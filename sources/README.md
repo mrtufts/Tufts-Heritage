@@ -33,7 +33,7 @@ Quotes below are transcribed from the page scans (OCR corrected against the imag
 ## STILL NEEDED from owner
 Neither research bot ("Revere & Peter Tufts Research" or "Albert C. Tufts Research") had scans or page images of these sources.
 
-1. **Tufts Kinsmen, Vols. I and II** (book source). ⚠️ MISSING IMAGES. This includes the **p. 50 claim**, which is known only secondhand and is **UNVERIFIED**. Please provide page scans or photos showing the printed page numbers.
+1. **Tufts Kinsmen, Vol. I** (book source; Vol. II is now cited from a private copy with short quotes and printed pages only: pp. 77, 83, 96, 107–115, 145–151; no scans, because of copyright). ⚠️ Vol. I NOT SEEN. This includes the **p. 50 claim**, which is known only secondhand and is **UNVERIFIED**. Please provide page scans or photos showing the printed page numbers.
 2. **DAR records.** ⚠️ MISSING IMAGES. This includes **ancestor A116812, Peter Tufts Jr. (1753–1832)**, which is known only from secondhand web sources and is **UNVERIFIED**. Please provide the DAR Genealogical Research System ancestor record or application pages.
 
 ## Awaiting owner material

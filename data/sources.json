@@ -119,14 +119,22 @@
   },
   {
     "id": "tufts-kinsmen",
-    "citation": "Tufts Kinsmen, Vols. I and II",
+    "citation": "Adams, Tufts Kinsmen, Vol. II (2012; (c) 2003)",
     "pages": [
-      "50"
+      "77",
+      "83",
+      "96",
+      "107-115",
+      "145",
+      "147",
+      "149",
+      "150",
+      "151"
     ],
     "scans": [],
     "archive_id": null,
-    "verified_on_scan": false,
-    "flag": "MISSING IMAGES; p.50 claim unverified (secondhand)"
+    "verified_on_scan": true,
+    "flag": "Vol. II private copy: short quotes only, no scans (copyright). Vol. I not seen; the p.50 claim is unverified."
   },
   {
     "id": "dar",
