@@ -3,12 +3,28 @@
     "id": "mss-v16",
     "citation": "Massachusetts Soldiers and Sailors of the Revolutionary War, vol. XVI (1907)",
     "pages": [
+      "131",
+      "132",
+      "133",
+      "134",
+      "135",
+      "136",
       "137",
-      "138"
+      "138",
+      "139",
+      "140"
     ],
     "scans": [
+      "sources/images/mss-v16-p131.jpg",
+      "sources/images/mss-v16-p132.jpg",
+      "sources/images/mss-v16-p133.jpg",
+      "sources/images/mss-v16-p134.jpg",
+      "sources/images/mss-v16-p135.jpg",
+      "sources/images/mss-v16-p136.jpg",
       "sources/images/mss-v16-p137.jpg",
-      "sources/images/mss-v16-p138.jpg"
+      "sources/images/mss-v16-p138.jpg",
+      "sources/images/mss-v16-p139.jpg",
+      "sources/images/mss-v16-p140.jpg"
     ],
     "archive_id": "massachusettssol16mass",
     "verified_on_scan": true
@@ -45,10 +61,14 @@
     "id": "wild",
     "citation": "Wild, Medford in the Revolution (1903)",
     "pages": [
-      "52"
+      "50",
+      "52",
+      "53"
     ],
     "scans": [
-      "sources/images/wild-medford-in-revolution-p52.jpg"
+      "sources/images/wild-medford-in-revolution-p50.jpg",
+      "sources/images/wild-medford-in-revolution-p52.jpg",
+      "sources/images/wild-medford-in-revolution-p53.jpg"
     ],
     "archive_id": "medfordinrevolut00wild",
     "verified_on_scan": true
@@ -65,6 +85,27 @@
     ],
     "archive_id": "beginningsofamer03chas",
     "verified_on_scan": true
+  },
+  {
+    "id": "tufts-family-history",
+    "citation": "Jay Franklin Tufts, Tufts Family History 1633-1963 (secondary source)",
+    "pages": [
+      "28",
+      "35",
+      "37",
+      "139",
+      "143"
+    ],
+    "scans": [
+      "sources/images/tufts-family-history-p28.jpg",
+      "sources/images/tufts-family-history-p35.jpg",
+      "sources/images/tufts-family-history-p37.jpg",
+      "sources/images/tufts-family-history-p139.jpg",
+      "sources/images/tufts-family-history-p143.jpg"
+    ],
+    "archive_id": "tuftsfamilyhisto00tuft_0",
+    "verified_on_scan": true,
+    "note": "p.37 printed number not legible on scan; taken from archive.org page map"
   },
   {
     "id": "medford-1925-monument",

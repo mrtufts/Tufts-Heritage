@@ -17,12 +17,13 @@ sources/               Quote table (README.md) and page scans (images/)
 docs/                  External links only; no large files
 config.js              ASSET_BASE_URL
 manifest.json          Maps each asset to its storage path
-tools/build_pages.py   Regenerates pages with the shared nav, header, and footer
+tools/build_pages.py   Regenerates all pages with the shared nav, header, and footer
+tools/content.py       Page and profile content (quotes, citations, scans)
 PROJECT_1776_BRIEF.md  Project brief
 ```
 
 ## Navigation
-Home | Generations (Colonial 1638–1765, The Revolution 1765–1783, 19th Century, Modern) | People | Places | Collections | Sources. Sections that have no content yet are greyed out and tagged "Coming soon" with a one-line note of what is planned. They still link to real pages, so there are no dead links.
+Home | Generations (Colonial 1638–1765, The Revolution 1765–1783, 19th Century, Modern) | People | Places | Collections | Sources. Sections still waiting on content are greyed out and tagged "Coming soon" with a one-line note of what is planned. They still link to real pages, so there are no dead links.
 
 ## URL rule
 Site files (HTML, CSS, JS, JSON) must never contain hardcoded absolute URLs. Use relative paths, or build asset paths from `ASSET_BASE_URL` in `config.js`. **Sole exception:** the Google Fonts links (fonts.googleapis.com / fonts.gstatic.com) that load Cinzel and EB Garamond. This keeps a future move of media to Cloudflare R2 or Backblaze B2 a one-line change.

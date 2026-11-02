@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "name": "Peter Tufts Jr.",
+    "slug": "peter-tufts-jr",
+    "born": "1753",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Peter Tufts of Winter Hill",
+    "town": "Medford",
+    "profile": "profiles/peter-tufts-jr.html"
+  },
+  {
+    "name": "Dr. Cotton Tufts",
+    "slug": "cotton-tufts",
+    "born": "",
+    "died": "1815",
+    "era": "The Revolution",
+    "line": "Dr. Simon Tufts",
+    "town": "Medford; Weymouth",
+    "profile": "profiles/cotton-tufts.html"
+  },
+  {
+    "name": "Zachariah Tufts",
+    "slug": "zachariah-tufts",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Undetermined",
+    "town": "Woburn",
+    "profile": "profiles/zachariah-tufts.html"
+  },
+  {
+    "name": "William Tufts (several men)",
+    "slug": "william-tufts",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Undetermined",
+    "town": "Bedford; Medford; others not given",
+    "profile": "profiles/william-tufts.html"
+  },
+  {
+    "name": "Samuel Tufts (several men)",
+    "slug": "samuel-tufts",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Undetermined",
+    "town": "Medford; Brookline; others not given",
+    "profile": "profiles/samuel-tufts.html"
+  },
+  {
+    "name": "Barnabas Tufts",
+    "slug": "barnabas-tufts",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Undetermined",
+    "town": "Gloucester",
+    "profile": "profiles/barnabas-tufts.html"
+  },
+  {
+    "name": "Caleb Tufts",
+    "slug": "caleb-tufts",
+    "born": "1762",
+    "died": "1852",
+    "era": "The Revolution",
+    "line": "Undetermined",
+    "town": "Medford; later Mystic, Conn.",
+    "profile": "profiles/caleb-tufts.html"
+  },
+  {
+    "name": "Charles Tufts",
+    "slug": "charles-tufts",
+    "born": "",
+    "died": "1876",
+    "era": "19th Century",
+    "line": "Undetermined",
+    "town": "Somerville",
+    "profile": "generations/19th-century.html#charles-tufts"
+  },
+  {
+    "name": "Albert C. Tufts",
+    "slug": "albert-c-tufts",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Undetermined",
+    "town": "Sacramento, Calif.",
+    "profile": "generations/19th-century.html#albert-c-tufts"
+  },
+  {
+    "name": "Peter Tufts of Winter Hill",
+    "slug": "peter-tufts-winter-hill",
+    "born": "1728",
+    "died": "1791",
+    "era": "Colonial",
+    "line": "Peter Tufts of Winter Hill",
+    "town": "Charlestown (Winter Hill)",
+    "profile": "generations/colonial.html#peter-1728"
+  },
+  {
+    "name": "Anne Adams Tufts",
+    "slug": "anne-adams-tufts",
+    "born": "1729",
+    "died": "1813",
+    "era": "Colonial",
+    "line": "Peter Tufts of Winter Hill",
+    "town": "Charlestown (Winter Hill)",
+    "profile": "generations/colonial.html#anne-adams"
+  },
+  {
+    "name": "Peter Tufts (the immigrant)",
+    "slug": "peter-tufts-immigrant",
+    "born": "1617",
+    "died": "1700",
+    "era": "Colonial",
+    "line": "Peter Tufts the immigrant",
+    "town": "Charlestown / Malden",
+    "profile": "generations/colonial.html#immigrant"
+  }
+]
