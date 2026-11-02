@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People | Tufts Family Heritage</title>
+<meta name="description" content="The Tufts family across generations, from colonial New England onward.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="chainmail">
+  <svg class="crest" viewBox="0 0 60 70" aria-hidden="true"><path d="M5 5h50v28c0 18-12 28-25 33C17 61 5 51 5 33z" fill="#6d1a24" stroke="#c9a24a" stroke-width="3"/><path d="M30 5v61M5 30h50" stroke="#c9a24a" stroke-width="2"/></svg>
+  <div class="kicker">A&ndash;Z Index</div>
+  <h1>People</h1>
+  <div>Searchable index of family members</div>
+</header>
+<nav aria-label="Main"><ul>
+<li><a href="index.html">Home</a></li>
+<li class="dropdown"><a href="generations/revolution.html" aria-haspopup="true">Generations &#9662;</a><ul><li><a href="generations/colonial.html" class="soon">Colonial 1638&ndash;1765<span class="tag">Coming soon</span></a></li><li><a href="generations/revolution.html">The Revolution 1765&ndash;1783</a></li><li><a href="generations/19th-century.html" class="soon">19th Century<span class="tag">Coming soon</span></a></li><li><a href="generations/modern.html" class="soon">Modern<span class="tag">Coming soon</span></a></li></ul></li>
+<li><a href="people.html" class="soon" aria-current="page">People<span class="tag">Coming soon</span></a></li>
+<li><a href="places.html">Places</a></li>
+<li><a href="collections.html" class="soon">Collections<span class="tag">Coming soon</span></a></li>
+<li><a href="sources.html">Sources</a></li>
+</ul></nav>
+<main>
+
+<section>
+  <h2>People A&ndash;Z</h2>
+  <div class="filters">
+    <label>Search <input id="q" type="search" placeholder="Name"></label>
+    <label>Era <select id="era"><option value="">All eras</option></select></label>
+    <label>Line <select id="line"><option value="">All lines</option></select></label>
+  </div>
+  <div id="people-list"><p class="note">Loading&hellip;</p></div>
+</section>
+</main>
+<footer class="chainmail">
+  &copy; <span id="year">2026</span> Tufts Family Heritage
+</footer>
+<script src="config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

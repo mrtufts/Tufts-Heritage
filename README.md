@@ -4,17 +4,25 @@ A static heritage website about the Tufts family across generations, from coloni
 
 ## Folder structure
 ```
-index.html        Landing page
-config.js         ASSET_BASE_URL (single asset location setting)
-manifest.json     Maps each document to its storage URL
-css/              Stylesheets
-js/               Scripts
-profiles/         One HTML page per soldier (_template.html is the starting point)
-data/             JSON records (soldiers.json)
-sources/          Approved primary source list and source notes
-docs/             External links only; no large files
+index.html             Home: hero, timeline strip, featured stories
+generations/           colonial.html, revolution.html (250th banner), 19th-century.html, modern.html
+people.html            Searchable A-Z index (data/people.json)
+places.html            Winter Hill, Medford & Charlestown, Later Homes
+collections.html       Letters, Artifacts, Photographs
+sources.html           Bibliography, Page Scans (data/sources.json), Research Notes
+profiles/              One HTML page per person (_template.html)
+css/ js/               Stylesheet and scripts (search/filters, scan gallery)
+data/                  people.json, sources.json
+sources/               Quote table (README.md) and page scans (images/)
+docs/                  External links only; no large files
+config.js              ASSET_BASE_URL
+manifest.json          Maps each asset to its storage path
+tools/build_pages.py   Regenerates pages with the shared nav, header, and footer
 PROJECT_1776_BRIEF.md  Project brief
 ```
+
+## Navigation
+Home | Generations (Colonial 1638–1765, The Revolution 1765–1783, 19th Century, Modern) | People | Places | Collections | Sources. Sections that have no content yet are greyed out and tagged "Coming soon" with a one-line note of what is planned. They still link to real pages, so there are no dead links.
 
 ## URL rule
 Site files (HTML, CSS, JS, JSON) must never contain hardcoded absolute URLs. Use relative paths, or build asset paths from `ASSET_BASE_URL` in `config.js`. **Sole exception:** the Google Fonts links (fonts.googleapis.com / fonts.gstatic.com) that load Cinzel and EB Garamond. This keeps a future move of media to Cloudflare R2 or Backblaze B2 a one-line change.

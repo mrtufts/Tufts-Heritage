@@ -1,2 +1,2 @@
 # Profiles
-One HTML page per Tufts Revolutionary War soldier will live here. Each profile must cite primary sources and flag anything unverified.
+One HTML page per person (start from `_template.html`). Add each to `data/people.json` with fields: name, slug, born, died, era, line, profile (relative path, e.g. `profiles/slug.html`).

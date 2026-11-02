@@ -36,3 +36,27 @@ a{color:var(--crimson)}
 .flag h2{margin-top:0;color:var(--crimson)}
 ol.sources li{margin-bottom:.4rem}
 footer{color:var(--parchment);text-align:center;padding:2rem 1rem;font-size:.95rem;border-top:6px double var(--gold)}
+
+/* Navigation with dropdown */
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center}
+nav li{position:relative}
+nav .dropdown>ul{display:none;position:absolute;left:0;top:100%;min-width:15rem;flex-direction:column;background:var(--iron);border:1px solid var(--gold);z-index:10;text-align:left}
+nav .dropdown:hover>ul,nav .dropdown:focus-within>ul{display:flex}
+nav .dropdown>ul a{display:block}
+nav a[aria-current="page"]{color:var(--gold)}
+.soon{opacity:.55}
+.tag{display:inline-block;font-family:"Cinzel",serif;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;background:var(--iron-light);color:var(--parchment);padding:.05rem .45rem;margin-left:.4rem;border-radius:2px;vertical-align:middle}
+section.soon{filter:grayscale(1)}
+.banner{background:linear-gradient(var(--crimson),var(--burgundy));color:var(--parchment);text-align:center;padding:1rem;border:2px solid var(--gold);font-family:"Cinzel",serif;margin-bottom:1.5rem}
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.75rem;margin:1.5rem 0}
+.timeline a,.card{display:block;padding:1rem;border:2px solid var(--gold);background:rgba(255,248,225,.85);text-decoration:none;color:var(--ink);text-align:center}
+.timeline a strong{display:block;font-family:"Cinzel",serif;color:var(--burgundy)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{text-align:left}
+.card img{max-width:100%;border:1px solid var(--parchment-dark)}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.filters input,.filters select{font:inherit;padding:.35rem .5rem;border:1px solid var(--iron-light);background:#fffaf0}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid var(--parchment-dark);padding:.4rem .6rem;text-align:left;vertical-align:top}
+.scans img{max-width:100%;height:auto;border:1px solid var(--parchment-dark)}
+blockquote{margin:.5rem 0;padding:.5rem 1rem;border-left:3px solid var(--burgundy);background:rgba(255,248,225,.7)}
