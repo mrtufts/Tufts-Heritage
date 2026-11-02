@@ -1,0 +1,99 @@
+[
+  {
+    "id": "mss-v16",
+    "citation": "Massachusetts Soldiers and Sailors of the Revolutionary War, vol. XVI (1907)",
+    "pages": [
+      "137",
+      "138"
+    ],
+    "scans": [
+      "sources/images/mss-v16-p137.jpg",
+      "sources/images/mss-v16-p138.jpg"
+    ],
+    "archive_id": "massachusettssol16mass",
+    "verified_on_scan": true
+  },
+  {
+    "id": "wyman-v2",
+    "citation": "Wyman, The Genealogies and Estates of Charlestown, vol. II (1879)",
+    "pages": [
+      "964",
+      "965"
+    ],
+    "scans": [
+      "sources/images/wyman-v2-p964.jpg",
+      "sources/images/wyman-v2-p965.jpg"
+    ],
+    "archive_id": "genealogiesestat02wyma",
+    "verified_on_scan": true
+  },
+  {
+    "id": "jones",
+    "citation": "Jones, Under Colonial Roofs (1894)",
+    "pages": [
+      "128",
+      "129"
+    ],
+    "scans": [
+      "sources/images/jones-under-colonial-roofs-p128.jpg",
+      "sources/images/jones-under-colonial-roofs-p129.jpg"
+    ],
+    "archive_id": "undercolonialroo00jone",
+    "verified_on_scan": true
+  },
+  {
+    "id": "wild",
+    "citation": "Wild, Medford in the Revolution (1903)",
+    "pages": [
+      "52"
+    ],
+    "scans": [
+      "sources/images/wild-medford-in-revolution-p52.jpg"
+    ],
+    "archive_id": "medfordinrevolut00wild",
+    "verified_on_scan": true
+  },
+  {
+    "id": "chase-v3",
+    "citation": "Chase, The Beginnings of the American Revolution, vol. III (1910)",
+    "pages": [
+      "99"
+    ],
+    "scans": [
+      "sources/images/chase-v3-p99-fullpage.jpg",
+      "sources/images/chase-v3-pp99-100.jpg"
+    ],
+    "archive_id": "beginningsofamer03chas",
+    "verified_on_scan": true
+  },
+  {
+    "id": "medford-1925-monument",
+    "citation": "Medford 1925 monument, roster of the First Company of Minute Men",
+    "pages": [],
+    "scans": [
+      "sources/images/medford-1925-monument.jpg"
+    ],
+    "archive_id": null,
+    "verified_on_scan": true
+  },
+  {
+    "id": "tufts-kinsmen",
+    "citation": "Tufts Kinsmen, Vols. I and II",
+    "pages": [
+      "50"
+    ],
+    "scans": [],
+    "archive_id": null,
+    "verified_on_scan": false,
+    "flag": "MISSING IMAGES; p.50 claim unverified (secondhand)"
+  },
+  {
+    "id": "dar",
+    "citation": "DAR records, ancestor A116812 Peter Tufts Jr.",
+    "pages": [],
+    "scans": [],
+    "archive_id": null,
+    "verified_on_scan": false,
+    "flag": "MISSING IMAGES; unverified (secondhand web sources)"
+  }
+]

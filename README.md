@@ -1,6 +1,6 @@
-# Tufts Revolutionary Heritage: Project 1776
+# Tufts Family Heritage
 
-A static heritage website by the **Tufts Kinsmen Association** honoring the **250th anniversary of American Independence (1776–2026)**. The site documents Tufts family Revolutionary War service, genealogy, historical places (including the Winter Hill farm, Medford, MA), artifacts, and family letters, in a professional, factual, story-like narrative.
+A static heritage website about the Tufts family across generations, from colonial New England onward: the colonial era, the Revolutionary War (including the 250th anniversary of American Independence, 1776–2026, as one chapter), the 19th century, and later generations. It covers genealogy, places, artifacts, and family letters, written in a professional, factual, story-like narrative. The site is an independent family-history project and is not a publication of, or affiliated with, any family association.
 
 ## Folder structure
 ```
@@ -23,10 +23,7 @@ Site files (HTML, CSS, JS, JSON) must never contain hardcoded absolute URLs. Use
 Medieval heraldic styling for a Revolutionary War era subject: parchment background, chainmail-pattern header and footer, heraldic shield and crossed-swords dividers (inline SVG), Cinzel headings, EB Garamond body text. Palette (CSS variables in `css/style.css`): burgundy/crimson, parchment cream, iron gray, gold. All textures are pure CSS or inline SVG; no external images.
 
 ## Sources policy
-Primary sources only; see `sources/README.md`. Anything unverified is clearly flagged.
+Primary sources only; see `sources/README.md`. Every book citation must show a page scan (`sources/images/`) or an exact quote with its printed page number. Never paraphrase. Missing images are flagged. `data/sources.json` maps each citation to its scan. Book sources include *Tufts Kinsmen*, Vols. I and II (cited as a book title only). Anything unverified is clearly flagged.
 
 ## Deployment
 GitHub Pages deploys automatically from the root of the `main` branch. `.nojekyll` disables Jekyll processing. A custom domain may be added later.
-
-## Contact
-Shannon Tufts, President, Tufts Kinsmen Association.

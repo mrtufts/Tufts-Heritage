@@ -1,1 +1,14 @@
-{}
+{
+  "assets": {
+    "mss-v16:mss-v16-p137.jpg": "sources/images/mss-v16-p137.jpg",
+    "mss-v16:mss-v16-p138.jpg": "sources/images/mss-v16-p138.jpg",
+    "wyman-v2:wyman-v2-p964.jpg": "sources/images/wyman-v2-p964.jpg",
+    "wyman-v2:wyman-v2-p965.jpg": "sources/images/wyman-v2-p965.jpg",
+    "jones:jones-under-colonial-roofs-p128.jpg": "sources/images/jones-under-colonial-roofs-p128.jpg",
+    "jones:jones-under-colonial-roofs-p129.jpg": "sources/images/jones-under-colonial-roofs-p129.jpg",
+    "wild:wild-medford-in-revolution-p52.jpg": "sources/images/wild-medford-in-revolution-p52.jpg",
+    "chase-v3:chase-v3-p99-fullpage.jpg": "sources/images/chase-v3-p99-fullpage.jpg",
+    "chase-v3:chase-v3-pp99-100.jpg": "sources/images/chase-v3-pp99-100.jpg",
+    "medford-1925-monument:medford-1925-monument.jpg": "sources/images/medford-1925-monument.jpg"
+  }
+}
