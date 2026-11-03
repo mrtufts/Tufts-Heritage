@@ -52,7 +52,7 @@ def page(path, title, kicker, h1, sub, body, desc="The Tufts family across gener
 </header>
 {nav(pre, path)}
 <main>
-{body.replace("{P}", pre).replace("{DIV}", DIV).replace("{SOON}", SOON)}
+{(body + EXTRA(path)).replace("{P}", pre).replace("{DIV}", DIV).replace("{SOON}", SOON)}
 </main>
 <footer class="chainmail">
   &copy; <span id="year">2026</span> Tufts Family Heritage
@@ -67,4 +67,5 @@ def page(path, title, kicker, h1, sub, body, desc="The Tufts family across gener
 def soon_section(id_, h, note):
     return f'<section id="{id_}" class="soon"><h2>{h}{{SOON}}</h2><p>{note}</p></section>'
 
+exec(open("tools/images.py").read())
 exec(open("tools/content.py").read())

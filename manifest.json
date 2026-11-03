@@ -25,5 +25,119 @@
     "wild-medford-in-revolution-p53.jpg": "sources/images/wild-medford-in-revolution-p53.jpg",
     "wyman-v2-p964.jpg": "sources/images/wyman-v2-p964.jpg",
     "wyman-v2-p965.jpg": "sources/images/wyman-v2-p965.jpg"
+  },
+  "images": {
+    "peter-tufts-house-medford.jpg": {
+      "path": "assets/images/peter-tufts-house-medford.jpg",
+      "title": "Peter Tufts House, Medford, Mass.",
+      "creator": "Daderot",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Peter_Tufts_House,_Medford,_Massachusetts.JPG"
+    },
+    "peter-oliver-tufts-house-somerville.jpg": {
+      "path": "assets/images/peter-oliver-tufts-house-somerville.jpg",
+      "title": "Peter and Oliver Tufts House, Somerville, Mass.",
+      "creator": "Swampyank",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Peter_and_Oliver_Tufts_House_in_Somerville_MA_USA.jpg"
+    },
+    "royall-house-1920.jpg": {
+      "path": "assets/images/royall-house-1920.jpg",
+      "title": "Royall House, Medford, Mass. (1920)",
+      "creator": "Leon H. Abdalian (via Boston Public Library / DPLA)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Royall_House,_Medford,_Mass._-_DPLA_-_fcd3982fa9652a304581fe95cd4c0e83.jpg"
+    },
+    "royall-house-east-facade.jpg": {
+      "path": "assets/images/royall-house-east-facade.jpg",
+      "title": "Isaac Royall House, east (front) facade",
+      "creator": "Daderot",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Isaac_Royall_House,_Medford,_Massachusetts_-_East_(front)_facade.JPG"
+    },
+    "cotton-tufts-greenleaf-1804.jpg": {
+      "path": "assets/images/cotton-tufts-greenleaf-1804.jpg",
+      "title": "Dr. Cotton Tufts, by Benjamin Greenleaf (1804)",
+      "creator": "Benjamin Greenleaf",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Cotton_Tufts_-_Benjamin_Greenleaf.jpg"
+    },
+    "charles-tufts-c1860.jpg": {
+      "path": "assets/images/charles-tufts-c1860.jpg",
+      "title": "Charles Tufts, about 1860",
+      "creator": "Hale's Photograph Rooms / Edwin B. Rollins",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Charles_Tufts,_founder_of_Tufts_College,_ca._1860.jpg"
+    },
+    "dorchester-heights-monument.jpg": {
+      "path": "assets/images/dorchester-heights-monument.jpg",
+      "title": "Dorchester Heights Monument, South Boston",
+      "creator": "Jet Lowe (HABS/HAER, Library of Congress)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Dorchester_Heights_Monument_(Boston,_MA)_-_general_view.jpg"
+    },
+    "old-powder-house-somerville.jpg": {
+      "path": "assets/images/old-powder-house-somerville.jpg",
+      "title": "Old Powder House, Somerville, Mass.",
+      "creator": "Daderot",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Old_Powder_House_(Somerville,_Massachusetts)_-_DSC04318.JPG"
+    },
+    "prospect-hill-monument.jpg": {
+      "path": "assets/images/prospect-hill-monument.jpg",
+      "title": "Prospect Hill Monument, Somerville, Mass.",
+      "creator": "Daderot",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Prospect_Hill_Monument_-_Somerville,_MA_-_DSC03320.JPG"
+    },
+    "doolittle-battle-of-lexington-1775.jpg": {
+      "path": "assets/images/doolittle-battle-of-lexington-1775.jpg",
+      "title": "The Battle of Lexington, April 19, 1775 (Doolittle, Plate I)",
+      "creator": "Amos Doolittle after Ralph Earl",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Battle_of_Lexington_Detail.jpg"
+    },
+    "trumbull-bunker-hill.jpg": {
+      "path": "assets/images/trumbull-bunker-hill.jpg",
+      "title": "The Battle of Bunker's Hill, June 17, 1775 (Trumbull)",
+      "creator": "John Trumbull",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Battle_of_Bunker%27s_Hill_June_17_1775_by_John_Trumbull.jpeg"
+    },
+    "trumbull-surrender-burgoyne.jpg": {
+      "path": "assets/images/trumbull-surrender-burgoyne.jpg",
+      "title": "Surrender of General Burgoyne at Saratoga, October 17, 1777 (Trumbull)",
+      "creator": "John Trumbull",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Surrender_of_General_Burgoyne.jpg"
+    },
+    "henry-tufts-narrative-1807.jpg": {
+      "path": "assets/images/henry-tufts-narrative-1807.jpg",
+      "title": "A Narrative of the Life ... of Henry Tufts (1807), title page",
+      "creator": "Samuel Bragg Jr., printer",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Henry_Tufts%27_Autobiography.jpg"
+    },
+    "farmington-falls-postcard-1907.jpg": {
+      "path": "assets/images/farmington-falls-postcard-1907.jpg",
+      "title": "Farmington Falls, Maine (postcard, 1907)",
+      "creator": "Unknown (1907 postcard)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_Farmington_Falls,_ME.jpg"
+    },
+    "fort-independence-castle-island.jpg": {
+      "path": "assets/images/fort-independence-castle-island.jpg",
+      "title": "Fort Independence, Castle Island, South Boston",
+      "creator": "Paul Keleher",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fort_Independence,_Castle_Island,_South_Boston.jpg"
+    },
+    "cradock-house-medford.jpg": {
+      "path": "assets/images/cradock-house-medford.jpg",
+      "title": "Cradock House, Riverside Ave., Medford (about 1895-1905)",
+      "creator": "Unknown photographer (via DPLA)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Cradock_House,_350_Riverside_Ave.,_1634._-_DPLA_-_664b9bbf74579ce773177aede37bc5a0.jpg"
+    }
   }
 }
