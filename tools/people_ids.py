@@ -120,6 +120,7 @@ def profile(p):
     p["family"] = p["family"] + "</section>{DIV}" + SPSEC(p).replace("</section>", "") 
     _profile0(p)
     f = f'profiles/{p["slug"]}.html'; h = open(f).read()
+    h = re.sub(r'<a href="\.\./profiles/' + p["slug"] + r'\.html">(.*?)</a>', r'\1', h)
     h = h.replace('<section id="unverified">', IDSEC(p) + '\n<section id="unverified">', 1)
     open(f, "w").write(h)
 # Perseus hits: link Timothy and Turell
