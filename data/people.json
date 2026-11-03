@@ -470,6 +470,26 @@
     "profile": "profiles/simon-tufts-1700.html"
   },
   {
+    "name": "Turell Tufts (1770&ndash;1842)",
+    "slug": "turell-tufts",
+    "born": "1770",
+    "died": "1842",
+    "era": "19th Century",
+    "line": "Son of Dr. Simon Tufts (1727&ndash;1786)",
+    "town": "Medford, Mass.",
+    "profile": "profiles/turell-tufts.html"
+  },
+  {
+    "name": "Timothy Tufts (1735&ndash;1805)",
+    "slug": "timothy-tufts",
+    "born": "1735",
+    "died": "1805",
+    "era": "The Revolution",
+    "line": "Son of Peter Tufts of Milk Row",
+    "town": "Charlestown (now Somerville), Mass.",
+    "profile": "profiles/timothy-tufts.html"
+  },
+  {
     "name": "Charles Tufts",
     "slug": "charles-tufts",
     "born": "",
