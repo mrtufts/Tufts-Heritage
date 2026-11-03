@@ -41,15 +41,31 @@ PROFILES += [
   Q("Tufts, Samuel, 3d, Medford. Private, Capt. Isaac Hall's co., Col. Thomas Gardner's regt., which assembled April 19, 1775; service, 5 days.", MSS + ", p. 139"),
   "His dates and parents. Not yet matched to a family number."),
 ]
+C1 = "https://commons.wikimedia.org/wiki/File:Charleville_Modele_1763_Musket-NMAH-AHB2015q026487.jpg"
+C2 = "https://commons.wikimedia.org/wiki/File:Tower_Brown_Bess_India_Pattern_Musket-NMAH-AHB2015q035657.jpg"
+IMAGES.update({
+ "placeholder-charleville-1763-nmah.jpg": ("French Model 1763 Charleville musket (lock detail), Smithsonian NMAH 1980.0399.0856", "Placeholder for comparison only; not the Tufts musket.", "The Smithsonian Institution, National Museum of American History", "Public domain", C1),
+ "placeholder-india-pattern-brown-bess-nmah.jpg": ("Tower Brown Bess India Pattern musket, Smithsonian NMAH AF*NM215", "Placeholder for comparison only; not the Tufts musket.", "The Smithsonian Institution, National Museum of American History", "Public domain", C2),
+})
+CREDITS = '<section id="image-credits"><h2>Image Credits</h2><p>Illustrations are public domain or openly licensed, except photographs from The Historical Marker Database (HMdb.org), which are used noncommercially with the attribution its terms require. Each is stored on this site and linked to its source page, which carries the full terms. CC BY-SA images may be reused under the same license.</p><ul>' + "".join(
+    f'<li><a href="{{P}}assets/images/{f}">{t}</a>. {who}. {lic}. <a href="{src}">{(v[5]+" page") if len(v)>5 else "Wikimedia Commons file page"}</a></li>' for f, v in IMAGES.items() for (t, cap, who, lic, src) in [v[:5]]) + '</ul></section>'
+N1 = 'Placeholder image: this is NOT the Tufts musket (AHS 1907.11.1). It shows a similar French Model 1763 Charleville flintlock musket (lock detail), Smithsonian National Museum of American History no. 1980.0399.0856, via <a href="' + C1 + '">Wikimedia Commons</a>, public domain.'
+N2 = 'Placeholder image: this is NOT the Tufts musket (AHS 1907.11.3). It shows a similar British &ldquo;Tower&rdquo; Brown Bess India Pattern flintlock musket, Smithsonian National Museum of American History no. AF*NM215, via <a href="' + C2 + '">Wikimedia Commons</a>, public domain.'
+def PH(f, note, rec, cat):
+    return (f'<figure class="hfig placeholder"><a href="{{P}}assets/images/{f}"><img src="{{P}}assets/images/{f}" alt="Placeholder: a similar musket, not the Tufts musket" loading="lazy"></a>'
+            f'<figcaption><strong>{note}</strong><br><a href="{AHS}{rec}">View the actual musket (catalog no. {cat}) in the Arlington Historical Society collection</a></figcaption></figure>')
+
 MUSKETS = f'''<section id="muskets"><h2>The Tufts Muskets</h2>
-<p>The Arlington Historical Society, which keeps the Jason Russell House, holds two muskets catalogued as the property of Ephraim Tufts. The Society&rsquo;s online catalog lists both. They are not illustrated here because the catalog grants no reuse license; follow the links to see them.</p>
+<p>The Arlington Historical Society, which keeps the Jason Russell House, holds two muskets catalogued as the property of Ephraim Tufts. The Society&rsquo;s online catalog lists both. The museum&rsquo;s own photographs carry no reuse license, so each entry shows a public-domain image of a similar musket, clearly labeled, with a link to the real object.</p>
 <h3>Musket, catalog no. 1907.11.1: French Charleville pattern, about 1763&ndash;1773</h3>
 {Q("Flint lock musket - With bayonet c. 1763-1773, French Barrel rings missing. American -made muskets were patterned after this French model. Formerly the property of Ephraim Tufts - inherited from his father. Bayonet is probably British, added later. Lock Plate &lsquo;Charleville R&rsquo;", f'Arlington Historical Society, catalog no. 1907.11.1. Source: Omar Whittemore. <a href="{AHS}A6A8A54E-2B3B-49DD-94D5-607561794660">Catalog record</a>')}
 {TA('Owned by <a href="{P}profiles/ephraim-tufts.html">Ephraim Tufts</a>, who inherited it from his father. The catalog links the record to Ebenezer Tufts and Ephraim Tufts Whittemore.', "catalog no. 1907.11.1")}
 {UNV("Who Ephraim&rsquo;s father was, and whether this musket was carried on April 19, 1775. The catalog gives &ldquo;April 19, 1775 Lexington &amp; Concord&rdquo; only as a search term. The Jason Russell House guide describes a Charleville 1763 musket on the kitchen wall only as being &ldquo;of the kind&rdquo; Colonial troops used. It has not been confirmed that this is the Tufts musket.")}
+{PH("placeholder-charleville-1763-nmah.jpg", N1, "A6A8A54E-2B3B-49DD-94D5-607561794660", "1907.11.1")}
 <h3>Musket, catalog no. 1907.11.3: British India pattern, about 1810&ndash;1830</h3>
 {Q("This appears to be a 3rd-pattern/India pattern British musket from ca. 1810-1830. &hellip; This dating is also consistent with ownership by Ephraim Tufts", f'Arlington Historical Society, catalog no. 1907.11.3. Source: Omar Whittemore. <a href="{AHS}11A3FED3-F109-4586-9DA0-174329339745">Catalog record</a>')}
 {TA('Catalogued as owned by <a href="{P}profiles/ephraim-tufts.html">Ephraim Tufts</a>. This is a militia arm of the early 1800s, not a Revolutionary weapon.', "catalog no. 1907.11.3")}
+{PH("placeholder-india-pattern-brown-bess-nmah.jpg", N2, "11A3FED3-F109-4586-9DA0-174329339745", "1907.11.3")}
 <h3>Related: Capt. Benjamin Locke&rsquo;s musket, catalog no. 1924.5.1</h3>
 {Q("This gun was carried by Capt. Benjamin Locke (Aug 5, 1738 - Dec. 7, 1791). Capt. Locke was born at the &lsquo;Feet of the Rocks&rsquo; Menotomy, now Arlington. he was captain of a company of minutemen at Lexington and Bunker Hill.", f'Arlington Historical Society, catalog no. 1924.5.1. <a href="{AHS}A41AC27E-2924-4742-8626-470757279760">Catalog record</a>; see also <a href="https://arlingtonhistorical.org/benjamin-locke-menotomy-minute-man/">&ldquo;Benjamin Locke: Menotomy Minute Man&rdquo;</a>')}
 {UNV("Any Tufts connection. Another family index says this musket was &ldquo;donated via Effie Tufts.&rdquo; The museum record instead says it was presented in 1924 by the children of Benjamin Delmont Locke and William Henry Locke, and names no Tufts. The barrel is marked &ldquo;TK&rdquo;; its meaning is not stated. Locke was not a Tufts, though the families intermarried: Peter Tufts Jr. (b. 1774) married Martha Locke (Booth, p. 22).")}

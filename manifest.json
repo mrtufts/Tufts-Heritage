@@ -635,6 +635,20 @@
       "creator": "Peter Tufts Jr.; Annin & Smith",
       "license": "No known copyright restrictions",
       "source": "https://www.digitalcommonwealth.org/search/commonwealth:cj82m224p"
+    },
+    "placeholder-charleville-1763-nmah.jpg": {
+      "path": "assets/images/placeholder-charleville-1763-nmah.jpg",
+      "title": "French Model 1763 Charleville musket (placeholder; NMAH 1980.0399.0856)",
+      "creator": "The Smithsonian Institution, National Museum of American History",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Charleville_Modele_1763_Musket-NMAH-AHB2015q026487.jpg"
+    },
+    "placeholder-india-pattern-brown-bess-nmah.jpg": {
+      "path": "assets/images/placeholder-india-pattern-brown-bess-nmah.jpg",
+      "title": "Tower Brown Bess India Pattern musket (placeholder; NMAH AF*NM215)",
+      "creator": "The Smithsonian Institution, National Museum of American History",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Tower_Brown_Bess_India_Pattern_Musket-NMAH-AHB2015q035657.jpg"
     }
   }
 }
