@@ -91,11 +91,30 @@ MAPS_HTML = f'''<section id="maps"><h2>Maps</h2>
 <h3>Peter Tufts the immigrant, Malden</h3>
 {TA("Ferry kept by Peter Tufts (1617&ndash;1700), Malden&rsquo;s largest landholder at his death.", BOOTH + f', p. 21. <a href="{BOOTH_URL}2">Perseus</a>')}
 <p>Booth (p. 21) writes that the first Peter &ldquo;kept the Ferry between Charlestown and Malden with his brother-in-law, Bridges, in 1646-7,&rdquo; was the largest landholder in Malden at his death in 1700, and lived latterly &ldquo;on the site of the United States Ordnance property, near the Malden river and canal.&rdquo; <a href="{BOOTH_URL}2">Text (Perseus)</a></p>
+</section>
+{{DIV}}
+<section id="powder-house"><h2>The Powder House and Revolutionary Landmarks</h2>
+<h3>The Old Powder House, Somerville (Nathan Tufts Park)</h3>
+<p>The stone tower on Quarry Hill was built as a windmill in the early 1700s. In 1747 the province bought the &ldquo;stone edifice, formerly a windmill&rdquo; and a quarter-acre of land and made it a gunpowder magazine. It stood then in Charlestown, close to the Medford line. On September 1, 1774, troops sent by Gov. Thomas Gage removed the provincial powder stored there. Rumor spread that blood had been shed, and thousands of militiamen marched toward Boston and Cambridge. This was the &ldquo;Powder Alarm.&rdquo; The magazine served until 1818, when the state sold it. <span class="cite">(<a href="https://boston1775.blogspot.com/2016/03/the-powderhouse-public-resource-or.html">J. L. Bell, <em>Boston 1775</em>, March 2016</a>; <a href="https://en.wikipedia.org/wiki/Powder_Alarm">Wikipedia: Powder Alarm</a>, tertiary)</span></p>
+{TA("Peter Tufts (1753&ndash;1832) bought the farm opposite the Powder House in 1788. His son Peter (1774&ndash;1825) was the keeper of the Powder House until 1815. Nathan Tufts, the butcher and tanner, owned &ldquo;the large farms around the Powder House and Walnut hill.&rdquo; The magazine and its lot were later Tufts property, and the family gave them to Somerville in 1890 as Nathan Tufts Park.", BOOTH + f', pp. 21&ndash;23. <a href="{BOOTH_URL}7">Perseus</a>; <a href="https://sah-archipedia.org/buildings/MA-01-SM13">SAH Archipedia</a>')}
+{UNV("Tufts ownership of the magazine lot itself. The Boston 1775 blog and Wikipedia say the state sold it to &ldquo;Peter Tufts&rdquo; in 1818; SAH Archipedia says the Tufts family acquired it in 1822. Neither names which Peter, and the deed has not been seen. Booth confirms Tufts farms around the Powder House, not the purchase of the magazine itself. No Tufts is yet documented in the events of September 1, 1774.")}
+<p>Pictured in the Illustrations below. See <a href="{{P}}profiles/peter-tufts-jr.html">Peter Tufts Jr.</a></p>
+<h3>Winter Hill fort and the alarm route</h3>
+<p>The 1890 marker in Paul Revere Park, Winter Hill, commemorates Paul Revere&rsquo;s ride and the Winter Hill fort. It stands beside the Anne Adams Tufts tablet (see <a href="#winter-hill">Winter Hill</a>).</p>
+{TA("Revere&rsquo;s route passed the Winter Hill farm of Peter Tufts, whom he woke on April 19, 1775.", JONES+", p. 129")}
+{UNV("The marker&rsquo;s full text and the exact site of the Winter Hill fort have not been transcribed here.")}
+<h3>Prospect Hill and Fort No. 3</h3>
+{Q("A barrack for the soldiers was erected on the homestead lot during the siege of Boston by Colonel Patterson, and Fort No. 3 took its beginning near the same point.", BOOTH + f', part 1, p. 23. <a href="{BOOTH_URL}2">Perseus</a>')}
+{TA("The lot was the homestead of Nathaniel Tufts (1692&ndash;1741), on Washington Street near Union Square. By the Revolution it had passed to his son William (d. 1773).", BOOTH + ", part 1, pp. 22&ndash;23")}
+<p>Prospect Hill is pictured in the Illustrations below. For Tufts service there, see <a href="{{P}}profiles/james-tufts-jr-36-2.html">James Tufts Jr.</a> and <a href="{{P}}profiles/john-tufts-49-2.html">John Tufts (49-2)</a>.</p>
+<h3>Headquarters houses</h3>
+<p>Two Tufts houses served as American headquarters during the siege: Gen. Greene&rsquo;s at the Peter Tufts house on Somerville Avenue, and Gen. Lee&rsquo;s at the John and Oliver Tufts house. See <a href="#homesteads">Homesteads</a>.</p>
+{UNV("Other landmarks still to research: Ploughed Hill (Mount Benedict), Cobble Hill, the Medford and Charlestown taverns on the 1775 alarm route, and the Cambridgeport magazine kept by Peter Tufts from 1815.")}
 </section>'''
 _EXTRA1 = EXTRA
 def EXTRA(path):
     out = _EXTRA1(path)
     if path == "places.html": out = "{DIV}" + MAPS_HTML + out
     if path == "profiles/peter-tufts-jr.html":
-        out += '{DIV}<section id="maps"><h2>Maps by His Son</h2><p>His son Peter (1774&ndash;1825), &ldquo;Peter, the surveyor,&rdquo; drew the 1818 <em>Plan of Charlestown Peninsula</em> (Booth, <em>Historic Leaves</em> vol. 1, p. 23). A 1794 plan of Medford signed &ldquo;Peter Tufts jun<sup>r</sup>&rdquo; may be by either man. See <a href="{P}places.html#maps">Places: Maps</a>.</p></section>'
+        out += '{DIV}<section id="maps"><h2>Maps by His Son</h2><p>His son Peter (1774&ndash;1825), &ldquo;Peter, the surveyor,&rdquo; drew the 1818 <em>Plan of Charlestown Peninsula</em> (Booth, <em>Historic Leaves</em> vol. 1, p. 23). A 1794 plan of Medford signed &ldquo;Peter Tufts jun<sup>r</sup>&rdquo; may be by either man. See <a href="{P}places.html#maps">Places: Maps</a> and <a href="{P}places.html#powder-house">the Powder House</a>, beside the farm he bought in 1788.</p></section>'
     return out
