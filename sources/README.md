@@ -37,6 +37,6 @@ Neither research bot ("Revere & Peter Tufts Research" or "Albert C. Tufts Resear
 2. **DAR records.** ⚠️ MISSING IMAGES. This includes **ancestor A116812, Peter Tufts Jr. (1753–1832)**, which is known only from secondhand web sources and is **UNVERIFIED**. Please provide the DAR Genealogical Research System ancestor record or application pages.
 
 ## Awaiting owner material
-- The 1979 Tufts Kinsmen Association newsletter recreation
+- The 1979 family newsletter recreation
 - Family letters and artifact photographs
 - Albert C. Tufts verified findings (beyond the directory lines)

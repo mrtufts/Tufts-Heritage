@@ -68,7 +68,7 @@ MUSKETS = f'''<section id="muskets"><h2>The Tufts Muskets</h2>
 {PH("placeholder-india-pattern-brown-bess-nmah.jpg", N2, "11A3FED3-F109-4586-9DA0-174329339745", "1907.11.3")}
 <h3>Related: Capt. Benjamin Locke&rsquo;s musket, catalog no. 1924.5.1</h3>
 {Q("This gun was carried by Capt. Benjamin Locke (Aug 5, 1738 - Dec. 7, 1791). Capt. Locke was born at the &lsquo;Feet of the Rocks&rsquo; Menotomy, now Arlington. he was captain of a company of minutemen at Lexington and Bunker Hill.", f'Arlington Historical Society, catalog no. 1924.5.1. <a href="{AHS}A41AC27E-2924-4742-8626-470757279760">Catalog record</a>; see also <a href="https://arlingtonhistorical.org/benjamin-locke-menotomy-minute-man/">&ldquo;Benjamin Locke: Menotomy Minute Man&rdquo;</a>')}
-{UNV("Any Tufts connection. Another family index says this musket was &ldquo;donated via Effie Tufts.&rdquo; The museum record instead says it was presented in 1924 by the children of Benjamin Delmont Locke and William Henry Locke, and names no Tufts. The barrel is marked &ldquo;TK&rdquo;; its meaning is not stated. Locke was not a Tufts, though the families intermarried: Peter Tufts Jr. (b. 1774) married Martha Locke (Booth, p. 22).")}
+{UNV("Any Tufts connection. Some accounts state that this musket was &ldquo;donated via Effie Tufts.&rdquo; The museum record instead says it was presented in 1924 by the children of Benjamin Delmont Locke and William Henry Locke, and names no Tufts. The barrel is marked &ldquo;TK&rdquo;; its meaning is not stated. Locke was not a Tufts, though the families intermarried: Peter Tufts Jr. (b. 1774) married Martha Locke (Booth, p. 22).")}
 <p>The Society also holds a portrait catalogued as &ldquo;Mrs Amos Locke nee Sally Tufts&rdquo; (no. 1915.7.1B). <a href="https://arlingtonhistorical.pastperfectonline.com/photo/F8D78A69-41C6-4E05-9734-560754397332">Catalog record</a>.</p>
 </section>'''
 L = lambda url, lab: f'<a href="{url}">{lab}</a>'
@@ -84,7 +84,7 @@ LETTERS = f'''<section id="adams-letters"><h2>Letters: The Adams Correspondence<
 <li><strong>John Adams to Abigail Adams, 7 April 1797:</strong> &ldquo;If Dr. Tufts has any Money of mine in his hands, I should be glad if he would Supply my Nephew and take his Security.&rdquo; {L("https://www.masshist.org/digitaladams/archive/doc?id=L17970407ja","Massachusetts Historical Society")}</li>
 <li><strong>Abigail Smith to Cotton Tufts, 2 April 1764:</strong> a letter from the future Abigail Adams to her &ldquo;Dear Unkle,&rdquo; written during the 1764 smallpox inoculations. {L("https://www.masshist.org/publications/adams-papers/index.php/view/ADMS-04-01-02-0013","Adams Papers")}</li>
 </ul>
-{UNV("The 1764 letter is sometimes listed as written by Cotton Tufts, with the quotation &ldquo;Physicians and civic authorities early recognized&hellip;&rdquo;. In the Adams Papers it is Abigail Smith&rsquo;s letter <em>to</em> him, and that sentence appears to be editorial commentary, not the letter&rsquo;s text.")}
+{UNV("Some accounts list the 1764 letter as written by Cotton Tufts, with the quotation &ldquo;Physicians and civic authorities early recognized&hellip;&rdquo;. In the Adams Papers it is Abigail Smith&rsquo;s letter <em>to</em> him, and that sentence appears to be editorial commentary, not the letter&rsquo;s text.")}
 <p>See <a href="{{P}}profiles/cotton-tufts.html">Dr. Cotton Tufts</a>.</p>
 </section>'''
 FARM = f'''<section id="farmington-tufts-house"><h2>Tufts House, Farmington, Maine (1810)</h2>
@@ -93,10 +93,10 @@ FARM = f'''<section id="farmington-tufts-house"><h2>Tufts House, Farmington, Mai
 {UNV('Whether this Francis is <a href="{P}profiles/francis-tufts-20-1.html">Rev. Francis Tufts (20-1)</a>. The Medford origin and the Farmington Falls mills fit his profile; the identity is not confirmed.')}
 </section>'''
 AUDIT = f'''<section id="index-audit"><h2>Names Under Research</h2>
-<p>These names appear in other published Tufts family indexes. They are not yet confirmed here, and none was found among the Tufts entries of <em>Massachusetts Soldiers and Sailors</em>, vol. XVI, pp. 130&ndash;140.</p>
+<p>Some accounts name these men as Revolutionary-era Tufts. They are not yet confirmed here, and none was found among the Tufts entries of <em>Massachusetts Soldiers and Sailors</em>, vol. XVI, pp. 130&ndash;140.</p>
 {UNV("<strong>Ichabod Tufts</strong> (said to be killed at Bunker Hill, 1775); <strong>Elias Tufts</strong> (said to have served in the 15th Massachusetts); <strong>Frederick Tufts</strong> (said to be a sergeant of colonial militia); <strong>James Tufts (1726&ndash;1786)</strong> (supporter of the cause). Each needs a primary record.")}
 </section>'''
-PLACE_AUDIT = UNV("Claims from other Tufts indexes that are not yet confirmed: that the Timothy Tufts House was &ldquo;a gathering place for Medford militia&rdquo; (Booth places it on Elm Street in Charlestown, now Somerville, and does not say this); that Anne Adams Tufts nursed &ldquo;Hessian prisoners&rdquo; at a Winter Hill hospital (Booth, p. 22, says she nursed eight wounded soldiers after Bunker Hill, and later the dying wife of one of Burgoyne&rsquo;s prisoners); and that the Powder House land was Tufts-owned in 1774.")
+PLACE_AUDIT = UNV("Claims made in some accounts that are not yet confirmed: that the Timothy Tufts House was &ldquo;a gathering place for Medford militia&rdquo; (Booth places it on Elm Street in Charlestown, now Somerville, and does not say this); that Anne Adams Tufts nursed &ldquo;Hessian prisoners&rdquo; at a Winter Hill hospital (Booth, p. 22, says she nursed eight wounded soldiers after Bunker Hill, and later the dying wife of one of Burgoyne&rsquo;s prisoners); and that the Powder House land was Tufts-owned in 1774.")
 _EXTRA3 = EXTRA
 def EXTRA(path):
     out = _EXTRA3(path)
@@ -106,3 +106,5 @@ def EXTRA(path):
     if path == "profiles/cotton-tufts.html": out += '{DIV}<section id="letters"><h2>Letters</h2><p>See <a href="{P}collections.html#adams-letters">the Adams correspondence</a>.</p></section>'
     if path == "profiles/francis-tufts-20-1.html": out += '{DIV}<section id="farmington-house"><h2>Tufts House, Farmington</h2><p>An 1810 brick house built by &ldquo;Francis Tufts, a brickmaker&rdquo; may be his; the identity is Unverified. See <a href="{P}places.html#farmington-tufts-house">Places</a>.</p></section>'
     return out
+exec(open("tools/researchlinks.py").read())
+exec(open("tools/newspapers.py").read())

@@ -237,15 +237,6 @@ page("generations/19th-century.html", "19th Century | Tufts Family Heritage", "G
 </section>''')
 
 page("generations/modern.html", "Modern | Tufts Family Heritage", "Generations", "Modern", "", f'''
-<section id="tka"><h2>The Tufts Kinsmen Association</h2>
-<p>A family association, separate from this site, has carried on Tufts genealogical research since the 1970s. According to its own public website:</p>
-<blockquote>&ldquo;The Tufts Kinsmen Association was founded in 1975 by Herbert Freeman Adams (1924-2003) as a way to support his on-going Tufts Kinsmen Project.&rdquo;</blockquote>
-<blockquote>&ldquo;members of the Tufts Kinsmen Association who had worked with Herb continued his work and published Tufts Kinsmen, Volumes I and II, in 2010 and 2013.&rdquo;</blockquote>
-<p class="cite">Tufts Kinsmen Association, &ldquo;Kinsmen History,&rdquo; <a href="https://tuftskinsmenassociation.org/kinsmen-history/">tuftskinsmenassociation.org/kinsmen-history</a> (accessed Nov. 2, 2026).</p>
-<blockquote>&ldquo;Today, we are a small group of Tufts descendants who meet annually and enjoy sharing our family history through the book, Tufts Kinsmen (2010).&rdquo;</blockquote>
-<p class="cite">Tufts Kinsmen Association, &ldquo;Mission,&rdquo; <a href="https://tuftskinsmenassociation.org/mission/">tuftskinsmenassociation.org/mission</a> (accessed Nov. 2, 2026).</p>
-<p>Its reunion page invites descendants to a September reunion focused on &ldquo;people and events in Medford, greater Boston, and New England.&rdquo; <span class="cite">(<a href="https://tuftskinsmenassociation.org/events-reunion/">Events &amp; Reunion</a>, accessed Nov. 2, 2026)</span></p>
-</section>
 <section id="newsletter-1979" class="soon"><h2>The 1979 Newsletter<span class="tag">Awaiting material from owner</span></h2><p>A recreation of the 1979 newsletter will be added once the owner supplies it.</p></section>''')
 
 page("people.html", "People | Tufts Family Heritage", "A&ndash;Z Index", "People", "Searchable index of family members", '''
@@ -310,8 +301,8 @@ page("sources.html", "Sources | Tufts Family Heritage", "Sources", "Sources", "B
 <li>{TFH}, pp. 28, 35, 37, 139, 143. <a href="https://archive.org/details/tuftsfamilyhisto00tuft_0">archive.org</a></li>
 <li>Sacramento city directories, 1869&ndash;1902 (Albert C. Tufts).</li>
 <li>City of Medford, Minute Men monument (1925), photograph.</li>
-<li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. II (Tufts Kinsmen Association, 2012; &copy; 2003), pp. 77, 83, 96, 107&ndash;115, 145&ndash;151. Private copy; cited with short quotes only, no scans.</li>
-<li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. I (Tufts Kinsmen Association, 2010), pp. 105, 110&ndash;112, 116, 119&ndash;120, 128&ndash;130, 133, 136&ndash;137, 141&ndash;142, 145, 150, 152&ndash;166, 175&ndash;181. Cited from an owner-supplied extract with short statements and printed page numbers. The book is not hosted here. <strong>Page scans not on file.</strong></li>
+<li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. II (2012; &copy; 2003), pp. 77, 83, 96, 107&ndash;115, 145&ndash;151. Private copy; cited with short quotes only, no scans.</li>
+<li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. I (2010), pp. 105, 110&ndash;112, 116, 119&ndash;120, 128&ndash;130, 133, 136&ndash;137, 141&ndash;142, 145, 150, 152&ndash;166, 175&ndash;181. Cited from an owner-supplied extract with short statements and printed page numbers. The book is not hosted here. <strong>Page scans not on file.</strong></li>
 <li>DAR records. <strong>Not seen; missing images.</strong></li>
 </ul></section>
 {{DIV}}

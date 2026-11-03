@@ -1,14 +1,14 @@
-> **Scope change Nov 2, 2026:** The site is now a general **Tufts Family Heritage** site covering the family across generations: colonial, Revolutionary, 19th century, and later. The 250th anniversary and the Revolutionary War are one chapter, not the whole site. The site must not be presented as a work of, or associated with, the Tufts Kinsmen Association. *Tufts Kinsmen* Vols. I/II are still cited as a book source. Also added: every book citation must show a page scan or an exact quote with its printed page number, with no paraphrase, and missing images are flagged. The original brief below is kept unchanged.
+> **Scope change Nov 2, 2026:** The site is now a general **Tufts Family Heritage** site covering the family across generations: colonial, Revolutionary, 19th century, and later. The 250th anniversary and the Revolutionary War are one chapter, not the whole site. The site must not be presented as a work of, or associated with, any family association, and must not reference one. *Tufts Kinsmen* Vols. I/II are still cited as a book source. Also added: every book citation must show a page scan or an exact quote with its printed page number, with no paraphrase, and missing images are flagged. The original brief below is kept unchanged.
 
 # PROJECT 1776 WEBSITE BRIEF
 
-**Owner:** Shannon Tufts, President, Tufts Kinsmen Association (tuftss@hotmail.com). Location: Clearwater/Largo, FL. Timezone: America/New_York.
+**Owner:** Shannon Tufts (tuftss@hotmail.com). Location: Clearwater/Largo, FL. Timezone: America/New_York.
 
 ## Vision
 A static heritage website honoring the 250th anniversary of American Independence, documenting Tufts family Revolutionary War service, genealogy, historical places (Winter Hill farm, Medford MA), artifacts, family letters, and verified resources. Professional, factual, story-like narrative tone. Primary sources only: Tufts Kinsmen Vols I/II, DAR, Massachusetts Soldiers and Sailors of the Revolutionary War, Find A Grave, town records of Charlestown/Medford, Revere's 1798 letter to Jeremy Belknap, Deposition of Paul Revere (MHS). Flag anything unverified.
 
 ## Current live site
-https://tuftskinsmenassociation.org/research-education/3197-2/ indexes ~30 Tufts soldiers with bios, sources, notes. Last updated April 16, 2026. Contact: Shannon Tufts.
+The owner's earlier research index (address kept privately, not linked from this site) lists ~30 Tufts soldiers with bios, sources, notes. Last updated April 16, 2026. Contact: Shannon Tufts.
 
 ## Planned repo
 `project-1776` on GitHub (user to create). Layout: `index.html`, `profiles/` (one HTML per soldier), `css/`, `js/`, `data/` (JSON records), `sources/`, `docs/` (external links only, no large files), `config.js` with single `ASSET_BASE_URL` variable. Always relative paths or the config variable; never hardcoded absolute URLs. GitHub Pages auto-deploys from `main`.
