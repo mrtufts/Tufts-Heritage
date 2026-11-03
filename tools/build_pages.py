@@ -13,7 +13,7 @@ GENS = [("Colonial 1638&ndash;1765", "generations/colonial.html", False),
         ("19th Century", "generations/19th-century.html", False),
         ("Modern", "generations/modern.html", False)]
 TOP = [("Home", "index.html", False), ("GEN", None, False), ("People", "people.html", False),
-       ("Places", "places.html", False), ("Collections", "collections.html", False), ("Sources", "sources.html", False)]
+       ("Places", "places.html", False), ("Collections", "collections.html", False), ("Sources", "sources.html", False), ("About", "about.html", False)]
 
 def link(label, path, soon, pre, cur):
     cls = ' class="soon"' if soon else ''
@@ -40,6 +40,10 @@ def page(path, title, kicker, h1, sub, body, desc="The Tufts family across gener
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
+<meta property="og:site_name" content="Tufts Lineage &amp; Legacy">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:type" content="website">
 {FONTS}
 <link rel="stylesheet" href="{pre}css/style.css">
 </head>
@@ -55,7 +59,7 @@ def page(path, title, kicker, h1, sub, body, desc="The Tufts family across gener
 {(body + EXTRA(path)).replace("{P}", pre).replace("{DIV}", DIV).replace("{SOON}", SOON)}
 </main>
 <footer class="chainmail">
-  &copy; <span id="year">2026</span> Tufts Family Heritage
+  &copy; <span id="year">2026</span> Tufts Lineage &amp; Legacy &middot; <a href="{pre}about.html">About</a>
 </footer>
 <script src="{pre}config.js"></script>
 <script src="{pre}js/main.js"></script>

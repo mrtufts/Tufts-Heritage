@@ -1,4 +1,4 @@
-# Tufts Family Heritage
+# Tufts Lineage & Legacy
 
 A static heritage website about the Tufts family across generations, from colonial New England onward: the colonial era, the Revolutionary War (including the 250th anniversary of American Independence, 1776–2026, as one chapter), the 19th century, and later generations. It covers genealogy, places, artifacts, and family letters, written in a professional, factual, story-like narrative. The site is an independent family-history project and is not a publication of, or affiliated with, any family association.
 

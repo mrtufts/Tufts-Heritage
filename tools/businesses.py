@@ -64,7 +64,7 @@ BIZ_HTML = (
   + UNV("<strong>Shipbuilding.</strong> Medford&rsquo;s shipyards (1803&ndash;1873) were run by Magoun, Turner, Lapham, Stetson, Sprague and James, Waterman and Ewell, Curtis, Foster and others. No Tufts shipyard owner has been found yet in Brooks or the Old Ship Street district history. A Tufts may have worked as a carpenter or owned shares in a ship; this is unchecked. <strong>Silversmithing.</strong> No colonial Tufts silversmith has been found. The only Tufts silver found so far is James W. Tufts&rsquo;s silver plate (from 1875). <strong>Taverns.</strong> None is yet documented for a Tufts.")
   + '</section>'
 )
-page("businesses.html", "Businesses | Tufts Family Heritage", "Places", "Businesses", "The trades of the Tufts family, colonial era to the 19th century", BIZ_HTML)
+page("businesses.html", "Businesses | Tufts Lineage &amp; Legacy", "Places", "Businesses", "The trades of the Tufts family, colonial era to the 19th century", BIZ_HTML)
 
 MYSTIC_HTML = '''<section id="mystic-river"><h2>The Mystic River</h2>
 <p>The Mystic runs through the family&rsquo;s whole New England story. The first Peter kept its ferry. His descendants dug clay along its banks, fished it, milled on its creeks, and farmed the slopes above it in Medford, Charlestown and Malden.</p>

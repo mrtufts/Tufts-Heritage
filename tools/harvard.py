@@ -45,7 +45,7 @@ HARV = f'''<section id="about"><p>Harvard College in Cambridge educated three ge
 <li><strong>Gifts:</strong> No gift or bequest to Harvard by a colonial Tufts has yet been found.</li>
 <li><strong>Not Harvard:</strong> No Harvard degree has been found for <a href="{{P}}profiles/francis-tufts-20-1.html">Rev. Francis Tufts</a> (1744&ndash;1833), the Freewill Baptist minister, in the Sibley index or the 1915 catalogue. The only Francis Tufts there is an LL.B. of 1851. Tufts College in Medford (1852) is a separate institution.</li>
 </ul>{UNV("Harvard University Archives records (faculty records, quarter-bill and steward&rsquo;s books) have not been searched. Offices held at Harvard by any Tufts are unconfirmed.")}</section>'''
-page("harvard.html", "Harvard | Tufts Family Heritage", "Places &middot; Cambridge", "Harvard College", "Tufts graduates, offices and honors, 1701&ndash;1807", HARV)
+page("harvard.html", "Harvard | Tufts Lineage &amp; Legacy", "Places &middot; Cambridge", "Harvard College", "Tufts graduates, offices and honors, 1701&ndash;1807", HARV)
 _EXTRA6 = EXTRA
 HV = {"simon-tufts-11-1": ("Class of 1744", SIB("XI", "478&ndash;481"), "Brooks, p. 305: born Jan. 16, 1727; &ldquo;graduated at Harvard College in 1744.&rdquo; He was not the elder Dr. Simon (1700&ndash;1747), class of 1724."),
       "cotton-tufts": ("Class of 1749; honorary M.D. 1785", SIB("XII", "493&ndash;500"), "Brooks, p. 306: &ldquo;graduated at Harvard College 1749.&rdquo; Quinquennial Catalogue (1915): A.M.; M.D. (Hon.) 1785."),

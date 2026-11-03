@@ -106,7 +106,7 @@ def profile(p):
 {('<section id="kinsmen"><h2>From <em>Tufts Kinsmen</em></h2>' + KIN[p["slug"]] + '</section>') if p["slug"] in KIN else ''}
 <section id="unverified">{UNV(p["unverified"])}</section>
 <p><a href="{{P}}people.html">&larr; All people</a> &middot; <a href="{{P}}generations/revolution.html#profiles">The Revolution</a></p>'''
-    page(f'profiles/{p["slug"]}.html', f'{p["name"]} | Tufts Family Heritage', "The Revolution &middot; " + (p.get("kicker") + " " if p.get("kicker") else "") + "Profile", p["name"], f'{p["dates"]} &middot; {p["town"]}', body)
+    page(f'profiles/{p["slug"]}.html', f'{p["name"]} | Tufts Lineage &amp; Legacy', "The Revolution &middot; " + (p.get("kicker") + " " if p.get("kicker") else "") + "Profile", p["name"], f'{p["dates"]} &middot; {p["town"]}', body)
 exec(open("tools/artifacts.py").read())
 for p in PROFILES: profile(p)
 json.dump([dict(name=p["name"], slug=p["slug"], born=p["born"], died=p["died"], era=p["era"], line=p["line"], town=p["town"], profile=f'profiles/{p["slug"]}.html') for p in PROFILES]
@@ -118,12 +118,11 @@ json.dump([dict(name=p["name"], slug=p["slug"], born=p["born"], died=p["died"], 
 
 PROF_LIST = "<ul>" + "".join(f'<li><a href="{{P}}profiles/{p["slug"]}.html">{p["name"]}</a> ({p["town"]})</li>' for p in PROFILES) + "</ul>"
 
-page("index.html", "Tufts Family Heritage", "From Colonial New England Onward", "Tufts Family Heritage", "The Tufts Family Across the Generations", '''
+page("index.html", "Tufts Lineage &amp; Legacy", "From Colonial New England Onward", "Tufts Lineage &amp; Legacy", "The Tufts Family Across the Generations", '''
 <section id="about">
   <h2>The Tufts Family Across the Generations</h2>
   <p>This site follows the Tufts family through the generations, from colonial New England onward. It covers the people, the family lines that connect them to descendants today, the places they lived and worked, and the letters and artifacts they left behind. Every statement is tied to a quoted source and a page scan, and anything not yet proven is marked Unverified.</p>
 </section>
-''' + NAME_NOTE + '''
 <nav class="timeline" aria-label="Timeline">
   <a href="generations/colonial.html"><strong>Colonial</strong>1638&ndash;1765</a>
   <a href="generations/revolution.html"><strong>The Revolution</strong>1765&ndash;1783</a>
@@ -146,7 +145,7 @@ page("index.html", "Tufts Family Heritage", "From Colonial New England Onward", 
   <p>Every account here is drawn from primary and documented sources. Each book citation shows a page scan or an exact quote with its printed page number. Where a detail cannot yet be verified, we say so. See <a href="sources.html">Sources</a>.</p>
 </section>''')
 
-page("generations/colonial.html", "Colonial 1638–1765 | Tufts Family Heritage", "Generations", "Colonial Era", "1638&ndash;1765", f'''
+page("generations/colonial.html", "Colonial 1638–1765 | Tufts Lineage &amp; Legacy", "Generations", "Colonial Era", "1638&ndash;1765", f'''
 <section id="immigrant"><h2>Peter Tufts the Immigrant</h2>
 <p>The Tufts families of Malden, Medford, and Charlestown descend from a Peter Tufts who came from England about 1638.</p>
 {Q("Peter Tufts was a descendant in the fourth generation of another Peter who came over from England about 1638. He was the ancestor of the numerous families of the name in Malden, Medford, and Somerville. &hellip; He was born in 1617, probably at or near Malden, England; &hellip; He was made a freeman in 1665. His wife's name was Mary. She died in 1703, aged seventy-five. Peter died in 1700. They had nine children, of whom the third son was John, born in 1665.", JONES+", p. 128", ["jones-under-colonial-roofs-p128.jpg"])}
@@ -173,7 +172,7 @@ page("generations/colonial.html", "Colonial 1638–1765 | Tufts Family Heritage"
 {{DIV}}
 <section><h2>The Winter Hill Farm</h2>{TA("Home farm of Peter Tufts of Winter Hill, roused by Paul Revere on April 19, 1775.", JONES+", p. 129")}<p>See <a href="{{P}}places.html#winter-hill">Places: Winter Hill</a>.</p></section>''')
 
-page("generations/revolution.html", "The Revolution 1765–1783 | Tufts Family Heritage", "Generations", "The Revolution", "1765&ndash;1783", f'''
+page("generations/revolution.html", "The Revolution 1765–1783 | Tufts Lineage &amp; Legacy", "Generations", "The Revolution", "1765&ndash;1783", f'''
 <div class="banner">1776 &ndash; 2026 &middot; The 250th Anniversary of American Independence</div>
 <section><h2>The Revolution</h2>
 <p>On April 19, 1775, Medford's minute men marched on the alarm. Isaac, John, Daniel, Ebenezer, Jonathan, James, Peter Jr., and several Samuels of the Tufts family served in Capt. Isaac Hall's company (MSS vol. XVI, pp. 132–139). Over the following eight years, men named Tufts from Medford, Woburn, Gloucester, Chelsea, Malden, Cambridge, Brookline, and other towns appear on the rolls.</p>
@@ -191,7 +190,7 @@ page("generations/revolution.html", "The Revolution 1765–1783 | Tufts Family H
 </section>
 <p>Related: <a href="{{P}}places.html#maps">Maps by Peter Tufts, the surveyor</a> &middot; <a href="{{P}}places.html#winter-hill">Winter Hill</a> &middot; <a href="{{P}}places.html#medford-charlestown">Medford &amp; Charlestown</a></p>''')
 
-page("generations/19th-century.html", "19th Century | Tufts Family Heritage", "Generations", "19th Century", "", f'''
+page("generations/19th-century.html", "19th Century | Tufts Lineage &amp; Legacy", "Generations", "19th Century", "", f'''
 <section id="charles-tufts"><h2>Charles Tufts and Walnut Hill</h2>
 {TA("Land owned by Charles Tufts and given by him as the site of Tufts College.", TFH+", pp. 139, 143")}
 <p>Charles Tufts of Somerville gave the hilltop land on which Tufts College was built.</p>
@@ -236,10 +235,10 @@ page("generations/19th-century.html", "19th Century | Tufts Family Heritage", "G
 {UNV("Albert's absence from the 1899 directory suggests, by inference only, that he died about 1898&ndash;99. No death record has been found. Also unverified: his birthplace, death, burial, any link to the Massachusetts Tufts family, Masonic office, and any bottle-collection accession. The trademark's location (10th &amp; K) conflicts with the directories (10th &amp; J).")}
 </section>''')
 
-page("generations/modern.html", "Modern | Tufts Family Heritage", "Generations", "Modern", "", f'''
+page("generations/modern.html", "Modern | Tufts Lineage &amp; Legacy", "Generations", "Modern", "", f'''
 <section id="newsletter-1979" class="soon"><h2>The 1979 Newsletter<span class="tag">Awaiting material from owner</span></h2><p>A recreation of the 1979 newsletter will be added once the owner supplies it.</p></section>''')
 
-page("people.html", "People | Tufts Family Heritage", "A&ndash;Z Index", "People", "Searchable index of family members", '''
+page("people.html", "People | Tufts Lineage &amp; Legacy", "A&ndash;Z Index", "People", "Searchable index of family members", '''
 <section>
   <h2>People A&ndash;Z</h2>
   <div class="filters">
@@ -251,7 +250,7 @@ page("people.html", "People | Tufts Family Heritage", "A&ndash;Z Index", "People
   <p class="note">&ldquo;Several men&rdquo; pages group records that share a name. Different men are never merged.</p>
 </section>''')
 
-page("places.html", "Places | Tufts Family Heritage", "Places", "Places", "Where the family lived and worked", f'''
+page("places.html", "Places | Tufts Lineage &amp; Legacy", "Places", "Places", "Where the family lived and worked", f'''
 <section id="winter-hill"><h2>Winter Hill</h2>
 {TA("Farm and home of Peter Tufts of Winter Hill (1728&ndash;1791) and Anne Adams Tufts, where Paul Revere roused him on April 19, 1775.", JONES+", p. 129")}
 {Q("At the outbreak of the Revolution, Peter Tufts lived at the top of Winter Hill in a little old house, which stood until a few years ago. Here he was soundly sleeping when Paul Revere came thundering up to the door, calling on the people to rouse and arm themselves, for the Regulars were coming.", JONES+", p. 129", ["jones-under-colonial-roofs-p129.jpg"])}
@@ -276,7 +275,7 @@ page("places.html", "Places | Tufts Family Heritage", "Places", "Places", "Where
 {UNV("Mystic, Conn. (Caleb Tufts): the residence rests on Wild p. 50 and his Find a Grave memorial only; no land record seen.")}
 </section>''')
 
-page("collections.html", "Collections | Tufts Family Heritage", "Collections", "Collections", "Letters, artifacts, and photographs", f'''
+page("collections.html", "Collections | Tufts Lineage &amp; Legacy", "Collections", "Collections", "Letters, artifacts, and photographs", f'''
 <section id="photographs"><h2>Photographs</h2>
 <div class="cards"><a class="card" href="{IMG}medford-1925-monument.jpg"><img src="{IMG}medford-1925-monument.jpg" alt="Medford 1925 Minute Men monument" loading="lazy"><h3>Medford Minute Men Monument (1925)</h3><p>Roster of the First Company of Minute Men, April 19, 1775, including nine men named Tufts.</p></a></div>
 <p>All page scans: <a href="{{P}}sources.html#scans">Sources: Page Scans</a>.</p>
@@ -290,7 +289,7 @@ page("collections.html", "Collections | Tufts Family Heritage", "Collections", "
 {{DIV}}
 <section id="letters" class="soon"><h2>Letters<span class="tag">Awaiting material from owner</span></h2><p>Transcribed family letters, with images of the originals, will be added as the owner supplies them.</p></section>''')
 
-page("sources.html", "Sources | Tufts Family Heritage", "Sources", "Sources", "Bibliography, page scans, and research notes", f'''
+page("sources.html", "Sources | Tufts Lineage &amp; Legacy", "Sources", "Sources", "Bibliography, page scans, and research notes", f'''
 <section id="bibliography"><h2>Bibliography</h2>
 <ul>
 <li>{MSS}, pp. 131&ndash;140 (all Tufts entries). <a href="https://archive.org/details/massachusettssol16mass">archive.org</a></li>

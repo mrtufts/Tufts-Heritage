@@ -1,6 +1,6 @@
-> **Scope change Nov 2, 2026:** The site is now a general **Tufts Family Heritage** site covering the family across generations: colonial, Revolutionary, 19th century, and later. The 250th anniversary and the Revolutionary War are one chapter, not the whole site. The site must not be presented as a work of, or associated with, any family association, and must not reference one. *Tufts Kinsmen* Vols. I/II are still cited as a book source. Also added: every book citation must show a page scan or an exact quote with its printed page number, with no paraphrase, and missing images are flagged. The original brief below is kept unchanged.
+> **Scope change Nov 2, 2026:** The site is now a general **Tufts Lineage & Legacy** site covering the family across generations: colonial, Revolutionary, 19th century, and later. The 250th anniversary and the Revolutionary War are one chapter, not the whole site. The site must not be presented as a work of, or associated with, any family association, and must not reference one. *Tufts Kinsmen* Vols. I/II are still cited as a book source. Also added: every book citation must show a page scan or an exact quote with its printed page number, with no paraphrase, and missing images are flagged. The original brief below is kept unchanged.
 
-# PROJECT 1776 WEBSITE BRIEF
+# TUFTS LINEAGE & LEGACY WEBSITE BRIEF
 
 **Owner:** Shannon Tufts (tuftss@hotmail.com). Location: Clearwater/Largo, FL. Timezone: America/New_York.
 

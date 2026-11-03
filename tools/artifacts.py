@@ -1,4 +1,4 @@
-# Muskets, Adams letters, and people added after the Project 1776 index audit (2026-11-03).
+# Muskets, Adams letters, and people added after the site index audit (2026-11-03).
 AHS = "https://arlingtonhistorical.pastperfectonline.com/webobject/"
 M131 = MSS + ", p. 131"; M132 = MSS + ", p. 132"
 def NP(slug, name, town, bio, service, unv, family="<p>Family placement not yet established from a cited source.</p>"):
@@ -115,3 +115,4 @@ exec(open("tools/societies.py").read())
 exec(open("tools/burying.py").read())
 exec(open("tools/people_ids.py").read())
 exec(open("tools/peter1617.py").read())
+exec(open("tools/about.py").read())

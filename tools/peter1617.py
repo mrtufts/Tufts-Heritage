@@ -41,7 +41,6 @@ REL["simon-tufts-1700"] = [("peter-tufts-1617", "grandfather Peter Tufts the imm
 REL["timothy-tufts"] = [("peter-tufts-1617", "great-grandfather Peter Tufts the immigrant")] + REL["timothy-tufts"]
 REL["turell-tufts"] = REL["turell-tufts"] + [("peter-tufts-1617", "ancestor Peter Tufts the immigrant (Gill, p. 54: &ldquo;fifth in the line of descent from Peter Tufts of Malden&rdquo;)")]
 TL_TA = TA("Peter Tufts the immigrant succeeded Philip Drinker as ferryman at Charlestown Neck in early 1647. This was the ferry later called the Penny Ferry, superseded in 1787 by Malden Bridge, on the line of today&rsquo;s Alford Street Bridge. The name &ldquo;Tufts Landing&rdquo; is not found in any source checked.", "Corey, p. 85 and n. 53; <em>Medford Historical Register</em>, vol. XXI, p. 54")
-NAME_NOTE = '<aside id="name-note" class="note" style="border:1px dashed #c9a24a;padding:.6em 1em;margin:1em 0"><strong>A possible new name.</strong> The owner is considering renaming this site from <em>Tufts Heritage</em> to <em>Tufts Landing</em>, after Peter Tufts&rsquo;s ferry landing on the Mystic (see <a href="{P}profiles/peter-tufts-1617.html">Peter Tufts the Immigrant</a>). Nothing has been decided, and the site&rsquo;s name and address are unchanged.</aside>'
 _EXTRA_P = EXTRA
 def EXTRA(path):
     out = _EXTRA_P(path)
