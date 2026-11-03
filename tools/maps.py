@@ -26,7 +26,7 @@ TA_FIG = {
  "weymouth-first-church.jpg": "Dr. Cotton Tufts was a deacon of the First Church, Weymouth, for more than forty years (Weymouth Tufts/Smith/Adams finding aid).",
  "medford-square-1913.jpg": "The Drs. Simon Tufts house stood at Medford Square until 1867 (Medford Historical Register XVIII, p. 67).",
  "medford-1880-birdseye.jpg": "Medford: Peter Tufts House, the Drs. Simon Tufts house, and Tufts College (see Places).",
- "mystic-river-medford.jpg": "No direct Tufts link cited; shown for the Medford landscape. Unverified.",
+ "mystic-river-medford.jpg": "Ferry, brickyards, fishing rights and mills of the Tufts family lay along the Mystic (Booth part 1 p. 21; Brooks pp. 355&ndash;356, 385). See The Mystic River above.",
 }
 for _f, _a in TA_FIG.items():
     if _f in IMAGES:
@@ -119,3 +119,4 @@ def EXTRA(path):
         out += '{DIV}<section id="birthplace-conflict"><div class="flag"><h3>&#9873; Unverified: birthplace conflict</h3><p>Booth: &ldquo;Peter, the eldest son of Peter and Anne (Adams) Tufts, was born in the old house on Winter hill in 1753.&rdquo; <span class="cite">(Edward C. Booth, &ldquo;The Tufts Family in Somerville,&rdquo; <em>Historic Leaves</em> vol. 1, p. 22. <a href="' + BOOTH_URL + '7">Perseus</a>)</span></p><p><em>Tufts Kinsmen</em> Vol. I: &ldquo;born 9 Jan. 1753 in Woburn.&rdquo; <span class="cite">(<em>Tufts Kinsmen</em>, Vol. I, p. 178, family no. 53-2; owner-supplied extract; page scan not on file)</span></p><p>Neither is confirmed by a primary record. The data on this page is unchanged.</p></div></section>'
         out += '{DIV}<section id="maps"><h2>Maps by His Son</h2><p>His son Peter (1774&ndash;1825), &ldquo;Peter, the surveyor,&rdquo; drew the 1818 <em>Plan of Charlestown Peninsula</em> (Booth, <em>Historic Leaves</em> vol. 1, p. 23). A 1794 plan of Medford signed &ldquo;Peter Tufts jun<sup>r</sup>&rdquo; may be by either man. See <a href="{P}places.html#maps">Places: Maps</a> and <a href="{P}places.html#powder-house">the Powder House</a>, beside the farm he bought in 1788.</p></section>'
     return out
+exec(open("tools/businesses.py").read())

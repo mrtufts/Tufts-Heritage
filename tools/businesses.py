@@ -1,0 +1,90 @@
+# Tufts family businesses (owner request 2026-11-03). Public sources only.
+BROOKS = "Charles Brooks, <em>History of the Town of Medford</em> (1855)"
+BROOKS_URL = "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2001.05.0104%3Achapter%3D11&amp;force=y"
+BK = lambda pg: BROOKS + f', p. {pg}. <a href="{BROOKS_URL}">Text (Perseus)</a>'
+TIDE_URL = "https://tidemillinstitute.org/Portal/docs/US-MA-076_Medford_Tufts_Cutter.pdf"
+def BIZ(id_, h, who, what, where, when, body):
+    return (f'<section id="{id_}"><h2>{h}</h2><p class="bizmeta"><strong>Tufts:</strong> {who} &middot; <strong>Business:</strong> {what} &middot; '
+            f'<strong>Location:</strong> {where} &middot; <strong>Dates:</strong> {when}</p>{body}</section>{{DIV}}')
+PR = lambda s, n: f'<a href="{{P}}profiles/{s}.html">{n}</a>'
+BIZ_HTML = (
+'<section id="about"><p>Long before the college that bears the name, the Tufts family earned its living from the clay, water and roads of the Mystic valley: ferrying, brickmaking, tanning, milling, fishing, distilling, printing and, later, pharmacy. Each entry below names the family member, the trade, the place and the dates, quoting the printed page. Doubtful identifications are marked Unverified. See also <a href="{P}places.html#mystic-river">the Mystic River</a> and <a href="{P}places.html#homesteads">Homesteads</a>.</p></section>{DIV}'
++ BIZ("ferry", "The Charlestown&ndash;Malden Ferry", "Peter Tufts (the immigrant, 1617&ndash;1700)", "Ferry", "Mystic River, between Charlestown and Malden", "1646&ndash;47",
+  Q("He kept the Ferry between Charlestown and Malden with his brother-in-law, Bridges, in 1646-7", BOOTH + f', part 1, p. 21. <a href="{BOOTH_URL}2">Perseus</a>')
+  + '<p>The ferry crossed the Mystic. Booth adds that Peter was the largest landholder in Malden when he died in 1700. See <a href="{P}generations/colonial.html#immigrant">Peter Tufts the Immigrant</a>.</p>'
+  + UNV("The ferry&rsquo;s exact landing places and the length of his tenure. Booth found no earlier record of him than 1646&ndash;47."))
++ BIZ("brick-yard-pasture", "Brick-yard Pasture, Medford", PR("simon-tufts-11-1","Dr. Simon Tufts"), "Brickmaking land", "North of Dr. Tufts&rsquo;s house, Medford", "Bought March 26, 1761",
+  Q("At a later date, say 1750, bricks were made on land directly north of Dr. Tufts's house. &hellip; This land, called Brick-yard Pasture, was owned by Rev. Matthew Byles, of Boston, and sold by him to Dr. Simon Tufts, March 26, 1761.", BK(355))
+  + '<p>Dr. Tufts&rsquo;s house stood at Medford Square (see <a href="{P}places.html#homesteads">Homesteads</a>).</p>'
+  + UNV("Brooks records the purchase of the land, not that Dr. Tufts made bricks himself. By 1761 the elder Dr. Simon had died (1747), so the buyer was presumably the younger Dr. Simon (1726&ndash;1786). Not confirmed by deed."))
++ BIZ("hall-brickyards", "Stephen Hall&rsquo;s brickyards", "Samuel Tufts, jun.", "Brickmaking (occupant)", "Medford", "1785",
+  Q("In 1785, Stephen Hall willed &lsquo;the brick-yards now in the occupation of Thomas Bradshaw, and Samuel Tufts, jun.&rsquo;", BK(355))
+  + UNV(f'Which Samuel Tufts this was. Candidates on this site include {PR("samuel-tufts-15-3","Samuel Tufts (15-3)")} and {PR("samuel-tufts-41-2","Samuel Tufts 2d (41-2)")}; neither is confirmed.'))
++ BIZ("fountain-yards", "The Fountain Yards", "William, Hutchinson and Benjamin Tufts", "Brickmaking", "Near the &ldquo;Fountain House,&rdquo; about eighty rods east of Gravelly Bridge, Medford (toward the Malden line)", "Early; discontinued before 1855",
+  Q("Messrs. William Tufts, Thomas Bradshaw, Hutchinson Tufts, Benjamin Tufts, and Sylvanus Blanchard were the manufacturers in that locality. These yards have been discontinued within our day.", BK(356))
+  + '<p>The Medford Historical Society places the Fountain Yards along Fulton Street from Forest Street to the Malden line. <a href="https://medfordhistorical.org/medford-history/about-medford/making-bricks-in-medford/">Medford Historical Society</a></p>'
+  + UNV(f'Which William Tufts this was (for example {PR("william-tufts-13-6","Lieut. William Tufts, 13-6")} or {PR("william-tufts-40-2","William Tufts Jr., 40-2")}). Brooks gives no dates for the individual makers.'))
++ BIZ("sodom-yards", "The &ldquo;Sodom&rdquo; Brickyards", "Isaac, Jonathan and Ebenezer Tufts, brothers; later Seth Tufts and his son Seth", "Brickmaking", "South side of the Mystic, near the Middlesex Canal, south-south-east of Rock Hill (between Summer and George Streets, on Brickyard Lane)", "18th century to shortly before 1855",
+  Q("As the familiar and improper sobriquet of Sodom was early given to that part of Medford which lies south of the river, the brick-yards, opened by the brothers Isaac, Jonathan, and Ebenezer Tufts, obtained the local name. After these gentlemen came Seth Tufts, who, with his son Seth, carried on the business till recently. These yards were situated near Middlesex Canal and the river, about south-south-east from Rock Hill.", BK(356))
+  + '<p>The street location is from the <a href="https://medfordhistorical.org/medford-history/about-medford/making-bricks-in-medford/">Medford Historical Society</a>. Medford bricks were carried by lighter down the Mystic to Boston.</p>'
+  + UNV(f'Whether these brothers are the Revolutionary soldiers {PR("isaac-tufts-36-10","Isaac (36-10)")}, {PR("jonathan-tufts-36-8","Jonathan (36-8)")} and {PR("ebenezer-tufts-36-7","Ebenezer (36-7)")} of the same family number. The names and family grouping fit, but Brooks does not give their dates.'))
++ BIZ("pottery", "James Tufts and Son, potters", "James Tufts and son", "Pottery", "Medford", "Late 18th or early 19th century",
+  Q("Mr. James Tufts and Son carried on for many years the pottery business.", BK(353))
+  + UNV("Which James Tufts this was, and the site of the pottery. Brooks gives neither."))
++ BIZ("tannery", "Tan-yard and leather works", "Nathan Tufts", "Tanning and butchering; leather manufacture", "Medford (corner south-east of Whitmore&rsquo;s Bridge), later Charlestown", "Before 1855",
+  Q("The first tan-yard in Medford was on the corner lot south-east of Whitmore's Bridge. &hellip; It was last owned by Mr. Nathan Tufts and Mr. Jonathan Brooks, in company. When they sold it, Mr. Tufts moved to Charlestown, and became the most extensive manufacturer of leather in the State.", BK(353))
+  + Q("Nathan, the youngest son of Nathan, Sr., was also a resident of Charlestown after his boyhood, and was an extensive butcher and tanner there.", BOOTH + f', part 2, p. 21. <a href="{BOOTH_URL}7">Perseus</a>')
+  + '<p>Booth adds that he owned &ldquo;the large farms around the Powder House and Walnut hill&rdquo; (p. 21). See <a href="{P}places.html#powder-house">the Powder House</a>.</p>'
+  + UNV("That Brooks&rsquo;s tanner and Booth&rsquo;s butcher and tanner are the same Nathan Tufts. The match is likely but not confirmed. His dates and the site of the Charlestown works are not yet found."))
++ BIZ("tide-mill", "Sandy Bank tide mill, 1746", "Dr. Simon Tufts, &ldquo;Esq., physician&rdquo; (the elder, 1700&ndash;1747)", "Gristmill (landowner and party to the agreement)", "Gravelly Creek, Medford", "Agreement of Feb. 20, 1746",
+  Q("Articles of agreement were concluded, Feb. 20, 1746, between Richard Sprague, cooper, Samuel Page, yeoman, Simon Tufts, Esq., physician, &hellip; all of Medford, and owners of land", BK(394))
+  + '<p>Brooks says Dr. Tufts and others bound themselves &ldquo;never to obstruct the free flow of water to the mill&rdquo; (p. 394).</p>')
++ BIZ("turnpike-mills", "Saw and grist mills on the Medford Turnpike", "William Tufts and Edward Tufts (with Gershom Cutter)", "Saw and grist milling", "Medford Turnpike (now Mystic Avenue)", "By 1848; sold to Gershom Cutter about 1845&ndash;48",
+  Q("&lsquo;the owners of the saw and grist mills on the turnpike,&rsquo; William Tufts, Edward Tufts and Gershom Cutter", f'Tide Mill Institute, &ldquo;Medford, Massachusetts: Tufts-Cutter Mill,&rdquo; compiled extracts. <a href="{TIDE_URL}">PDF</a>')
+  + UNV("This is a compilation; its original printed source and page are not yet confirmed. The compilation says Gershom Cutter bought &ldquo;the Tufts mill&rdquo; in 1845, but it names William and Edward Tufts as owners in the 1848 agreement. Which William and Edward these were is not known."))
++ BIZ("fishing", "Mystic River fishing rights", "Jonathan, Isaac, Charles, Simon and Seth Tufts", "Fishery (town fishing rights)", "Mystic River, Medford", "About 1803",
+  Q("Among the earliest fishermen were John Cutter, Jonathan Tufts, and Benjamin Teel. In 1803, Cutter paid sixty-five dollars, Tufts thirteen dollars, and Teel thirteen dollars, for the right of fishing. &hellip; Isaac Tufts fished from the Bridge to Rock Hill", BK(385))
+  + '<p>Brooks adds that &ldquo;Charles, Simon, and Seth Tufts are there&rdquo; in the records (p. 385).</p>'
+  + UNV("Which Jonathan, Isaac, Charles, Simon and Seth Tufts these were."))
++ BIZ("distillery", "Medford distilling", "Fitch Tufts", "Distilling (Medford rum)", "Medford", "Late 18th to early 19th century",
+  Q("The business has been carried on by Messrs. Andrew Hall, Benjamin Hall, John Bishop, Nathaniel Hall, Fitch Tufts, Joseph Swan, Hall and Manning, and Joseph Hall.", BK(391))
+  + UNV("Fitch Tufts&rsquo;s dates and the location of his distillery."))
++ BIZ("printer", "Edmund Tufts, Printer", "Edmund Tufts, son of Joseph Tufts (1760&ndash;1819)", "Printing", "The Peter Tufts of Winter Hill homestead, Somerville", "About 1842&ndash;1851 and after",
+  Q("Edmund was intimately connected with the early history of this town, and his sign on the old house, &lsquo;Edmund Tufts, Printer,&rsquo; is still remembered. For some years he did the printing for the new town of Somerville and its inhabitants, and we find his name on most of the early town reports. He issued a Somerville Directory in 1851, a pamphlet of thirty-two pages.", BOOTH + f', part 2, p. 24. <a href="{BOOTH_URL}7">Perseus</a>')
+  + '<p>The 1851 directory was reprinted in the same volume of <em>Historic Leaves</em> (p. 25). See <a href="{P}places.html#homesteads">Homesteads</a>.</p>'
+  + UNV("His birth and death dates and the years of the press. Somerville was set off in 1842, which suggests the start date; that is an inference."))
++ BIZ("james-w-tufts", "James W. Tufts, apothecary and soda-fountain maker", "James Walker Tufts (1835&ndash;1902), son of Leonard Tufts of Charlestown", "Pharmacy and drug stores; Arctic soda apparatus; silver-plated ware", "Somerville Avenue near the Bleachery; Medford; Boston (Washington and Hanover Streets)", "1856&ndash;1895",
+  Q("Leonard, who lived in Charlestown, was the father of James W. Tufts, who was at one time an apothecary in Somerville avenue, near the Bleachery. Mr. Tufts has since become well-known as a manufacturer of soda-water apparatus.", BOOTH + f', part 2, p. 24. <a href="{BOOTH_URL}7">Perseus</a>')
+  + '<p>He was apprenticed at fifteen to Samuel Kidder and Company, druggists of Charlestown, and opened his own pharmacy in Somerville in 1856. He later had stores in Medford, Boston, Winchester and Woburn, then sold the stores to make his Arctic Soda Apparatus. In 1891 his firm merged into the American Soda Fountain Company, which he headed. He also built the Bunker Hill Terraces tenements in Charlestown (1890) and later founded Pinehurst, N.C. <span class="cite">(<a href="https://www.ncpedia.org/biography/tufts-james-walker">NCpedia</a>)</span> From 1875 his firm also made silver-plated wares. <span class="cite">(<a href="https://www.si.edu/object/soda-glass-holder%3Anmah_1059718">Smithsonian</a>)</span> Booth places him in the line of John Tufts (b. 1755) of the Peter and Oliver Tufts House.</p>'
+  + UNV("NCpedia gives his apprenticeship at fifteen; another account says sixteen."))
++ BIZ("albert-c-tufts", "Albert C. Tufts, druggist", "Albert C. Tufts", "Pharmacy", "Sacramento, Calif.", "City directories 1869&ndash;1902",
+  '<p>His record is on the <a href="{P}generations/19th-century.html#albert-c-tufts">19th Century</a> page, drawn from Sacramento city directories.</p>'
+  + UNV("His tie to the Massachusetts families is not established."))
++ '<section id="not-found"><h2>Trades Searched, Not Yet Found</h2>'
+  + UNV("<strong>Shipbuilding.</strong> Medford&rsquo;s shipyards (1803&ndash;1873) were run by Magoun, Turner, Lapham, Stetson, Sprague and James, Waterman and Ewell, Curtis, Foster and others. No Tufts shipyard owner has been found yet in Brooks or the Old Ship Street district history. A Tufts may have worked as a carpenter or owned shares in a ship; this is unchecked. <strong>Silversmithing.</strong> No colonial Tufts silversmith has been found. The only Tufts silver found so far is James W. Tufts&rsquo;s silver plate (from 1875). <strong>Taverns.</strong> None is yet documented for a Tufts.")
+  + '</section>'
+)
+page("businesses.html", "Businesses | Tufts Family Heritage", "Places", "Businesses", "The trades of the Tufts family, colonial era to the 19th century", BIZ_HTML)
+
+MYSTIC_HTML = '''<section id="mystic-river"><h2>The Mystic River</h2>
+<p>The Mystic runs through the family&rsquo;s whole New England story. The first Peter kept its ferry. His descendants dug clay along its banks, fished it, milled on its creeks, and farmed the slopes above it in Medford, Charlestown and Malden.</p>
+''' + TA("Every association below is cited; see <a href=\'{P}businesses.html\'>Businesses</a> for the full entries.") + '''
+<ul>
+<li><strong>Ferry:</strong> Peter Tufts kept the Charlestown&ndash;Malden ferry in 1646&ndash;47 (Booth, part 1, p. 21). <a href="{P}businesses.html#ferry">Entry</a></li>
+<li><strong>Brickyards on the south bank:</strong> the &ldquo;Sodom&rdquo; yards of Isaac, Jonathan and Ebenezer Tufts, then Seth Tufts and his son, &ldquo;near Middlesex Canal and the river&rdquo; (Brooks, p. 356). <a href="{P}businesses.html#sodom-yards">Entry</a></li>
+<li><strong>Brickyards on the north side:</strong> the Fountain Yards of William, Hutchinson and Benjamin Tufts (Brooks, p. 356), and Dr. Simon Tufts&rsquo;s Brick-yard Pasture (Brooks, p. 355).</li>
+<li><strong>Fishing:</strong> Jonathan Tufts held fishing rights in 1803, and &ldquo;Isaac Tufts fished from the Bridge to Rock Hill.&rdquo; One fishing district ran &ldquo;from the bridge to the beach opposite James Tufts's barn&rdquo; (Brooks, p. 385). <a href="{P}businesses.html#fishing">Entry</a></li>
+<li><strong>Mills:</strong> Dr. Simon Tufts was a party to the 1746 Sandy Bank tide-mill agreement on Gravelly Creek (Brooks, p. 394). William and Edward Tufts owned mills on the Medford Turnpike (Tide Mill Institute compilation).</li>
+<li><strong>Medford bank homes:</strong> the Peter Tufts House on Riverside Avenue (<a href="#homesteads">Homesteads</a>), and the Royall farm, where Peter Tufts (b. 1753) settled early (Booth, part 2, p. 22).</li>
+<li><strong>Charlestown bank:</strong> Peter Tufts Jr.&rsquo;s 1818 <em>Plan of Charlestown Peninsula</em> maps the river frontage (<a href="#maps">Maps</a>).</li>
+</ul>
+''' + UNV("No Tufts shipyard on the Mystic has been found. The location of &ldquo;James Tufts's barn&rdquo; is not identified.") + '</section>'
+_EXTRA2 = EXTRA
+def EXTRA(path):
+    out = _EXTRA2(path)
+    if path == "places.html":
+        out = '{DIV}<section id="businesses"><h2>Businesses</h2><p>The family&rsquo;s brickyards, ferry, tannery, mills, fishery, distillery, press and pharmacies each have their own entry on the <a href="{P}businesses.html">Businesses</a> page.</p></section>{DIV}' + MYSTIC_HTML + out
+    L = {"profiles/simon-tufts-11-1.html": "brick-yard-pasture", "profiles/isaac-tufts-36-10.html": "sodom-yards", "profiles/jonathan-tufts-36-8.html": "sodom-yards", "profiles/ebenezer-tufts-36-7.html": "sodom-yards", "profiles/samuel-tufts-15-3.html": "hall-brickyards", "profiles/samuel-tufts-41-2.html": "hall-brickyards", "profiles/william-tufts-13-6.html": "fountain-yards", "profiles/william-tufts-40-2.html": "fountain-yards"}
+    if path in L:
+        out += '{DIV}<section id="business"><h2>Business</h2><p>A man of this name appears in Brooks&rsquo;s <em>History of Medford</em> in connection with the brickyards. Whether it is this man is Unverified. See <a href="{P}businesses.html#' + L[path] + '">Businesses</a>.</p></section>'
+    return out
