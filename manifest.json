@@ -113,7 +113,7 @@
     },
     "henry-tufts-narrative-1807.jpg": {
       "path": "assets/images/henry-tufts-narrative-1807.jpg",
-      "title": "A Narrative of the Life ... of Henry Tufts (1807), title page",
+      "title": "A Narrative of the Life ' of Henry Tufts (1807), title page",
       "creator": "Samuel Bragg Jr., printer",
       "license": "Public domain",
       "source": "https://commons.wikimedia.org/wiki/File:Henry_Tufts%27_Autobiography.jpg"
@@ -134,10 +134,318 @@
     },
     "cradock-house-medford.jpg": {
       "path": "assets/images/cradock-house-medford.jpg",
-      "title": "Cradock House, Riverside Ave., Medford (about 1895-1905)",
+      "title": "Cradock House, Riverside Ave., Medford (about 1895'1905)",
       "creator": "Unknown photographer (via DPLA)",
       "license": "Public domain",
       "source": "https://commons.wikimedia.org/wiki/File:Cradock_House,_350_Riverside_Ave.,_1634._-_DPLA_-_664b9bbf74579ce773177aede37bc5a0.jpg"
+    },
+    "granary-burying-ground.jpg": {
+      "path": "assets/images/granary-burying-ground.jpg",
+      "title": "Granary Burying Ground, Boston",
+      "creator": "Ceoil",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Granary_Burying_Ground,_Boston_B.jpg"
+    },
+    "noddles-island-fort-1776.jpg": {
+      "path": "assets/images/noddles-island-fort-1776.jpg",
+      "title": "Fort on Noddle's Island, 1776",
+      "creator": "Unknown draftsman (Library of Congress)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Fort_on_Noddles_Island._LOC_73691627.jpg"
+    },
+    "chelsea-creek-1775.jpg": {
+      "path": "assets/images/chelsea-creek-1775.jpg",
+      "title": "Noddle's Island and Chelsea Creek, 1775 map detail",
+      "creator": "J. De Costa",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Battle_of_Chelsea_Creek.jpg"
+    },
+    "medford-square-1913.jpg": {
+      "path": "assets/images/medford-square-1913.jpg",
+      "title": "Medford Square, postcard about 1913",
+      "creator": "Unknown (postcard)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Medford_Square_with_streetcar_-_1913_postcard.jpg"
+    },
+    "medford-square-1900.jpg": {
+      "path": "assets/images/medford-square-1900.jpg",
+      "title": "Medford Square and station, early 1900s",
+      "creator": "Unknown photographer",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Medford_Square_and_station,_early_1900s.JPG"
+    },
+    "medford-1880-birdseye.jpg": {
+      "path": "assets/images/medford-1880-birdseye.jpg",
+      "title": "Medford, Massachusetts, 1880 (bird's-eye view)",
+      "creator": "O. H. Bailey ' Co.; C. H. Brainard, agent (Library of Congress)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Medford,_Massachusetts_-_1880._LOC_93683273.jpg"
+    },
+    "mystic-river-medford.jpg": {
+      "path": "assets/images/mystic-river-medford.jpg",
+      "title": "The Mystic River near Medford",
+      "creator": "Daderot",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fishing_on_the_Mystic_River_-_Medford,_MA_-_DSC00810.jpg"
+    },
+    "lexington-battle-green.jpg": {
+      "path": "assets/images/lexington-battle-green.jpg",
+      "title": "Lexington Battle Green",
+      "creator": "Dudesleeper",
+      "license": "CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Battle_Green,_Lexington_(Dudesleeper).jpg"
+    },
+    "old-north-bridge-concord.jpg": {
+      "path": "assets/images/old-north-bridge-concord.jpg",
+      "title": "Old North Bridge, Concord",
+      "creator": "Cbaile19",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Old_North_Bridge,_Concord,_2010-06-30.jpg"
+    },
+    "doolittle-engagement-at-concord.jpg": {
+      "path": "assets/images/doolittle-engagement-at-concord.jpg",
+      "title": "The Engagement at the North Bridge in Concord (Doolittle, Plate III)",
+      "creator": "Amos Doolittle (photo: Daderot)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Plate_III,_The_Engagement_at_Concord,_Amos_Doolittle_engravings_of_the_Battle_of_Lexington_and_Concord,_December_1775,_reprint_by_Charles_E._Goodspeed,_Boston,_1903_-_Concord_Museum_-_Concord,_MA_-_DSC05586.JPG"
+    },
+    "saratoga-freemans-farm.jpg": {
+      "path": "assets/images/saratoga-freemans-farm.jpg",
+      "title": "Saratoga Battlefield, Freeman's Farm",
+      "creator": "Nsausa",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Saratoga_Battlefield_Freeman%27s_Farm.jpg"
+    },
+    "west-point-c1780.jpg": {
+      "path": "assets/images/west-point-c1780.jpg",
+      "title": "West Point on the Hudson, about 1780",
+      "creator": "Unknown artist (National Archives)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:West_Point,_on_the_Hudson_River,_New_York,_ca._1780_-_NARA_-_518222.jpg"
+    },
+    "battle-of-rhode-island-1779.jpg": {
+      "path": "assets/images/battle-of-rhode-island-1779.jpg",
+      "title": "The Siege of Rhode Island, 1778 (print of 1779)",
+      "creator": "Unknown engraver",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Battle_of_Rhode_Island.jpg"
+    },
+    "white-plains-plan-1796.jpg": {
+      "path": "assets/images/white-plains-plan-1796.jpg",
+      "title": "Battle of White Plains, plan (1796)",
+      "creator": "D. Martin",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:White_Plains_Battle_Plans.jpeg"
+    },
+    "fort-washington-attack-1776.jpg": {
+      "path": "assets/images/fort-washington-attack-1776.jpg",
+      "title": "The Attack against Fort Washington, November 16, 1776",
+      "creator": "Thomas Davies",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_the_Attack_Against_Fort_Washington.jpeg"
+    },
+    "newburgh-snake-hill.jpg": {
+      "path": "assets/images/newburgh-snake-hill.jpg",
+      "title": "Newburgh and Snake Hill from Fishkill Landing, about 1860'1870",
+      "creator": "E. ' H. T. Anthony (NYPL)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Fishkill_Landing,_with_Newburgh_and_Snake_Hill_in_the_distance,_by_E._%26_H.T._Anthony_(Firm).jpg"
+    },
+    "topsham-mason-st.jpg": {
+      "path": "assets/images/topsham-mason-st.jpg",
+      "title": "Topsham, Maine, from Mason Street, about 1865'1880",
+      "creator": "G. W. Barnes (NYPL)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Topsham_from_Mason_St,_by_Barnes,_G._W._(George_W.).jpg"
+    },
+    "burning-of-charlestown-1775.jpg": {
+      "path": "assets/images/burning-of-charlestown-1775.jpg",
+      "title": "The Burning of Charlestown, June 17th, 1775",
+      "creator": "NYPL Emmet Collection",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:The_burning_of_Charlestown,_June_17th,_1775_(NYPL_b13075517-422178).jpg"
+    },
+    "tufts-college-1854.jpg": {
+      "path": "assets/images/tufts-college-1854.jpg",
+      "title": "Tufts College, about 1854",
+      "creator": "Unknown artist",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Tufts1853.jpg"
+    },
+    "frigate-alliance-1780.jpg": {
+      "path": "assets/images/frigate-alliance-1780.jpg",
+      "title": "Continental frigate Alliance passing Boston Light, 1780",
+      "creator": "Matthew Parke (U.S. Naval History and Heritage Command)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Continental_frigate_%27Alliance%27_passing_Boston_lighthouse_on_its_return_from_France_in_1780_KN-677.jpg"
+    },
+    "john-barry-stuart.jpg": {
+      "path": "assets/images/john-barry-stuart.jpg",
+      "title": "Commodore John Barry",
+      "creator": "V. Zveg after Gilbert Stuart (U.S. Navy)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:John_Barry_by_Gilbert_Stuart.jpg"
+    },
+    "cape-town-samuel-davis.jpg": {
+      "path": "assets/images/cape-town-samuel-davis.jpg",
+      "title": "Cape Town, late 18th century (Samuel Davis)",
+      "creator": "Samuel Davis (Yale Center for British Art)",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Samuel_Davis_-_Cape_Town_-_B1986.29.584_-_Yale_Center_for_British_Art.jpg"
+    },
+    "st-georges-bermuda-1614.jpg": {
+      "path": "assets/images/st-georges-bermuda-1614.jpg",
+      "title": "St. George's, Bermuda (1614)",
+      "creator": "Capt. John Smith",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Town_of_St._George%27s_and_Warwick_Fort_in_Bermuda_(1614).png"
+    },
+    "horatio-gates-stuart.jpg": {
+      "path": "assets/images/horatio-gates-stuart.jpg",
+      "title": "Gen. Horatio Gates (Gilbert Stuart)",
+      "creator": "Gilbert Stuart (Metropolitan Museum of Art)",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Horatio_Gates_MET_DT2041.jpg"
+    },
+    "henry-knox-stuart.jpg": {
+      "path": "assets/images/henry-knox-stuart.jpg",
+      "title": "Gen. Henry Knox (after Gilbert Stuart)",
+      "creator": "After Gilbert Stuart (Detroit Institute of Arts)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_-_General_Henry_Knox_-_40.51_-_Detroit_Institute_of_Arts.jpg"
+    },
+    "philip-schuyler-trumbull.jpg": {
+      "path": "assets/images/philip-schuyler-trumbull.jpg",
+      "title": "Gen. Philip Schuyler (John Trumbull)",
+      "creator": "John Trumbull",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Philip_Schuyler_by_John_Trumbull.jpg"
+    },
+    "burgoyne-reynolds.jpg": {
+      "path": "assets/images/burgoyne-reynolds.jpg",
+      "title": "Gen. John Burgoyne (Joshua Reynolds)",
+      "creator": "Joshua Reynolds",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:General_John_Burgoyne_-_Reynolds_c._1766_(cropped).jpg"
+    },
+    "isaac-royall-family-feke.jpg": {
+      "path": "assets/images/isaac-royall-family-feke.jpg",
+      "title": "The Isaac Royall Family (Robert Feke, 1741)",
+      "creator": "Robert Feke",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Robert_Feke_001.jpg"
+    },
+    "abigail-adams-blyth.jpg": {
+      "path": "assets/images/abigail-adams-blyth.jpg",
+      "title": "Abigail Adams (Benjamin Blyth, 1766)",
+      "creator": "Benjamin Blyth (Massachusetts Historical Society)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Abigail_Adams.jpg"
+    },
+    "john-adams-copley.jpg": {
+      "path": "assets/images/john-adams-copley.jpg",
+      "title": "John Adams (John Singleton Copley, 1783)",
+      "creator": "John Singleton Copley (Harvard Art Museums)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:John_Singleton_Copley_-_John_Adams_(1735-1826)_-_H74_-_Harvard_Art_Museums.jpg"
+    },
+    "washington-peale-1776.jpg": {
+      "path": "assets/images/washington-peale-1776.jpg",
+      "title": "George Washington (Charles Willson Peale, 1776)",
+      "creator": "Charles Willson Peale (Brooklyn Museum)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_George_Washington_-_Charles_Willson_Peale_-_overall.jpg"
+    },
+    "albany-houses-1789.jpg": {
+      "path": "assets/images/albany-houses-1789.jpg",
+      "title": "A View of Houses in the City of Albany (1789)",
+      "creator": "Library of Congress Prints ' Photographs",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:A_view_of_houses_in_the_city_of_Albany_LCCN2004671540.jpg"
+    },
+    "siege-of-boston-1775-map.jpg": {
+      "path": "assets/images/siege-of-boston-1775-map.jpg",
+      "title": "Boston and the country adjacent, 1775 (De Costa map)",
+      "creator": "J. De Costa",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Lexington_Concord_Siege_of_Boston.jpg"
+    },
+    "weymouth-first-church.jpg": {
+      "path": "assets/images/weymouth-first-church.jpg",
+      "title": "First Church in Weymouth",
+      "creator": "Magicpiano",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:WeymouthMA_FirstChurch.jpg"
+    },
+    "elkhart-hotel-bucklen.jpg": {
+      "path": "assets/images/elkhart-hotel-bucklen.jpg",
+      "title": "Hotel Bucklen, Elkhart, Indiana (1863'1880s)",
+      "creator": "Unknown photographer",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:ElkhartIN_Hotel_Bucklen.jpg"
+    },
+    "yankeetown-ohio.jpg": {
+      "path": "assets/images/yankeetown-ohio.jpg",
+      "title": "Yankeetown, Ohio",
+      "creator": "Aesopposea",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Yankeetown,_Ohio.JPG"
+    },
+    "lee-nh-town-hall.jpg": {
+      "path": "assets/images/lee-nh-town-hall.jpg",
+      "title": "Town Hall, Lee, New Hampshire",
+      "creator": "Bostonian13",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Town_Hall_Lee_NH.jpg"
+    },
+    "salem-jail-1908.jpg": {
+      "path": "assets/images/salem-jail-1908.jpg",
+      "title": "Old Salem Jail, St. Peter Street, about 1908",
+      "creator": "Unknown (postcard)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Salem_Jail_StPeterSt_ca1908_Salem_Massachusetts.png"
+    },
+    "halifax-1764.jpg": {
+      "path": "assets/images/halifax-1764.jpg",
+      "title": "Halifax, Nova Scotia, looking down Prince Street (1764)",
+      "creator": "James Mason after Dominic Serres (Library of Congress)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:This_print_representing_part_of_the_town_and_harbour_of_Halifax_in_Nova_Scotia,_looking_down_Prince_Street_..._Representation_d%C3%BAne_partie_de_la_Ville_%26_Port_de_Halifax,_dans_la_Nouvelle_LCCN2003671692.jpg"
+    },
+    "fort-william-henry-plan.jpg": {
+      "path": "assets/images/fort-william-henry-plan.jpg",
+      "title": "Plan of Fort William Henry and camp at Lake George",
+      "creator": "W. Eyre and I. Heath",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Plan_of_Fort_William_Henry_on_Lake_George.jpg"
+    },
+    "ticonderoga-fort.jpg": {
+      "path": "assets/images/ticonderoga-fort.jpg",
+      "title": "Fort Ticonderoga from Mount Defiance",
+      "creator": "Mwanner",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fort_Ticonderoga,_Ticonderoga,_NY.jpg"
+    },
+    "mhs-building.jpg": {
+      "path": "assets/images/mhs-building.jpg",
+      "title": "Massachusetts Historical Society, Boston",
+      "creator": "Biruitorul",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:MassHistorichq.JPG"
+    },
+    "michigan-map-1831.jpg": {
+      "path": "assets/images/michigan-map-1831.jpg",
+      "title": "Map of Michigan, 1831 (David H. Burr)",
+      "creator": "David H. Burr",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_of_Michigan_(1831)_DH_Burr.jpg"
+    },
+    "washington-before-boston-medal.jpg": {
+      "path": "assets/images/washington-before-boston-medal.jpg",
+      "title": "Washington before Boston medal (1776)",
+      "creator": "P. S. B. Duvivier (via DPLA)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Comitia_Americana_Washington_before_Boston,_1776_-_DPLA_-_ad11bfa958298ed060fb7f178dd6e6fe_(page_1).jpg"
     }
   }
 }
