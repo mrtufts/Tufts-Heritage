@@ -51,7 +51,7 @@ IMAGES = {
  'washington-peale-1776.jpg': ('George Washington (Charles Willson Peale, 1776)', 'Portrait of George Washington by Charles Willson Peale, about 1776, Brooklyn Museum.', 'Charles Willson Peale (Brooklyn Museum)', 'Public domain', 'https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_George_Washington_-_Charles_Willson_Peale_-_overall.jpg'),
  'albany-houses-1789.jpg': ('A View of Houses in the City of Albany (1789)', 'An etching of Albany houses published in 1789, from the Library of Congress.', 'Library of Congress Prints &amp; Photographs', 'Public domain', 'https://commons.wikimedia.org/wiki/File:A_view_of_houses_in_the_city_of_Albany_LCCN2004671540.jpg'),
  'siege-of-boston-1775-map.jpg': ('Boston and the country adjacent, 1775 (De Costa map)', 'J. De Costa&rsquo;s hand-colored map of 29 July 1775, showing the Lexington and Concord roads and the lines of the siege of Boston, including Medford, Charlestown, and Prospect Hill.', 'J. De Costa', 'Public domain', 'https://commons.wikimedia.org/wiki/File:Lexington_Concord_Siege_of_Boston.jpg'),
- 'weymouth-first-church.jpg': ('First Church in Weymouth', 'The First Church in Weymouth, in the Weymouth Meeting House Historic District (photographed 2012). Shown as a view of Weymouth, Dr. Cotton Tufts&rsquo;s town. The building; the present building is later than his time.rsquo;s date is not given in the source.', 'Magicpiano', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:WeymouthMA_FirstChurch.jpg'),
+ 'weymouth-first-church.jpg': ('First Church in Weymouth', 'The First Church in Weymouth, in the Weymouth Meeting House Historic District (photographed 2012). Shown as a view of Weymouth, Dr. Cotton Tufts&rsquo;s town. The building&rsquo;s date is not given in the source.', 'Magicpiano', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:WeymouthMA_FirstChurch.jpg'),
  'elkhart-hotel-bucklen.jpg': ('Hotel Bucklen, Elkhart, Indiana (1863&ndash;1880s)', 'An early view of Elkhart: the Hotel Bucklen at Main and Jackson, first built in 1863.', 'Unknown photographer', 'Public domain', 'https://commons.wikimedia.org/wiki/File:ElkhartIN_Hotel_Bucklen.jpg'),
  'yankeetown-ohio.jpg': ('Yankeetown, Ohio', 'A present-day view of Yankeetown, Ohio, at Ohio 207 and Cook-Yankeetown Road (photographed 2012).', 'Aesopposea', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Yankeetown,_Ohio.JPG'),
  'lee-nh-town-hall.jpg': ('Town Hall, Lee, New Hampshire', 'The town hall in Lee, N.H. (photographed 2013).', 'Bostonian13', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Town_Hall_Lee_NH.jpg'),
@@ -105,3 +105,5 @@ def EXTRA(path):
         out += "{DIV}" + GALLERY("Pictures" if path.startswith("profiles/") else "Illustrations", PAGE_FIGS[path])
     if path == "sources.html": out += "{DIV}" + CREDITS
     return out
+
+exec(open("tools/findagrave.py").read())
