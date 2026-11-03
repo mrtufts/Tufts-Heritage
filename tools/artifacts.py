@@ -109,3 +109,4 @@ def EXTRA(path):
 exec(open("tools/researchlinks.py").read())
 exec(open("tools/newspapers.py").read())
 exec(open("tools/harvard.py").read())
+exec(open("tools/letters.py").read())
