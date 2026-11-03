@@ -69,3 +69,5 @@ table.conflict th,table.conflict td{border:1px solid var(--gold);padding:.4rem .
 .hfig img{display:block;width:100%;height:auto;border:2px solid #6d1a24}
 .hfig figcaption{font-size:.92rem;margin-top:.5rem;line-height:1.35}
 .hfig .credit{display:block;font-size:.8rem;color:#2e3034;margin-top:.35rem;font-style:italic}
+
+.ai-note{display:block;font-size:.75rem;font-style:italic;color:#6b5a3a;margin:.2rem 0 .4rem}
