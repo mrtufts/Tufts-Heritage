@@ -159,3 +159,11 @@ def profile(p):
     if r:
         p = dict(p); p["family"] = p["family"] + '<p class="relatives"><strong>Relatives with profiles on this site:</strong> ' + "; ".join(PL(s, l) for s, l in r) + "." + RELNOTE.get(p["slug"], "") + "</p>"
     _profile1(p)
+
+_EXTRA_M = EXTRA
+def EXTRA(path):
+    out = _EXTRA_M(path)
+    if path == "places.html": out += "{DIV}" + CROSSSEC() + "{DIV}" + SVSEC()
+    if path == "generations/colonial.html": out += "{DIV}" + CROSSSEC() + "{DIV}" + SVSEC()
+    if path == "salem-street-burying-ground.html": out += "{DIV}" + FIG("salem-street-burying-ground-marker.jpg") + '<p><a href="' + SV(42.4181, -71.1076) + '">View on Google Street View</a></p>'
+    return out

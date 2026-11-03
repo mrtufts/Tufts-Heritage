@@ -649,6 +649,62 @@
       "creator": "The Smithsonian Institution, National Museum of American History",
       "license": "Public domain",
       "source": "https://commons.wikimedia.org/wiki/File:Tower_Brown_Bess_India_Pattern_Musket-NMAH-AHB2015q035657.jpg"
+    },
+    "map-page-boston-1775.jpg": {
+      "path": "assets/images/map-page-boston-1775.jpg",
+      "title": "A Plan of the Town of Boston &hellip; in 1775 (Lieut. Page, publ. Faden 1777)",
+      "creator": "Thomas Hyde Page; William Faden (Library of Congress gm71000620)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:A_plan_of_the_town_of_Boston,_with_the_intrenchments_etc._of_His_Majestys_forces_in_1775-_From_the_observations_of_Lieut._Page_of_His_Majesty%27s_Corps_of_Engineers;_and_from_the_plans_of_other_LOC_gm71000620.jpg"
+    },
+    "map-pelham-boston-1777.jpg": {
+      "path": "assets/images/map-pelham-boston-1777.jpg",
+      "title": "A Plan of Boston in New England with its Environs (1777)",
+      "creator": "Map from NYPL (Hades-118256-54202); crop by Fabartus",
+      "license": "CC BY 3.0 (crop); original map public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:A_1777_plan_of_Boston_in_New_England_with_its_environs_by_the_British_Military,_(cropped_from_NYPL_Hades-118256-54202).png"
+    },
+    "chart-desbarres-boston-harbour-1775.jpg": {
+      "path": "assets/images/chart-desbarres-boston-harbour-1775.jpg",
+      "title": "A Chart of the Harbour of Boston (Des Barres, 1775)",
+      "creator": "Joseph F. W. Des Barres (Library of Congress 75693436)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:A_chart_of_the_harbour_of_Boston_LOC_75693436.jpg"
+    },
+    "alford-street-bridge-1918.jpg": {
+      "path": "assets/images/alford-street-bridge-1918.jpg",
+      "title": "Alford Street Bridge and the Mystic River Elevated Bridge, 1918",
+      "creator": "Boston Elevated Railway (City of Boston Archives)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Mystic_River_Elevated_Bridge_and_Alford_Street_Bridge_1918_April_9_Boston_Archives.jpg"
+    },
+    "alford-street-bridge-raised-2024.jpg": {
+      "path": "assets/images/alford-street-bridge-raised-2024.jpg",
+      "title": "Alford Street Bridge, raised (2024)",
+      "creator": "4300streetcar",
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Alford_Street_Bridge_in_raised_position.jpg"
+    },
+    "alford-street-bridge-2025.jpg": {
+      "path": "assets/images/alford-street-bridge-2025.jpg",
+      "title": "Alford Street Bridge (2025)",
+      "creator": "4300streetcar",
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Southbound_MBTA_105_bus_on_Alford_Street_Bridge_November_2025.jpg"
+    },
+    "winter-hill-broadway-2024.jpg": {
+      "path": "assets/images/winter-hill-broadway-2024.jpg",
+      "title": "Broadway on Winter Hill, Somerville (2024)",
+      "creator": "4300streetcar",
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Broadway_in_Winter_Hill_looking_west_Oct_2024.jpg"
+    },
+    "salem-street-burying-ground-marker.jpg": {
+      "path": "assets/images/salem-street-burying-ground-marker.jpg",
+      "title": "Salem Street Burying Ground, Medford",
+      "creator": "Magicpiano",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:MedfordMA_SalemStreetBuryingGroundMarker.jpg"
     }
   }
 }
