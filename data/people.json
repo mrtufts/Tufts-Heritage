@@ -460,6 +460,16 @@
     "profile": "profiles/samuel-tufts-3d.html"
   },
   {
+    "name": "Dr. Simon Tufts (1700&ndash;1747)",
+    "slug": "simon-tufts-1700",
+    "born": "1700",
+    "died": "1747",
+    "era": "Colonial",
+    "line": "Son of Capt. Peter Tufts",
+    "town": "Medford, Mass.",
+    "profile": "profiles/simon-tufts-1700.html"
+  },
+  {
     "name": "Charles Tufts",
     "slug": "charles-tufts",
     "born": "",
