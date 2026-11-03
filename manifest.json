@@ -621,6 +621,20 @@
       "creator": "Portrait courtesy of the family / FamilySearch",
       "license": "Artist and date unknown",
       "source": "https://www.familysearch.org/tree/person/details/LW2T-T77"
+    },
+    "map-medford-1794-peter-tufts.jpg": {
+      "path": "assets/images/map-medford-1794-peter-tufts.jpg",
+      "title": "A Plan of the Town of Medford, 1794 (Peter Tufts Jr.)",
+      "creator": "Peter Tufts Jr.; Massachusetts Archives",
+      "license": "No known copyright restrictions",
+      "source": "https://www.digitalcommonwealth.org/search/commonwealth:2227ng58z"
+    },
+    "map-charlestown-1818-peter-tufts.jpg": {
+      "path": "assets/images/map-charlestown-1818-peter-tufts.jpg",
+      "title": "Plan of Charlestown Peninsula, 1818 (Peter Tufts Jr.)",
+      "creator": "Peter Tufts Jr.; Annin & Smith",
+      "license": "No known copyright restrictions",
+      "source": "https://www.digitalcommonwealth.org/search/commonwealth:cj82m224p"
     }
   }
 }

@@ -12,6 +12,7 @@ WYMAN = "Thomas Bellows Wyman, <em>The Genealogies and Estates of Charlestown</e
 JONES = "Alvin Lincoln Jones, <em>Under Colonial Roofs</em> (1894)"
 TFH = "Jay Franklin Tufts, <em>Tufts Family History 1633&ndash;1963</em> (secondary source)"
 CHASE = "Ellen Chase, <em>The Beginnings of the American Revolution</em>, vol. III (1910)"
+exec(open("tools/maps.py").read())
 
 # ---------------- Profiles ----------------
 PROFILES = [
@@ -185,7 +186,7 @@ page("generations/revolution.html", "The Revolution 1765–1783 | Tufts Family H
 <blockquote>&ldquo;ROSTER OF THE FIRST COMPANY OF MINUTE MEN WHO ASSEMBLED IN MEDFORD AT THE CALL OF PAUL REVERE AND ENGAGED IN THE BATTLE OF APRIL 19, 1775&rdquo;</blockquote>
 <p>The monument, erected by the City of Medford in 1925, lists Tufts Daniel, Tufts Ebenezer, Tufts James Jr., Tufts John Corporal, Tufts Jonathan, Tufts Isaac Sergeant, Tufts Peter Jr., Tufts Samuel, and Tufts Samuel 3d. <a href="{IMG}medford-1925-monument.jpg">View photograph</a></p>
 </section>
-<p>Related: <a href="{{P}}places.html#winter-hill">Winter Hill</a> &middot; <a href="{{P}}places.html#medford-charlestown">Medford &amp; Charlestown</a></p>''')
+<p>Related: <a href="{{P}}places.html#maps">Maps by Peter Tufts, the surveyor</a> &middot; <a href="{{P}}places.html#winter-hill">Winter Hill</a> &middot; <a href="{{P}}places.html#medford-charlestown">Medford &amp; Charlestown</a></p>''')
 
 page("generations/19th-century.html", "19th Century | Tufts Family Heritage", "Generations", "19th Century", "", f'''
 <section id="charles-tufts"><h2>Charles Tufts and Walnut Hill</h2>
