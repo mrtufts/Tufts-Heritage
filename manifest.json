@@ -614,6 +614,13 @@
       "creator": "Photo: Eric Thomsen, Find a Grave",
       "license": "Contributor photo on Find a Grave; used with credit and link (owner-approved 2026-11-03)",
       "source": "https://www.findagrave.com/memorial/6688008/charles-tufts"
+    },
+    "anne-adams-tufts-portrait-family.jpg": {
+      "path": "assets/images/anne-adams-tufts-portrait-family.jpg",
+      "title": "Portrait of Anne Adams Tufts (artist and date unknown)",
+      "creator": "Portrait courtesy of the family / FamilySearch",
+      "license": "Artist and date unknown",
+      "source": "https://www.familysearch.org/tree/person/details/LW2T-T77"
     }
   }
 }

@@ -158,6 +158,7 @@ page("generations/colonial.html", "Colonial 1638–1765 | Tufts Family Heritage"
 {Q("She was born July 8, 1729, and died February 17, 1813.", JONES+", p. 129", ["jones-under-colonial-roofs-p129.jpg"])}
 {Q("Anne Adams Tufts rendered notable service to her country during the Revolutionary War. After the battle of Bunker Hill, she assisted in binding up the wounds of many soldiers who were brought to her house, and later, when part of Burgoyne's army was encamped on Winter Hill, she went to camp and nursed all night the dying wife of one of the prisoners.", TFH+", p. 28, quoting the <em>Boston Journal</em>, June 22, 1909", ["tufts-family-history-p28.jpg"])}
 {FIG("anne-adams-tufts-pioneer-mothers-1912.jpg")}
+{FIG("anne-adams-tufts-portrait-family.jpg")}
 {FIG("anne-adams-tufts-tablet-hmdb.jpg")}
 <h3>The 1909 tablet (transcription)</h3>
 <blockquote>To the Memory of Anne Adams-Tufts / Born 1729 Died 1813 / A heroine of the Revolution who did active patriotic service after the Battle of Bunker Hill. / This was the door-stone of her home which stood about 120 feet south-west of this spot. [The middle digit is worn on the bronze and appears to be 2; some transcriptions read 100.] / This tablet is placed by the Somerville Chapter of the Daughters of the American Revolution which is honored in bearing her name. / 1909</blockquote>
