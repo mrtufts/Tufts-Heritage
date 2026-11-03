@@ -157,6 +157,12 @@ page("generations/colonial.html", "Colonial 1638–1765 | Tufts Family Heritage"
 <section id="anne-adams"><h2>Anne Adams Tufts</h2>
 {Q("She was born July 8, 1729, and died February 17, 1813.", JONES+", p. 129", ["jones-under-colonial-roofs-p129.jpg"])}
 {Q("Anne Adams Tufts rendered notable service to her country during the Revolutionary War. After the battle of Bunker Hill, she assisted in binding up the wounds of many soldiers who were brought to her house, and later, when part of Burgoyne's army was encamped on Winter Hill, she went to camp and nursed all night the dying wife of one of the prisoners.", TFH+", p. 28, quoting the <em>Boston Journal</em>, June 22, 1909", ["tufts-family-history-p28.jpg"])}
+{FIG("anne-adams-tufts-pioneer-mothers-1912.jpg")}
+{FIG("anne-adams-tufts-tablet-hmdb.jpg")}
+<h3>The 1909 tablet (transcription)</h3>
+<blockquote>To the Memory of Anne Adams-Tufts / Born 1729 Died 1813 / A heroine of the Revolution who did active patriotic service after the Battle of Bunker Hill. / This was the door-stone of her home which stood about 100 feet south-west of this spot. / This tablet is placed by the Somerville Chapter of the Daughters of the American Revolution which is honored in bearing her name. / 1909</blockquote>
+<p class="cite">Transcribed from the photograph by Marc Posner, April 8, 2024, <a href="https://www.hmdb.org/m.asp?m=248718">HMdb.org</a> (original in capitals). Paul Revere Park, Winter Hill, Somerville.</p>
+<p class="note">Discrepancy: the HMdb.org page transcribes the tablet as &ldquo;Died 1812&rdquo;; the photograph reads &ldquo;Died 1813&rdquo;. The tablet&rsquo;s 1813 agrees with Wyman and Jones on the year; it does not settle the day (Feb. 7 or Feb. 17).</p>
 {UNV("Anne's death date: Wyman (p. 965) gives Feb. 7, 1813, and Jones (p. 129) gives February 17, 1813. Her father: Jones says &ldquo;Anne Adams of Quincy&rdquo;, and the family history (p. 28) says &ldquo;the daughter of Joseph Adams of Cambridge&rdquo;. Her nursing service is known only from a 1909 newspaper account quoted in a secondary source.")}
 </section>
 {{DIV}}
@@ -251,6 +257,9 @@ page("places.html", "Places | Tufts Family Heritage", "Places", "Places", "Where
 <section id="winter-hill"><h2>Winter Hill</h2>
 {Q("At the outbreak of the Revolution, Peter Tufts lived at the top of Winter Hill in a little old house, which stood until a few years ago. Here he was soundly sleeping when Paul Revere came thundering up to the door, calling on the people to rouse and arm themselves, for the Regulars were coming.", JONES+", p. 129", ["jones-under-colonial-roofs-p129.jpg"])}
 {Q("The tablet rests upon the historic door stone of the Anne Adams Tufts homestead and was recently presented to the chapter.", TFH+", p. 28, quoting the <em>Boston Journal</em>, June 22, 1909, on the tablet unveiled in Paul Revere Park, Winter Hill, Somerville", ["tufts-family-history-p28.jpg"])}
+{FIG("anne-adams-tufts-marker-hmdb.jpg")}
+{FIG("anne-adams-tufts-marker-behind-revere-hmdb.jpg")}
+<p>The tablet reads in part: &ldquo;This was the door-stone of her home which stood about 100 feet south-west of this spot.&rdquo; Full transcription on <a href="{{P}}generations/colonial.html#anne-adams">Anne Adams Tufts</a>.</p>
 </section>
 {{DIV}}
 <section id="medford-charlestown"><h2>Medford &amp; Charlestown</h2>
