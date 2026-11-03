@@ -64,11 +64,11 @@ def NP(slug, name, fam, born, died, dates, town, bio, facts, unv="", line="", lo
         unverified=(unv + " " if unv else "") + SCANFLAG + " No other source on this site has yet been checked for this man.", kicker="Loyalist" if loyalist else ""))
 
 NP("simon-tufts-11-1", "Dr. Simon Tufts", "11-1", "", "", "[dates not in extract]", "Medford",
-   "<p>Dr. Simon Tufts of Medford, father of Dr. Cotton Tufts, was an ardent Whig and a justice of the peace from 1770. When the fighting began he cared for the wounded on both sides, and he spent the war in the awkward role of guardian to a Loyalist neighbor&rsquo;s estate.</p>",
+   "<p>Dr. Simon Tufts of Medford, older brother of Dr. Cotton Tufts (both children of family no. 11 in Tufts Kinsmen Vol. I), was an ardent Whig and a justice of the peace from 1770. When the fighting began he cared for the wounded on both sides, and he spent the war in the awkward role of guardian to a Loyalist neighbor&rsquo;s estate.</p>",
    [("Ardent Whig; justice of the peace 1770; took depositions and bound wounds after Lexington and Concord; attended the wounded on both sides at Bunker Hill; lent bounty money for the war.", 110),
     ("Reluctantly served as conservator of the estate of the Tory Col. Isaac Royall; testified before the Committee of Safety that he believed Royall a friend to the American cause; the Committee refused and ordered the estate surrendered. After Royall&rsquo;s death in 1781 the state returned the estate to Simon as trustee.", 110),
     ("Fellow of the Massachusetts Medical Society 1782; died from a fall from his horse.", 110)],
-   "Birth and death dates are not in the extract. Service was civil and medical, not military.", line="Father of Dr. Cotton Tufts")
+   "Birth and death dates are not in the extract. Service was civil and medical, not military.", line="Older brother of Dr. Cotton Tufts")
 NP("william-tufts-13-6", "Lieut. William Tufts", "13-6", "1713", "1783", "1713 &ndash; 1783", "Charlestown; Medford",
    "<p>Lieut. William Tufts was a generation older than most of the family&rsquo;s Revolutionary soldiers. Born in Charlestown in 1713, he had helped build Fort Lawrence on the Bay of Fundy, and he died at Medford in 1783.</p>",
    [("Born 10 June 1713 in Charlestown; died 29 Oct. 1783 in Medford.", 116),
