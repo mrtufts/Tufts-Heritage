@@ -4,6 +4,8 @@ IMG = "{P}sources/images/"
 def Q(text, cite, scans=(), note=""):
     links = " &middot; ".join(f'<a href="{IMG}{s}">page scan</a>' for s in scans)
     return f'<blockquote>&ldquo;{text}&rdquo;</blockquote>\n<p class="cite">{cite}{(" &middot; " + links) if links else ""}{(" " + note) if note else ""}</p>'
+def TA(text, cite=""):
+    return f'<p class="tufts-assoc"><strong>Tufts association:</strong> {text}{(" <span class=\"cite\">(" + cite + ")</span>") if cite else ""}</p>'
 def UNV(text):
     return f'<div class="flag"><h3>&#9873; Unverified</h3><p>{text}</p></div>'
 MSS = "<em>Massachusetts Soldiers and Sailors of the Revolutionary War</em>, vol. XVI (1907)"
@@ -168,7 +170,7 @@ page("generations/colonial.html", "Colonial 1638–1765 | Tufts Family Heritage"
 {UNV("Anne's death date: Wyman (p. 965) gives Feb. 7, 1813, and Jones (p. 129) gives February 17, 1813. Her father: Jones says &ldquo;Anne Adams of Quincy&rdquo;, and the family history (p. 28) says &ldquo;the daughter of Joseph Adams of Cambridge&rdquo;. Her nursing service is known only from a 1909 newspaper account quoted in a secondary source.")}
 </section>
 {{DIV}}
-<section><h2>The Winter Hill Farm</h2><p>See <a href="{{P}}places.html#winter-hill">Places: Winter Hill</a>.</p></section>''')
+<section><h2>The Winter Hill Farm</h2>{TA("Home farm of Peter Tufts of Winter Hill, roused by Paul Revere on April 19, 1775.", JONES+", p. 129")}<p>See <a href="{{P}}places.html#winter-hill">Places: Winter Hill</a>.</p></section>''')
 
 page("generations/revolution.html", "The Revolution 1765–1783 | Tufts Family Heritage", "Generations", "The Revolution", "1765&ndash;1783", f'''
 <div class="banner">1776 &ndash; 2026 &middot; The 250th Anniversary of American Independence</div>
@@ -190,6 +192,7 @@ page("generations/revolution.html", "The Revolution 1765–1783 | Tufts Family H
 
 page("generations/19th-century.html", "19th Century | Tufts Family Heritage", "Generations", "19th Century", "", f'''
 <section id="charles-tufts"><h2>Charles Tufts and Walnut Hill</h2>
+{TA("Land owned by Charles Tufts and given by him as the site of Tufts College.", TFH+", pp. 139, 143")}
 <p>Charles Tufts of Somerville gave the hilltop land on which Tufts College was built.</p>
 {Q("As early as 1841, Charles Tufts conceived the idea that an Universalist College was needed, and that his Walnut Hill was the appropiate site for it. &hellip; when previously asked by a friend what he intended to do with the wind-swept height, Mr. Tufts replied; &ldquo;I will put a light on it&rdquo;, &mdash;a remark which has become one of the traditions of Tufts University. &hellip; A charter for the new College was issued April 15, 1852, and on July 23, 1853 the corner stone for Ballou Hall, the first building, was laid; and in 1854 was opened to students.", TFH+", p. 139", ["tufts-family-history-p139.jpg"])}
 {Q("Mr. Charles Tufts, whose name is better known to the people than almost any other, whose generous acts endeared him to many he had benefacted, is no more. &hellip; He believed in doing good to the greatest number, and hence his noble gift to Tufts College, of the beautiful tract of land upon which the buildings are now located.", TFH+", p. 143, quoting the <em>Somerville Journal</em>, December 30, 1876", ["tufts-family-history-p143.jpg"])}
@@ -197,6 +200,7 @@ page("generations/19th-century.html", "19th Century | Tufts Family Heritage", "G
 </section>
 {{DIV}}
 <section id="weymouth"><h2>The Weymouth Line and Tufts Library</h2>
+{TA("Home town of Dr. Cotton Tufts and his son Cotton; the Tufts Library was founded by the bequest of Quincy and Susanna Tufts.", TFH+", p. 35; <a href=\"https://www.weymouth.ma.us/DocumentCenter/View/545/Tufts-Smith-Adams-Family-Collection\">Weymouth finding aid</a>")}
 {Q("The year 1879 was a memorable one for the town of Weymouth. Early that year, through the generosity of Quincy and his sister Miss Susanna Tufts, they gave to the town, by will, a fund for the establishment of a library for the benefit of its citizens.", TFH+", p. 35", ["tufts-family-history-p35.jpg"])}
 <p>See also <a href="{{P}}profiles/cotton-tufts.html">Dr. Cotton Tufts</a>.</p>
 </section>
@@ -257,6 +261,7 @@ page("people.html", "People | Tufts Family Heritage", "A&ndash;Z Index", "People
 
 page("places.html", "Places | Tufts Family Heritage", "Places", "Places", "Where the family lived and worked", f'''
 <section id="winter-hill"><h2>Winter Hill</h2>
+{TA("Farm and home of Peter Tufts of Winter Hill (1728&ndash;1791) and Anne Adams Tufts, where Paul Revere roused him on April 19, 1775.", JONES+", p. 129")}
 {Q("At the outbreak of the Revolution, Peter Tufts lived at the top of Winter Hill in a little old house, which stood until a few years ago. Here he was soundly sleeping when Paul Revere came thundering up to the door, calling on the people to rouse and arm themselves, for the Regulars were coming.", JONES+", p. 129", ["jones-under-colonial-roofs-p129.jpg"])}
 {Q("The tablet rests upon the historic door stone of the Anne Adams Tufts homestead and was recently presented to the chapter.", TFH+", p. 28, quoting the <em>Boston Journal</em>, June 22, 1909, on the tablet unveiled in Paul Revere Park, Winter Hill, Somerville", ["tufts-family-history-p28.jpg"])}
 {FIG("anne-adams-tufts-marker-hmdb.jpg")}
@@ -265,15 +270,18 @@ page("places.html", "Places | Tufts Family Heritage", "Places", "Places", "Where
 </section>
 {{DIV}}
 <section id="medford-charlestown"><h2>Medford &amp; Charlestown</h2>
+{TA("Residences of Peter Tufts Jr. (1753&ndash;1832) and his cousin Daniel Tufts opposite the Powder House; Peter Jr. had his homestead lot set off to Charlestown in 1811.", WILD+", pp. 50, 52")}
 {Q("Lived in house occupied at one time by his cousin Daniel, opposite Powder House; through his influence his homestead lot was set off to Charlestown in 1811.", WILD+", p. 52 (Peter Tufts Jr.)", ["wild-medford-in-revolution-p52.jpg"])}
 {Q("lived near Powder House, Somerville; land where his house stood set off from Medford to Charlestown, 1811.", WILD+", p. 50 (Daniel Tufts)", ["wild-medford-in-revolution-p50.jpg"])}
 </section>
 {{DIV}}
 <section id="later-homes"><h2>Later Homes</h2>
+{TA("Each place below is tied to the family member named in the linked section, where its sources are quoted.")}
 <ul><li>Weymouth, Mass.: Dr. Cotton Tufts and the Tufts Library (<a href="{{P}}generations/19th-century.html#weymouth">19th Century</a>)</li>
 <li>Walnut Hill, Somerville and Medford: Charles Tufts's gift for Tufts College (<a href="{{P}}generations/19th-century.html#charles-tufts">19th Century</a>)</li>
 <li>Mystic, Conn.: Caleb Tufts, per Wild p. 50 (<a href="{{P}}profiles/caleb-tufts.html">profile</a>)</li>
 <li>Sacramento, Calif.: Albert C. Tufts, druggist (<a href="{{P}}generations/19th-century.html#albert-c-tufts">19th Century</a>)</li></ul>
+{UNV("Mystic, Conn. (Caleb Tufts): the residence rests on Wild p. 50 and his Find a Grave memorial only; no land record seen.")}
 </section>''')
 
 page("collections.html", "Collections | Tufts Family Heritage", "Collections", "Collections", "Letters, artifacts, and photographs", f'''
