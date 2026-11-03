@@ -60,3 +60,6 @@ table{border-collapse:collapse;width:100%}
 th,td{border:1px solid var(--parchment-dark);padding:.4rem .6rem;text-align:left;vertical-align:top}
 .scans img{max-width:100%;height:auto;border:1px solid var(--parchment-dark)}
 blockquote{margin:.5rem 0;padding:.5rem 1rem;border-left:3px solid var(--burgundy);background:rgba(255,248,225,.7)}
+table.conflict{border-collapse:collapse;margin:1rem 0;width:100%;background:rgba(255,248,225,.9)}
+table.conflict caption{font-family:Cinzel,serif;color:var(--crimson);text-align:left;padding:.3rem 0}
+table.conflict th,table.conflict td{border:1px solid var(--gold);padding:.4rem .6rem;text-align:left;vertical-align:top}

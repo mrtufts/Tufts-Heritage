@@ -3,7 +3,7 @@
     "name": "Peter Tufts Jr.",
     "slug": "peter-tufts-jr",
     "born": "1753",
-    "died": "",
+    "died": "1832",
     "era": "The Revolution",
     "line": "Peter Tufts of Winter Hill",
     "town": "Medford",
@@ -12,7 +12,7 @@
   {
     "name": "Dr. Cotton Tufts",
     "slug": "cotton-tufts",
-    "born": "",
+    "born": "1732",
     "died": "1815",
     "era": "The Revolution",
     "line": "Dr. Simon Tufts",
@@ -52,11 +52,11 @@
   {
     "name": "Barnabas Tufts",
     "slug": "barnabas-tufts",
-    "born": "",
-    "died": "",
+    "born": "1743",
+    "died": "1795",
     "era": "The Revolution",
     "line": "Undetermined",
-    "town": "Gloucester",
+    "town": "Medford; Gloucester (Cape Ann); Topsham, Me.",
     "profile": "profiles/barnabas-tufts.html"
   },
   {
@@ -68,6 +68,306 @@
     "line": "Undetermined",
     "town": "Medford; later Mystic, Conn.",
     "profile": "profiles/caleb-tufts.html"
+  },
+  {
+    "name": "Dr. Simon Tufts",
+    "slug": "simon-tufts-11-1",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Father of Dr. Cotton Tufts",
+    "town": "Medford",
+    "profile": "profiles/simon-tufts-11-1.html"
+  },
+  {
+    "name": "Lieut. William Tufts",
+    "slug": "william-tufts-13-6",
+    "born": "1713",
+    "died": "1783",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 13-6",
+    "town": "Charlestown; Medford",
+    "profile": "profiles/william-tufts-13-6.html"
+  },
+  {
+    "name": "Capt. Joseph Tufts Jr.",
+    "slug": "joseph-tufts-jr-15-2",
+    "born": "1731",
+    "died": "1778",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 15-2",
+    "town": "Medford",
+    "profile": "profiles/joseph-tufts-jr-15-2.html"
+  },
+  {
+    "name": "Samuel Tufts (1732&ndash;1818)",
+    "slug": "samuel-tufts-15-3",
+    "born": "1732",
+    "died": "1818",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 15-3",
+    "town": "Medford",
+    "profile": "profiles/samuel-tufts-15-3.html"
+  },
+  {
+    "name": "Nathan Tufts (1741&ndash;1784)",
+    "slug": "nathan-tufts-15-7",
+    "born": "1741",
+    "died": "1784",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 15-7",
+    "town": "Medford",
+    "profile": "profiles/nathan-tufts-15-7.html"
+  },
+  {
+    "name": "Rev. Francis Tufts",
+    "slug": "francis-tufts-20-1",
+    "born": "1744",
+    "died": "1833",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 20-1",
+    "town": "Medford; Lincoln Co., Me.; Farmington, Me.; Ohio",
+    "profile": "profiles/francis-tufts-20-1.html"
+  },
+  {
+    "name": "James Tufts Jr.",
+    "slug": "james-tufts-jr-36-2",
+    "born": "1726",
+    "died": "1786",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 36-2",
+    "town": "Medford",
+    "profile": "profiles/james-tufts-jr-36-2.html"
+  },
+  {
+    "name": "Ebenezer Tufts",
+    "slug": "ebenezer-tufts-36-7",
+    "born": "1737",
+    "died": "1809",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 36-7",
+    "town": "Medford",
+    "profile": "profiles/ebenezer-tufts-36-7.html"
+  },
+  {
+    "name": "Jonathan Tufts",
+    "slug": "jonathan-tufts-36-8",
+    "born": "1739",
+    "died": "1784",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 36-8",
+    "town": "Medford",
+    "profile": "profiles/jonathan-tufts-36-8.html"
+  },
+  {
+    "name": "Sgt. Isaac Tufts",
+    "slug": "isaac-tufts-36-10",
+    "born": "1744",
+    "died": "1823",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 36-10",
+    "town": "Medford",
+    "profile": "profiles/isaac-tufts-36-10.html"
+  },
+  {
+    "name": "William Tufts Jr. (1736&ndash;1782)",
+    "slug": "william-tufts-40-2",
+    "born": "1736",
+    "died": "1782",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 40-2",
+    "town": "Medford",
+    "profile": "profiles/william-tufts-40-2.html"
+  },
+  {
+    "name": "Lieut. Moses Tufts",
+    "slug": "moses-tufts-40-6",
+    "born": "1744",
+    "died": "1805",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 40-6",
+    "town": "Medford; Chelsea; Newcastle, Me.",
+    "profile": "profiles/moses-tufts-40-6.html"
+  },
+  {
+    "name": "George Tufts",
+    "slug": "george-tufts-40-7",
+    "born": "1747",
+    "died": "1796",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 40-7",
+    "town": "Medford; Concord",
+    "profile": "profiles/george-tufts-40-7.html"
+  },
+  {
+    "name": "Lieut. Grimes Tufts",
+    "slug": "grimes-tufts-40-8",
+    "born": "1748",
+    "died": "1808",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 40-8",
+    "town": "Medford; Lynn",
+    "profile": "profiles/grimes-tufts-40-8.html"
+  },
+  {
+    "name": "Samuel Tufts 2nd (1752&ndash;1815)",
+    "slug": "samuel-tufts-41-2",
+    "born": "1752",
+    "died": "1815",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 41-2",
+    "town": "Medford",
+    "profile": "profiles/samuel-tufts-41-2.html"
+  },
+  {
+    "name": "Lieut. Francis Tufts (1756&ndash;1823)",
+    "slug": "francis-tufts-41-4",
+    "born": "1756",
+    "died": "1823",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 41-4",
+    "town": "Lancaster; Boston",
+    "profile": "profiles/francis-tufts-41-4.html"
+  },
+  {
+    "name": "Cpl. David Tufts",
+    "slug": "david-tufts-41-7",
+    "born": "1763",
+    "died": "1823",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 41-7",
+    "town": "Medford; Billerica; Lynn",
+    "profile": "profiles/david-tufts-41-7.html"
+  },
+  {
+    "name": "Joseph Tufts (of Danvers)",
+    "slug": "joseph-tufts-43-1",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 43-1",
+    "town": "Danvers",
+    "profile": "profiles/joseph-tufts-43-1.html"
+  },
+  {
+    "name": "Andrew Tufts",
+    "slug": "andrew-tufts-43-3",
+    "born": "1761",
+    "died": "1836",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 43-3",
+    "town": "Medford; Worcester",
+    "profile": "profiles/andrew-tufts-43-3.html"
+  },
+  {
+    "name": "Samuel Tufts 3rd (1761&ndash;1803)",
+    "slug": "samuel-tufts-44-3",
+    "born": "1761",
+    "died": "1803",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 44-3",
+    "town": "Medford",
+    "profile": "profiles/samuel-tufts-44-3.html"
+  },
+  {
+    "name": "John Tufts (of Prospect Hill)",
+    "slug": "john-tufts-49-2",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 49-2",
+    "town": "Prospect Hill (Somerville)",
+    "profile": "profiles/john-tufts-49-2.html"
+  },
+  {
+    "name": "Cpl. John Tufts (1754&ndash;1839)",
+    "slug": "john-tufts-53-3",
+    "born": "1754",
+    "died": "1839",
+    "era": "The Revolution",
+    "line": "Peter Tufts of Winter Hill",
+    "town": "Charlestown (Winter Hill)",
+    "profile": "profiles/john-tufts-53-3.html"
+  },
+  {
+    "name": "John Tufts (of Windham, Conn.)",
+    "slug": "john-tufts-22-1",
+    "born": "1755",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 22-1",
+    "town": "Windham, Conn.; Ashford; Stephentown, N.Y.; Ludlow, Mass.",
+    "profile": "profiles/john-tufts-22-1.html"
+  },
+  {
+    "name": "Henry Tufts (of Lee, N.H.)",
+    "slug": "henry-tufts-25-1",
+    "born": "1735",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 25-1",
+    "town": "Boston; Newmarket and Lee, N.H.",
+    "profile": "profiles/henry-tufts-25-1.html"
+  },
+  {
+    "name": "Thomas Tufts (of Lee, N.H.)",
+    "slug": "thomas-tufts-25-3",
+    "born": "1757",
+    "died": "1834",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 25-3",
+    "town": "Lee, N.H.",
+    "profile": "profiles/thomas-tufts-25-3.html"
+  },
+  {
+    "name": "Eliphalet Tufts",
+    "slug": "eliphalet-tufts-25-4",
+    "born": "1759",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 25-4",
+    "town": "Lee, N.H.",
+    "profile": "profiles/eliphalet-tufts-25-4.html"
+  },
+  {
+    "name": "Capt. Samuel Tufts (Loyalist)",
+    "slug": "samuel-tufts-28-11",
+    "born": "1758",
+    "died": "1819",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 28-11",
+    "town": "Nova Scotia; Boston; near Quoddy Point, Me.",
+    "profile": "profiles/samuel-tufts-28-11.html"
+  },
+  {
+    "name": "Simon Tufts (Loyalist, 1750&ndash;1801)",
+    "slug": "simon-tufts-29-1",
+    "born": "1750",
+    "died": "1801",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 29-1",
+    "town": "Medford; Boston; Cape Town",
+    "profile": "profiles/simon-tufts-29-1.html"
+  },
+  {
+    "name": "William Tuffs (1750&ndash;1848)",
+    "slug": "william-tuffs-35-8",
+    "born": "1750",
+    "died": "1848",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 35-8",
+    "town": "Schoharie, N.Y.; Ohio; Elkhart, Ind.",
+    "profile": "profiles/william-tuffs-35-8.html"
+  },
+  {
+    "name": "Nathan Tuffs (1752&ndash;1827)",
+    "slug": "nathan-tuffs-35-9",
+    "born": "1752",
+    "died": "1827",
+    "era": "The Revolution",
+    "line": "Tufts Kinsmen family no. 35-9",
+    "town": "Portsmouth, N.H.; Bethel, Vt.",
+    "profile": "profiles/nathan-tuffs-35-9.html"
   },
   {
     "name": "Charles Tufts",

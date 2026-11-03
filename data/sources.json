@@ -134,7 +134,7 @@
     "scans": [],
     "archive_id": null,
     "verified_on_scan": true,
-    "flag": "Vol. II private copy: short quotes only, no scans (copyright). Vol. I not seen; the p.50 claim is unverified."
+    "flag": "Vol. II private copy: short quotes only, no scans (copyright). The p.50 claim is unverified (not in the Vol. I extract)."
   },
   {
     "id": "dar",
@@ -144,5 +144,49 @@
     "archive_id": null,
     "verified_on_scan": false,
     "flag": "MISSING IMAGES; unverified (secondhand web sources)"
+  },
+  {
+    "id": "tka-v1",
+    "citation": "Herbert Freeman Adams, comp., Tufts Kinsmen, Vol. I (Tufts Kinsmen Association, 2010)",
+    "pages": [
+      "105",
+      "110",
+      "111",
+      "112",
+      "116",
+      "119",
+      "120",
+      "128",
+      "129",
+      "130",
+      "133",
+      "136",
+      "137",
+      "141",
+      "142",
+      "145",
+      "150",
+      "152",
+      "153",
+      "154",
+      "156",
+      "158",
+      "159",
+      "160",
+      "162",
+      "164",
+      "165",
+      "166",
+      "175",
+      "176",
+      "177",
+      "178",
+      "181"
+    ],
+    "scans": [],
+    "archive_id": null,
+    "verified_on_scan": false,
+    "hosted": false,
+    "flag": "Copyrighted; private reference only, not hosted. Cited from owner-supplied extract with short statements; page scans not on file."
   }
 ]

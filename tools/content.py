@@ -92,6 +92,8 @@ KIN = {
 <p class="note"><strong>Possible matches</strong> only. Wild&rsquo;s Samuel 3d was the son of William, his Samuel b. 1732 the son of Joseph, and his Samuel b. 1761 the son of Samuel. These fit the three lines above in parentage, but Vol. II gives no service or dates for any Samuel5. None is attached to a specific MSS entry.</p>""",
 }
 
+exec(open("tools/kinsmen_v1.py").read())
+
 def profile(p):
     body = f'''<section id="biography"><h2>Biography</h2>{p["bio"]}</section>
 {{DIV}}
@@ -101,7 +103,7 @@ def profile(p):
 {('<section id="kinsmen"><h2>From <em>Tufts Kinsmen</em></h2>' + KIN[p["slug"]] + '</section>') if p["slug"] in KIN else ''}
 <section id="unverified">{UNV(p["unverified"])}</section>
 <p><a href="{{P}}people.html">&larr; All people</a> &middot; <a href="{{P}}generations/revolution.html#profiles">The Revolution</a></p>'''
-    page(f'profiles/{p["slug"]}.html', f'{p["name"]} | Tufts Family Heritage', "The Revolution &middot; Profile", p["name"], f'{p["dates"]} &middot; {p["town"]}', body)
+    page(f'profiles/{p["slug"]}.html', f'{p["name"]} | Tufts Family Heritage', "The Revolution &middot; " + (p.get("kicker") + " " if p.get("kicker") else "") + "Profile", p["name"], f'{p["dates"]} &middot; {p["town"]}', body)
 for p in PROFILES: profile(p)
 json.dump([dict(name=p["name"], slug=p["slug"], born=p["born"], died=p["died"], era=p["era"], line=p["line"], town=p["town"], profile=f'profiles/{p["slug"]}.html') for p in PROFILES]
           + [dict(name="Charles Tufts", slug="charles-tufts", born="", died="1876", era="19th Century", line="Undetermined", town="Somerville", profile="generations/19th-century.html#charles-tufts"),
@@ -170,6 +172,8 @@ page("generations/revolution.html", "The Revolution 1765–1783 | Tufts Family H
 <section id="profiles"><h2>Revolutionary Profiles</h2>{PROF_LIST}
 <p class="note">The Tufts entries in <em>Massachusetts Soldiers and Sailors</em>, vol. XVI, fill pp. 131&ndash;140. Every page is linked here so that men not yet profiled can be read in the original: <a href="{IMG}mss-v16-p131.jpg">131</a> &middot; <a href="{IMG}mss-v16-p132.jpg">132</a> &middot; <a href="{IMG}mss-v16-p133.jpg">133</a> &middot; <a href="{IMG}mss-v16-p134.jpg">134</a> &middot; <a href="{IMG}mss-v16-p135.jpg">135</a> &middot; <a href="{IMG}mss-v16-p136.jpg">136</a> &middot; <a href="{IMG}mss-v16-p137.jpg">137</a> &middot; <a href="{IMG}mss-v16-p138.jpg">138</a> &middot; <a href="{IMG}mss-v16-p139.jpg">139</a> &middot; <a href="{IMG}mss-v16-p140.jpg">140</a>.</p>
 </section>
+{KIN_HTML}
+{{DIV}}
 <section id="medford-roster"><h2>The Medford Minute Men Roster</h2>
 <blockquote>&ldquo;ROSTER OF THE FIRST COMPANY OF MINUTE MEN WHO ASSEMBLED IN MEDFORD AT THE CALL OF PAUL REVERE AND ENGAGED IN THE BATTLE OF APRIL 19, 1775&rdquo;</blockquote>
 <p>The monument, erected by the City of Medford in 1925, lists Tufts Daniel, Tufts Ebenezer, Tufts James Jr., Tufts John Corporal, Tufts Jonathan, Tufts Isaac Sergeant, Tufts Peter Jr., Tufts Samuel, and Tufts Samuel 3d. <a href="{IMG}medford-1925-monument.jpg">View photograph</a></p>
@@ -286,15 +290,16 @@ page("sources.html", "Sources | Tufts Family Heritage", "Sources", "Sources", "B
 <li>{TFH}, pp. 28, 35, 37, 139, 143. <a href="https://archive.org/details/tuftsfamilyhisto00tuft_0">archive.org</a></li>
 <li>Sacramento city directories, 1869&ndash;1902 (Albert C. Tufts).</li>
 <li>City of Medford, Minute Men monument (1925), photograph.</li>
-<li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. II (Tufts Kinsmen Association, 2012; &copy; 2003), pp. 77, 83, 96, 107&ndash;115, 145&ndash;151. Private copy; cited with short quotes only, no scans. Vol. I <strong>not seen</strong>.</li>
+<li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. II (Tufts Kinsmen Association, 2012; &copy; 2003), pp. 77, 83, 96, 107&ndash;115, 145&ndash;151. Private copy; cited with short quotes only, no scans.</li>
+<li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. I (Tufts Kinsmen Association, 2010), pp. 105, 110&ndash;112, 116, 119&ndash;120, 128&ndash;130, 133, 136&ndash;137, 141&ndash;142, 145, 150, 152&ndash;166, 175&ndash;181. Cited from an owner-supplied extract with short statements and printed page numbers. The book is not hosted here. <strong>Page scans not on file.</strong></li>
 <li>DAR records. <strong>Not seen; missing images.</strong></li>
 </ul></section>
 {{DIV}}
 <section id="scans"><h2>Page Scans</h2><div id="scan-list" class="cards"></div></section>
 {{DIV}}
 <section id="notes"><h2>Research Notes</h2>
-{UNV("Peter Tufts Jr.'s death year: 1836 (Wild p. 52) or 1832 (secondhand DAR listing).")}
+{UNV("Peter Tufts Jr.'s death year: 1836 (Wild p. 52) or 1832 (<em>Tufts Kinsmen</em> Vol. I p. 178, agreeing with the secondhand DAR listing). Both are shown on his profile.")}
 {UNV("Anne Adams Tufts's death date (Feb. 7 or Feb. 17, 1813) and her father (Quincy or Cambridge).")}
-{UNV("The <em>Tufts Kinsmen</em> p. 50 claim is known only secondhand. It is probably in Vol. I, which has not been seen.")}
+{UNV("The <em>Tufts Kinsmen</em> p. 50 claim is known only secondhand. It is probably in Vol. I; the owner&rsquo;s Vol. I extract does not include p. 50.")}
 <p>Full quote table: <a href="sources/README.md">sources/README.md</a></p>
 </section>''')
