@@ -113,8 +113,7 @@ json.dump([dict(name=p["name"], slug=p["slug"], born=p["born"], died=p["died"], 
           + [dict(name="Charles Tufts", slug="charles-tufts", born="", died="1876", era="19th Century", line="Undetermined", town="Somerville", profile="generations/19th-century.html#charles-tufts"),
              dict(name="Albert C. Tufts", slug="albert-c-tufts", born="", died="", era="19th Century", line="Undetermined", town="Sacramento, Calif.", profile="generations/19th-century.html#albert-c-tufts"),
              dict(name="Peter Tufts of Winter Hill", slug="peter-tufts-winter-hill", born="1728", died="1791", era="Colonial", line="Peter Tufts of Winter Hill", town="Charlestown (Winter Hill)", profile="generations/colonial.html#peter-1728"),
-             dict(name="Anne Adams Tufts", slug="anne-adams-tufts", born="1729", died="1813", era="Colonial", line="Peter Tufts of Winter Hill", town="Charlestown (Winter Hill)", profile="generations/colonial.html#anne-adams"),
-             dict(name="Peter Tufts (the immigrant)", slug="peter-tufts-immigrant", born="1617", died="1700", era="Colonial", line="Peter Tufts the immigrant", town="Charlestown / Malden", profile="generations/colonial.html#immigrant")],
+             dict(name="Anne Adams Tufts", slug="anne-adams-tufts", born="1729", died="1813", era="Colonial", line="Peter Tufts of Winter Hill", town="Charlestown (Winter Hill)", profile="generations/colonial.html#anne-adams")],
           open("data/people.json", "w"), indent=2)
 
 PROF_LIST = "<ul>" + "".join(f'<li><a href="{{P}}profiles/{p["slug"]}.html">{p["name"]}</a> ({p["town"]})</li>' for p in PROFILES) + "</ul>"
@@ -124,6 +123,7 @@ page("index.html", "Tufts Family Heritage", "From Colonial New England Onward", 
   <h2>The Tufts Family Across the Generations</h2>
   <p>This site follows the Tufts family through the generations, from colonial New England onward. It covers the people, the family lines that connect them to descendants today, the places they lived and worked, and the letters and artifacts they left behind. Every statement is tied to a quoted source and a page scan, and anything not yet proven is marked Unverified.</p>
 </section>
+''' + NAME_NOTE + '''
 <nav class="timeline" aria-label="Timeline">
   <a href="generations/colonial.html"><strong>Colonial</strong>1638&ndash;1765</a>
   <a href="generations/revolution.html"><strong>The Revolution</strong>1765&ndash;1783</a>

@@ -490,6 +490,16 @@
     "profile": "profiles/timothy-tufts.html"
   },
   {
+    "name": "Peter Tufts the Immigrant (c. 1617&ndash;1700)",
+    "slug": "peter-tufts-1617",
+    "born": "1617",
+    "died": "1700",
+    "era": "Colonial",
+    "line": "Peter Tufts the immigrant",
+    "town": "Charlestown (Mystic Side) and Malden, Mass.",
+    "profile": "profiles/peter-tufts-1617.html"
+  },
+  {
     "name": "Charles Tufts",
     "slug": "charles-tufts",
     "born": "",
@@ -528,15 +538,5 @@
     "line": "Peter Tufts of Winter Hill",
     "town": "Charlestown (Winter Hill)",
     "profile": "generations/colonial.html#anne-adams"
-  },
-  {
-    "name": "Peter Tufts (the immigrant)",
-    "slug": "peter-tufts-immigrant",
-    "born": "1617",
-    "died": "1700",
-    "era": "Colonial",
-    "line": "Peter Tufts the immigrant",
-    "town": "Charlestown / Malden",
-    "profile": "generations/colonial.html#immigrant"
   }
 ]
