@@ -107,6 +107,7 @@ def profile(p):
 <section id="unverified">{UNV(p["unverified"])}</section>
 <p><a href="{{P}}people.html">&larr; All people</a> &middot; <a href="{{P}}generations/revolution.html#profiles">The Revolution</a></p>'''
     page(f'profiles/{p["slug"]}.html', f'{p["name"]} | Tufts Family Heritage', "The Revolution &middot; " + (p.get("kicker") + " " if p.get("kicker") else "") + "Profile", p["name"], f'{p["dates"]} &middot; {p["town"]}', body)
+exec(open("tools/artifacts.py").read())
 for p in PROFILES: profile(p)
 json.dump([dict(name=p["name"], slug=p["slug"], born=p["born"], died=p["died"], era=p["era"], line=p["line"], town=p["town"], profile=f'profiles/{p["slug"]}.html') for p in PROFILES]
           + [dict(name="Charles Tufts", slug="charles-tufts", born="", died="1876", era="19th Century", line="Undetermined", town="Somerville", profile="generations/19th-century.html#charles-tufts"),
