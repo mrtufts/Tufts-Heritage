@@ -127,3 +127,34 @@ PERS[:] = [(d, t.replace("Timothy Tufts and Samuel", "<a href='{P}profiles/timot
 PERS += [("1824", "<a href='{P}profiles/turell-tufts.html'>Turell Tufts</a>, chairman of the selectmen, welcomed Lafayette to Medford.", f'{BR}, p. 141. <a href="{SCAN}141">Page scan</a>'),
          ("1770&ndash;1842", "Gill&rsquo;s sketch of <a href='{P}profiles/turell-tufts.html'>Turell Tufts</a>, &ldquo;unmarried,&rdquo; selectman, treasurer and representative.", PH_(MR("XVIII"), "54&ndash;56", "2005.05.0018", 16))]
 _rp = open("tools/researchpass.py").read(); exec(_rp[_rp.index("RP = ("):_rp.index("_EXTRA8 = EXTRA")])
+# ---------- Relatives with their own profiles (matched by identity, not by name) ----------
+W1 = [("william-tufts-40-2", "brother William Jr. (1736&ndash;1782; mother Catherine Wyman)"), ("george-tufts-40-7", "brother George (1747&ndash;1796; mother Catherine Wyman)"), ("grimes-tufts-40-8", "brother Grimes (1748&ndash;1808; mother Catherine Wyman)"),
+      ("samuel-tufts-41-2", "brother Samuel 2nd (1752&ndash;1815; mother Mary Francis)"), ("david-tufts-41-7", "brother David (1763&ndash;1823; mother Mary Francis)"), ("moses-tufts-40-6", "brother Moses (possible; Brooks no. 266a)")]
+def _sib(me, father=("william-tufts-13-6", "father Lieut. William Tufts (1713&ndash;1783)")):
+    return [father] + [x for x in W1 if x[0] != me]
+REL = {
+ "simon-tufts-1700": [("simon-tufts-11-1", "son Dr. Simon Tufts (1727&ndash;1786)"), ("cotton-tufts", "son Dr. Cotton Tufts (1732&ndash;1815)"), ("turell-tufts", "grandson Turell Tufts"), ("simon-tufts-29-1", "grandson Simon Tufts (1750&ndash;1801)")],
+ "simon-tufts-11-1": [("simon-tufts-1700", "father Dr. Simon Tufts (1700&ndash;1747)"), ("cotton-tufts", "brother Dr. Cotton Tufts"), ("simon-tufts-29-1", "son Simon Tufts (1750&ndash;1801), by Lucy Dudley"), ("turell-tufts", "son Turell Tufts (1770&ndash;1842), by Elizabeth Hall")],
+ "cotton-tufts": [("simon-tufts-1700", "father Dr. Simon Tufts (1700&ndash;1747)"), ("simon-tufts-11-1", "brother Dr. Simon Tufts (1727&ndash;1786)"), ("turell-tufts", "nephew Turell Tufts"), ("simon-tufts-29-1", "nephew Simon Tufts (1750&ndash;1801)")],
+ "simon-tufts-29-1": [("simon-tufts-11-1", "father Dr. Simon Tufts (1727&ndash;1786)"), ("simon-tufts-1700", "grandfather Dr. Simon Tufts (1700&ndash;1747)"), ("cotton-tufts", "uncle Dr. Cotton Tufts"), ("turell-tufts", "half-brother Turell Tufts")],
+ "turell-tufts": [("simon-tufts-11-1", "father"), ("simon-tufts-1700", "grandfather"), ("cotton-tufts", "uncle"), ("simon-tufts-29-1", "half-brother Simon")],
+ "timothy-tufts": [("peter-tufts-jr", "nephew Peter Tufts Jr. (1753&ndash;1832)")],
+ "peter-tufts-jr": [("timothy-tufts", "uncle Timothy Tufts (1735&ndash;1805)")],
+ "samuel-tufts-15-3": [("joseph-tufts-jr-15-2", "brother Capt. Joseph Tufts Jr. (1731&ndash;1778)"), ("caleb-tufts", "son Caleb Tufts (1762&ndash;1852)")],
+ "joseph-tufts-jr-15-2": [("samuel-tufts-15-3", "brother Samuel Tufts (1732&ndash;1818)"), ("caleb-tufts", "nephew Caleb Tufts")],
+ "caleb-tufts": [("samuel-tufts-15-3", "father Samuel Tufts (1732&ndash;1818)"), ("joseph-tufts-jr-15-2", "uncle Capt. Joseph Tufts Jr.")],
+ "william-tufts-13-6": [(s, l.replace("brother ", "son ")) for s, l in W1],
+ "william-tufts-40-2": _sib("william-tufts-40-2") + [("nathan-tufts-jr", "son Nathan Tufts Jr.")],
+ "george-tufts-40-7": _sib("george-tufts-40-7"), "grimes-tufts-40-8": _sib("grimes-tufts-40-8"), "samuel-tufts-41-2": _sib("samuel-tufts-41-2"),
+ "david-tufts-41-7": _sib("david-tufts-41-7"), "moses-tufts-40-6": _sib("moses-tufts-40-6"),
+ "nathan-tufts-jr": [("william-tufts-40-2", "father William Tufts Jr. (1736&ndash;1782), &ldquo;William Tufts, 4th&rdquo; in Brooks"), ("william-tufts-13-6", "grandfather Lieut. William Tufts")],
+}
+RELNOTE = {**{k: " Brothers are listed with their mothers as Brooks gives them (p. 550); sons of different mothers are half-brothers." for k in ("william-tufts-40-2","george-tufts-40-7","grimes-tufts-40-8","samuel-tufts-41-2","david-tufts-41-7","moses-tufts-40-6")},"william-tufts-13-6": " Sons by Catherine Wyman: William, George, Grimes (Brooks, p. 550). By Mary Francis: Samuel and David. Moses (no. 266a) is listed without a mother.",
+           "nathan-tufts-jr": " Brooks, p. 552, says no. 341 is the &ldquo;Same as No. 291,&rdquo; the son of no. 290, William 4th.",
+           "caleb-tufts": " Brooks, p. 546, lists &ldquo;94 Caleb, b. Sept. 1, 1762&rdquo; among Samuel and Hannah&rsquo;s children."}
+_profile1 = profile
+def profile(p):
+    r = REL.get(p["slug"])
+    if r:
+        p = dict(p); p["family"] = p["family"] + '<p class="relatives"><strong>Relatives with profiles on this site:</strong> ' + "; ".join(PL(s, l) for s, l in r) + "." + RELNOTE.get(p["slug"], "") + "</p>"
+    _profile1(p)
