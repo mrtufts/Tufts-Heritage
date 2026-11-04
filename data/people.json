@@ -500,6 +500,106 @@
     "profile": "profiles/peter-tufts-1617.html"
   },
   {
+    "name": "Capt. Peter Tufts (c. 1648&ndash;1721)",
+    "slug": "peter-tufts-1648",
+    "born": "1648",
+    "died": "1721",
+    "era": "Colonial",
+    "line": "Son of Peter Tufts the immigrant",
+    "town": "Malden and Medford, Mass.",
+    "profile": "profiles/peter-tufts-1648.html"
+  },
+  {
+    "name": "James Tufts (c. 1650&ndash;1675)",
+    "slug": "james-tufts-1675",
+    "born": "1650",
+    "died": "1675",
+    "era": "Colonial",
+    "line": "Son of Peter Tufts the immigrant",
+    "town": "Charlestown and Deerfield, Mass.",
+    "profile": "profiles/james-tufts-1675.html"
+  },
+  {
+    "name": "James Tufts (1672&ndash;1733)",
+    "slug": "james-tufts-1672",
+    "born": "1672",
+    "died": "1733",
+    "era": "Colonial",
+    "line": "Grandson of Peter Tufts the immigrant",
+    "town": "Salem, Charlestown and Medford, Mass.",
+    "profile": "profiles/james-tufts-1672.html"
+  },
+  {
+    "name": "Peter Tufts (1697&ndash;1776)",
+    "slug": "peter-tufts-1697",
+    "born": "1697",
+    "died": "1776",
+    "era": "Colonial",
+    "line": "Father of Peter Tufts of Winter Hill",
+    "town": "Charlestown (Milk Row, now Somerville), Mass.",
+    "profile": "profiles/peter-tufts-1697.html"
+  },
+  {
+    "name": "Lucy Tufts Pritchard (b. 1754)",
+    "slug": "lucy-tufts-pritchard",
+    "born": "1754",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Daughter of Lieut. William Tufts",
+    "town": "Medford, Mass.",
+    "profile": "profiles/lucy-tufts-pritchard.html"
+  },
+  {
+    "name": "Richard Tufts (b. 1763 or 1765)",
+    "slug": "richard-tufts",
+    "born": "1765",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Son of Lieut. William Tufts",
+    "town": "Medford, Mass.",
+    "profile": "profiles/richard-tufts.html"
+  },
+  {
+    "name": "Uriah Tufts (1768&ndash;1837)",
+    "slug": "uriah-tufts-1768",
+    "born": "1768",
+    "died": "1837",
+    "era": "19th Century",
+    "line": "Son of William Tufts Jr. (1736&ndash;1782)",
+    "town": "Medford, Boston and Charlestown, Mass.",
+    "profile": "profiles/uriah-tufts-1768.html"
+  },
+  {
+    "name": "Uriah Tufts (1796&ndash;1860)",
+    "slug": "uriah-tufts-1796",
+    "born": "1796",
+    "died": "1860",
+    "era": "19th Century",
+    "line": "Son of Uriah Tufts (1768&ndash;1837)",
+    "town": "Boston and Charlestown, Mass.",
+    "profile": "profiles/uriah-tufts-1796.html"
+  },
+  {
+    "name": "William Tufts (1820&ndash;1893)",
+    "slug": "william-tufts-1820",
+    "born": "1820",
+    "died": "1893",
+    "era": "19th Century",
+    "line": "Son of Uriah Tufts (1796&ndash;1860)",
+    "town": "Boston, Mass.",
+    "profile": "profiles/william-tufts-1820.html"
+  },
+  {
+    "name": "Sarah Tufts Hinckley (1702&ndash;1784)",
+    "slug": "sarah-tufts-hinckley",
+    "born": "1702",
+    "died": "1784",
+    "era": "Colonial",
+    "line": "Daughter of Capt. Peter Tufts",
+    "town": "Medford and Brookfield, Mass.",
+    "profile": "profiles/sarah-tufts-hinckley.html"
+  },
+  {
     "name": "Charles Tufts",
     "slug": "charles-tufts",
     "born": "",
