@@ -35,6 +35,7 @@ for _s in ("william-tufts-1802", "edward-tufts-1806", "george-f-tufts-1825", "al
                ("Markers, Plaques and Places", "https://medfordhistoricalcommission.org/wp-content/uploads/2022/02/area-edward.pdf", "Medford Historical Commission, Edward Street Area (2022)", "Inventory form with the Walling (1855), Beers (1875) and Walker (1889) maps and the subdivision plans.")]
 CUR.setdefault("cotton-tufts", []).append(("Maps, Surveys and Artifacts", "coat-of-arms.html#armories", "The Tufts Coat of Arms: the Norton tankard", "Bolton&rsquo;s <em>American Armory</em> (1927) records the Norton arms on a tankard given by Elizabeth Quincy to her daughter Lucy Tufts, his first wife."))
 CUR["alfred-tufts-1829"].insert(0, ("Maps, Surveys and Artifacts", "places.html#tufts-subdivisions", "Subdivision plans surveyed by Alfred Tufts", "MCSRD Plans 7:19 (1854), 9a:9 and plan book 10, plan 17 (1861), described on Places."))
+del CUR["alfred-tufts-1829"][1]
 
 import json as _json
 BROKEN = {"http://www.battleroad.net/rememberingthefallen/gravesite17.html"}
@@ -87,7 +88,7 @@ def collect(soup, me):
         rel = re.sub(r"^(\.\./)+", "", u)
         if 'tuftsgenealogy.blogspot' in u: continue
         if rel.startswith("profiles/") or rel in ("people.html", "generations/revolution.html#profiles", "index.html", "about.html"): continue
-        key = rel
+        key = re.sub(r'^https?://(www\.)?', '', rel).rstrip('/')
         if key in seen: continue
         seen.add(key)
         par = a.find_parent(["li", "p", "td", "figcaption", "div"]) or a.parent
@@ -133,8 +134,8 @@ def run():
         t = re.sub(r'<section id="research-links">.*?</section>', "", t, flags=re.S)
         soup = BeautifulSoup(t, "html.parser")
         cur = ([("Biographies and Family Trees", BLOG_KEEP[s][0], "Family blog post", BLOG_KEEP[s][1])] if s in BLOG_KEEP else []) + [(g, ("" if u.startswith("http") else "../") + u, l, d) for g, u, l, d in CUR.get(s, [])]
-        curk = {re.sub(r"^(\.\./)+", "", c[1]) for c in cur}
-        items = cur + [i for i in collect(soup, s) if re.sub(r"^(\.\./)+", "", i[1]) not in curk]
+        curk = {re.sub(r"^https?://(www\.)?", "", re.sub(r"^(\.\./)+", "", c[1])).rstrip("/") for c in cur}
+        items = cur + [i for i in collect(soup, s) if re.sub(r"^https?://(www\.)?", "", re.sub(r"^(\.\./)+", "", i[1])).rstrip("/") not in curk]
         sec = section(items, "../")
         div = re.search(r'<svg class="divider".*?</svg>', t, flags=re.S).group(0)
         if s in BLOG_KEEP: sec = sec.replace("</section>", '<div class="flag"><h3>&#9873; Unverified</h3><p>' + BLOG_KEEP[s][2] + '</p></div></section>', 1)

@@ -20,11 +20,11 @@ SITES = [
  ("Peter Tufts House, 350 Riverside Ave., Medford", 42.4115, -71.0936, "The brick house at 350 Riverside Avenue.", "peter-tufts-house-medford.jpg"),
  ("Dr. Simon Tufts house site, Medford Square", 42.4184, -71.1096, "Approximate: the corner of Main and Forest Streets. Gill (<em>Medford Historical Register</em>, vol. XVIII, p. 54) says the house &ldquo;was on the corner of Main and Forest streets&rdquo;; it was taken down in 1867.", "medford-square-1913.jpg"),
 ]
-def SVSEC():
+def SVSEC(have=""):
     rows = "".join(f'<li><strong>{n}.</strong> {c} <a href="{SV(la, lo)}">View on Google Street View</a> &middot; <a href="{OSM(la, lo)}">OpenStreetMap</a> ({la}, {lo})</li>' for n, la, lo, c, _ in SITES)
-    figs = "".join(FIG(f) for f in dict.fromkeys(f for *_, f in SITES if f))
+    figs = "".join(FIG(f) for f in dict.fromkeys(f for *_, f in SITES if f and ('assets/images/' + f) not in have))
     return ('<section id="street-view"><h2>Sites Today: Street View and Photos</h2><p>Links open Google Street View or OpenStreetMap in a new page. No Street View imagery is copied onto this site. The photographs are freely licensed and credited below each one.</p><ul>' + rows + '</ul>'
-            + UNV("The Winter Hill and Dr. Simon Tufts house coordinates are approximate placements at the street corners the sources name. Neither house survives. The Malden Bridge points mark the two ends of today&rsquo;s Alford Street Bridge.") + f'<div class="figs">{figs}</div></section>')
+            + UNV("The Winter Hill and Dr. Simon Tufts house coordinates are approximate placements at the street corners the sources name. Neither house survives. The Malden Bridge points mark the two ends of today&rsquo;s Alford Street Bridge.") + (f'<div class="figs">{figs}</div>' if figs else '') + '</section>')
 def CROSSSEC():
     return ('<section id="penny-ferry"><h2>The Charlestown&ndash;Malden Crossing</h2>'
             + Q("He kept the Ferry between Charlestown and Malden with his brother-in-law, Bridges, in 1646-7", BOOTH + f', part 1, p. 21, on Peter Tufts the immigrant. <a href="{BOOTH_URL}2">Perseus</a>')

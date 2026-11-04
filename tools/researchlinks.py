@@ -10,8 +10,11 @@ def _src(u):
 def RLSEC(path):
     d = RL.get(path)
     if not d: return ""
-    li = []
+    li = []; _seen = set()
     for u, e in d.items():
+        _k = re.sub(r'^https?://(www\.)?', '', u).rstrip('/')
+        if _k in _seen: continue
+        _seen.add(_k)
         if 'tuftsgenealogy.blogspot' in u: continue  # owner rule 2026-11-04: blog links only where firsthand and untraced (see links_resources.py BLOG_KEEP)
         lab = " / ".join(e["labels"][:3]) or _src(u)
         br = ' <span class="tag">link reported broken (checked 2026-11-03)</span>' if e["broken"] else ""
