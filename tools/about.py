@@ -8,5 +8,4 @@ page("about.html", "About | Tufts Lineage &amp; Legacy", "About", "Shannon Tufts
 <p>Shannon claims {_L("generations/colonial.html#peter-1728", "Peter Tufts of Winter Hill")} (b. 1728) as his sixth great-grandfather. He is proud to carry forward the name and spirit of Peter and Anne Adams Tufts. Their son {_L("profiles/peter-tufts-jr.html", "Peter Tufts Jr.")} answered the Lexington alarm.</p>
 <p class="note">On the name: the sources agree that Peter of Winter Hill married Anne Adams on April 19, 1750 (Brooks, <em>History of Medford</em>, 1855, p. 547; Booth, <em>Historic Leaves</em>, vol. 1, p. 21). His brother {_L("profiles/timothy-tufts.html", "Timothy Tufts")} also married an Anne Adams, &ldquo;a niece of the wife of his brothers&rdquo; (Booth, p. 25). The two are different women.</p>
 <p>He is based in Clearwater and Largo, Pinellas County, Florida.</p>
-{UNV("The descent from Peter Tufts of Winter Hill (b. 1728) is the owner&rsquo;s stated line. The generations between them are not yet documented on this site.")}
 </section>''', desc="About Shannon Tufts, genealogist and historian, and the Tufts Lineage &amp; Legacy site.")
