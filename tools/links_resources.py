@@ -39,6 +39,19 @@ import json as _json
 BROKEN = {"http://www.battleroad.net/rememberingthefallen/gravesite17.html"}
 for _pg, _d in _json.load(open("data/research_links.json")).items():
     BROKEN |= {u for u, e in _d.items() if e.get("broken")}
+# Owner rule (2026-11-04): Tufts genealogy blog links stay only where the post holds firsthand material
+# not traced to an authoritative source; each kept fact carries a red Unverified box.
+_BP = "https://tuftsgenealogy.blogspot.com/2014/"
+BLOG_KEEP = {
+ "zachariah-tufts": (_BP + "01/zachariah-tufts-revolutionary-soldier.html", "Blog post transcribing his New Hampshire pension record (Cheshire County, 1818)",
+   "Pension record (Cheshire County, N.H., 1818), as transcribed on a family blog: service in 1776 as a private in Capt. Hale&rsquo;s company, Col. John Stark&rsquo;s N.H. regiment, and in 1777&ndash;1779 in Capt. Hale&rsquo;s company of Col. Morgan&rsquo;s riflemen; one pension names the 15th Virginia Regiment. The original pension file has not been seen here."),
+ "adam-tufts": (_BP + "02/tufts-military-history-part-two-all.html", "Blog post with an image of a marriage intention for Adam, &ldquo;negro&rdquo; servant of Stephen Tufts of Malden",
+   "A marriage intention record (image on a family blog) names Adam as a Negro servant of Stephen Tufts of Malden. The original register and page have not been identified here."),
+ "aaron-tufts": (_BP + "02/tufts-military-history-part-two-all.html", "Blog post with an image of his entry in <em>Mariners of the American Revolution</em>",
+   "Naval service, from an entry in <em>Mariners of the American Revolution</em> (image on a family blog). The book, edition and page have not been checked here."),
+ "ebenezer-tufts-36-7": (_BP + "02/tufts-military-history-part-two-all.html", "Blog post summarizing his pension application",
+   "His pension application, as summarized on a family blog, swears to service in Col. Loammi Baldwin&rsquo;s regiment; the blog adds marriages to Hannah Levistone (1781) and Elizabeth Traverse (1802) and residence at Marlborough by 1810. The pension file has not been seen here."),
+}
 def group(u):
     h = urlparse(u).netloc.lower().replace("www.", ""); p = u.lower()
     if not h:
@@ -71,6 +84,7 @@ def collect(soup, me):
         u = a["href"]
         if u.startswith("#") or u.startswith("mailto:"): continue
         rel = re.sub(r"^(\.\./)+", "", u)
+        if 'tuftsgenealogy.blogspot' in u: continue
         if rel.startswith("profiles/") or rel in ("people.html", "generations/revolution.html#profiles", "index.html", "about.html"): continue
         key = rel
         if key in seen: continue
@@ -117,11 +131,13 @@ def run():
         t = re.sub(r'<svg class="divider"[^\n]*?</svg><section id="research-links">.*?</section>', "", t, flags=re.S)
         t = re.sub(r'<section id="research-links">.*?</section>', "", t, flags=re.S)
         soup = BeautifulSoup(t, "html.parser")
-        cur = [(g, ("" if u.startswith("http") else "../") + u, l, d) for g, u, l, d in CUR.get(s, [])]
+        cur = ([("Biographies and Family Trees", BLOG_KEEP[s][0], "Family blog post", BLOG_KEEP[s][1])] if s in BLOG_KEEP else []) + [(g, ("" if u.startswith("http") else "../") + u, l, d) for g, u, l, d in CUR.get(s, [])]
         curk = {re.sub(r"^(\.\./)+", "", c[1]) for c in cur}
         items = cur + [i for i in collect(soup, s) if re.sub(r"^(\.\./)+", "", i[1]) not in curk]
         sec = section(items, "../")
         div = re.search(r'<svg class="divider".*?</svg>', t, flags=re.S).group(0)
+        if s in BLOG_KEEP: sec = sec.replace("</section>", '<div class="flag"><h3>&#9873; Unverified</h3><p>' + BLOG_KEEP[s][2] + '</p></div></section>', 1)
+        t = re.sub(r'<a href="https?://tuftsgenealogy\.blogspot\.com[^"]*">(.*?)</a>', r"\1", t) if s not in BLOG_KEEP else t
         t = t.replace("</main>", div + "\n" + sec + "\n</main>", 1)
         open(f, "w").write(t)
 run()
