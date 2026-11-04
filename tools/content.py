@@ -26,7 +26,7 @@ PROFILES = [
   family=Q("Son of Peter and Anne (Adams) of Winter Hill; born 1753; married Hannah Adams; died 1836.", WILD+", p. 52", ["wild-medford-in-revolution-p52.jpg"]) +
    Q("PETER 38. Son of Peter 37; m. HANNAH ADAMS [19] July 22, 1773, at Camb., who d. 1816, &aelig;. 60 (tablet with Bernard).", WYMAN+", p. 965", ["wyman-v2-p965.jpg"]) +
    Q("ii. Peter, Jan. 9, 1753.", WYMAN+", p. 965 (issue of Peter 37)", ["wyman-v2-p965.jpg"]),
-  unverified="Death year. Wild (p. 52) prints &ldquo;died 1836.&rdquo; Secondhand web sources for DAR ancestor A116812 give 1832. Wyman gives no death date. A separate MSS entry, &ldquo;TUFTS, PETER. Private, Capt. Benjamin Blaney's co., Col. Eleazer Brooks's regt. of guards; joined Jan. 23, 1778&rdquo; (p. 137), gives no town, so it is not attached to him here. <em>Tufts Kinsmen</em> Vol. II gives no death date for Peter5 (generation 5 is in Vol. I). Vol. I and DAR records have not been seen."),
+  unverified="Death year. Wild (p. 52) prints &ldquo;died 1836.&rdquo; Secondhand web sources for DAR ancestor A116812 give 1832. Wyman gives no death date. A separate MSS entry, &ldquo;TUFTS, PETER. Private, Capt. Benjamin Blaney's co., Col. Eleazer Brooks's regt. of guards; joined Jan. 23, 1778&rdquo; (p. 137), gives no town, so it is not attached to him here."),
  dict(slug="cotton-tufts", name="Dr. Cotton Tufts", dates="[birth year not in sources seen] &ndash; 1815", town="Medford; Weymouth", born="", died="1815", era="The Revolution", line="Dr. Simon Tufts",
   bio="""<p>Dr. Cotton Tufts was born in Medford, the son of Dr. Simon Tufts. He practiced medicine in Weymouth until his death in 1815. A family history records his ties to the Adams family: John Adams noted dining with him in 1796. The same history credits him with service as a state senator and as a delegate to the convention that adopted the Constitution. These points come from a 20th-century secondary source and are quoted as written.</p>""",
   service=Q("Dr. Cotton Tufts besides practicing medicine in Weymouth was a State Senator for many years; also a delegate to the convention which adopted the constitution of the United States; Always an ardent Federalist.", TFH+", p. 35", ["tufts-family-history-p35.jpg"]) +
@@ -84,7 +84,7 @@ TK = "<em>Tufts Kinsmen</em>, Vol. II"
 KIN = {
  "peter-tufts-jr": f"""<p>Vol. II, which covers generations 7 and 8, places Peter Tufts Jr. as <strong>Peter5</strong> in the line &ldquo;from Peter5, Peter4, Peter3, John2, Peter1.&rdquo; It also records the families of four of his sons: Peter6 and Martha (Locke) Tufts, Joel6 and Sarah (Butterfield) Tufts, Thomas6 and Sarah (Barrows) Tufts, and Aaron6 and Mehitable (Pearson) Tufts. All are cross-referenced to Vol. I family 129 (children 129-2, 129-4, 129-6, 129-10). <span class="cite">({TK}, pp. 145, 149, 150, 151)</span></p>
 <p>His grandson Peter7 is listed as &ldquo;PETER7 TUFTS, 3rd, leather manufacturer,&rdquo; born 3 Sep. 1798 in Charlestown. <span class="cite">({TK}, p. 145)</span></p>
-<p class="note">Identity match: strong. The line and his son Peter6&rsquo;s marriage to Martha Locke agree with Wyman, p. 965. Vol. II does not give Peter5&rsquo;s own birth or death dates; those are in Vol. I, which has not been seen.</p>""",
+<p class="note">Identity match: strong. The line and his son Peter6&rsquo;s marriage to Martha Locke agree with Wyman, p. 965.</p>""",
  "caleb-tufts": f"""<p>Vol. II records the family of Ezekiel6 and Ann C. (Williams) Tufts (Vol. I ref. 111-1), &ldquo;from Caleb5, Samuel4, Joseph3, Jonathan2, Peter1.&rdquo; Their children were born in Groton, New London County, Connecticut, near Mystic. <span class="cite">({TK}, p. 115)</span></p>
 <p class="note">Identity match: strong for Wild&rsquo;s Caleb (son of Samuel; settled in Mystic, Conn.). It is still only a <strong>possible match</strong> for the MSS Caleb credited to Medford.</p>""",
  "barnabas-tufts": f"""<p>Vol. II records the family of Richard6 and Rhoda (Goss) Tufts (Vol. I ref. 90-6), &ldquo;from Barnabas5, John4, James3, Jonathan2, Peter1.&rdquo; Their children were born in &ldquo;Gloucester [Rockport]&rdquo; from 1812. <span class="cite">({TK}, p. 77)</span></p>
@@ -104,7 +104,7 @@ def profile(p):
 {{DIV}}
 <section id="family"><h2>Family Connection</h2>{p["family"]}</section>
 {('<section id="kinsmen"><h2>From <em>Tufts Kinsmen</em></h2>' + KIN[p["slug"]] + '</section>') if p["slug"] in KIN else ''}
-<section id="unverified">{UNV(p["unverified"])}</section>
+<section id="unverified">{UNV(p["unverified"]) if p["unverified"].strip() else ""}</section>
 <p><a href="{{P}}people.html">&larr; All people</a> &middot; <a href="{{P}}generations/revolution.html#profiles">The Revolution</a></p>'''
     page(f'profiles/{p["slug"]}.html', f'{p["name"]} | Tufts Lineage &amp; Legacy', "The Revolution &middot; " + (p.get("kicker") + " " if p.get("kicker") else "") + "Profile", p["name"], f'{p["dates"]} &middot; {p["town"]}', body)
 exec(open("tools/artifacts.py").read())
@@ -308,8 +308,6 @@ page("sources.html", "Sources | Tufts Lineage &amp; Legacy", "Sources", "Sources
 <section id="scans"><h2>Page Scans</h2><div id="scan-list" class="cards"></div></section>
 {{DIV}}
 <section id="notes"><h2>Research Notes</h2>
-{UNV("Peter Tufts Jr.'s death year: 1836 (Wild p. 52) or 1832 (<em>Tufts Kinsmen</em> Vol. I p. 178, agreeing with the secondhand DAR listing). Both are shown on his profile.")}
 {UNV("Anne Adams Tufts's death date (Feb. 7 or Feb. 17, 1813) and her father (Quincy or Cambridge).")}
-{UNV("The <em>Tufts Kinsmen</em> p. 50 claim is known only secondhand. It is probably in Vol. I; the owner&rsquo;s Vol. I extract does not include p. 50.")}
 <p>Full quote table: <a href="sources/README.md">sources/README.md</a></p>
 </section>''')

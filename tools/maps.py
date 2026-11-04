@@ -116,7 +116,7 @@ def EXTRA(path):
     out = _EXTRA1(path)
     if path == "places.html": out = "{DIV}" + MAPS_HTML + out
     if path == "profiles/peter-tufts-jr.html":
-        out += '{DIV}<section id="birthplace-conflict"><div class="flag"><h3>&#9873; Unverified: birthplace conflict</h3><p>Booth: &ldquo;Peter, the eldest son of Peter and Anne (Adams) Tufts, was born in the old house on Winter hill in 1753.&rdquo; <span class="cite">(Edward C. Booth, &ldquo;The Tufts Family in Somerville,&rdquo; <em>Historic Leaves</em> vol. 1, p. 22. <a href="' + BOOTH_URL + '7">Perseus</a>)</span></p><p><em>Tufts Kinsmen</em> Vol. I: &ldquo;born 9 Jan. 1753 in Woburn.&rdquo; <span class="cite">(<em>Tufts Kinsmen</em>, Vol. I, p. 178, family no. 53-2; owner-supplied extract; page scan not on file)</span></p><p>Neither is confirmed by a primary record. The data on this page is unchanged.</p></div></section>'
+        pass
         out += '{DIV}<section id="maps"><h2>Maps by His Son</h2><p>His son Peter (1774&ndash;1825), &ldquo;Peter, the surveyor,&rdquo; drew the 1818 <em>Plan of Charlestown Peninsula</em> (Booth, <em>Historic Leaves</em> vol. 1, p. 23). A 1794 plan of Medford signed &ldquo;Peter Tufts jun<sup>r</sup>&rdquo; may be by either man. See <a href="{P}places.html#maps">Places: Maps</a> and <a href="{P}places.html#powder-house">the Powder House</a>, beside the farm he bought in 1788.</p></section>'
     return out
 exec(open("tools/businesses.py").read())

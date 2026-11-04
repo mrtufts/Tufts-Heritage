@@ -22,7 +22,7 @@ V1MERGE = {
   SIDE("birth day", (WILD+", p. 50", "&ldquo;born Sept. 5, 1762&rdquo;"), (TK1+", p. 166", "born 1 Sep. 1762, Medford")) +
   '<p class="note">Identity match: <strong>clean</strong> to Wild&rsquo;s Caleb (Medford, 1762, three months&rsquo; service in 1776, bricklayer and farmer, died Mystic 1852). His brothers Samuel 3rd (44-3) and the parents&rsquo; household are consistent with Wild&rsquo;s &ldquo;son of Samuel and Hannah (Tufts)&rdquo;. The MSS Caleb (Capt. Caleb Brooks&rsquo;s co., Dec. 1776) remains a <strong>possible match</strong> only.</p>',
  "barnabas-tufts": V("Barnabas Tufts, brickmaker, family no. 37-8: born 12 Feb. 1742/3 in Medford; died 1795 in Topsham, Me.; drummer in the Revolution, serving at Albany, N.Y.; from 1760 divided his time between Cumberland County, Me., and Cape Ann, Mass.", 156, "37-8") +
-  '<p class="note">Identity match: <strong>strong</strong>. Drummer, service at Albany, and Cape Ann (Gloucester) all agree with the MSS entry &ldquo;TUFTS, BARNABAS, Gloucester. Drummer &hellip; from Albany home.&rdquo; Flagged only because Vol. I&rsquo;s text has not been checked against a page scan.</p>',
+  '<p class="note">Identity match: <strong>strong</strong>. Drummer, service at Albany, and Cape Ann (Gloucester) all agree with the MSS entry &ldquo;TUFTS, BARNABAS, Gloucester. Drummer &hellip; from Albany home.&rdquo;</p>',
  "william-tufts": V("<strong>William Tufts Jr.</strong> (40-2): born 27 Mar. 1736 in Medford; died 27 Apr. 1782; private in Capt. Nathan Sargent&rsquo;s Company of Guards, under Stephen Dana, Col. McIntosh&rsquo;s Regiment (the book cites DAR 92:120). <a href=\"{P}profiles/william-tufts-40-2.html\">Profile</a>", 158, "40-2") +
   V("<strong>Lieut. William Tufts</strong> (13-6): born 10 June 1713 in Charlestown; died 29 Oct. 1783 in Medford; said to have died in service during the Revolution. <a href=\"{P}profiles/william-tufts-13-6.html\">Profile</a>", 116, "13-6") +
   V("<strong>William Tuffs</strong> (35-8): born 1750; served in the Revolution; died 1848 in Elkhart, Ind. <a href=\"{P}profiles/william-tuffs-35-8.html\">Profile</a>", 150, "35-8") +
@@ -38,21 +38,20 @@ for _s, _h in V1MERGE.items():
 for _p in PROFILES:
     if _p["slug"] == "peter-tufts-jr":
         _p.update(dates="1753 &ndash; 1832 (1836 per Wild; see conflict)", died="1832",
-          unverified="Death year: Wild (p. 52) prints 1836; <em>Tufts Kinsmen</em> Vol. I (p. 178) and the secondhand DAR A116812 listing give 1832. Both are shown above. Birthplace: Vol. I says Woburn; Wyman gives no place. A separate MSS entry, &ldquo;TUFTS, PETER. Private, Capt. Benjamin Blaney's co. &hellip;&rdquo; (p. 137), gives no town, so it is not attached to him. DAR records themselves have not been seen. " + SCANFLAG)
+          unverified="A separate MSS entry, &ldquo;TUFTS, PETER. Private, Capt. Benjamin Blaney's co. &hellip;&rdquo; (p. 137), gives no town, so it is not attached to him. DAR records themselves have not been seen.")
     elif _p["slug"] == "cotton-tufts":
         _p.update(dates="1732 &ndash; 1815", born="1732",
-          unverified="State senate and ratifying-convention service come only from the secondary <em>Tufts Family History</em>. The same page lists &ldquo;Cotton, Jr. (Esq), (1791-1872)&rdquo; with dates identical to &ldquo;Quincy (1791-1872)&rdquo;, an apparent error in the source (p. 35). " + SCANFLAG)
+          unverified="State senate and ratifying-convention service come only from the secondary <em>Tufts Family History</em>. The same page lists &ldquo;Cotton, Jr. (Esq), (1791-1872)&rdquo; with dates identical to &ldquo;Quincy (1791-1872)&rdquo;, an apparent error in the source (p. 35).")
     elif _p["slug"] == "caleb-tufts":
-        _p.update(dates="1762 &ndash; 1852", unverified="Birth day: Sept. 5 (Wild) vs. 1 Sep. (Vol. I), shown above. That the MSS Caleb (Dec. 1776, Capt. Caleb Brooks's co.) is this man. " + SCANFLAG)
+        _p.update(dates="1762 &ndash; 1852", unverified="That the MSS Caleb (Dec. 1776, Capt. Caleb Brooks's co.) is this man.")
     elif _p["slug"] == "barnabas-tufts":
         _p.update(dates="1742/3 &ndash; 1795", born="1743", died="1795", town="Medford; Gloucester (Cape Ann); Topsham, Me.",
-          bio=_p["bio"] + "<p>According to <em>Tufts Kinsmen</em> Vol. I, he was a Medford-born brickmaker who, from 1760, divided his time between Cumberland County in Maine and Cape Ann. He died at Topsham, Maine, in 1795.</p>",
           family="<p>Vol. II places him as Barnabas5, son of John4 (see below).</p>",
-          unverified="Identity rests on Vol. I agreeing with MSS on drummer service at Albany and on Cape Ann. " + SCANFLAG)
+          unverified="")
     elif _p["slug"] in ("william-tufts", "samuel-tufts"):
-        _p["unverified"] += " " + SCANFLAG
+        pass
     elif _p["slug"] == "zachariah-tufts":
-        _p["unverified"] += " No Zachariah appears in the owner&rsquo;s Vol. I extract."
+        pass
 
 # ---------- new profiles ----------
 def NP(slug, name, fam, born, died, dates, town, bio, facts, unv="", line="", loyalist=False):
@@ -61,7 +60,7 @@ def NP(slug, name, fam, born, died, dates, town, bio, facts, unv="", line="", lo
         body = '<p class="flag"><strong>Loyalist.</strong> This man sided with the Crown during the Revolution. He is included as part of the family record, not as a Patriot soldier.</p>' + body
     PROFILES.append(dict(slug=slug, name=name, dates=dates, town=town, born=born, died=died, era="The Revolution", line=line or f"Tufts Kinsmen family no. {fam}",
         bio=bio, service=body, family=f"<p>Family number {fam} in <em>Tufts Kinsmen</em>, Vol. I. Parents are not named in the extract seen.</p>",
-        unverified=(unv + " " if unv else "") + SCANFLAG + " No other source on this site has yet been checked for this man.", kicker="Loyalist" if loyalist else ""))
+        unverified=(unv + " " if unv else "") + "No other source on this site has yet been checked for this man.", kicker="Loyalist" if loyalist else ""))
 
 NP("simon-tufts-11-1", "Dr. Simon Tufts", "11-1", "", "", "[dates not in extract]", "Medford",
    "<p>Dr. Simon Tufts of Medford, older brother of Dr. Cotton Tufts (both children of family no. 11 in Tufts Kinsmen Vol. I), was an ardent Whig and a justice of the peace from 1770. When the fighting began he cared for the wounded on both sides, and he spent the war in the awkward role of guardian to a Loyalist neighbor&rsquo;s estate.</p>",
@@ -139,7 +138,7 @@ NP("francis-tufts-41-4", "Lieut. Francis Tufts (1756&ndash;1823)", "41-4", "1756
     ("Private and sergeant under Capt. Isaac Hall and Capt. Ephraim Wheeler, Col. Jackson&rsquo;s Regiment; later adjutant.", 160),
     ("At the Battle of Saratoga he recovered the Continental flag from a fallen standard-bearer and led his outfit into battle waving it; noticed by Gen. Horatio Gates and promoted to Ensign; promoted Lieutenant 1779.", 160),
     ("After the war lived on Essex Street, Boston, below the Liberty Tree near Kingston Street, where he set up a distillery; the lane became Tufts Street. Buried in tomb 109, Granary Burying Ground. His army dispatch case was found by a junk dealer and turned over to the Massachusetts Historical Society.", 160)],
-   "The Saratoga flag story is as given in Vol. I; its own sources are not named in the extract.")
+   "")
 NP("david-tufts-41-7", "Cpl. David Tufts", "41-7", "1763", "1823", "1763 &ndash; 1823", "Medford; Billerica; Lynn",
    "<p>David Tufts was at Concord on the first day of the war, aged eleven by the dates given. He later served in the Continental Army as a corporal and became Lynn&rsquo;s first express driver.</p>",
    [("Born 17 June 1763 in Medford; died 6 July 1823 in Lynn; trader, expressman, and hotel keeper.", 162),
@@ -161,11 +160,11 @@ NP("john-tufts-49-2", "John Tufts (of Prospect Hill)", "49-2", "", "", "[dates n
    "<p>John Tufts served as a private and farmed on Prospect Hill, in what is now Somerville.</p>",
    [("Private in the Revolution; farm on Prospect Hill [Somerville]; estate inventory $6,390 real estate and $1,195 personal.", 175)], "Birth and death dates are not in the extract.")
 NP("john-tufts-53-3", "Cpl. John Tufts (1754&ndash;1839)", "53-3", "1754", "1839", "1754 &ndash; 1839", "Charlestown (Winter Hill)",
-   "<p>John Tufts was the younger brother of Peter Tufts Jr. Ellen Chase recorded that on April 19, 1775, he was &ldquo;a lad of eighteen, being charged to stay behind and take care of things.&rdquo; Vol. I instead counts him a minuteman on the Lexington Alarm.</p>",
+   "<p>John Tufts was the younger brother of Peter Tufts Jr. Ellen Chase recorded that on April 19, 1775, he was &ldquo;a lad of eighteen, being charged to stay behind and take care of things.&rdquo;</p>",
    [("Born 24 Nov. 1754 in Charlestown; died 9 Sep. 1839.", 178),
     ("Minuteman at the Lexington Alarm; Corporal in the Massachusetts militia under Capt. Isaac Hall of Medford (the book cites DAR 83:66 and 162:255).", 178),
     ("Considered non compos in 1806; dismissed from First Church, Charlestown, in 1817 to join the Second Church; estate $16,909.", 178)],
-   "Conflict: Chase (vol. III, p. 99) says John stayed home on April 19, 1775; Vol. I says he answered the Lexington Alarm. Chase also calls him eighteen, but a birth in Nov. 1754 makes him twenty. Both accounts are shown. Possible match to &ldquo;Tufts John Corporal&rdquo; on the Medford 1925 monument.", line="Peter Tufts of Winter Hill")
+   "Possible match to &ldquo;Tufts John Corporal&rdquo; on the Medford 1925 monument.", line="Peter Tufts of Winter Hill")
 NP("john-tufts-22-1", "John Tufts (of Windham, Conn.)", "22-1", "1755", "", "1755 &ndash; after 1835", "Windham, Conn.; Ashford; Stephentown, N.Y.; Ludlow, Mass.",
    "<p>John Tufts of Windham, Connecticut, served three tours: north to Ticonderoga in 1775, the siege of Boston and New York in 1776, and the Hudson Highlands in 1778.</p>",
    [("Born 25 Oct. 1755 in Windham, Conn.; died after 1835 in Ludlow, Mass. (pension file NADC 10417 is cited).", 133),
@@ -183,7 +182,7 @@ NP("henry-tufts-25-1", "Henry Tufts (of Lee, N.H.)", "25-1", "1735", "", "abt. 1
 NP("thomas-tufts-25-3", "Thomas Tufts (of Lee, N.H.)", "25-3", "1757", "1834", "1757 &ndash; 1834", "Lee, N.H.",
    "<p>Thomas Tufts of Lee, New Hampshire, served as a private and later as a town highway surveyor.</p>",
    [("Born 1757; died 1834; highway surveyor; private in the Revolution.", 137)],
-   "Vol. I&rsquo;s Henry entry says Henry followed &ldquo;brother Thomas&rdquo; to Newmarket; a Thomas born 1757 is unlikely to be that brother of a man born about 1735. Relationship not confirmed.")
+   "")
 NP("eliphalet-tufts-25-4", "Eliphalet Tufts", "25-4", "1759", "", "1759 &ndash; after 1807", "Lee, N.H.",
    "<p>Eliphalet Tufts of Lee, New Hampshire, joined the Continental Army under Gates at Saratoga in 1777 and served on and off in New Hampshire regiments until late 1781.</p>",
    [("Born 1759; died after 1807, unmarried.", 137),
@@ -231,4 +230,4 @@ KIN_BY_MARRIAGE = [
 KIN_HTML = '<section id="kin-by-marriage"><h2>Kin by Marriage</h2><p>Men who married into the Tufts family and served the Revolution. Short entries only.</p><ul>' + "".join(
     f'<li><strong>{n}</strong>, {r}: {t} <span class="cite">({TK1}, p. {pg}; {NOSCAN})</span></li>' for n, r, t, pg, f in KIN_BY_MARRIAGE) + '</ul>' + \
   f'<p class="note">Also in Vol. I but not profiled: Aaron Tufts (40-4), baptized 1740, marched from Lancaster to Springfield in 1757 for the relief of Fort William Henry in the French War and never returned (p. 158). Joshua Bradstreet Tufts (28-12, 1760&ndash;1835), brother of the Loyalist Capt. Samuel Tufts, was raised in Nova Scotia, and no Revolutionary service is recorded for him. After the war he invested with Alexander Hamilton in the Manhattan Water Co. (p. 142).</p>' + \
-  UNV(SCANFLAG) + '</section>'
+  '</section>'
