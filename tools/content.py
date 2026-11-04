@@ -268,7 +268,7 @@ page("people.html", "People | Tufts Lineage &amp; Legacy", "A&ndash;Z Index", "P
     <label>Line <select id="line"><option value="">All lines</option></select></label>
   </div>
   <div id="people-list"><p class="note">Loading&hellip;</p></div>
-  <p class="note">&ldquo;Several men&rdquo; pages group records that share a name. Different men are never merged.</p>
+  <p class="note">Where several men shared a name, their records are listed together on one page but kept separate, so different people are never combined.</p>
 </section>''')
 
 page("places.html", "Places | Tufts Lineage &amp; Legacy", "Places", "Places", "Where the family lived and worked", f'''
