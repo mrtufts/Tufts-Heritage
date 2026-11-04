@@ -306,6 +306,7 @@ page("sources.html", "Sources | Tufts Lineage &amp; Legacy", "Sources", "Sources
 <li>{WILD}, pp. 50, 52, 53. <a href="https://archive.org/details/medfordinrevolut00wild">archive.org</a></li>
 <li>{CHASE}, p. 99. <a href="https://archive.org/details/beginningsofamer03chas">archive.org</a></li>
 <li>{TFH}, pp. 28, 35, 37, 139, 143. <a href="https://archive.org/details/tuftsfamilyhisto00tuft_0">archive.org</a></li>
+<li>William Richard Cutter, ed., <em>Genealogical and Personal Memoirs Relating to the Families of the State of Massachusetts</em>, 4 vols. (New York: Lewis Historical Publishing Co., 1910): Tufts family, vol. II, pp. 1198&ndash;1200; John Brooks and Dr. Tufts, vol. I, p. 566. <a href="https://archive.org/details/genealogicalpers01cutt">Vol. I</a> &middot; <a href="https://archive.org/details/genealogicalpers02cutt">Vol. II</a> &middot; <a href="https://archive.org/details/genealogicalpers03cutt">Vol. III</a> &middot; <a href="https://archive.org/details/genealogicalpers04cutt">Vol. IV</a> (archive.org)</li>
 <li>Sacramento city directories, 1869&ndash;1902 (Albert C. Tufts).</li>
 <li>City of Medford, Minute Men monument (1925), photograph.</li>
 <li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. II (2012; &copy; 2003), pp. 77, 83, 96, 107&ndash;115, 145&ndash;151. Private copy; cited with short quotes only, no scans.</li>
