@@ -1,12 +1,12 @@
 # About page: site owner bio (owner request 2026-11-03). No ID or Spouse sections.
 _L = lambda h, t: f'<a href="{{P}}{h}">{t}</a>'
-page("about.html", "About | Tufts Lineage &amp; Legacy", "About", "Shannon Tufts", "Genealogist and historian", f'''
+page("about.html", "About | Tufts Lineage &amp; Legacy", "About", "Shannon Tufts", "Tufts descendant", f'''
 <section id="bio"><h2>About the Author</h2>
 <figure class="author-photo" style="float:right;max-width:240px;margin:0 0 1em 1.5em;"><img src="{{P}}assets/images/shannon-tufts.jpg" alt="Portrait of Shannon Tufts" style="width:100%;height:auto;border:3px solid #b8932f;"><figcaption>Shannon Tufts</figcaption></figure>
-<p>Shannon Tufts is a genealogist and historian. He leads <em>Tufts Lineage &amp; Legacy</em>, which documents the Tufts family across the generations. Its Revolutionary War chapter honors the 250th anniversary of American Independence.</p>
+<p>Shannon Tufts leads <em>Tufts Lineage &amp; Legacy</em>, which documents the Tufts family across the generations. Its Revolutionary War chapter honors the 250th anniversary of American Independence.</p>
 <p>His research follows the extended Tufts lineage. It takes in the Revolutionary soldiers of the family: {_L("profiles/cotton-tufts.html", "Dr. Cotton Tufts")}, {_L("profiles/zachariah-tufts.html", "Zachariah")}, {_L("profiles/william-tufts.html", "William")}, {_L("profiles/samuel-tufts.html", "Samuel")} and {_L("profiles/barnabas-tufts.html", "Barnabas Tufts")}, the {_L("generations/revolution.html", "minutemen")}, and the {_L("businesses.html", "brickmakers")} of Medford, Somerville and Charlestown, Massachusetts. It also covers {_L("generations/19th-century.html#charles-tufts", "Charles Tufts")}, benefactor of Tufts University.</p>
 <p>He works from primary and printed sources. These include the <em>Tufts Kinsmen</em> volumes I and II (cited by title and page), DAR records, Find a Grave, <em>Massachusetts Soldiers and Sailors of the Revolutionary War</em>, and town records. They are listed on {_L("sources.html", "Sources")}.</p>
 <p>Shannon claims {_L("generations/colonial.html#peter-1728", "Peter Tufts of Winter Hill")} (b. 1728) as his sixth great-grandfather. He is proud to carry forward the name and spirit of Peter and Anne Adams Tufts. Their son {_L("profiles/peter-tufts-jr.html", "Peter Tufts Jr.")} answered the Lexington alarm.</p>
 <p class="note">On the name: the sources agree that Peter of Winter Hill married Anne Adams on April 19, 1750 (Brooks, <em>History of Medford</em>, 1855, p. 547; Booth, <em>Historic Leaves</em>, vol. 1, p. 21). His brother {_L("profiles/timothy-tufts.html", "Timothy Tufts")} also married an Anne Adams, &ldquo;a niece of the wife of his brothers&rdquo; (Booth, p. 25). The two are different women.</p>
 <p>He is based in Clearwater and Largo, Pinellas County, Florida.</p>
-</section>''', desc="About Shannon Tufts, genealogist and historian, and the Tufts Lineage &amp; Legacy site.")
+</section>''', desc="About Shannon Tufts and the Tufts Lineage &amp; Legacy site.")
