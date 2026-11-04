@@ -600,6 +600,36 @@
     "profile": "profiles/sarah-tufts-hinckley.html"
   },
   {
+    "name": "Anne Adams Tufts (1729&ndash;1813)",
+    "slug": "anne-adams-tufts",
+    "born": "1729",
+    "died": "1813",
+    "era": "The Revolution",
+    "line": "Wife of Peter Tufts of Winter Hill",
+    "town": "Menotomy (Arlington) and Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/anne-adams-tufts.html"
+  },
+  {
+    "name": "Peter Tufts the Surveyor (1774&ndash;1825)",
+    "slug": "peter-tufts-1774",
+    "born": "1774",
+    "died": "1825",
+    "era": "19th Century",
+    "line": "Grandson of Anne Adams Tufts",
+    "town": "Medford, Charlestown (Somerville) and Cambridgeport, Mass.",
+    "profile": "profiles/peter-tufts-1774.html"
+  },
+  {
+    "name": "John Tufts (b. 1754)",
+    "slug": "john-tufts-1754",
+    "born": "1754",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Son of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/john-tufts-1754.html"
+  },
+  {
     "name": "Charles Tufts",
     "slug": "charles-tufts",
     "born": "",
@@ -628,15 +658,5 @@
     "line": "Peter Tufts of Winter Hill",
     "town": "Charlestown (Winter Hill)",
     "profile": "generations/colonial.html#peter-1728"
-  },
-  {
-    "name": "Anne Adams Tufts",
-    "slug": "anne-adams-tufts",
-    "born": "1729",
-    "died": "1813",
-    "era": "Colonial",
-    "line": "Peter Tufts of Winter Hill",
-    "town": "Charlestown (Winter Hill)",
-    "profile": "generations/colonial.html#anne-adams"
   }
 ]

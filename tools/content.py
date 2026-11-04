@@ -112,8 +112,7 @@ for p in PROFILES: profile(p)
 json.dump([dict(name=p["name"], slug=p["slug"], born=p["born"], died=p["died"], era=p["era"], line=p["line"], town=p["town"], profile=f'profiles/{p["slug"]}.html') for p in PROFILES]
           + [dict(name="Charles Tufts", slug="charles-tufts", born="", died="1876", era="19th Century", line="Undetermined", town="Somerville", profile="generations/19th-century.html#charles-tufts"),
              dict(name="Albert C. Tufts", slug="albert-c-tufts", born="", died="", era="19th Century", line="Undetermined", town="Sacramento, Calif.", profile="generations/19th-century.html#albert-c-tufts"),
-             dict(name="Peter Tufts of Winter Hill", slug="peter-tufts-winter-hill", born="1728", died="1791", era="Colonial", line="Peter Tufts of Winter Hill", town="Charlestown (Winter Hill)", profile="generations/colonial.html#peter-1728"),
-             dict(name="Anne Adams Tufts", slug="anne-adams-tufts", born="1729", died="1813", era="Colonial", line="Peter Tufts of Winter Hill", town="Charlestown (Winter Hill)", profile="generations/colonial.html#anne-adams")],
+             dict(name="Peter Tufts of Winter Hill", slug="peter-tufts-winter-hill", born="1728", died="1791", era="Colonial", line="Peter Tufts of Winter Hill", town="Charlestown (Winter Hill)", profile="generations/colonial.html#peter-1728")],
           open("data/people.json", "w"), indent=2)
 
 PROF_LIST = "<ul>" + "".join(f'<li><a href="{{P}}profiles/{p["slug"]}.html">{p["name"]}</a> ({p["town"]})</li>' for p in PROFILES) + "</ul>"
