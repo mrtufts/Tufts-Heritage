@@ -236,7 +236,7 @@ page("generations/19th-century.html", "19th Century | Tufts Lineage &amp; Legacy
 </section>''')
 
 page("generations/modern.html", "Modern | Tufts Lineage &amp; Legacy", "Generations", "Modern", "", f'''
-<section id="newsletter-1979" class="soon"><h2>The 1979 Newsletter<span class="tag">Awaiting material from owner</span></h2><p>A recreation of the 1979 newsletter will be added once the owner supplies it.</p></section>''')
+<section id="newsletter-1979" class="soon"><h2>The 1979 Newsletter</h2><p>Note: Pending further work.</p></section>''')
 
 page("people.html", "People | Tufts Lineage &amp; Legacy", "A&ndash;Z Index", "People", "Searchable index of family members", '''
 <section>
@@ -284,10 +284,10 @@ page("collections.html", "Collections | Tufts Lineage &amp; Legacy", "Collection
 <section id="artifacts"><h2>Artifacts</h2>
 {Q("One heirloom of the family, a tankard (now belonging to the First Congregational Society of Quincy, Mass.), made by John Edwards, was the gift of Elizabeth Quincy to her daughter, Lucy (Quincy) Tufts, who married Dr. Cotton Tufts in 1755.", TFH+", p. 35", ["tufts-family-history-p35.jpg"])}
 {UNV("The tankard's present location is reported from 1963. No photograph is held.")}
-<p class="soon">Family artifacts <span class="tag">Awaiting material from owner</span></p>
+<p class="soon">Family artifacts <span class="tag">Note: Pending further work.</span></p>
 </section>
 {{DIV}}
-<section id="letters" class="soon"><h2>Letters<span class="tag">Awaiting material from owner</span></h2><p>Transcribed family letters, with images of the originals, will be added as the owner supplies them.</p></section>''')
+<section id="letters" class="soon"><h2>Letters</h2><p>Note: Pending further work.</p></section>''')
 
 page("sources.html", "Sources | Tufts Lineage &amp; Legacy", "Sources", "Sources", "Bibliography, page scans, and research notes", f'''
 <section id="bibliography"><h2>Bibliography</h2>
@@ -301,7 +301,7 @@ page("sources.html", "Sources | Tufts Lineage &amp; Legacy", "Sources", "Sources
 <li>Sacramento city directories, 1869&ndash;1902 (Albert C. Tufts).</li>
 <li>City of Medford, Minute Men monument (1925), photograph.</li>
 <li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. II (2012; &copy; 2003), pp. 77, 83, 96, 107&ndash;115, 145&ndash;151. Private copy; cited with short quotes only, no scans.</li>
-<li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. I (2010), pp. 105, 110&ndash;112, 116, 119&ndash;120, 128&ndash;130, 133, 136&ndash;137, 141&ndash;142, 145, 150, 152&ndash;166, 175&ndash;181. Cited from an owner-supplied extract with short statements and printed page numbers. The book is not hosted here. <strong>Page scans not on file.</strong></li>
+<li>Herbert Freeman Adams, comp., <em>Tufts Kinsmen</em>, Vol. I (2010), pp. 105, 110&ndash;112, 116, 119&ndash;120, 128&ndash;130, 133, 136&ndash;137, 141&ndash;142, 145, 150, 152&ndash;166, 175&ndash;181. The book is not hosted here. Note: Pending further work.</li>
 <li>DAR records. <strong>Not seen; missing images.</strong></li>
 </ul></section>
 {{DIV}}

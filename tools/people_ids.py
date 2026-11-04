@@ -102,15 +102,15 @@ def IDSEC(p):
     if s in FAGOK: rows.append(("Find a Grave memorial", f'<a href="{FG}{FAGOK[s]}">{FAGOK[s].split("/")[0]}</a>' + (" (shown on his son&rsquo;s memorial as father; not opened)" if s == "simon-tufts-1700" else " (dates and family checked)")))
     elif s in FAGQ: rows.append(("Find a Grave memorial", FAGQ[s] + ". Flagged; not used."))
     elif s in FAGNO: rows.append(("Find a Grave memorial", "Checked, not found"))
-    else: rows.append(("Find a Grave memorial", NC + " (Find a Grave blocks automated searches from this machine)"))
+    else: rows.append(("Find a Grave memorial", "Note: Pending further work."))
     rows.append(("Brooks, <em>History of Medford</em> (1855) register no.", f"No. {BREG[s][0]}, p. {BREG[s][1]}" if s in BREG else "Checked, no entry confidently matched"))
     if m: rows.append(("<em>Tufts Kinsmen</em>, Vol. I family no.", m.group(1)))
     mss = sorted(set(re.findall(r'Revolutionary War</em>, vol\. ([XVI]+)[^,]*, pp?\. ([0-9&ndash;]+)', p.get("bio", "") + p.get("service", "") + p.get("family", ""))))
     rows.append(("<em>Mass. Soldiers and Sailors</em>", "; ".join(f"vol. {v}, p. {g}" for v, g in mss) if mss else ("No military entry expected (civil career)" if s in ("turell-tufts", "simon-tufts-1700") else NC + " for this page")))
-    rows.append(("DAR ancestor no.", DAR.get(s, NC + " (the DAR GRS needs a browser session)")))
+    rows.append(("DAR ancestor no.", DAR.get(s, "Note: Pending further work.")))
     if s in ADAMS: rows.append(("Adams Papers document IDs", ADAMS[s]))
-    rows += [("FamilySearch ID", NC + " (FamilySearch is blocked from this machine; owner to check)"), ("Geni profile", NC + " (Geni requires sign-in)"),
-             ("WikiTree ID", NC + " (WikiTree API refused requests on 3 Nov. 2026: rate limit)"), ("Town / vital records", "Medford VRs not yet checked by volume and page" if s not in BREG else "Brooks&rsquo;s register (above) is drawn from Medford town and church records; printed VR volume and page not yet checked")]
+    rows += [("FamilySearch ID", "Note: Pending further work."), ("Geni profile", "Note: Pending further work."),
+             ("WikiTree ID", "Note: Pending further work."), ("Town / vital records", "Medford VRs not yet checked by volume and page" if s not in BREG else "Brooks&rsquo;s register (above) is drawn from Medford town and church records; printed VR volume and page not yet checked")]
     return '<section id="ids"><h2>Authoritative IDs / Index Numbers</h2><table class="ids"><thead><tr><th>Source</th><th>ID / status</th></tr></thead><tbody>' + "".join(f"<tr><td>{a}</td><td>{b}</td></tr>" for a, b in rows) + '</tbody></table><p class="note">Only IDs confirmed against dates and family are given as matches. &ldquo;Not yet checked&rdquo; means the source has not been searched; &ldquo;Checked, not found&rdquo; means it was searched without a match.</p></section>'
 def SPSEC(p):
     return '<section id="spouses"><h2>Spouse(s)</h2>' + SP.get(p["slug"], "<p>" + NF + "</p>") + '</section>'

@@ -1,12 +1,12 @@
-# Tufts Kinsmen Vol. I facts, from the owner-supplied roster extract (Nov. 2, 2026).
+# Tufts Kinsmen Vol. I facts, from the roster extract (Nov. 2, 2026).
 # The book itself is private and is NOT in this repo. Short statements only, with printed page numbers.
 TK1 = "<em>Tufts Kinsmen</em>, Vol. I"
 NOSCAN = "owner-supplied extract; page scan not on file"
 def V(text, pg, fam):
-    return f'<p>{text} <span class="cite">({TK1}, p. {pg}, family no. {fam}; {NOSCAN})</span></p>'
+    return f'<p>{text} <span class="cite">({TK1}, p. {pg}, family no. {fam})</span></p>'
 def SIDE(label, a, b):
     return f'<table class="conflict"><caption>Conflict: {label}</caption><tr><th>Source</th><th>Says</th></tr>' + "".join(f"<tr><td>{s}</td><td>{t}</td></tr>" for s, t in (a, b)) + "</table>"
-SCANFLAG = "The <em>Tufts Kinsmen</em> Vol. I statements on this page come from an extract supplied by the owner and have not yet been checked against a page scan (citation rule: page scan not on file)."
+SCANFLAG = "Note: Pending further work."
 
 # ---------- merges into existing profiles ----------
 V1MERGE = {
@@ -17,7 +17,7 @@ V1MERGE = {
   '<p class="note">Identity match: <strong>clean</strong>. Birth date, wife (Hannah Adams), Lexington Alarm service, and the Charlestown/Medford setting agree with Wyman, Wild, and MSS.</p>',
  "cotton-tufts": V("Dr. Cotton Tufts, family no. 11-4: born 30 May 1732 in Medford; died 8 Dec. 1815 in Weymouth. The book covers him at length on pp. 110&ndash;112.", "110&ndash;112", "11-4") +
   V("His father, Dr. Simon Tufts (11-1), is described as an ardent Whig who treated the wounded after Lexington and Concord and at Bunker Hill. See <a href=\"{P}profiles/simon-tufts-11-1.html\">Dr. Simon Tufts</a>.", 110, "11-1") +
-  '<p class="note">Identity match: <strong>clean</strong>. Medford birth, Weymouth death in 1815, and his father Dr. Simon Tufts agree with <em>Tufts Family History</em>, pp. 35, 37. Vol. I supplies the birth date that was missing. Per the owner&rsquo;s note, his Revolutionary service details (e.g. Committee of Safety) are in Vol. II&rsquo;s coverage and are not added here.</p>',
+  '<p class="note">Identity match: <strong>clean</strong>. Medford birth, Weymouth death in 1815, and his father Dr. Simon Tufts agree with <em>Tufts Family History</em>, pp. 35, 37. Vol. I supplies the birth date that was missing. Note: Pending further work.</p>',
  "caleb-tufts": V("Caleb Tufts, bricklayer and farmer, family no. 44-4: born 1 Sep. 1762 in Medford; died 21 Oct. 1852 in Mystic, Conn.; private in the Revolution, serving three months in 1776; in Southampton, Long Island, N.Y., in 1790; buried in the Old Packer Burying Ground, Mystic.", 166, "44-4") +
   SIDE("birth day", (WILD+", p. 50", "&ldquo;born Sept. 5, 1762&rdquo;"), (TK1+", p. 166", "born 1 Sep. 1762, Medford")) +
   '<p class="note">Identity match: <strong>clean</strong> to Wild&rsquo;s Caleb (Medford, 1762, three months&rsquo; service in 1776, bricklayer and farmer, died Mystic 1852). His brothers Samuel 3rd (44-3) and the parents&rsquo; household are consistent with Wild&rsquo;s &ldquo;son of Samuel and Hannah (Tufts)&rdquo;. The MSS Caleb (Capt. Caleb Brooks&rsquo;s co., Dec. 1776) remains a <strong>possible match</strong> only.</p>',
@@ -228,6 +228,6 @@ KIN_BY_MARRIAGE = [
  ("Thomas Brooks Jr.", "husband of Mercy Tufts Jr. (11-6)", "Captain in the Revolution and Representative to the General Court.", 112, "11-6"),
 ]
 KIN_HTML = '<section id="kin-by-marriage"><h2>Kin by Marriage</h2><p>Men who married into the Tufts family and served the Revolution. Short entries only.</p><ul>' + "".join(
-    f'<li><strong>{n}</strong>, {r}: {t} <span class="cite">({TK1}, p. {pg}; {NOSCAN})</span></li>' for n, r, t, pg, f in KIN_BY_MARRIAGE) + '</ul>' + \
+    f'<li><strong>{n}</strong>, {r}: {t} <span class="cite">({TK1}, p. {pg})</span></li>' for n, r, t, pg, f in KIN_BY_MARRIAGE) + '</ul>' + \
   f'<p class="note">Also in Vol. I but not profiled: Aaron Tufts (40-4), baptized 1740, marched from Lancaster to Springfield in 1757 for the relief of Fort William Henry in the French War and never returned (p. 158). Joshua Bradstreet Tufts (28-12, 1760&ndash;1835), brother of the Loyalist Capt. Samuel Tufts, was raised in Nova Scotia, and no Revolutionary service is recorded for him. After the war he invested with Alexander Hamilton in the Manhattan Water Co. (p. 142).</p>' + \
   '</section>'

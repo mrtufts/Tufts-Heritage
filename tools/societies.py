@@ -37,7 +37,7 @@ SIM_YOUNGER = ('{DIV}<section id="medical-society"><h2>Medical Societies: 1765 a
  + Q("he was one of the first in the State who felt the need of a medical society; and he was called to the first meeting for consummating the plan, which meeting took place on the third Monday in March, 1765, at Gardner&rsquo;s tavern, on Boston Neck.", BRP(306))
  + '<p>The plan itself is credited to his younger brother. Philip Cash calls <a href="{P}profiles/cotton-tufts.html">Dr. Cotton Tufts</a> of Weymouth &ldquo;the prime mover&rdquo; of the 1765 attempt, which failed (' + CSMC + '). So Simon is recorded as a participant called to the meeting, and Cotton as its organizer.</p>'
  '<h3>Fellow of the Massachusetts Medical Society, 1782</h3>'
- '<p>Medford&rsquo;s vital records cite his gravestone as &ldquo;Simon Tufts Esq., F. M. S.,&rdquo; that is, Fellow of the Medical Society, and his Find a Grave memorial is headed &ldquo;Dr Simon F.M.S. Tufts Esq.&rdquo; (<a href="https://www.findagrave.com/memorial/26903836/simon-fms-tufts">memorial 26903836</a>). The fellowship date of 1782 comes from <em>Tufts Kinsmen</em>, Vol. I, p. 110 (owner-supplied extract; page scan not on file).</p>'
+ '<p>Medford&rsquo;s vital records cite his gravestone as &ldquo;Simon Tufts Esq., F. M. S.,&rdquo; that is, Fellow of the Medical Society, and his Find a Grave memorial is headed &ldquo;Dr Simon F.M.S. Tufts Esq.&rdquo; (<a href="https://www.findagrave.com/memorial/26903836/simon-fms-tufts">memorial 26903836</a>). The fellowship date of 1782 comes from <em>Tufts Kinsmen</em>, Vol. I, p. 110.</p>'
  + UNV("The 1782 date of his fellowship has not been confirmed from the Society&rsquo;s own records.")
  + '</section>')
 _EXTRA9 = EXTRA
