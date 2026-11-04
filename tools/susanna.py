@@ -30,4 +30,4 @@ SP["cotton-tufts"] = SP["cotton-tufts"].replace("<li><strong>Susanna Warner</str
 NEWUNCHK.add("susanna-warner-tufts")
 REL["susanna-warner-tufts"] = [("cotton-tufts", "husband Dr. Cotton Tufts"), ("simon-tufts-1700", "father-in-law Dr. Simon Tufts (1700&ndash;1747)"), ("simon-tufts-11-1", "brother-in-law Dr. Simon Tufts (1727&ndash;1786)")]
 _addrel("cotton-tufts", [("susanna-warner-tufts", "second wife Susanna Warner Tufts")])
-SP["cotton-tufts"] = SP["cotton-tufts"].replace("Dates and places of marriage not found.", "His first marriage, to &ldquo;Mrs. Lucy Quincey of Brantree,&rdquo; is recorded at Weymouth on Dec. 2, 1755; Lucy died Oct. 30, 1785, aged 56 (<em>Vital Records of Weymouth</em>, vol. II). The second marriage is dated above.")
+SP["cotton-tufts"] = SP["cotton-tufts"].replace("Dates and places of marriage not found.", "His first wife Lucy died Oct. 30, 1785 (<em>Vital Records of Weymouth</em>, vol. II, deaths). First marriage date: Note: Pending further work. The second marriage is dated above.")

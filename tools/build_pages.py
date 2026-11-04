@@ -46,6 +46,9 @@ def page(path, title, kicker, h1, sub, body, desc="The Tufts family across gener
 <meta property="og:type" content="website">
 {FONTS}
 <link rel="stylesheet" href="{pre}css/style.css">
+<link rel="icon" href="{pre}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{pre}favicon.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="{pre}apple-touch-icon.png">
 </head>
 <body>
 <header class="chainmail">
