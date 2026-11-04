@@ -7,8 +7,8 @@ TCE = lambda ch, t: f'Anne Sauer et al., <em>Concise Encyclopedia of Tufts Histo
 COLES = ('Historic Deerfield, &ldquo;Coat of Arms: By the Name of Putnam,&rdquo; possibly John Coles Sr. or John Coles Jr., ca. 1800, accession no. HD 2019.16. <a href="https://museums.fivecolleges.edu/collection/search/hd-2019-16-coat-of-arms-by-the-name-of-putnam-possibly-john-coles-sr-possibly-john-coles-jr-circa-1800">Museum record</a>; see also &ldquo;By the Name of Jones&rdquo; (HD 2431.1) and &ldquo;By the Name of Hurd&rdquo; (HD 2431.2), same attribution.')
 IMG = '<figure class="hfig arms-fig"><a href="{P}assets/images/tufts-arms-reproduction.jpg"><img src="{P}assets/images/tufts-arms-reproduction.jpg" alt="Modern reproduction of a Tufts armorial painting: blue shield with a white fess bearing three black birds between three white ostrich feathers, helmet, red and gold mantling, an animal-head crest, crossed green sprays and a pink ribbon reading By the Name of Tufts" loading="lazy"></a><figcaption><strong>Reproduction, not a historical original.</strong> A modern rendering of a New England &ldquo;By the Name of&rdquo; armorial painting, created by Shannon Tufts (2026). It is shown to illustrate the design discussed on this page. <span class="credit">Image: Shannon Tufts. All rights reserved.</span></figcaption></figure>'
 PLACEHOLDER = '<div class="placeholder-box"><h3>Original armorial painting</h3><p>An image of the original painting on which the reproduction is based will be added here. Its maker, date, owner and present location have not yet been identified.</p><p><strong>Note: Pending further work.</strong></p></div>'
-ARMS_BODY = f'''<section id="intro"><h2>A Shield Borrowed Across the Sea</h2>
-<p>Many New England families of the late eighteenth and early nineteenth centuries hung a painted or embroidered coat of arms in the parlor, lettered beneath with the words &ldquo;By the Name of&rdquo; and the family surname. The Tufts family was no exception. The design that has come down under the Tufts name, though, its granting remains unclear. Its shield matches the coat of Tufnell of England. This page sets out what the records show about that shield, where the American custom came from, and the other arms that have been linked to the name.</p></section>
+ARMS_BODY = f'''<section id="intro"><h2>A Shield from Across the Sea</h2>
+<p>Many New England families of the late eighteenth and early nineteenth centuries hung a painted or embroidered coat of arms in the parlor, lettered beneath with the words &ldquo;By the Name of&rdquo; and the family surname. The Tufts family was no exception. The design that has come down under the Tufts name, though, a shield from across the sea. Its shield matches the coat of Tufnell of England. This page sets out what the records show about that shield, where the American custom came from, and the other arms that have been linked to the name.</p></section>
 {{DIV}}
 <section id="the-design"><h2>The Design</h2>
 <div class="figs">{IMG}{PLACEHOLDER}</div>
@@ -20,35 +20,31 @@ ARMS_BODY = f'''<section id="intro"><h2>A Shield Borrowed Across the Sea</h2>
 <li><strong>Behind the shield:</strong> two crossed green sprays or feathers.</li>
 <li><strong>Ribbon:</strong> a pink scroll lettered &ldquo;BY THE NAME OF TUFTS.&rdquo;</li>
 </ul>
-<p>In formal heraldry a martlet is drawn without feet. The birds in the reproduction have feet, as many American folk renderings did.</p></section>
+</section>
 {{DIV}}
 <section id="tufnell"><h2>The Tufnell Arms</h2>
 <p>The shield matches, charge for charge and colour for colour, the arms that Burke&rsquo;s <em>General Armory</em> records for the Tufnell family of Langleys, Essex:</p>
 {Q("Tufnell (Langleys, co. Essex; descended from Richard Tufnaile, or Tufnell, citizen and brewer of London, M.P. for Southwark in 1640. John Jolliffe Tufnell, Esq., of Langleys, was High Sheriff co. Essex 1823). Az. on a fess betw. three ostrich feathers ar. as many martlets sa. Crest&mdash;A dexter arm embowed in armour ppr. holding in the gauntlet a cutlass ar. hilt or.", BURKE, note=OCR)}
-<p>In plain words: a blue shield; a silver band between three silver ostrich feathers; on the band, three black martlets. Burke gives the Tufnell crest as an arm in armour, bent at the elbow, holding a cutlass. The animal-head crest in the American painting is therefore not the Tufnell crest. It may be the painter&rsquo;s choice or a crest borrowed from another book. Its source has not been identified.</p>
+<p>In plain words: a blue shield; a silver band between three silver ostrich feathers; on the band, three black martlets. Burke gives the Tufnell crest as an arm in armour, bent at the elbow, holding a cutlass. The animal-head crest in the American painting is therefore not the Tufnell crest. It may be the painter&rsquo;s choice or a crest taken from another source. Its source has not been identified.</p>
 <p>Burke has no entry at all under &ldquo;Tufts.&rdquo; The neighbouring entries on the same page are for unrelated names: Tuffle (&ldquo;Gu. six ostrich feathers ar.&rdquo;) and the Tufton Earls of Thanet ((&ldquo;Sa. an eagle displ. erm.&rdquo; and variants) (Burke, p. 1035)ldquo;Sa. an eagle displ. erm. a border ar.(&ldquo;Sa. an eagle displ. erm.&rdquo; and variants) (Burke, p. 1035)rdquo;) (Burke, pp. 1035&ndash;36).</p>
-{UNV("The owner&rsquo;s notes associate the Tufnell arms with Monken Hadley, Middlesex, and say they were in use on monuments, windows and plate from about 1613. Burke places the family at Langleys, Essex, and gives 1640 as the earliest date (Richard Tufnell, M.P. for Southwark). No source has yet been found for Monken Hadley or for 1613. Note: Pending further work. Papworth&rsquo;s <em>Ordinary of British Armorials</em> and the heralds&rsquo; visitations have not yet been checked.")}
 </section>
 {{DIV}}
 <section id="by-the-name-of"><h2>&ldquo;By the Name of&rdquo;: The American Custom</h2>
 <p>Very few colonial families held a grant of arms from the English College of Arms, but arms still carried prestige. Historic Deerfield&rsquo;s catalogue explains how families chose them:</p>
 {Q("Although few American families were conferred arms by the English College of Heralds, the aristocratic connotation was no less meaningful to established families in New England; they did not hesitate to select arms of people with common surnames. By 1730, Boston heraldic painters had access to a number of publications that illustrated coats of arms from which to copy or combine elements.", HD)}
 <p>Boston painters made many of these pictures. Historic Deerfield holds several watercolours lettered &ldquo;By the Name of&rdquo; that it attributes to John Coles Sr. or his son John Coles Jr., among them Putnam, Jones and Hurd, all dated about 1800 ({COLES}). The Tufts painting fits this pattern: an English shield found in a book under a similar name, a helmet and mantling, and the surname on a ribbon. No Coles painting for Tufts has been found.</p>
-{UNV("The life dates given for John Coles Sr. (c. 1749&ndash;1809) and John Coles Jr. (1776&ndash;1854), and the claim that the original Tufts painting is by either man, have not been confirmed. Note: Pending further work.")}
 </section>
 {{DIV}}
 <section id="deerfield"><h2>The &ldquo;Tuffts Family&rdquo; Embroidery at Historic Deerfield</h2>
 <p>The only Tufts coat of arms in a museum found so far is a needlework piece at Historic Deerfield, catalogued as &ldquo;needlework coat of arms: Tufts,&rdquo; ca. 1800, made in Hartford, Connecticut. It is polychrome silk embroidery on a white satin silk ground, accession number HD 1998. The museum describes it as an &ldquo;Embroidered silk coat-of-arms of the Tuffts Family&rdquo; ({HD}).</p>
 {Q("Heraldic embroidery provided the perfect forum for displaying needlework, education, leisure, status, and family allegiance.", HD)}
 <div class="placeholder-box museum-card"><h3>View the needlework at Historic Deerfield</h3><p><strong>needlework coat of arms: Tufts</strong><br>Maker: not recorded<br>Hartford, Connecticut, ca. 1800<br>Polychrome silk embroidery on white satin-weave silk<br>Historic Deerfield, accession no. HD 1998</p><p><a href="https://museums.fivecolleges.edu/collection/search/hd-1998-needlework-coat-of-arms-tufts-ca-1800">Open the museum record &rarr;</a></p></div><p>The museum record lists no maker, and as of November 4, 2026 it shows no photograph and does not describe the shield. Under the Five College Museums&rsquo; terms, posting a collection image on a website counts as publication and needs the museum&rsquo;s permission, so no image is copied here. Rights requests go to Historic Deerfield&rsquo;s Digital Assets Coordinator.</p>
-{UNV("Whether the Deerfield embroidery bears the same Tufnell shield as the painting is not stated in the museum record. Which Tufts family, or which needlewoman, made it is also unknown. Note: Pending further work.")}
 </section>
 {{DIV}}
 <section id="armories"><h2>What the American Armories Record</h2>
 <p><strong>Bolton&rsquo;s <em>American Armory</em> (1927)</strong> lists arms actually used in America, from seals, gravestones, bookplates and silver. It has no entry for Tufts. Its entries pass from Tufton to Tuite (p. 167). The Tufton entry is the seal of John Tufton, Sheriff of New Hampshire, on a document of August 1688. Tufton is a different family from the Charlestown and Medford Tufts.</p>
 <p>The name does turn up in Bolton under other families&rsquo; arms. The Norton arms were &ldquo;Engr. on tankard given by Mrs. Elizabeth Quincy, daughter of Rev. John Norton of Hingham, Mass., to her daughter, Lucy Tufts. In First Ch. Quincy, Mass.&rdquo; (Bolton, Norton entry, pp. 118&ndash;124). Lucy (Quincy) Tufts was the first wife of <a href="{{P}}profiles/cotton-tufts.html">Dr. Cotton Tufts</a>. Bolton also records a framed watercolour of the Whitney arms by Mrs. Mary Lovering Holman, &ldquo;Owned by Mrs. Susan Cotton Tufts, Brookline, Mass.&rdquo; (Bolton, p. 180).</p>
 <p><strong>Crozier&rsquo;s <em>General Armory</em> (1904)</strong>, a registry of American families &ldquo;entitled to coat armor,&rdquo; has no Tufts entry either ({CROZ}; searched in the full text).</p>
-{UNV("The Norton entry&rsquo;s page in Bolton falls between pp. 118 and 124 of the scanned text; the exact page is pending. The <em>Roll of Arms</em> of the New England Historic Genealogical Society&rsquo;s Committee on Heraldry has not been checked for Tufts. Note: Pending further work.")}
 </section>
 {{DIV}}
 <section id="university"><h2>Tufts College: Seal and Coat of Arms</h2>
@@ -59,12 +55,22 @@ ARMS_BODY = f'''<section id="intro"><h2>A Shield Borrowed Across the Sea</h2>
 <p>Several online shops sell a &ldquo;Tufts family crest&rdquo; on rings, prints and mugs, among them crestsandarms.com and heraldicjewelry.com. They give no source for the arms they show, and some show designs unlike the painting. These are <strong>commercial claims</strong>. They are not evidence that any Tufts was granted arms, and they are not used as sources on this site.</p></section>
 {{DIV}}
 <section id="summary"><h2>In Short</h2>
-<p>The &ldquo;By the Name of Tufts&rdquo; arms are a piece of American family art. The shield is the Tufnell coat as recorded by Burke, adopted for the Tufts name by the New England custom of borrowing arms from a family with a similar surname. No grant of arms to anyone named Tufts has been found in Burke, Bolton or Crozier. The arms are still part of the family&rsquo;s story. They show how a Charlestown and Medford family of farmers, doctors and tradesmen chose to present itself around 1800.</p></section>
+<p>The &ldquo;By the Name of Tufts&rdquo; arms are a piece of American family art. The shield is the Tufnell coat as recorded by Burke, used for the Tufts name in keeping with the New England custom of displaying arms of a family with a similar surname. No grant of arms to anyone named Tufts has been found in Burke, Bolton or Crozier. The arms are still part of the family&rsquo;s story. They show how a Charlestown and Medford family of farmers, doctors and tradesmen chose to present itself around 1800.</p></section>
+<section id="verification-todo"><h2>Verification To-Do</h2><p>Shannon Tufts is following up on these items to confirm the details on this page.</p><ul>
+<li>Contact Historic Deerfield (Lauren D. Whitley, lwhitley@historic-deerfield.org) for permission to show the needlework coat of arms (HD 1998) on this site.</li>
+<li>Locate the original &ldquo;By the Name of Tufts&rdquo; painting and identify its maker, date, owner and present location.</li>
+<li>Confirm whether John Coles Sr. or John Coles Jr. painted the Tufts arms, and verify their life dates.</li>
+<li>Check the source for the Tufnell arms at Monken Hadley, Middlesex, and their use from about 1613, in Papworth&rsquo;s <em>Ordinary</em> and the heralds&rsquo; visitations.</li>
+<li>Confirm whether the Deerfield needlework shows the same Tufnell shield, and who made it.</li>
+<li>Identify the source of the animal-head crest.</li>
+<li>Find the exact page of the Norton entry in Bolton&rsquo;s <em>American Armory</em> (pp. 118&ndash;124).</li>
+<li>Check the New England Historic Genealogical Society Committee on Heraldry&rsquo;s <em>Roll of Arms</em> for Tufts.</li>
+</ul></section>
 '''
-page("coat-of-arms.html", "The Tufts Coat of Arms | Tufts Lineage &amp; Legacy", "Collections &middot; Heraldry", "The Tufts Coat of Arms", "&ldquo;By the Name of Tufts&rdquo;: a borrowed shield and its story", ARMS_BODY, desc="The By the Name of Tufts coat of arms: the Tufnell shield, the New England custom of borrowed arms, and Tufts College heraldry.")
+page("coat-of-arms.html", "The Tufts Coat of Arms | Tufts Lineage &amp; Legacy", "Collections &middot; Heraldry", "The Tufts Coat of Arms", "&ldquo;By the Name of Tufts&rdquo;: the shield and its story", ARMS_BODY, desc="The By the Name of Tufts coat of arms: the Tufnell shield, the New England armorial custom, and Tufts College heraldry.")
 _EXTRA_COA = EXTRA
 def EXTRA(path):
     out = _EXTRA_COA(path)
     if path == "collections.html":
-        out = '{DIV}<section id="coat-of-arms"><h2>The Tufts Coat of Arms</h2><p>The &ldquo;By the Name of Tufts&rdquo; armorial painting, the English Tufnell shield it borrows, the Historic Deerfield needlework, and Tufts College heraldry. <a href="{P}coat-of-arms.html">Read about the coat of arms &rarr;</a></p></section>' + out
+        out = '{DIV}<section id="coat-of-arms"><h2>The Tufts Coat of Arms</h2><p>The &ldquo;By the Name of Tufts&rdquo; armorial painting, the English Tufnell shield it uses, the Historic Deerfield needlework, and Tufts College heraldry. <a href="{P}coat-of-arms.html">Read about the coat of arms &rarr;</a></p></section>' + out
     return out
