@@ -1,3 +1,4 @@
+NEWUNCHK = {"peter-tufts-1697","uriah-tufts-1768","uriah-tufts-1796","william-tufts-1820","james-tufts-1675","sarah-tufts-hinckley","lucy-tufts-pritchard"}
 # Turell and Timothy Tufts profiles; Authoritative IDs and Spouse(s) sections on every profile (2026-11-03).
 # Brooks (1855) page numbers are the printed pages of the 1855 edition (scan: archive.org historyoftownofm1855broo);
 # Perseus omits page markers after p. 529 in the Register of Families, so the scan pages are used.
@@ -97,13 +98,14 @@ def IDSEC(p):
     rows = []
     if s == "turell-tufts": per = f'<code>auth=tufts,turell</code>, a key used only for him (Brooks, chs. 3, 5, 7, 8, 9, 16; <a href="{PERS_T("2005.05.0018", 16)}">MHR vol. XVIII</a>). Confirmed.'
     elif first in PKEYS: per = f'<code>auth=tufts,{first}</code>. This is a name-level key shared by every {first.title()} Tufts in Perseus, not a personal ID. Use it with the passages cited on this page.'
+    elif s in NEWUNCHK: per = "Note: Pending further work."
     else: per = "Checked, not found (no <code>auth=tufts,…</code> key for this name in Brooks, the <em>Medford Historical Register</em> or <em>Historic Leaves</em>)."
     rows.append(("Perseus person index (auth=)", per))
     if s in FAGOK: rows.append(("Find a Grave memorial", f'<a href="{FG}{FAGOK[s]}">{FAGOK[s].split("/")[0]}</a>' + (" (shown on his son&rsquo;s memorial as father; not opened)" if s == "simon-tufts-1700" else " (dates and family checked)")))
     elif s in FAGQ: rows.append(("Find a Grave memorial", FAGQ[s] + ". Flagged; not used."))
     elif s in FAGNO: rows.append(("Find a Grave memorial", "Checked, not found"))
     else: rows.append(("Find a Grave memorial", "Note: Pending further work."))
-    rows.append(("Brooks, <em>History of Medford</em> (1855) register no.", f"No. {BREG[s][0]}, p. {BREG[s][1]}" if s in BREG else "Checked, no entry confidently matched"))
+    rows.append(("Brooks, <em>History of Medford</em> (1855) register no.", f"No. {BREG[s][0]}, p. {BREG[s][1]}" if s in BREG else ("Note: Pending further work." if s in NEWUNCHK else "Checked, no entry confidently matched")))
     if m: rows.append(("<em>Tufts Kinsmen</em>, Vol. I family no.", m.group(1)))
     mss = sorted(set(re.findall(r'Revolutionary War</em>, vol\. ([XVI]+)[^,]*, pp?\. ([0-9&ndash;]+)', p.get("bio", "") + p.get("service", "") + p.get("family", ""))))
     rows.append(("<em>Mass. Soldiers and Sailors</em>", "; ".join(f"vol. {v}, p. {g}" for v, g in mss) if mss else ("No military entry expected (civil career)" if s in ("turell-tufts", "simon-tufts-1700") else NC + " for this page")))
