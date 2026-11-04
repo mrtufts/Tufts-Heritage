@@ -73,3 +73,4 @@ def soon_section(id_, h, note):
 
 exec(open("tools/images.py").read())
 exec(open("tools/content.py").read())
+exec(open("tools/links_resources.py").read())

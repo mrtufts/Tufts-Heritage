@@ -71,3 +71,10 @@ table.conflict th,table.conflict td{border:1px solid var(--gold);padding:.4rem .
 .hfig .credit{display:block;font-size:.8rem;color:#2e3034;margin-top:.35rem;font-style:italic}
 
 .ai-note{display:block;font-size:.75rem;font-style:italic;color:#6b5a3a;margin:.2rem 0 .4rem}
+
+/* Links and Resources (profile pages) */
+.links-resources h3 { font-family: "Cinzel", serif; color: #6d1a24; border-bottom: 1px solid #c9a24a; padding-bottom: .2em; margin-top: 1.2em; }
+.links-resources ul.link-list { list-style: none; padding-left: 0; }
+.links-resources ul.link-list li { padding: .35em 0 .35em 1.4em; position: relative; border-bottom: 1px dotted rgba(201,162,74,.5); }
+.links-resources ul.link-list li::before { content: "\2726"; color: #c9a24a; position: absolute; left: 0; }
+.links-resources .link-desc { color: #444; }

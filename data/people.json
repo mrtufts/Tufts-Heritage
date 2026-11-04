@@ -630,6 +630,136 @@
     "profile": "profiles/john-tufts-1754.html"
   },
   {
+    "name": "Ann Tufts Richardson (b. 1757)",
+    "slug": "ann-tufts-richardson",
+    "born": "1757",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Child of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/ann-tufts-richardson.html"
+  },
+  {
+    "name": "Elizabeth Tufts Swan (b. 1758)",
+    "slug": "elizabeth-tufts-swan",
+    "born": "1758",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Child of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/elizabeth-tufts-swan.html"
+  },
+  {
+    "name": "Joseph Tufts (b. 1760)",
+    "slug": "joseph-tufts-1760",
+    "born": "1760",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Child of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/joseph-tufts-1760.html"
+  },
+  {
+    "name": "Lydia Tufts Gray (b. 1762)",
+    "slug": "lydia-tufts-gray",
+    "born": "1762",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Child of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/lydia-tufts-gray.html"
+  },
+  {
+    "name": "Asa Tufts (1764&ndash;1828)",
+    "slug": "asa-tufts-1764",
+    "born": "1764",
+    "died": "1828",
+    "era": "The Revolution",
+    "line": "Child of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/asa-tufts-1764.html"
+  },
+  {
+    "name": "Thomas Tufts of Lexington (1766&ndash;1830)",
+    "slug": "thomas-tufts-1766",
+    "born": "1766",
+    "died": "1830",
+    "era": "The Revolution",
+    "line": "Child of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/thomas-tufts-1766.html"
+  },
+  {
+    "name": "Lucy Tufts Osgood (b. 1767)",
+    "slug": "lucy-tufts-osgood",
+    "born": "1767",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Child of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/lucy-tufts-osgood.html"
+  },
+  {
+    "name": "Rebecca Tufts Adams (1769&ndash;c. 1848)",
+    "slug": "rebecca-tufts-adams",
+    "born": "1769",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Child of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/rebecca-tufts-adams.html"
+  },
+  {
+    "name": "Sarah Tufts Adams",
+    "slug": "sarah-tufts-adams",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Child of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/sarah-tufts-adams.html"
+  },
+  {
+    "name": "William Tufts (1802&ndash;1862)",
+    "slug": "william-tufts-1802",
+    "born": "1802",
+    "died": "1862",
+    "era": "19th Century",
+    "line": "Son of Amos Tufts (1762&ndash;1839)",
+    "town": "Charlestown, Mass.",
+    "profile": "profiles/william-tufts-1802.html"
+  },
+  {
+    "name": "Edward Tufts (1806&ndash;1875)",
+    "slug": "edward-tufts-1806",
+    "born": "1806",
+    "died": "1875",
+    "era": "19th Century",
+    "line": "Son of Amos Tufts (1762&ndash;1839)",
+    "town": "Lowell, Mass.",
+    "profile": "profiles/edward-tufts-1806.html"
+  },
+  {
+    "name": "George F. Tufts (1825&ndash;1920)",
+    "slug": "george-f-tufts-1825",
+    "born": "1825",
+    "died": "1920",
+    "era": "19th Century",
+    "line": "Grandson of Amos Tufts (1762&ndash;1839)",
+    "town": "Charlestown and Medford, Mass.",
+    "profile": "profiles/george-f-tufts-1825.html"
+  },
+  {
+    "name": "Alfred Tufts (1829&ndash;1882)",
+    "slug": "alfred-tufts-1829",
+    "born": "1829",
+    "died": "1882",
+    "era": "19th Century",
+    "line": "Grandson of Amos Tufts (1762&ndash;1839)",
+    "town": "Charlestown and Medford, Mass.",
+    "profile": "profiles/alfred-tufts-1829.html"
+  },
+  {
     "name": "Charles Tufts",
     "slug": "charles-tufts",
     "born": "",
