@@ -65,8 +65,8 @@ table.conflict caption{font-family:Cinzel,serif;color:var(--crimson);text-align:
 table.conflict th,table.conflict td{border:1px solid var(--gold);padding:.4rem .6rem;text-align:left;vertical-align:top}
 /* Illustrations */
 .gallery .figs{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem}
-.hfig{margin:0;background:var(--parchment,#f3e7c9);border:1px solid #c9a24a;padding:.6rem;box-shadow:0 2px 6px rgba(46,48,52,.25)}
-.hfig img{display:block;width:100%;height:auto;border:2px solid #6d1a24}
+.hfig{box-sizing:border-box;overflow:hidden;margin:0;background:var(--parchment,#f3e7c9);border:1px solid #c9a24a;padding:.6rem;box-shadow:0 2px 6px rgba(46,48,52,.25)}
+.hfig img{box-sizing:border-box;display:block;width:100%;max-width:100%;height:auto;border:2px solid #6d1a24}
 .hfig figcaption{font-size:.92rem;margin-top:.5rem;line-height:1.35}
 .hfig .credit{display:block;font-size:.8rem;color:#2e3034;margin-top:.35rem;font-style:italic}
 
