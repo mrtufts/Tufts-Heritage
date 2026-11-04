@@ -33,6 +33,7 @@ CUR = {
 for _s in ("william-tufts-1802", "edward-tufts-1806", "george-f-tufts-1825", "alfred-tufts-1829"):
     CUR[_s] = [("Maps, Surveys and Artifacts", "places.html#tufts-subdivisions", "The Tufts subdivisions of South Medford", "This site&rsquo;s entry on the 1854 and 1861 plans labeled &ldquo;W E G F &amp; A Tufts.&rdquo;"),
                ("Markers, Plaques and Places", "https://medfordhistoricalcommission.org/wp-content/uploads/2022/02/area-edward.pdf", "Medford Historical Commission, Edward Street Area (2022)", "Inventory form with the Walling (1855), Beers (1875) and Walker (1889) maps and the subdivision plans.")]
+CUR.setdefault("cotton-tufts", []).append(("Maps, Surveys and Artifacts", "coat-of-arms.html#armories", "The Tufts Coat of Arms: the Norton tankard", "Bolton&rsquo;s <em>American Armory</em> (1927) records the Norton arms on a tankard given by Elizabeth Quincy to her daughter Lucy Tufts, his first wife."))
 CUR["alfred-tufts-1829"].insert(0, ("Maps, Surveys and Artifacts", "places.html#tufts-subdivisions", "Subdivision plans surveyed by Alfred Tufts", "MCSRD Plans 7:19 (1854), 9a:9 and plan book 10, plan 17 (1861), described on Places."))
 
 import json as _json

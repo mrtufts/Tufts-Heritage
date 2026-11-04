@@ -78,3 +78,6 @@ table.conflict th,table.conflict td{border:1px solid var(--gold);padding:.4rem .
 .links-resources ul.link-list li { padding: .35em 0 .35em 1.4em; position: relative; border-bottom: 1px dotted rgba(201,162,74,.5); }
 .links-resources ul.link-list li::before { content: "\2726"; color: #c9a24a; position: absolute; left: 0; }
 .links-resources .link-desc { color: #444; }
+.placeholder-box{border:3px dashed var(--gold);background:rgba(201,162,74,.08);padding:1.2rem;display:flex;flex-direction:column;justify-content:center;text-align:center;min-height:240px}
+.placeholder-box h3{font-family:"Cinzel",serif;color:#6d1a24}
+.arms-fig img{max-height:620px;width:auto}
