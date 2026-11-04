@@ -195,6 +195,15 @@ page("generations/revolution.html", "The Revolution 1765–1783 | Tufts Lineage 
 <section id="medford-roster"><h2>The Medford Minute Men Roster</h2>
 <blockquote>&ldquo;ROSTER OF THE FIRST COMPANY OF MINUTE MEN WHO ASSEMBLED IN MEDFORD AT THE CALL OF PAUL REVERE AND ENGAGED IN THE BATTLE OF APRIL 19, 1775&rdquo;</blockquote>
 <p>The monument, erected by the City of Medford in 1925, lists Tufts Daniel, Tufts Ebenezer, Tufts James Jr., Tufts John Corporal, Tufts Jonathan, Tufts Isaac Sergeant, Tufts Peter Jr., Tufts Samuel, and Tufts Samuel 3d. <a href="{IMG}medford-1925-monument.jpg">View photograph</a></p>
+<p>The bronze stands on the lawn of the Medford Public Library at 111 High Street, just west of Hillside Avenue. Below the roster, set apart from the alphabetical list, is one more line: &ldquo;HENRY PUTNAM AGED 62 KILLED IN ACTION.&rdquo; The closing inscription reads: &ldquo;ERECTED BY THE CITY OF MEDFORD ON THE ONE HUNDRED AND FIFTIETH ANNIVERSARY TO COMMEMORATE THEIR VALIANT SERVICE IN THE CAUSE OF LIBERTY.&rdquo; <span class="cite">(<a href="https://www.hmdb.org/m.asp?m=309611">HMDB marker 309611</a>)</span></p>
+<p>The Sarah Bradlee Fulton Chapter&rsquo;s history explains that separate line. Putnam, a veteran of Louisburg, was past the age of service but marched anyway:</p>
+<blockquote>&ldquo;On account of his age he was exempt, but, as his great-grandson says, &lsquo;he showed his Putnam spunk&rsquo; and went with the rest.&rdquo;</blockquote>
+<p class="cite">(<em>Medford in the War of the Revolution</em>, Sarah Bradlee Fulton Chapter, D.A.R., p. 32. <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2005.05.0002%3Achapter%3D2%3Asection%3Dc.2.4%3Apage%3D32">Text (Perseus)</a>)</p>
+<p>The same page records that &ldquo;Henry Putnam gave his life at Menotomy,&rdquo; and that the company brought home William Polly, eighteen, mortally wounded. Polly is on the roster, but nothing on the bronze marks his death.</p>
+</section>
+<section id="brooks-meriam"><h2>John Brooks at Meriam&rsquo;s Corner</h2>
+<p>Dr. Tufts&rsquo;s former apprentice was not with the Medford company that day. Brooks had set up his practice in Reading and commanded that town&rsquo;s minute men. Pressing ahead of Col. Bridge&rsquo;s regiment, his company reached Meriam&rsquo;s Corner in Concord as the British column fell back from Concord, and Brooks ordered his men to fire. He later served as governor of Massachusetts from 1816 to 1823. <span class="cite">(<a href="https://www.nps.gov/mima/learn/historyculture/governor-john-brooks-at-the-fight-at-meriam-s-corner.htm">Minute Man National Historical Park: Governor John Brooks at the Fight at Meriam&rsquo;s Corner</a>; <a href="https://www.nps.gov/mima/learn/historyculture/meriam-s-corner.htm">Meriam&rsquo;s Corner</a>)</span></p>
+<p>See <a href="#brooks-tufts">Dr. Tufts and John Brooks</a>.</p>
 </section>
 <p>Related: <a href="{{P}}places.html#maps">Maps by Peter Tufts, the surveyor</a> &middot; <a href="{{P}}places.html#winter-hill">Winter Hill</a> &middot; <a href="{{P}}places.html#medford-charlestown">Medford &amp; Charlestown</a></p>''')
 
