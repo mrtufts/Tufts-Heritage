@@ -130,7 +130,7 @@ def run():
     for f in sorted(glob.glob("profiles/*.html")):
         if f.endswith("_template.html"): continue
         s = f[9:-5]; t = open(f).read()
-        t = re.sub(r'<svg class="divider"[^\n]*?</svg><section id="research-links">.*?</section>', "", t, flags=re.S)
+        t = re.sub(r'<svg class="divider"(?:(?!</svg>)[^\n])*</svg><section id="research-links">.*?</section>', "", t, flags=re.S)
         t = re.sub(r'<section id="research-links">.*?</section>', "", t, flags=re.S)
         soup = BeautifulSoup(t, "html.parser")
         cur = ([("Biographies and Family Trees", BLOG_KEEP[s][0], "Family blog post", BLOG_KEEP[s][1])] if s in BLOG_KEEP else []) + [(g, ("" if u.startswith("http") else "../") + u, l, d) for g, u, l, d in CUR.get(s, [])]
