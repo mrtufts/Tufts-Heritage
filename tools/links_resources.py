@@ -43,6 +43,9 @@ for _s,_items in {
   ("Markers, Plaques and Places", "places.html#tufts-library", "Tufts Library, Weymouth", "Founded by his grandchildren Quincy and Susannah."),
   ("Markers, Plaques and Places", "places.html#tufts-corner", "Tufts Corner / Tufts & Whittemore store", "His son Cotton Jr.&rsquo;s store at Weymouth Landing."),
   ("Archives, Letters and Records", "https://www.weymouth.ma.us/DocumentCenter/View/545/Tufts-Smith-Adams-Family-Collection", "Weymouth Tufts/Smith/Adams finding aid", "Municipal finding aid for the family papers."),
+  ("Digitized Books and Journals", "https://archive.org/details/mobot31753002119144", "Memoirs of the American Academy of Arts and Sciences, Vol. I (1785)", "First Memoirs volume (Boston: Adams and Nourse, 1785); title page and preface reprint the Academy&rsquo;s act of incorporation."),
+  ("Digitized Books and Journals", "https://archive.org/details/jstor-25053737", "A List of the American Academy of Arts and Sciences, 1785", "Printed list naming Hon. Cotton Tufts, Esq; M. D. F. M. S. among the Council."),
+  ("Archives, Letters and Records", "https://www.amacad.org/archives/charter", "American Academy charter and charter members", "Academy archives page with the 1780 act and the list of 62 incorporators, including Cotton Tufts."),
  ],
  "cotton-tufts-jr": [
   ("Markers, Plaques and Places", "places.html#tufts-corner", "Tufts Corner", "Tufts &amp; Whittemore store and circulating library."),

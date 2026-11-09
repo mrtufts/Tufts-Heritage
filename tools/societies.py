@@ -9,8 +9,9 @@ NEJM = '&ldquo;From the Curator&rsquo;s Notebook: Cotton Tufts to Cotton Tufts, 
 COTTON_SOC = ('{DIV}<section id="learned-societies"><h2>Learned Societies</h2>'
  '<h3>American Academy of Arts and Sciences, 1780</h3>'
  + Q("Be it therefore Enacted &hellip; that the Honble Samuel Adams Esqr., Honble John Adams Esqr., &hellip; Honble John Hancock Esqr., &hellip; Cotton Tufts Esqr., &hellip; be, and they hereby are formed into, constituted &amp; made a body politic and corporate, by the name of the American Academy of Arts and Sciences", f'Act of incorporation, passed May 3, 1780, as copied into the Academy&rsquo;s Minutes, vol. 1, pp. 1&ndash;2. <a href="{AAA1}">American Academy archives transcription</a>; <a href="{AAAC}">charter and list of the 62 charter members</a>')
- + '<p>He was one of 62 incorporators named in the act. The Academy&rsquo;s own charter page lists him among its charter members.</p>'
- + UNV("The date. The copied minutes say the act passed May 3, 1780; the Academy&rsquo;s charter page says it was granted May 4, 1780.")
+ + '<p>He was one of 62 incorporators named in the act. The Academy&rsquo;s own charter page lists him among its charter members. The Academy&rsquo;s first <em>Memoirs</em> volume was printed at Boston in 1785 (title page below). A printed membership list for that year places &ldquo;Hon. Cotton Tufts, Esq; M. D. F. M. S.&rdquo; on the Academy&rsquo;s Council.</p>'
+ + '<div class="figs">' + FIG("aaas-ancient-seal.png") + FIG("aaas-memoirs-1785-titlepage.jpg") + FIG("aaas-members-list-1785.jpg") + '</div>'
+ + UNV("The date. The copied minutes say the act passed May 3, 1780; the Academy&rsquo;s charter page (and the 1785 <em>Memoirs</em> preface, p. iv) say the charter was granted May 4, 1780. The Internet Archive copy of the 1785 membership list does not carry a separate page number in the scan used here.")
  + '<h3>Massachusetts Medical Society: an incorporator, 1781</h3>'
  + Q("Tufts was also an incorporator of the Massachusetts Medical Society in 1781 and served as its fourth president (1787&ndash;1795).", CTW)
  + '<p>The Society was incorporated on November 1, 1781, with thirty-one incorporators (Cash, as below, text at nn. 45&ndash;46).</p>'
