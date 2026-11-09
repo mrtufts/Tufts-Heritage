@@ -37,6 +37,26 @@ CUR.setdefault("cotton-tufts", []).append(("Maps, Surveys and Artifacts", "coat-
 CUR["alfred-tufts-1829"].insert(0, ("Maps, Surveys and Artifacts", "places.html#tufts-subdivisions", "Subdivision plans surveyed by Alfred Tufts", "MCSRD Plans 7:19 (1854), 9a:9 and plan book 10, plan 17 (1861), described on Places."))
 del CUR["alfred-tufts-1829"][1]
 
+
+for _s,_items in {
+ "cotton-tufts": [
+  ("Markers, Plaques and Places", "places.html#tufts-library", "Tufts Library, Weymouth", "Founded by his grandchildren Quincy and Susannah."),
+  ("Markers, Plaques and Places", "places.html#tufts-corner", "Tufts Corner / Tufts & Whittemore store", "His son Cotton Jr.&rsquo;s store at Weymouth Landing."),
+  ("Archives, Letters and Records", "https://www.weymouth.ma.us/DocumentCenter/View/545/Tufts-Smith-Adams-Family-Collection", "Weymouth Tufts/Smith/Adams finding aid", "Municipal finding aid for the family papers."),
+ ],
+ "cotton-tufts-jr": [
+  ("Markers, Plaques and Places", "places.html#tufts-corner", "Tufts Corner", "Tufts &amp; Whittemore store and circulating library."),
+  ("Archives, Letters and Records", "https://www.historicnewengland.org/explore/collections-access/gusn/194087/", "Historic New England stock book (1823)", "Tufts &amp; Whittemore inventory."),
+ ],
+ "quincy-tufts": [("Markers, Plaques and Places", "places.html#tufts-library", "Tufts Library", "Co-founder by bequest (1879).")],
+ "susannah-tufts-1797": [("Markers, Plaques and Places", "places.html#tufts-library", "Tufts Library", "Co-founder by bequest (1879).")],
+ "mercy-brooks-tufts": [("Archives, Letters and Records", "https://www.weymouth.ma.us/DocumentCenter/View/545/Tufts-Smith-Adams-Family-Collection", "Weymouth finding aid", "Notes her 1799 diary in the family papers.")],
+}.items():
+    CUR.setdefault(_s, [])
+    for it in _items:
+        if it not in CUR[_s]:
+            CUR[_s].append(it)
+
 import json as _json
 BROKEN = {"http://www.battleroad.net/rememberingthefallen/gravesite17.html"}
 for _pg, _d in _json.load(open("data/research_links.json")).items():

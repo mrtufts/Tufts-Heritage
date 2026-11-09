@@ -21,7 +21,7 @@ H = [("Thomas Tufts", "1701", "", SIB("V", "122&ndash;124"), "The Quinquennial C
  ("Dr. Simon Tufts (1727&ndash;1786)", "1744", "simon-tufts-11-1", SIB("XI", "478&ndash;481"), "Brooks: born Jan. 16, 1727, &ldquo;graduated at Harvard College in 1744&rdquo; (p. 305)."),
  ("Dr. Cotton Tufts (1732&ndash;1815)", "1749", "cotton-tufts", SIB("XII", "493&ndash;500"), "A.B. 1749, A.M.; honorary M.D. 1785 (Quinquennial Catalogue, class of 1749)."),
  ("Simon Tufts (son of Dr. Simon)", "1767", "", SIB("XVI", "540&ndash;542"), 'Probably the Simon Tufts, A.M., eldest son of Dr. Simon and Lucy (Dudley) Tufts, who died in 1802 at the Cape of Good Hope (Medford vital records). Whether he is the <a href="{P}profiles/simon-tufts-29-1.html">Loyalist Simon Tufts (1750&ndash;1801)</a> on this site is Unverified.'),
- ("Cotton Tufts Jr. (1757&ndash;1833)", "1777", "", QQC("1777"), "Son of Dr. Cotton Tufts; the Adams Papers editors give &ldquo;Harvard 1777&rdquo; (Adams Family Correspondence, vol. 1, Abigail Smith to Cotton Tufts, 2 April 1764, note 6)."),
+ ("Cotton Tufts Jr. (1757&ndash;1833)", "1777", "cotton-tufts-jr", QQC("1777"), "Son of Dr. Cotton Tufts; the Adams Papers editors give &ldquo;Harvard 1777&rdquo; (Adams Family Correspondence, vol. 1, Abigail Smith to Cotton Tufts, 2 April 1764, note 6)."),
  ("Abijah Tufts", "1790", "", QQC("1790"), "Identity not established."),
  ("Hall Tufts", "1794", "", 'Brooks, p. 301 (Medford graduates list)', "Listed by Brooks among Medford&rsquo;s Harvard graduates. Identity not established."),
  ("Joseph Tufts", "1807", "", QQC("1807"), "Identity not established."),

@@ -10,13 +10,13 @@
     "profile": "profiles/peter-tufts-jr.html"
   },
   {
-    "name": "Dr. Cotton Tufts",
+    "name": "Dr. Cotton Tufts (1732&ndash;1815)",
     "slug": "cotton-tufts",
     "born": "1732",
     "died": "1815",
     "era": "The Revolution",
     "line": "Dr. Simon Tufts",
-    "town": "Medford; Weymouth",
+    "town": "Medford; Weymouth, Mass.",
     "profile": "profiles/cotton-tufts.html"
   },
   {
@@ -768,6 +768,46 @@
     "line": "Second wife of Dr. Cotton Tufts",
     "town": "Gloucester and Weymouth, Mass.",
     "profile": "profiles/susanna-warner-tufts.html"
+  },
+  {
+    "name": "Cotton Tufts (1757&ndash;1833)",
+    "slug": "cotton-tufts-jr",
+    "born": "1757",
+    "died": "1833",
+    "era": "The Revolution",
+    "line": "Son of Dr. Cotton Tufts",
+    "town": "Weymouth, Mass.",
+    "profile": "profiles/cotton-tufts-jr.html"
+  },
+  {
+    "name": "Mercy Brooks Tufts (1763&ndash;1849)",
+    "slug": "mercy-brooks-tufts",
+    "born": "1763",
+    "died": "1849",
+    "era": "The Revolution",
+    "line": "Wife of Cotton Tufts (1757&ndash;1833)",
+    "town": "Medford; Weymouth, Mass.",
+    "profile": "profiles/mercy-brooks-tufts.html"
+  },
+  {
+    "name": "Quincy Tufts (1791&ndash;1872)",
+    "slug": "quincy-tufts",
+    "born": "1791",
+    "died": "1872",
+    "era": "19th Century",
+    "line": "Grandson of Dr. Cotton Tufts",
+    "town": "Weymouth; Boston, Mass.",
+    "profile": "profiles/quincy-tufts.html"
+  },
+  {
+    "name": "Susannah Tufts (1797&ndash;1877)",
+    "slug": "susannah-tufts-1797",
+    "born": "1797",
+    "died": "1877",
+    "era": "19th Century",
+    "line": "Granddaughter of Dr. Cotton Tufts",
+    "town": "Weymouth, Mass.",
+    "profile": "profiles/susannah-tufts-1797.html"
   },
   {
     "name": "Charles Tufts",
