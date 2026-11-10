@@ -204,3 +204,5 @@ def EXTRA(path):
     if path == "profiles/quincy-tufts.html" or path == "profiles/susannah-tufts-1797.html":
         out += ('{DIV}<section id="library"><h2>Tufts Library</h2><p>See <a href="{P}places.html#tufts-library">Places: Tufts Library</a>.</p></section>')
     return out
+
+exec(open("tools/shea_selee.py").read())
