@@ -285,6 +285,7 @@ page("places.html", "Places | Tufts Lineage &amp; Legacy", "Places", "Places", "
 {TA("Residences of Peter Tufts Jr. (1753&ndash;1832) and his cousin Daniel Tufts opposite the Powder House; Peter Jr. had his homestead lot set off to Charlestown in 1811.", WILD+", pp. 50, 52")}
 {Q("Lived in house occupied at one time by his cousin Daniel, opposite Powder House; through his influence his homestead lot was set off to Charlestown in 1811.", WILD+", p. 52 (Peter Tufts Jr.)", ["wild-medford-in-revolution-p52.jpg"])}
 {Q("lived near Powder House, Somerville; land where his house stood set off from Medford to Charlestown, 1811.", WILD+", p. 50 (Daniel Tufts)", ["wild-medford-in-revolution-p50.jpg"])}
+<p>On the Mystic side of Charlestown Neck, Nathan Tufts (c. 1764&ndash;1835) built Tufts Mill Pond and operated a tide mill, just below present Sullivan Square. See <a href="{{P}}businesses.html#nathan-tufts-tide-mill">Tide mill of Nathan Tufts</a>.</p>
 </section>
 {{DIV}}
 <section id="later-homes"><h2>Later Homes</h2>
@@ -303,6 +304,8 @@ page("collections.html", "Collections | Tufts Lineage &amp; Legacy", "Collection
 </section>
 {{DIV}}
 <section id="artifacts"><h2>Artifacts</h2>
+<figure class="hfig hfig-flow"><a href="{{P}}assets/images/historic-deerfield-needlework-tufts.jpg"><img src="{{P}}assets/images/historic-deerfield-needlework-tufts.jpg" alt="Needlework coat of arms: Tufts, ca. 1800, Hartford, Conn., Historic Deerfield accession HD 1998" loading="lazy"></a><figcaption><strong>Needlework coat of arms: Tufts, ca. 1800, Hartford, Conn. Historic Deerfield, accession no. HD 1998.</strong><span class="credit">Image: Historic Deerfield, HD 1998. <a href="https://museums.fivecolleges.edu/collection/search/hd-1998-needlework-coat-of-arms-tufts-ca-1800">Museum record (Five College Museums)</a></span></figcaption></figure>
+<p>Historic Deerfield holds a needlework coat of arms of the Tufts (spelled Tuffts) family, made in Hartford, Connecticut, about 1800: polychrome silk embroidery on white satin, accession no. HD 1998. The museum&rsquo;s online page showed no photograph as of November 4, 2026. The piece and its shield are discussed on <a href="{{P}}coat-of-arms.html#deerfield">The Tufts Coat of Arms</a>.</p>
 {Q("One heirloom of the family, a tankard (now belonging to the First Congregational Society of Quincy, Mass.), made by John Edwards, was the gift of Elizabeth Quincy to her daughter, Lucy (Quincy) Tufts, who married Dr. Cotton Tufts in 1755.", TFH+", p. 35", ["tufts-family-history-p35.jpg"])}
 {UNV("The tankard's present location is reported from 1963. No photograph is held.")}
 <p class="soon">Family artifacts <span class="tag">Note: Pending further work.</span></p>
