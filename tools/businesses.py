@@ -7,6 +7,12 @@ def BIZ(id_, h, who, what, where, when, body):
     return (f'<section id="{id_}"><h2>{h}</h2><p class="bizmeta"><strong>Tufts:</strong> {who} &middot; <strong>Business:</strong> {what} &middot; '
             f'<strong>Location:</strong> {where} &middot; <strong>Dates:</strong> {when}</p>{body}</section>{{DIV}}')
 PR = lambda s, n: f'<a href="{{P}}profiles/{s}.html">{n}</a>'
+SPOT_POND = (
+'<h3 id="spot-pond-dam">Spot Pond mill dam, Medford, 1800</h3>\n'
+'<p><strong>Tufts association.</strong> A Samuel Tufts held the mill dam on the brook below Spot Pond. When owners of the flooded meadows sued, the Supreme Judicial Court ruled in October 1800 that the defendant, Samuel Tufts, &ldquo;has had, and now has, prescriptive right to keep up the dam, in the same situation and height, as in his plea he has declared.&rdquo;</p>\n'
+'<p class="cite">&ldquo;Medford&rsquo;s Water Supply,&rdquo; <em>The Medford Historical Register</em>, vol. XIII, no. 3 (July 1910), p. 61, citing Sullivan&rsquo;s <em>Land Titles</em>. <a href="https://archive.org/details/medfordhistoricv13v16medf">Volume scan (Internet Archive)</a></p>\n'
++ UNV("Which Samuel Tufts owned the dam, and which mill it served, is not stated. The case report in Sullivan&rsquo;s <em>History of Land Titles in Massachusetts</em> (1801) has not yet been checked.")
++ '\n')
 BIZ_HTML = (
 '<section id="about"><p>Long before the college that bears the name, the Tufts family earned its living from the clay, water and roads of the Mystic valley: ferrying, brickmaking, tanning, milling, fishing, distilling, printing and, later, pharmacy. Each entry below names the family member, the trade, the place and the dates, quoting the printed page. Doubtful identifications are marked Unverified. See also <a href="{P}places.html#mystic-river">the Mystic River</a> and <a href="{P}places.html#homesteads">Homesteads</a>.</p></section>{DIV}'
 + BIZ("ferry", "The Charlestown&ndash;Malden Ferry", "Peter Tufts (the immigrant, 1617&ndash;1700)", "Ferry", "Mystic River, between Charlestown and Malden", "1646&ndash;47",
@@ -48,6 +54,7 @@ BIZ_HTML = (
   + UNV("This is a compilation; its original printed source and page are not yet confirmed. The compilation says Gershom Cutter bought &ldquo;the Tufts mill&rdquo; in 1845, but it names William and Edward Tufts as owners in the 1848 agreement. Which William and Edward these were is not known."))
 + BIZ("fishing", "Mystic River fishing rights", "Jonathan, Isaac, Charles, Simon and Seth Tufts", "Fishery (town fishing rights)", "Mystic River, Medford", "About 1803",
   Q("Among the earliest fishermen were John Cutter, Jonathan Tufts, and Benjamin Teel. In 1803, Cutter paid sixty-five dollars, Tufts thirteen dollars, and Teel thirteen dollars, for the right of fishing. &hellip; Isaac Tufts fished from the Bridge to Rock Hill", BK(385))
+  .replace("</blockquote>\n", "</blockquote>\n" + SPOT_POND, 1)
   + '<p>Brooks adds that &ldquo;Charles, Simon, and Seth Tufts are there&rdquo; in the records (p. 385).</p>'
   + UNV("Which Jonathan, Isaac, Charles, Simon and Seth Tufts these were."))
 + BIZ("distillery", "Medford distilling", "Fitch Tufts", "Distilling (Medford rum)", "Medford", "Late 18th to early 19th century",
