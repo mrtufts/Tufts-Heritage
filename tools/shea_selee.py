@@ -15,7 +15,7 @@ def SS_CITE(t):
 SS_BODY = f'''
 <style>:root{{--burgundy:#355e3b}}.hfig img{{border-color:#355e3b}}.links-resources h3,.placeholder-box h3{{color:#355e3b}}</style>
 <section id="intro">
-<p>This page follows the Shea family of Annascaul, on the Dingle Peninsula in County Kerry, and the Selee, Ziegler, and Layer families of Sebewaing, Michigan,. Every confirmed statement is cited. Anything that still rests only on family tradition, or that the records contradict or leave unsettled, is marked Unverified.</p>
+<p>This page follows the Shea family of Annascaul, on the Dingle Peninsula in County Kerry, and the Selee, Ziegler, and Layer families of Sebewaing, Michigan. Every confirmed statement is cited. Anything that still rests only on family tradition, or that the records contradict or leave unsettled, is marked Unverified.</p>
 <p>The page is kept off the public menus and is not offered to search engines.</p>
 </section>
 {{DIV}}
