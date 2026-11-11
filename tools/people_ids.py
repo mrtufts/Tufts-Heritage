@@ -108,7 +108,7 @@ def IDSEC(p):
     rows.append(("Brooks, <em>History of Medford</em> (1855) register no.", f"No. {BREG[s][0]}, p. {BREG[s][1]}" if s in BREG else ("Note: Pending further work." if s in NEWUNCHK else "Checked, no entry confidently matched")))
     if m: rows.append(("<em>Tufts Kinsmen</em>, Vol. I family no.", m.group(1)))
     mss = sorted(set(re.findall(r'Revolutionary War</em>, vol\. ([XVI]+)[^,]*, pp?\. ([0-9&ndash;]+)', p.get("bio", "") + p.get("service", "") + p.get("family", ""))))
-    rows.append(("<em>Mass. Soldiers and Sailors</em>", "; ".join(f"vol. {v}, p. {g}" for v, g in mss) if mss else ("No military entry expected (civil career)" if s in ("turell-tufts", "simon-tufts-1700") else NC + " for this page")))
+    rows.append(("<em>Mass. Soldiers and Sailors</em>", "; ".join(f"vol. {v}, p. {g}" for v, g in mss) if mss else ("No military entry expected (civil career)" if s in ("turell-tufts", "simon-tufts-1700", "nathan-tufts-1764") else NC + " for this page")))
     rows.append(("DAR ancestor no.", DAR.get(s, "Note: Pending further work.")))
     if s in ADAMS: rows.append(("Adams Papers document IDs", ADAMS[s]))
     rows += [("FamilySearch ID", "Note: Pending further work."), ("Geni profile", "Note: Pending further work."),

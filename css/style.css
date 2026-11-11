@@ -85,5 +85,5 @@ table.conflict th,table.conflict td{border:1px solid var(--gold);padding:.4rem .
 .hfig-sm img{max-width:min(140px,100%)}
 .hfig-flow{float:right;margin:0 0 .85rem 1.1rem;max-width:min(380px,48%)}
 .hfig-shield img{width:260px;max-width:100%}
-#nathan-tufts-tide-mill::after,#deerfield::after,#artifacts::after{content:"";display:table;clear:both}
+#nathan-tufts-tide-mill::after,#deerfield::after,#artifacts::after,#biography::after{content:"";display:table;clear:both}
 @media (max-width:600px){.hfig-sm,.hfig-flow{float:none;margin:0 auto 1rem}.hfig-flow{max-width:100%}.arms-fig img{max-height:none}}

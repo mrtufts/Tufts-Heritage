@@ -35,7 +35,7 @@ PROFILES += [
  _NP_ART("nathan-tufts-jr", "Nathan Tufts Jr.", "Medford",
   '<p>Nathan Tufts Jr. helped pay for the men sent to New York in 1776 and served 82 days with Capt. Benjamin Blaney&rsquo;s guards at Cambridge in 1778.</p>',
   Q("Tufts, Nathan, Jr. Account of money paid by persons to hire men who went to New York in Sept., 1776, examined and allowed by a committee at Medford Jan. 13, 1777; also, Private, Capt. Benjamin Blaney's co., Col. Eleazer Brooks's regt. of guards; joined Jan. 12, 1778; service to April 3, 1778, 82 days, at Cambridge.", MSS + ", p. 137"),
-  "His dates and whether he is Nathan the Charlestown tanner (see Businesses). Compare also Nathan Tufts (15-7)."),
+  "His dates. He is not the Charlestown butcher and tanner <a href='{P}profiles/nathan-tufts-1764.html'>Nathan Tufts (c. 1764&ndash;1835)</a>, son of Nathan of Medford; compare also <a href='{P}profiles/nathan-tufts-15-7.html'>Nathan Tufts (15-7)</a>."),
  _NP_ART("samuel-tufts-3d", "Samuel Tufts 3d", "Medford",
   '<p>Samuel Tufts 3d of Medford marched with Capt. Isaac Hall&rsquo;s company on April 19, 1775. Medford had at least three men named Samuel Tufts at the time, and the numeral set him apart from the others.</p>',
   Q("Tufts, Samuel, 3d, Medford. Private, Capt. Isaac Hall's co., Col. Thomas Gardner's regt., which assembled April 19, 1775; service, 5 days.", MSS + ", p. 139"),

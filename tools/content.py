@@ -285,7 +285,7 @@ page("places.html", "Places | Tufts Lineage &amp; Legacy", "Places", "Places", "
 {TA("Residences of Peter Tufts Jr. (1753&ndash;1832) and his cousin Daniel Tufts opposite the Powder House; Peter Jr. had his homestead lot set off to Charlestown in 1811.", WILD+", pp. 50, 52")}
 {Q("Lived in house occupied at one time by his cousin Daniel, opposite Powder House; through his influence his homestead lot was set off to Charlestown in 1811.", WILD+", p. 52 (Peter Tufts Jr.)", ["wild-medford-in-revolution-p52.jpg"])}
 {Q("lived near Powder House, Somerville; land where his house stood set off from Medford to Charlestown, 1811.", WILD+", p. 50 (Daniel Tufts)", ["wild-medford-in-revolution-p50.jpg"])}
-<p>On the Mystic side of Charlestown Neck, Nathan Tufts (c. 1764&ndash;1835) built Tufts Mill Pond and operated a tide mill, just below present Sullivan Square. See <a href="{{P}}businesses.html#nathan-tufts-tide-mill">Tide mill of Nathan Tufts</a>.</p>
+<p>On the Mystic side of Charlestown Neck, <a href="{{P}}profiles/nathan-tufts-1764.html">Nathan Tufts (c. 1764&ndash;1835)</a> built Tufts Mill Pond and operated a tide mill, just below present Sullivan Square. See <a href="{{P}}businesses.html#nathan-tufts-tide-mill">Tide mill of Nathan Tufts</a>.</p>
 </section>
 {{DIV}}
 <section id="later-homes"><h2>Later Homes</h2>
