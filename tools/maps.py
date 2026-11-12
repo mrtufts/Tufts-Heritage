@@ -25,7 +25,7 @@ TA_FIG = {
  "siege-of-boston-1775-map.jpg": "Shows Winter Hill, home of Peter Tufts of Winter Hill (Jones, p. 129).",
  "weymouth-first-church.jpg": "Dr. Cotton Tufts was a deacon of the First Church, Weymouth, for more than forty years (Weymouth Tufts/Smith/Adams finding aid).",
  "medford-square-1913.jpg": "The Drs. Simon Tufts house stood at Medford Square until 1867 (Medford Historical Register XVIII, p. 67).",
- "medford-1880-birdseye.jpg": "Medford: Peter Tufts House, the Drs. Simon Tufts house, and Tufts College (see Places).",
+ "medford-1880-birdseye.jpg": "Medford Square, where the Drs. Simon Tufts house, later the home of Turell Tufts, stood until it was demolished in 1867 (Medford Historical Register XVIII, p. 67). The house itself is therefore not shown in this 1880 view. See Places.",
  "mystic-river-medford.jpg": "Ferry, brickyards, fishing rights and mills of the Tufts family lay along the Mystic (Booth part 1 p. 21; Brooks pp. 355&ndash;356, 385). See The Mystic River above.",
 }
 for _f, _a in TA_FIG.items():
