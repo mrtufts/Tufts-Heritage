@@ -88,6 +88,7 @@ PAGE_FIGS = {
  "places.html": ["peter-tufts-house-medford.jpg", "peter-oliver-tufts-house-somerville.jpg", "old-powder-house-somerville.jpg", "prospect-hill-monument.jpg", "royall-house-1920.jpg", "royall-house-east-facade.jpg", "cradock-house-medford.jpg", "dorchester-heights-monument.jpg", "fort-independence-castle-island.jpg", "farmington-falls-postcard-1907.jpg", "tide-mill-nathan-tufts-charlestown.jpg", "map-charlestown-1848-tufts-mill-pond.jpg"],
  "collections.html": ["cotton-tufts-greenleaf-1804.jpg", "charles-tufts-c1860.jpg", "henry-tufts-narrative-1807.jpg", "tide-mill-nathan-tufts-charlestown.jpg", "map-charlestown-1848-tufts-mill-pond.jpg"],
  "profiles/cotton-tufts.html": ["cotton-tufts-greenleaf-1804.jpg"],
+ "profiles/turell-tufts.html": ["medford-1880-birdseye.jpg"],
  "profiles/simon-tufts-11-1.html": ["trumbull-bunker-hill.jpg", "royall-house-1920.jpg"],
  "profiles/henry-tufts-25-1.html": ["henry-tufts-narrative-1807.jpg"],
  "profiles/francis-tufts-20-1.html": ["farmington-falls-postcard-1907.jpg", "dorchester-heights-monument.jpg"],
