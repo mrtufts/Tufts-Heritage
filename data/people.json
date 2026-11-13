@@ -820,6 +820,26 @@
     "profile": "profiles/susannah-tufts-1797.html"
   },
   {
+    "name": "Nathan Tufts, Cordwainer, of Medford",
+    "slug": "nathan-tufts-cordwainer",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Son of Peter Tufts of Milk Row; father of Daniel, Deacon Amos, and Nathan Tufts of Charlestown",
+    "town": "Medford, Mass.",
+    "profile": "profiles/nathan-tufts-cordwainer.html"
+  },
+  {
+    "name": "Deacon Amos Tufts (c. 1762&ndash;1839)",
+    "slug": "amos-tufts-1762",
+    "born": "1762",
+    "died": "1839",
+    "era": "19th Century",
+    "line": "Son of Nathan Tufts, cordwainer of Medford; blacksmith and deacon of the First Church, Charlestown",
+    "town": "Charlestown, Mass.",
+    "profile": "profiles/amos-tufts-1762.html"
+  },
+  {
     "name": "Charles Tufts",
     "slug": "charles-tufts",
     "born": "",

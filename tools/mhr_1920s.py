@@ -32,3 +32,4 @@ def EXTRA(path):
         if s and path == f"profiles/{s}.html":
             out += '{DIV}<section id="route-of-revere"><h2>Medford Roll of April 19, 1775</h2><p>Listed as &ldquo;' + n + '&rdquo; on the Medford roll of Capt. Isaac Hall&rsquo;s company called in &ldquo;The Route of Revere&rdquo; (' + _R1920 + '). See <a href="{P}places.html#medford-april-1775">Places</a>.</p></section>'
     return out
+exec(open("tools/amos_mill_1113.py").read())
