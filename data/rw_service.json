@@ -20,6 +20,7 @@
   "hutchinson-tufts": "pistol",
   "isaac-tufts-36-10": "musket",
   "james-tufts-jr-36-2": "pistol",
+  "john-tufts-1754": "pistol",
   "john-tufts-22-1": "musket",
   "john-tufts-49-2": "pistol",
   "john-tufts-53-3": "pistol",
@@ -41,5 +42,6 @@
   "timothy-tufts": "pistol",
   "william-tuffs-35-8": "pistol",
   "william-tufts-13-6": "musket",
-  "william-tufts-40-2": "pistol"
+  "william-tufts-40-2": "pistol",
+  "zachariah-tufts": "musket"
 }
