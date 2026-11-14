@@ -12,7 +12,7 @@ BTH = lambda pg: f'{BOOTH}, p. {pg}. <a href="{BOOTH_URL}7">Text (Perseus)</a>'
 COBURN = "Frank Warren Coburn, <em>The Battle of April 19, 1775</em> (1912), p. 150"
 FREESE = "John W. Freese, <em>Historic Houses and Spots in Cambridge, Massachusetts, and Near-by Towns</em> (1897)"
 MHSD = "https://www.masshist.org/digitaladams/archive/doc?id="
-PL = lambda s, t: f'<a href="{{P}}profiles/{s}.html">{t}</a>'
+PL = lambda s, t: f'<a href="{{P}}profiles/{s}.html">{t}{RW_icon(s)}</a>'
 
 PROFILES += [
  dict(slug="turell-tufts", name="Turell Tufts (1770&ndash;1842)", dates="1770&ndash;1842", town="Medford, Mass.", born="1770", died="1842", era="19th Century", line="Son of Dr. Simon Tufts (1727&ndash;1786)",

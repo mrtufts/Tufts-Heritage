@@ -1,6 +1,7 @@
 """Generates the site's HTML pages with one shared header, nav, and footer.
 Run from the repo root: python3 tools/build_pages.py"""
 import re
+exec(open("tools/rw_icons.py").read())
 FONTS = '''<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap">'''
@@ -69,7 +70,7 @@ def page(path, title, kicker, h1, sub, body, desc="The Tufts family across gener
 </body>
 </html>
 '''
-    open(path, "w").write(html)
+    open(path, "w").write(RW_apply(html, pre, path))
 
 def soon_section(id_, h, note):
     return f'<section id="{id_}" class="soon"><h2>{h}{{SOON}}</h2><p>{note}</p></section>'
@@ -77,3 +78,4 @@ def soon_section(id_, h, note):
 exec(open("tools/images.py").read())
 exec(open("tools/content.py").read())
 exec(open("tools/links_resources.py").read())
+RW_finalize()

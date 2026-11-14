@@ -33,6 +33,20 @@ function initPeople() {
       rows.forEach(function (x) {
         var li = document.createElement("li"), a = document.createElement("a");
         a.href = x.profile; a.textContent = x.name;
+        if (x.rw === "musket" || x.rw === "pistol") {
+          var img = document.createElement("img");
+          img.className = "rw-icon";
+          img.src = assetUrl("icons/" + x.rw + ".svg");
+          img.alt = "";
+          img.width = 22;
+          img.height = 10;
+          var label = x.rw === "musket"
+            ? "Revolutionary War service: extensive"
+            : "Revolutionary War service: limited service or support of the war effort";
+          img.title = label;
+          img.setAttribute("aria-label", label);
+          a.appendChild(img);
+        }
         li.appendChild(a);
         li.appendChild(document.createTextNode(" (" + (x.born || "?") + "–" + (x.died || "?") + ")" + (x.era ? " · " + x.era : "") + (x.line ? " · " + x.line : "")));
         ul.appendChild(li);

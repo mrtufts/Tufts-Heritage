@@ -109,10 +109,15 @@ def profile(p):
     page(f'profiles/{p["slug"]}.html', f'{p["name"]} | Tufts Lineage &amp; Legacy', "The Revolution &middot; " + (p.get("kicker") + " " if p.get("kicker") else "") + "Profile", p["name"], f'{p["dates"]} &middot; {p["town"]}', body)
 exec(open("tools/artifacts.py").read())
 for p in PROFILES: profile(p)
-json.dump([dict(name=p["name"], slug=p["slug"], born=p["born"], died=p["died"], era=p["era"], line=p["line"], town=p["town"], profile=f'profiles/{p["slug"]}.html') for p in PROFILES]
-          + [dict(name="Charles Tufts", slug="charles-tufts", born="", died="1876", era="19th Century", line="Undetermined", town="Somerville", profile="generations/19th-century.html#charles-tufts"),
-             dict(name="Albert C. Tufts", slug="albert-c-tufts", born="", died="", era="19th Century", line="Undetermined", town="Sacramento, Calif.", profile="generations/19th-century.html#albert-c-tufts"),
-             dict(name="Peter Tufts of Winter Hill", slug="peter-tufts-winter-hill", born="1728", died="1791", era="Colonial", line="Peter Tufts of Winter Hill", town="Charlestown (Winter Hill)", profile="generations/colonial.html#peter-1728")],
+def _person_rec(name, slug, born, died, era, line, town, profile):
+    rec = dict(name=name, slug=slug, born=born, died=died, era=era, line=line, town=town, profile=profile)
+    if slug in RW_SERVICE:
+        rec["rw"] = RW_SERVICE[slug]
+    return rec
+json.dump([_person_rec(p["name"], p["slug"], p["born"], p["died"], p["era"], p["line"], p["town"], f'profiles/{p["slug"]}.html') for p in PROFILES]
+          + [_person_rec("Charles Tufts", "charles-tufts", "", "1876", "19th Century", "Undetermined", "Somerville", "generations/19th-century.html#charles-tufts"),
+             _person_rec("Albert C. Tufts", "albert-c-tufts", "", "", "19th Century", "Undetermined", "Sacramento, Calif.", "generations/19th-century.html#albert-c-tufts"),
+             _person_rec("Peter Tufts of Winter Hill", "peter-tufts-winter-hill", "1728", "1791", "Colonial", "Peter Tufts of Winter Hill", "Charlestown (Winter Hill)", "generations/colonial.html#peter-1728")],
           open("data/people.json", "w"), indent=2)
 
 PROF_LIST = "<ul>" + "".join(f'<li><a href="{{P}}profiles/{p["slug"]}.html">{p["name"]}</a> ({p["town"]})</li>' for p in PROFILES) + "</ul>"
@@ -267,6 +272,9 @@ page("people.html", "People | Tufts Lineage &amp; Legacy", "A&ndash;Z Index", "P
     <label>Era <select id="era"><option value="">All eras</option></select></label>
     <label>Line <select id="line"><option value="">All lines</option></select></label>
   </div>
+  <p class="rw-legend" role="note"><strong>Revolutionary War key:</strong>
+    <img class="rw-icon" src="{P}assets/icons/musket.svg" width="22" height="10" alt=""> musket &mdash; extensive military service;
+    <img class="rw-icon" src="{P}assets/icons/pistol.svg" width="22" height="10" alt=""> pistol &mdash; limited service or support of the war effort (including civil office, financing, supply, or care of the wounded).</p>
   <div id="people-list"><p class="note">Loading&hellip;</p></div>
   <p class="note">Where several men shared a name, their records are listed together on one page but kept separate, so different people are never combined.</p>
 </section>''')
