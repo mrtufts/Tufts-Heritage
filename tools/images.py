@@ -2,6 +2,7 @@
 # Captions only name a Tufts person or house when the source file page explicitly does.
 C = "https://commons.wikimedia.org/wiki/File:"
 IMAGES = {
+ "simon-turell-tufts-house-medford.jpg": ("House of Dr. Simon Tufts, later of Turell Tufts, Esq., Medford", "Frontispiece plate captioned &ldquo;House of Dr. Simon Tufts, Later of Turell Tufts, Esq. (Corner High and Forest Streets.) Built about 1709 and razed 1867.&rdquo; From <em>Medford Historical Register</em>, vol. XXII, no. 4 (December 1919), frontispiece.", "Medford Historical Society, <em>Medford Historical Register</em> XXII (1919)", "Public domain (published 1919)", "https://archive.org/details/medfordhistorica35medf/page/n215/mode/1up", "Internet Archive"),
  "peter-tufts-house-medford.jpg": ("Peter Tufts House, Medford, Mass.", "The Peter Tufts House in Medford, photographed in 2005. The Wikimedia Commons description dates it to about 1678 and calls it possibly the oldest surviving gambrel roof in America. Which Peter Tufts built it is not stated in that source.", "Daderot", "CC BY-SA 3.0", C+"Peter_Tufts_House,_Medford,_Massachusetts.JPG"),
  "peter-oliver-tufts-house-somerville.jpg": ("Peter and Oliver Tufts House, Somerville, Mass.", "The Peter and Oliver Tufts House in Somerville, photographed in 2010.", "Swampyank", "CC BY-SA 3.0", C+"Peter_and_Oliver_Tufts_House_in_Somerville_MA_USA.jpg"),
  "royall-house-1920.jpg": ("Royall House, Medford, Mass. (1920)", "The Royall House in Medford, photographed on 2 November 1920. This was the estate of the Loyalist Col. Isaac Royall.", "Leon H. Abdalian (via Boston Public Library / DPLA)", "Public domain", C+"Royall_House,_Medford,_Mass._-_DPLA_-_fcd3982fa9652a304581fe95cd4c0e83.jpg"),
@@ -85,11 +86,11 @@ PAGE_FIGS = {
  "generations/colonial.html": ["peter-tufts-house-medford.jpg", "cradock-house-medford.jpg"],
  "generations/revolution.html": ["doolittle-battle-of-lexington-1775.jpg", "trumbull-bunker-hill.jpg", "dorchester-heights-monument.jpg", "trumbull-surrender-burgoyne.jpg"],
  "generations/19th-century.html": ["charles-tufts-c1860.jpg"],
- "places.html": ["peter-tufts-house-medford.jpg", "peter-oliver-tufts-house-somerville.jpg", "old-powder-house-somerville.jpg", "prospect-hill-monument.jpg", "royall-house-1920.jpg", "royall-house-east-facade.jpg", "cradock-house-medford.jpg", "dorchester-heights-monument.jpg", "fort-independence-castle-island.jpg", "farmington-falls-postcard-1907.jpg", "tide-mill-nathan-tufts-charlestown.jpg", "map-charlestown-1848-tufts-mill-pond.jpg"],
+ "places.html": ["peter-tufts-house-medford.jpg", "simon-turell-tufts-house-medford.jpg", "peter-oliver-tufts-house-somerville.jpg", "old-powder-house-somerville.jpg", "prospect-hill-monument.jpg", "royall-house-1920.jpg", "royall-house-east-facade.jpg", "cradock-house-medford.jpg", "dorchester-heights-monument.jpg", "fort-independence-castle-island.jpg", "farmington-falls-postcard-1907.jpg", "tide-mill-nathan-tufts-charlestown.jpg", "map-charlestown-1848-tufts-mill-pond.jpg"],
  "collections.html": ["cotton-tufts-greenleaf-1804.jpg", "charles-tufts-c1860.jpg", "henry-tufts-narrative-1807.jpg", "tide-mill-nathan-tufts-charlestown.jpg", "map-charlestown-1848-tufts-mill-pond.jpg"],
  "profiles/cotton-tufts.html": ["cotton-tufts-greenleaf-1804.jpg"],
- "profiles/turell-tufts.html": ["medford-1880-birdseye.jpg"],
- "profiles/simon-tufts-11-1.html": ["trumbull-bunker-hill.jpg", "royall-house-1920.jpg"],
+ "profiles/turell-tufts.html": ["medford-1880-birdseye.jpg", "simon-turell-tufts-house-medford.jpg"],
+ "profiles/simon-tufts-11-1.html": ["simon-turell-tufts-house-medford.jpg", "trumbull-bunker-hill.jpg", "royall-house-1920.jpg"],
  "profiles/henry-tufts-25-1.html": ["henry-tufts-narrative-1807.jpg"],
  "profiles/francis-tufts-20-1.html": ["farmington-falls-postcard-1907.jpg", "dorchester-heights-monument.jpg"],
  "profiles/francis-tufts-41-4.html": ["trumbull-surrender-burgoyne.jpg"],
