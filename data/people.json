@@ -59,7 +59,8 @@
     "era": "The Revolution",
     "line": "Undetermined",
     "town": "Medford; Gloucester (Cape Ann); Topsham, Me.",
-    "profile": "profiles/barnabas-tufts.html"
+    "profile": "profiles/barnabas-tufts.html",
+    "rw": "pistol"
   },
   {
     "name": "Caleb Tufts",
@@ -91,7 +92,8 @@
     "era": "The Revolution",
     "line": "Tufts Kinsmen family no. 13-6",
     "town": "Charlestown; Medford",
-    "profile": "profiles/william-tufts-13-6.html"
+    "profile": "profiles/william-tufts-13-6.html",
+    "rw": "musket"
   },
   {
     "name": "Capt. Joseph Tufts Jr.",
@@ -299,7 +301,8 @@
     "era": "The Revolution",
     "line": "Tufts Kinsmen family no. 49-2",
     "town": "Prospect Hill (Somerville)",
-    "profile": "profiles/john-tufts-49-2.html"
+    "profile": "profiles/john-tufts-49-2.html",
+    "rw": "pistol"
   },
   {
     "name": "Cpl. John Tufts (1754&ndash;1839)",
@@ -342,7 +345,8 @@
     "era": "The Revolution",
     "line": "Tufts Kinsmen family no. 25-3",
     "town": "Lee, N.H.",
-    "profile": "profiles/thomas-tufts-25-3.html"
+    "profile": "profiles/thomas-tufts-25-3.html",
+    "rw": "pistol"
   },
   {
     "name": "Eliphalet Tufts",
@@ -383,7 +387,8 @@
     "era": "The Revolution",
     "line": "Tufts Kinsmen family no. 35-8",
     "town": "Schoharie, N.Y.; Ohio; Elkhart, Ind.",
-    "profile": "profiles/william-tuffs-35-8.html"
+    "profile": "profiles/william-tuffs-35-8.html",
+    "rw": "pistol"
   },
   {
     "name": "Nathan Tuffs (1752&ndash;1827)",
@@ -664,7 +669,8 @@
     "era": "The Revolution",
     "line": "Son of Peter and Anne (Adams) Tufts of Winter Hill",
     "town": "Winter Hill, Charlestown (now Somerville), Mass.",
-    "profile": "profiles/john-tufts-1754.html"
+    "profile": "profiles/john-tufts-1754.html",
+    "rw": "pistol"
   },
   {
     "name": "Ann Tufts Richardson (b. 1757)",
@@ -904,6 +910,7 @@
     "era": "Colonial",
     "line": "Peter Tufts of Winter Hill",
     "town": "Charlestown (Winter Hill)",
-    "profile": "generations/colonial.html#peter-1728"
+    "profile": "generations/colonial.html#peter-1728",
+    "rw": "musket"
   }
 ]

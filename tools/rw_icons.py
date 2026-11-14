@@ -6,6 +6,10 @@ RW_LABEL = {
     "musket": "Revolutionary War service: extensive",
     "pistol": "Revolutionary War service: limited service or support of the war effort",
 }
+# Non-profile pages that still identify a classified person.
+RW_HREF_SLUG = {
+    "generations/colonial.html#peter-1728": "peter-tufts-winter-hill",
+}
 
 def RW_icon(slug, pre="{P}"):
     kind = RW_SERVICE.get(slug)
@@ -14,21 +18,46 @@ def RW_icon(slug, pre="{P}"):
     return (f'<img class="rw-icon" src="{pre}assets/icons/{kind}.svg" width="22" height="10" alt="" '
             f'title="{RW_LABEL[kind]}" aria-label="{RW_LABEL[kind]}">')
 
+def RW_mark(kind, pre="{P}"):
+    """Icon for an individual service entry on a composite page (not keyed to a slug)."""
+    if kind not in RW_LABEL:
+        return ""
+    return (f'<img class="rw-icon" src="{pre}assets/icons/{kind}.svg" width="22" height="10" alt="" '
+            f'title="{RW_LABEL[kind]}" aria-label="{RW_LABEL[kind]}">')
+
+def _add_icon_to_anchor(attrs, inner, slug, pre):
+    if slug not in RW_SERVICE or 'class="rw-icon"' in inner:
+        return None
+    icon = RW_icon(slug, pre)
+    if re.search(r'<h[1-6]\b', inner, re.I):
+        inner = re.sub(r'(</h[1-6]>)', icon + r'\1', inner, count=1, flags=re.I)
+    else:
+        inner = inner + icon
+    return f'<a {attrs}>{inner}</a>'
+
 def RW_apply(html, pre, path=None):
-    """Insert icons beside veteran names in profile links and on profile titles. Idempotent."""
-    def _sub(m):
+    """Insert icons beside veteran names in profile links, alias links, titles, and plain-name mentions. Idempotent."""
+    def _sub_profile(m):
         attrs, slug, inner = m.group(1), m.group(2), m.group(3)
-        if slug not in RW_SERVICE or 'class="rw-icon"' in inner:
-            return m.group(0)
-        icon = RW_icon(slug, pre)
-        if re.search(r'<h[1-6]\b', inner, re.I):
-            inner = re.sub(r'(</h[1-6]>)', icon + r'\1', inner, count=1, flags=re.I)
-        else:
-            inner = inner + icon
-        return f'<a {attrs}>{inner}</a>'
+        out = _add_icon_to_anchor(attrs, inner, slug, pre)
+        return out if out is not None else m.group(0)
     html = re.sub(
         r'<a\s+([^>]*href="(?:(?:\.\./)*)profiles/([a-z0-9-]+)\.html"[^>]*)>(.*?)</a>',
-        _sub, html, flags=re.S | re.I)
+        _sub_profile, html, flags=re.S | re.I)
+
+    def _sub_alias(m):
+        attrs, href, inner = m.group(1), m.group(2), m.group(3)
+        # normalize href to a key without leading ../
+        key = re.sub(r'^(?:\.\./)+', '', href)
+        slug = RW_HREF_SLUG.get(key)
+        if not slug:
+            return m.group(0)
+        out = _add_icon_to_anchor(attrs, inner, slug, pre)
+        return out if out is not None else m.group(0)
+    html = re.sub(
+        r'<a\s+([^>]*href="((?:(?:\.\./)*)generations/colonial.html#peter-1728)"[^>]*)>(.*?)</a>',
+        _sub_alias, html, flags=re.S | re.I)
+
     if path and path.startswith("profiles/") and path.endswith(".html"):
         slug = path[len("profiles/"):-5]
         hm = re.search(r'<header[^>]*>.*?<h1>(.*?)</h1>', html, re.S)
@@ -36,6 +65,20 @@ def RW_apply(html, pre, path=None):
             html = re.sub(r'(<header[^>]*>\s*.*?<h1>)(.*?)(</h1>)',
                           lambda m: m.group(1) + m.group(2) + RW_icon(slug, pre) + m.group(3),
                           html, count=1, flags=re.S)
+
+    # Plain-text mentions of Peter of Winter Hill (do not invent new wording).
+    if "peter-tufts-winter-hill" in RW_SERVICE:
+        icon = RW_icon("peter-tufts-winter-hill", pre)
+        name_re = re.compile(
+            r'Peter(?:(?:\s|&nbsp;)+Tufts)?(?:\s|&nbsp;)+of(?:\s|&nbsp;)+Winter(?:\s|&nbsp;)+Hill'
+            r'(?:(?:\s|&nbsp;)*\((?:1728)(?:&ndash;|–|-)(?:1791)\))?'
+        )
+        def _plain(m):
+            after = html[m.end():m.end()+250]
+            if re.match(r'(?:\s*</[^>]+>)?\s*<img class="rw-icon"', after):
+                return m.group(0)
+            return m.group(0) + icon
+        html = name_re.sub(_plain, html)
     return html
 
 def RW_finalize():
