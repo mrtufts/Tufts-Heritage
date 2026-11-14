@@ -16,6 +16,18 @@ GENS = [("Colonial 1638&ndash;1765", "generations/colonial.html", False),
 TOP = [("Home", "index.html", False), ("GEN", None, False), ("People", "people.html", False),
        ("Places", "places.html", False), ("Collections", "collections.html", False), ("Sources", "sources.html", False), ("About", "about.html", False)]
 
+import hashlib as _bp_hl, os as _bp_os
+def _bp_ver(rel):
+    # Short content hash so browsers fetch a fresh copy whenever the file changes.
+    fp = _bp_os.path.join(_bp_os.path.dirname(_bp_os.path.abspath(__file__)), "..", rel)
+    try:
+        return _bp_hl.sha1(open(fp, "rb").read()).hexdigest()[:8]
+    except OSError:
+        return "0"
+BP_VER_CSS = _bp_ver("css/style.css")
+BP_VER_JS = _bp_ver("js/main.js")
+BP_VER_CFG = _bp_ver("config.js")
+
 def link(label, path, soon, pre, cur):
     cls = ' class="soon"' if soon else ''
     ac = ' aria-current="page"' if path == cur else ''
@@ -46,7 +58,7 @@ def page(path, title, kicker, h1, sub, body, desc="The Tufts family across gener
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
 {FONTS}
-<link rel="stylesheet" href="{pre}css/style.css">
+<link rel="stylesheet" href="{pre}css/style.css?v={BP_VER_CSS}">
 <link rel="icon" href="{pre}favicon.svg" type="image/svg+xml">
 <link rel="icon" href="{pre}favicon.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="{pre}apple-touch-icon.png">
@@ -65,8 +77,8 @@ def page(path, title, kicker, h1, sub, body, desc="The Tufts family across gener
 <footer class="chainmail">
   &copy; <span id="year">2026</span> Tufts Lineage &amp; Legacy &middot; <a href="{pre}about.html">About</a>
 </footer>
-<script src="{pre}config.js"></script>
-<script src="{pre}js/main.js"></script>
+<script src="{pre}config.js?v={BP_VER_CFG}"></script>
+<script src="{pre}js/main.js?v={BP_VER_JS}"></script>
 </body>
 </html>
 '''
