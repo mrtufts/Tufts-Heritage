@@ -77,7 +77,18 @@ IMAGES = {
  'map-charlestown-1848-tufts-mill-pond.jpg': ('Tufts Mill Pond on the 1848 Plan of the City of Charlestown', 'Detail of the northwest Neck, showing the rectangular basin labeled &ldquo;Tufts Mill Pond&rdquo; on the Mystic River side, beside Malden Bridge, and the earlier Charlestown Mill Pond to the south. From Felton &amp; Parker and Ebenezer Barker, <em>Plan of the City of Charlestown</em> (Boston: J. H. Bufford&rsquo;s Lithography, 1848). Norman B. Leventhal Map &amp; Education Center, Boston Public Library.', 'Felton &amp; Parker; Ebenezer Barker; J. H. Bufford&rsquo;s Lithography', 'No known copyright restrictions', 'https://www.digitalcommonwealth.org/search/commonwealth:1257b9962', 'Digital Commonwealth / Leventhal Map Center'),
  'aaas-members-list-1785.jpg': ('A List of the American Academy of Arts and Sciences, 1785', 'Printed membership list for 1785. Under &ldquo;The present Council&rdquo; it names &ldquo;Hon. Cotton Tufts, Esq; M. D. F. M. S.&rdquo; James Bowdoin appears as President.', 'American Academy of Arts and Sciences (Internet Archive copy of the 1785 list associated with the <em>Memoirs</em>)', 'Public domain (U.S., published 1785)', 'https://archive.org/details/jstor-25053737', 'Internet Archive'),
 }
+IMG_GROUPS = {
+ "simon-tufts-house-ai-renditions": (["simon-tufts-house-ai-rendition-militia.jpg", "simon-tufts-house-ai-rendition.jpg"],
+  "AI renditions of the Dr. Simon Tufts house",
+  "Two AI renditions by Shannon Tufts imagining the house of Dr. Simon Tufts, later of Turell Tufts, at High and Forest Streets in Medford, one with colonial militiamen passing on the road. These are modern artistic interpretations, not historical photographs or records. For the house as it actually appeared, see the 1919 <em>Medford Historical Register</em> plate.",
+  "Shannon Tufts (AI renditions). Modern AI-generated artwork, used with the creator&rsquo;s permission."),
+}
 def FIG(f, klass=""):
+    if f in IMG_GROUPS:
+        files, t, cap, credit = IMG_GROUPS[f]
+        imgs = "".join(f'<a href="{{P}}assets/images/{x}"><img src="{{P}}assets/images/{x}" alt="{IMAGES[x][0]}" loading="lazy"></a>' for x in files)
+        return (f'<figure class="hfig hfig-pair{(" " + klass) if klass else ""}"><div class="pair-imgs">{imgs}</div>'
+                f'<figcaption><strong>{t}.</strong> {cap}<span class="credit">Images: {credit}</span></figcaption></figure>')
     t, cap, who, lic, src, *lab = IMAGES[f]; lab = lab[0] if lab else 'Wikimedia Commons'
     cl = "hfig" + ((" " + klass) if klass else "")
     return (f'<figure class="{cl}"><a href="{{P}}assets/images/{f}"><img src="{{P}}assets/images/{f}" alt="{t}" loading="lazy"></a>'
@@ -88,11 +99,11 @@ PAGE_FIGS = {
  "generations/colonial.html": ["peter-tufts-house-medford.jpg", "cradock-house-medford.jpg"],
  "generations/revolution.html": ["doolittle-battle-of-lexington-1775.jpg", "trumbull-bunker-hill.jpg", "dorchester-heights-monument.jpg", "trumbull-surrender-burgoyne.jpg"],
  "generations/19th-century.html": ["charles-tufts-c1860.jpg"],
- "places.html": ["peter-tufts-house-medford.jpg", "simon-turell-tufts-house-medford.jpg", "simon-tufts-house-ai-rendition-militia.jpg", "simon-tufts-house-ai-rendition.jpg", "peter-oliver-tufts-house-somerville.jpg", "old-powder-house-somerville.jpg", "prospect-hill-monument.jpg", "royall-house-1920.jpg", "royall-house-east-facade.jpg", "cradock-house-medford.jpg", "dorchester-heights-monument.jpg", "fort-independence-castle-island.jpg", "farmington-falls-postcard-1907.jpg", "tide-mill-nathan-tufts-charlestown.jpg", "map-charlestown-1848-tufts-mill-pond.jpg"],
+ "places.html": ["peter-tufts-house-medford.jpg", "simon-turell-tufts-house-medford.jpg", "simon-tufts-house-ai-renditions", "peter-oliver-tufts-house-somerville.jpg", "old-powder-house-somerville.jpg", "prospect-hill-monument.jpg", "royall-house-1920.jpg", "royall-house-east-facade.jpg", "cradock-house-medford.jpg", "dorchester-heights-monument.jpg", "fort-independence-castle-island.jpg", "farmington-falls-postcard-1907.jpg", "tide-mill-nathan-tufts-charlestown.jpg", "map-charlestown-1848-tufts-mill-pond.jpg"],
  "collections.html": ["cotton-tufts-greenleaf-1804.jpg", "charles-tufts-c1860.jpg", "henry-tufts-narrative-1807.jpg", "tide-mill-nathan-tufts-charlestown.jpg", "map-charlestown-1848-tufts-mill-pond.jpg"],
  "profiles/cotton-tufts.html": ["cotton-tufts-greenleaf-1804.jpg"],
- "profiles/turell-tufts.html": ["medford-1880-birdseye.jpg", "simon-turell-tufts-house-medford.jpg", "simon-tufts-house-ai-rendition-militia.jpg", "simon-tufts-house-ai-rendition.jpg"],
- "profiles/simon-tufts-11-1.html": ["simon-turell-tufts-house-medford.jpg", "simon-tufts-house-ai-rendition-militia.jpg", "simon-tufts-house-ai-rendition.jpg", "trumbull-bunker-hill.jpg", "royall-house-1920.jpg"],
+ "profiles/turell-tufts.html": ["medford-1880-birdseye.jpg", "simon-turell-tufts-house-medford.jpg", "simon-tufts-house-ai-renditions"],
+ "profiles/simon-tufts-11-1.html": ["simon-turell-tufts-house-medford.jpg", "simon-tufts-house-ai-renditions", "trumbull-bunker-hill.jpg", "royall-house-1920.jpg"],
  "profiles/henry-tufts-25-1.html": ["henry-tufts-narrative-1807.jpg"],
  "profiles/francis-tufts-20-1.html": ["farmington-falls-postcard-1907.jpg", "dorchester-heights-monument.jpg"],
  "profiles/francis-tufts-41-4.html": ["trumbull-surrender-burgoyne.jpg"],

@@ -96,3 +96,10 @@ header h1 .rw-icon{opacity:.95}
 
 /* IDs in tables and text: match the surrounding serif type instead of the browser's default monospace */
 code{font-family:inherit;font-size:1em;font-weight:inherit;color:inherit;background:none;padding:0;word-break:break-word}
+/* Two related images framed together with one caption */
+.hfig-pair{width:auto}
+.gallery .figs .hfig-pair{grid-column:span 2}
+.hfig-pair .pair-imgs{display:flex;gap:.6rem;align-items:flex-start}
+.hfig-pair .pair-imgs a{flex:1 1 0;min-width:0}
+.hfig-pair .pair-imgs img{width:100%}
+@media (max-width:600px){.gallery .figs .hfig-pair{grid-column:auto}}
