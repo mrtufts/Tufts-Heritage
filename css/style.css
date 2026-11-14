@@ -93,3 +93,6 @@ table.conflict th,table.conflict td{border:1px solid var(--gold);padding:.4rem .
 .rw-legend{margin:1rem 0 .5rem;font-size:.95rem}
 .rw-legend .rw-icon{margin:0 .2em 0 .15em}
 header h1 .rw-icon{opacity:.95}
+
+/* IDs in tables and text: match the surrounding serif type instead of the browser's default monospace */
+code{font-family:inherit;font-size:1em;font-weight:inherit;color:inherit;background:none;padding:0;word-break:break-word}

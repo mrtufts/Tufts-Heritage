@@ -1,3 +1,16 @@
+// Display-only cleanup for directory names: decode HTML entities such as &ndash;
+// and drop a trailing date range, since the dates are appended once after the link.
+function decodeEntities(v) {
+  var t = document.createElement("textarea");
+  t.innerHTML = v || "";
+  return t.value;
+}
+function displayName(x) {
+  var n = decodeEntities(x.name);
+  if (x.born || x.died) n = n.replace(/\s*\(\s*[\d?]{0,4}\s*[\u2013-]\s*[\d?]{0,4}\s*\)\s*$/, "");
+  return n;
+}
+
 // Tufts Lineage & Legacy site script. Asset paths are built from ASSET_BASE_URL (config.js).
 function assetUrl(path) {
   return ASSET_BASE_URL.replace(/\/$/, "") + "/" + path.replace(/^\//, "");
@@ -16,7 +29,7 @@ function initPeople() {
     people.sort(function (a, b) { return a.name.localeCompare(b.name); });
     [["era", era], ["line", line]].forEach(function (p) {
       Array.from(new Set(people.map(function (x) { return x[p[0]]; }).filter(Boolean))).sort().forEach(function (v) {
-        var o = document.createElement("option"); o.value = o.textContent = v; p[1].appendChild(o);
+        var o = document.createElement("option"); o.value = v; o.textContent = decodeEntities(v); p[1].appendChild(o);
       });
     });
     function render() {
@@ -32,7 +45,7 @@ function initPeople() {
       var ul = document.createElement("ul");
       rows.forEach(function (x) {
         var li = document.createElement("li"), a = document.createElement("a");
-        a.href = x.profile; a.textContent = x.name;
+        a.href = x.profile; a.textContent = displayName(x);
         if (x.rw === "musket" || x.rw === "pistol") {
           var img = document.createElement("img");
           img.className = "rw-icon";
@@ -48,7 +61,7 @@ function initPeople() {
           a.appendChild(img);
         }
         li.appendChild(a);
-        li.appendChild(document.createTextNode(" (" + (x.born || "?") + "–" + (x.died || "?") + ")" + (x.era ? " · " + x.era : "") + (x.line ? " · " + x.line : "")));
+        li.appendChild(document.createTextNode(" (" + (x.born || "?") + "–" + (x.died || "?") + ")" + (x.era ? " · " + decodeEntities(x.era) : "") + (x.line ? " · " + decodeEntities(x.line) : "")));
         ul.appendChild(li);
       });
       list.appendChild(ul);
