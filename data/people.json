@@ -884,14 +884,14 @@
     "profile": "profiles/amos-tufts-1762.html"
   },
   {
-    "name": "Charles Tufts",
-    "slug": "charles-tufts",
-    "born": "",
+    "name": "Charles Tufts (1781&ndash;1876)",
+    "slug": "charles-tufts-1781",
+    "born": "1781",
     "died": "1876",
     "era": "19th Century",
-    "line": "Undetermined",
-    "town": "Somerville",
-    "profile": "generations/19th-century.html#charles-tufts"
+    "line": "Son of Daniel Tufts, brick-maker; farmer and brick-maker; donor of Walnut Hill to Tufts College",
+    "town": "Charlestown and Somerville, Mass.",
+    "profile": "profiles/charles-tufts-1781.html"
   },
   {
     "name": "Albert C. Tufts",

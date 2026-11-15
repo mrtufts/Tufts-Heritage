@@ -115,7 +115,7 @@ def _person_rec(name, slug, born, died, era, line, town, profile):
         rec["rw"] = RW_SERVICE[slug]
     return rec
 json.dump([_person_rec(p["name"], p["slug"], p["born"], p["died"], p["era"], p["line"], p["town"], f'profiles/{p["slug"]}.html') for p in PROFILES]
-          + [_person_rec("Charles Tufts", "charles-tufts", "", "1876", "19th Century", "Undetermined", "Somerville", "generations/19th-century.html#charles-tufts"),
+          + [
              _person_rec("Albert C. Tufts", "albert-c-tufts", "", "", "19th Century", "Undetermined", "Sacramento, Calif.", "generations/19th-century.html#albert-c-tufts"),
              _person_rec("Peter Tufts of Winter Hill", "peter-tufts-winter-hill", "1728", "1791", "Colonial", "Peter Tufts of Winter Hill", "Charlestown (Winter Hill)", "generations/colonial.html#peter-1728")],
           open("data/people.json", "w"), indent=2)
@@ -217,7 +217,7 @@ page("generations/revolution.html", "The Revolution 1765–1783 | Tufts Lineage 
 <p>Related: <a href="{{P}}places.html#maps">Maps by Peter Tufts, the surveyor</a> &middot; <a href="{{P}}places.html#winter-hill">Winter Hill</a> &middot; <a href="{{P}}places.html#medford-charlestown">Medford &amp; Charlestown</a></p>''')
 
 page("generations/19th-century.html", "19th Century | Tufts Lineage &amp; Legacy", "Generations", "19th Century", "", f'''
-<section id="charles-tufts"><h2>Charles Tufts and Walnut Hill</h2>
+<section id="charles-tufts"><h2>Charles Tufts and Walnut Hill</h2><p>Profile: <a href="{{P}}profiles/charles-tufts-1781.html">Charles Tufts (1781&ndash;1876)</a>, son of <a href="{{P}}profiles/daniel-tufts.html">Daniel Tufts, brick-maker</a>.</p>
 {TA("Land owned by Charles Tufts and given by him as the site of Tufts College.", TFH+", pp. 139, 143")}
 <p>Charles Tufts of Somerville gave the hilltop land on which Tufts College was built.</p>
 {Q("As early as 1841, Charles Tufts conceived the idea that an Universalist College was needed, and that his Walnut Hill was the appropiate site for it. &hellip; when previously asked by a friend what he intended to do with the wind-swept height, Mr. Tufts replied; &ldquo;I will put a light on it&rdquo;, &mdash;a remark which has become one of the traditions of Tufts University. &hellip; A charter for the new College was issued April 15, 1852, and on July 23, 1853 the corner stone for Ballou Hall, the first building, was laid; and in 1854 was opened to students.", TFH+", p. 139", ["tufts-family-history-p139.jpg"])}
