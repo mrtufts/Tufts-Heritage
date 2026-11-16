@@ -24,7 +24,8 @@
     "wild-medford-in-revolution-p52.jpg": "sources/images/wild-medford-in-revolution-p52.jpg",
     "wild-medford-in-revolution-p53.jpg": "sources/images/wild-medford-in-revolution-p53.jpg",
     "wyman-v2-p964.jpg": "sources/images/wyman-v2-p964.jpg",
-    "wyman-v2-p965.jpg": "sources/images/wyman-v2-p965.jpg"
+    "wyman-v2-p965.jpg": "sources/images/wyman-v2-p965.jpg",
+    "wild-medford-in-revolution-p62.jpg": "sources/images/wild-medford-in-revolution-p62.jpg"
   },
   "images": {
     "peter-tufts-house-medford.jpg": {
@@ -705,6 +706,27 @@
       "creator": "Magicpiano",
       "license": "CC BY-SA 4.0",
       "source": "https://commons.wikimedia.org/wiki/File:MedfordMA_SalemStreetBuryingGroundMarker.jpg"
+    },
+    "hms-roebuck-forcing-hudson-1776.jpg": {
+      "path": "assets/images/hms-roebuck-forcing-hudson-1776.jpg",
+      "title": "HMS Roebuck with Phoenix and Tartar forcing a passage of the Hudson, 1776 (comparable example only)",
+      "creator": "Thomas Mitchell, after Dominic Serres",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Forcing_a_Passage_of_the_Hudson.jpg"
+    },
+    "mill-prison-diary-russell-1781-07-08.jpg": {
+      "path": "assets/images/mill-prison-diary-russell-1781-07-08.jpg",
+      "title": "William Russell's Mill Prison diary, 8-9 July 1781",
+      "creator": "William Russell (manuscript, Boston Public Library); Internet Archive Book Images",
+      "license": "No known copyright restrictions",
+      "source": "https://commons.wikimedia.org/wiki/File:Diaries_of_cruise_with_privateer_from_Boston,_capture,_ordeals_in_Old_Mill_Prison_at_Plymouth,_England,_attempted_escapes,_and_release_(manuscript)_(1779)_(14595694290).jpg"
+    },
+    "mill-prison-diary-russell-1781-10-01.jpg": {
+      "path": "assets/images/mill-prison-diary-russell-1781-10-01.jpg",
+      "title": "William Russell's Mill Prison diary, 1-2 October 1781",
+      "creator": "William Russell (manuscript, Boston Public Library); Internet Archive Book Images",
+      "license": "No known copyright restrictions",
+      "source": "https://commons.wikimedia.org/wiki/File:Diaries_of_cruise_with_privateer_from_Boston,_capture,_ordeals_in_Old_Mill_Prison_at_Plymouth,_England,_attempted_escapes,_and_release_(manuscript)_(1779)_(14779305051).jpg"
     }
   }
 }

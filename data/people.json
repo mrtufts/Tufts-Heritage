@@ -415,8 +415,8 @@
   {
     "name": "Aaron Tufts",
     "slug": "aaron-tufts",
-    "born": "",
-    "died": "",
+    "born": "1761",
+    "died": "1781",
     "era": "The Revolution",
     "line": "Undetermined",
     "town": "Medford",
@@ -944,14 +944,58 @@
     "profile": "profiles/joseph-f-tufts-1790.html"
   },
   {
-    "name": "Peter Tufts of Winter Hill",
+    "name": "Peter Tufts of Winter Hill (1728&ndash;1791)",
     "slug": "peter-tufts-winter-hill",
     "born": "1728",
     "died": "1791",
     "era": "Colonial",
-    "line": "Peter Tufts of Winter Hill",
-    "town": "Charlestown (Winter Hill)",
-    "profile": "generations/colonial.html#peter-1728",
+    "line": "Second son of Peter Tufts of Milk Row; farmer of Winter Hill; husband of Anne Adams",
+    "town": "Charlestown (Winter Hill, now Somerville), Mass.",
+    "profile": "profiles/peter-tufts-winter-hill.html",
     "rw": "musket"
+  },
+  {
+    "name": "Henry Tufts Sr. (1716&ndash;1780)",
+    "slug": "henry-tufts-1716",
+    "born": "1716",
+    "died": "1780",
+    "era": "The Revolution",
+    "line": "Medford-born tailor who settled at Lee, N.H.; father of Henry Tufts the memoirist",
+    "town": "Medford, Mass.; Newmarket and Lee, N.H.",
+    "profile": "profiles/henry-tufts-1716.html",
+    "rw": "pistol"
+  },
+  {
+    "name": "Henry Tufts Jr. (1748&ndash;1831)",
+    "slug": "henry-tufts-1748",
+    "born": "1748",
+    "died": "1831",
+    "era": "The Revolution",
+    "line": "Soldier, wanderer and &ldquo;Indian doctor&rdquo;; author of the 1807 memoir",
+    "town": "Newmarket and Lee, N.H.; Limerick, Me.",
+    "profile": "profiles/henry-tufts-1748.html",
+    "rw": "musket"
+  },
+  {
+    "name": "William Tufts (d. 1777)",
+    "slug": "william-tufts-1777",
+    "born": "",
+    "died": "1777",
+    "era": "The Revolution",
+    "line": "Son of William and Catherine (Tufts) Tufts; killed in service, 1777",
+    "town": "Medford, Mass.",
+    "profile": "profiles/william-tufts-1777.html",
+    "rw": "musket"
+  },
+  {
+    "name": "Joseph Tufts Jr. (b. 1755)",
+    "slug": "joseph-tufts-1755",
+    "born": "1755",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Son of Capt. Joseph and Hannah (Cutter) Tufts; loaned money for Medford&rsquo;s 1776 bounties",
+    "town": "Medford, Mass.",
+    "profile": "profiles/joseph-tufts-1755.html",
+    "rw": "pistol"
   }
 ]

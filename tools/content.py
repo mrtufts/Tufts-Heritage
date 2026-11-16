@@ -115,8 +115,8 @@ def _person_rec(name, slug, born, died, era, line, town, profile):
         rec["rw"] = RW_SERVICE[slug]
     return rec
 json.dump([_person_rec(p["name"], p["slug"], p["born"], p["died"], p["era"], p["line"], p["town"], f'profiles/{p["slug"]}.html') for p in PROFILES]
-          + [
-             _person_rec("Peter Tufts of Winter Hill", "peter-tufts-winter-hill", "1728", "1791", "Colonial", "Peter Tufts of Winter Hill", "Charlestown (Winter Hill)", "generations/colonial.html#peter-1728")],
+          + [r for r in [
+             _person_rec("Peter Tufts of Winter Hill", "peter-tufts-winter-hill", "1728", "1791", "Colonial", "Peter Tufts of Winter Hill", "Charlestown (Winter Hill)", "generations/colonial.html#peter-1728")] if r["slug"] not in {p["slug"] for p in PROFILES}],
           open("data/people.json", "w"), indent=2)
 
 PROF_LIST = "<ul>" + "".join(f'<li><a href="{{P}}profiles/{p["slug"]}.html">{p["name"]}</a> ({p["town"]})</li>' for p in PROFILES) + "</ul>"

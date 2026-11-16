@@ -17,3 +17,5 @@ for _p in PROFILES:
     if _p["slug"] == "cotton-tufts" and "story-brief" not in _p["bio"]:
         _i = _p["bio"].find("</figure>")
         _p["bio"] = _p["bio"][:_i + 9] + CS_STORY + _p["bio"][_i + 9:] if _i > -1 else CS_STORY + _p["bio"]
+
+exec(open("tools/aaron_essex_roster_1116.py").read())
