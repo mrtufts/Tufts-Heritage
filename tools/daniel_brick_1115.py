@@ -34,3 +34,4 @@ def EXTRA(path):
     if path == "profiles/nathan-tufts-cordwainer.html":
         out += '{DIV}<section id="wyman"><h2>Wyman&rsquo;s Record</h2><p>Wyman records Nathan Tufts, cordwainer, son of Peter Tufts [36], as marrying Mary Adams on June 6, 1751; he died December 21, 1771, and administration was granted to his widow on January 14, 1772. She married second Richard Clark of Watertown on November 25, 1777. Children: Nathan (b. 7 June 1752, d. 5 Aug. 1762); ' + PL("daniel-tufts", "Daniel (b. 27 Dec. 1753)") + '; Susanna (b. 31 Jan. 1756, m. Jonathan Foster); Mary (b. 17 Mar. 1758, m. Seth Stone); Abigail (b. 20 Jan. 1760, d. 1777); ' + PL("amos-tufts-1762", "Amos (b. 30 July 1762)") + '; ' + PL("nathan-tufts-1764", "Nathan (b. 23 Mar. 1764)") + ' (' + _WY(967) + '). Because he died in 1771, he is not the ' + PL("nathan-tufts-15-7", "Nathan Tufts who died in 1784") + '.</p></section>'
     return out
+exec(open("tools/daniel_sons_1115.py").read())
