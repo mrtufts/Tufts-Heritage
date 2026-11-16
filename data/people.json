@@ -874,7 +874,7 @@
     "profile": "profiles/nathan-tufts-cordwainer.html"
   },
   {
-    "name": "Deacon Amos Tufts (c. 1762&ndash;1839)",
+    "name": "Deacon Amos Tufts (1762&ndash;1839)",
     "slug": "amos-tufts-1762",
     "born": "1762",
     "died": "1839",
@@ -922,6 +922,16 @@
     "line": "Youngest son of Daniel Tufts, brick-maker; brick-maker and farmer, Cambridge Street, Somerville",
     "town": "Charlestown and Somerville, Mass.",
     "profile": "profiles/nathan-tufts-2d-1786.html"
+  },
+  {
+    "name": "Joseph F. Tufts (1790&ndash;1854)",
+    "slug": "joseph-f-tufts-1790",
+    "born": "1790",
+    "died": "1854",
+    "era": "19th Century",
+    "line": "Eldest surviving son of Deacon Amos Tufts; tanner, partner of Gilbert Tufts; treasurer of the Warren Institution for Savings",
+    "town": "Charlestown, Mass.",
+    "profile": "profiles/joseph-f-tufts-1790.html"
   },
   {
     "name": "Albert C. Tufts",
