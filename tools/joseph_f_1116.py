@@ -42,3 +42,4 @@ def EXTRA(path):
     if path in ("profiles/william-tufts-1802.html", "profiles/edward-tufts-1806.html", "profiles/george-f-tufts-1825.html", "profiles/alfred-tufts-1829.html"):
         out += ('{DIV}<p>His ' + ("brother" if "william" in path or "edward" in path else "father") + ' ' + PL(_JF, "Joseph F. Tufts (1790&ndash;1854)") + ' now has a profile, drawn from Wyman, vol. 2, p. 969, and Sawyer, <em>Old Charlestown</em>, pp. 166&ndash;167.</p>')
     return out
+exec(open("tools/cotton_story_1116.py").read())
