@@ -116,7 +116,6 @@ def _person_rec(name, slug, born, died, era, line, town, profile):
     return rec
 json.dump([_person_rec(p["name"], p["slug"], p["born"], p["died"], p["era"], p["line"], p["town"], f'profiles/{p["slug"]}.html') for p in PROFILES]
           + [
-             _person_rec("Albert C. Tufts", "albert-c-tufts", "", "", "19th Century", "Undetermined", "Sacramento, Calif.", "generations/19th-century.html#albert-c-tufts"),
              _person_rec("Peter Tufts of Winter Hill", "peter-tufts-winter-hill", "1728", "1791", "Colonial", "Peter Tufts of Winter Hill", "Charlestown (Winter Hill)", "generations/colonial.html#peter-1728")],
           open("data/people.json", "w"), indent=2)
 
@@ -233,6 +232,7 @@ page("generations/19th-century.html", "19th Century | Tufts Lineage &amp; Legacy
 {{DIV}}
 <section id="albert-c-tufts"><h2>Albert C. Tufts of Sacramento</h2>
 <p><span class="tag">Research in progress</span></p>
+<p><strong>Read his story:</strong> <a href="{{P}}profiles/albert-c-tufts.html">Albert C. Tufts, Druggist of Sacramento</a>.</p>
 <h3>Sacramento city directories (primary)</h3>
 <ul>
 <li>1869: no entry found.</li>
@@ -316,6 +316,13 @@ page("collections.html", "Collections | Tufts Lineage &amp; Legacy", "Collection
 <p>Historic Deerfield holds a needlework coat of arms of the Tufts (spelled Tuffts) family, made in Hartford, Connecticut, about 1800: polychrome silk embroidery on white satin, accession no. HD 1998. The museum&rsquo;s online page showed no photograph as of November 4, 2026. The piece and its shield are discussed on <a href="{{P}}coat-of-arms.html#deerfield">The Tufts Coat of Arms</a>.</p>
 {Q("One heirloom of the family, a tankard (now belonging to the First Congregational Society of Quincy, Mass.), made by John Edwards, was the gift of Elizabeth Quincy to her daughter, Lucy (Quincy) Tufts, who married Dr. Cotton Tufts in 1755.", TFH+", p. 35", ["tufts-family-history-p35.jpg"])}
 {UNV("The tankard's present location is reported from 1963. No photograph is held.")}
+<h3 id="uriah-tufts-pitcher">The Uriah Tufts Pitcher (1800)</h3>
+<figure class="hfig hfig-flow"><a href="{{P}}assets/images/met-pitcher-bassett.jpg"><img src="{{P}}assets/images/met-pitcher-bassett.jpg" alt="Comparable example: American pewter pitcher by Frederick Bassett, New York, late 18th century" loading="lazy"></a><figcaption><strong>Comparable example only, not the Tufts pitcher: pewter pitcher by Frederick Bassett, New York, late 18th century.</strong><span class="credit">Image: The Metropolitan Museum of Art, CC0. <a href="https://commons.wikimedia.org/wiki/File:Pitcher_MET_179397.jpg">Wikimedia Commons</a></span></figcaption></figure>
+<p><a href="{{P}}profiles/uriah-tufts-1768.html">Uriah Tufts (1768&ndash;1837)</a>, a Medford-born blacksmith, kept a smithy for many years on Constitution Wharf in Boston. In 1800, the year he was admitted to the Massachusetts Charitable Mechanic Association, he made a pitcher with his own hands. A century later it was still in the family, in the keeping of his granddaughter.</p>
+{Q("A pitcher which he wrought in 1800 is owned by his granddaughter. It bears a significant coat-of-arms, and the motto: &ldquo;By hammer and hand, all arts do stand.&rdquo;", "Cutter, <em>Genealogical and Personal Memoirs</em>, vol. II, p. 1199. <a href=\"https://archive.org/details/genealogicalpers02cutt/page/n1014/mode/1up\">Page (Internet Archive)</a>", note='<span class="note">(Scanned text; obvious scanning errors corrected.)</span>')}
+<figure class="hfig hfig-flow"><a href="{{P}}assets/images/arms-blacksmiths-company.png"><img src="{{P}}assets/images/arms-blacksmiths-company.png" alt="Arms of the Worshipful Company of Blacksmiths, London, with the motto By hammer and hand all arts do stand" loading="lazy"></a><figcaption><strong>Comparable example only: arms of the Worshipful Company of Blacksmiths, London, which carry the same motto.</strong><span class="credit">Image: MostEpic, Wikimedia Commons, CC BY 4.0. <a href="https://commons.wikimedia.org/wiki/File:Arms_of_the_Worshipful_Company_of_Blacksmiths.svg">Wikimedia Commons</a></span></figcaption></figure>
+<p>The motto was the old watchword of the blacksmiths&rsquo; craft and appears on the arms of the Blacksmiths&rsquo; Company of London. Uriah&rsquo;s father was <a href="{{P}}profiles/william-tufts-40-2.html">William Tufts Jr. (1736&ndash;1782)</a> of Medford; his son was <a href="{{P}}profiles/uriah-tufts-1796.html">Uriah Tufts (1796&ndash;1860)</a>, a Boston cabinetmaker; and his grandson was <a href="{{P}}profiles/william-tufts-1820.html">William Tufts (1820&ndash;1893)</a>.</p>
+{UNV("No photograph of the Tufts pitcher has been found, and its present owner is unknown. Cutter does not name the granddaughter, say what metal the pitcher is, or describe the coat of arms, so it is not known whether it shows the Blacksmiths&rsquo; Company arms. Both pictures here are comparable examples only.")}
 <p class="soon">Family artifacts <span class="tag">Note: Pending further work.</span></p>
 </section>
 {{DIV}}

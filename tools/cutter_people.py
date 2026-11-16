@@ -169,3 +169,42 @@ def page(path, title, kicker, h1, sub, body, *a, **k):
     if path == "generations/colonial.html":
         body = body.replace("<p>His father was Peter Tufts (1697&ndash;1776) of Charlestown", '<p>His father was <a href="{P}profiles/peter-tufts-1697.html">Peter Tufts (1697&ndash;1776)</a> of Charlestown', 1)
     return _page_cp(path, title, kicker, h1, sub, body, *a, **k)
+
+# Uriah Tufts pitcher artifact links (Nov 16)
+_PITCH = '<p>Family artifact: <a href="{P}collections.html#uriah-tufts-pitcher">the Uriah Tufts pitcher (1800)</a>, wrought by Uriah Tufts (1768&ndash;1837) and bearing the motto &ldquo;By hammer and hand, all arts do stand&rdquo; (Cutter, vol. II, p. 1199).</p>'
+for _p in PROFILES:
+    if _p["slug"] in ("uriah-tufts-1768", "uriah-tufts-1796", "william-tufts-1820"):
+        _p["bio"] = _p["bio"] + _PITCH
+CUT_P["william-tufts-40-2"] = CUT_P["william-tufts-40-2"] + _PITCH
+
+# Albert C. Tufts of Sacramento story profile (Nov 16)
+_ACT_DIR = ''
+PROFILES += [
+ dict(slug="albert-c-tufts", name="Albert C. Tufts (fl. 1870&ndash;1898)", dates="fl. 1870&ndash;1898", town="Sacramento, Calif.", born="", died="", era="19th Century", line="Line undetermined",
+  bio='<p><span class="tag">Research in progress</span></p>'
+   + '<p>Albert C. Tufts spent nearly thirty years behind the counter of Sacramento&rsquo;s drugstores, rising from clerk to proprietor of his own shop on J Street, the city&rsquo;s main business thoroughfare. Where he came from, and whether he descends from the Massachusetts Tufts families, is not yet known.</p>'
+   + '<p class="note">Directory entries below are quoted from the scanned text of the Sacramento city directories; printed page numbers have not yet been captured.</p>'
+   + '<h3>A clerk becomes an apothecary</h3>'
+   + '<p>He first appears in the Sacramento city directory of 1870 as a young clerk in the drug firm of Justin Gates &amp; Brother:</p>'
+   + Q("Tufts A. C., clerk, with Justin Gates &amp; Bro.", "Sacramento city directory, 1870", note=_ACT_DIR)
+   + '<p>By 1874 he had earned the title of apothecary, working for J. L. Polhemus and living at 282 J Street. A year later he was back with Justin Gates &amp; Brother, now as an apothecary himself:</p>'
+   + Q("Tufts A. C., apothecary, with J. L. Polhemus, res 282 J", "Sacramento city directory, 1874", note=_ACT_DIR)
+   + Q("Tufts A. C., apothecary, with Justin Gates &amp; Bro.", "Sacramento city directory, 1875", note=_ACT_DIR)
+   + '<h3>A cough balsam and a marriage</h3>'
+   + '<p>In 1877 the firm of Tufts &amp; Spieker registered California Trade Mark No. 404 for a Yerba Santa Cough Balsam, a remedy made from the yerba santa shrub of the California hills. The record is known from a bottle collector&rsquo;s blog, not from the state register itself. That December he married Eva N. Carriger; a clipping from <em>The Pacific Bee</em> of Sacramento, December 22, 1877, page 8, is titled with the marriage, though its text has not yet been seen. Their daughter Edith was born in Sacramento on October 7, 1878, according to an index drawn from Social Security records, and a second daughter, Jessie May, followed.</p>'
+   + '<h3>The druggist at Tenth and J</h3>'
+   + '<p>By 1879 Albert had a store of his own at the southeast corner of Tenth and J Streets, and he stayed on that corner for the rest of his working life. The directories list him there in 1879&ndash;80 and 1880&ndash;81. In 1884&ndash;85 the family lived at 1605 H Street, and he was selling his own preparations, Meadows&rsquo; Magic Liniment and Tufts&rsquo; Yerbine Cough Balsam:</p>'
+   + Q("Tufts A C, druggist, se cor 10th", "Sacramento city directories, 1879&ndash;80 and 1880&ndash;81", note=_ACT_DIR)
+   + Q("TUFTS A C, druggist, SE cor J and Tenth, res 1605 [H]", "Sacramento city directory, 1884&ndash;85", note=_ACT_DIR)
+   + '<p>The address became 1000 J Street in the directories of 1888&ndash;89 and later. By 1896 the shop had a telephone, number 379:</p>'
+   + Q("TUFTS ALBERT C, druggist, 1000 J, r 1605 H", "Sacramento city directory, 1894", note=_ACT_DIR)
+   + Q("TUFTS ALBERT C., Druggist 1000 J. Telephone 379", "Sacramento city directory, 1896", note=_ACT_DIR)
+   + '<h3>The family after Albert</h3>'
+   + '<p>In 1897 Edith and Jessie were still at 1605 H Street. In 1898 the family had moved to 1104 I Street, where Albert is listed for the last time. In 1899 the directory lists his wife as &ldquo;Mrs. A C Tufts&rdquo; at 1104 I, with Jessie working at the State Printing Office, and Albert is not listed:</p>'
+   + Q("Tufts A C Mrs, r 1104 I", "Sacramento city directory, 1899", note=_ACT_DIR)
+   + '<p>By 1902 Edith was teaching at the Union Primary School and living at 817 Eighteenth Street. She later married and is indexed as Edith Tufts Shaw. The family&rsquo;s church was St. Paul&rsquo;s Episcopal in Sacramento, whose index names Albert, Mrs. Eva Nelson Tufts, Edith and Jessie May Tufts.</p>',
+  service="<p>No military service found.</p>",
+  family='<p>Wife: Eva N. Carriger (Mrs. Eva Nelson Tufts in the St. Paul&rsquo;s index). Children: Edith Tufts Shaw (b. Oct. 7, 1878, Sacramento) and Jessie May Tufts.</p><p>Directory record by year: <a href="{P}generations/19th-century.html#albert-c-tufts">19th Century page</a>. Business: <a href="{P}businesses.html#albert-c-tufts">Albert C. Tufts, druggist</a>.</p>',
+  unverified="<strong>Death:</strong> his absence from the 1899 directory suggests, by inference only, that he died about 1898&ndash;99; no death record has been found. <strong>Also unverified:</strong> his birthplace, burial, and any link to the Massachusetts Tufts family. The marriage rests on a clipping title whose text has not been seen; Edith&rsquo;s birth date comes from an index, not a record; the St. Paul&rsquo;s listing comes from a secondary index; and the trademark comes from a collector&rsquo;s blog. The trademark gives the firm&rsquo;s location as 10th &amp; K, which conflicts with the directories (10th &amp; J)."),
+]
+SP["albert-c-tufts"] = "<ul><li><strong>Eva N. Carriger</strong> (Mrs. Eva Nelson Tufts). Married about December 1877, per the title of a clipping citing <em>The Pacific Bee</em>, Sacramento, Dec. 22, 1877, p. 8.</li></ul>"

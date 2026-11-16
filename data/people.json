@@ -642,6 +642,16 @@
     "profile": "profiles/sarah-tufts-hinckley.html"
   },
   {
+    "name": "Albert C. Tufts (fl. 1870&ndash;1898)",
+    "slug": "albert-c-tufts",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Line undetermined",
+    "town": "Sacramento, Calif.",
+    "profile": "profiles/albert-c-tufts.html"
+  },
+  {
     "name": "Anne Adams Tufts (1729&ndash;1813)",
     "slug": "anne-adams-tufts",
     "born": "1729",
@@ -932,16 +942,6 @@
     "line": "Eldest surviving son of Deacon Amos Tufts; tanner, partner of Gilbert Tufts; treasurer of the Warren Institution for Savings",
     "town": "Charlestown, Mass.",
     "profile": "profiles/joseph-f-tufts-1790.html"
-  },
-  {
-    "name": "Albert C. Tufts",
-    "slug": "albert-c-tufts",
-    "born": "",
-    "died": "",
-    "era": "19th Century",
-    "line": "Undetermined",
-    "town": "Sacramento, Calif.",
-    "profile": "generations/19th-century.html#albert-c-tufts"
   },
   {
     "name": "Peter Tufts of Winter Hill",
