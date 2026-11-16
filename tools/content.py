@@ -232,7 +232,7 @@ page("generations/19th-century.html", "19th Century | Tufts Lineage &amp; Legacy
 {{DIV}}
 <section id="albert-c-tufts"><h2>Albert C. Tufts of Sacramento</h2>
 <p><span class="tag">Research in progress</span></p>
-<p><strong>Read his story:</strong> <a href="{{P}}profiles/albert-c-tufts.html">Albert C. Tufts, Druggist of Sacramento</a>.</p>
+<p><strong>Read his story:</strong> <a href="{{P}}stories/albert-c-tufts.html">Albert C. Tufts of Sacramento</a>. Profile: <a href="{{P}}profiles/albert-c-tufts.html">Albert C. Tufts</a>.</p>
 <h3>Sacramento city directories (primary)</h3>
 <ul>
 <li>1869: no entry found.</li>
