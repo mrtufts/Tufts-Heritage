@@ -727,6 +727,38 @@
       "creator": "William Russell (manuscript, Boston Public Library); Internet Archive Book Images",
       "license": "No known copyright restrictions",
       "source": "https://commons.wikimedia.org/wiki/File:Diaries_of_cruise_with_privateer_from_Boston,_capture,_ordeals_in_Old_Mill_Prison_at_Plymouth,_England,_attempted_escapes,_and_release_(manuscript)_(1779)_(14779305051).jpg"
+    },
+    "cotton-tufts-greenleaf-1804-crop-face.jpg": {
+      "path": "assets/images/cotton-tufts-greenleaf-1804-crop-face.jpg",
+      "title": "Dr. Cotton Tufts, by Benjamin Greenleaf (1804) (detail: face)",
+      "creator": "Benjamin Greenleaf",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Cotton_Tufts_-_Benjamin_Greenleaf.jpg",
+      "derived_from": "assets/images/cotton-tufts-greenleaf-1804.jpg"
+    },
+    "henry-tufts-narrative-1807-crop-title.jpg": {
+      "path": "assets/images/henry-tufts-narrative-1807-crop-title.jpg",
+      "title": "A Narrative of the Life &hellip; of Henry Tufts (1807), title page (detail: title)",
+      "creator": "Samuel Bragg Jr., printer",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Henry_Tufts%27_Autobiography.jpg",
+      "derived_from": "assets/images/henry-tufts-narrative-1807.jpg"
+    },
+    "map-medford-1794-crop-title.jpg": {
+      "path": "assets/images/map-medford-1794-crop-title.jpg",
+      "title": "A Plan of the Town of Medford, surveyed 1794 by Peter Tufts Junr (detail: title cartouche)",
+      "creator": "Peter Tufts Jr.; Massachusetts Archives",
+      "license": "No known copyright restrictions",
+      "source": "https://www.digitalcommonwealth.org/search/commonwealth:2227ng58z",
+      "derived_from": "assets/images/map-medford-1794-peter-tufts.jpg"
+    },
+    "map-medford-1794-crop-signature.jpg": {
+      "path": "assets/images/map-medford-1794-crop-signature.jpg",
+      "title": "A Plan of the Town of Medford, surveyed 1794 by Peter Tufts Junr (detail: surveyor&rsquo;s signature)",
+      "creator": "Peter Tufts Jr.; Massachusetts Archives",
+      "license": "No known copyright restrictions",
+      "source": "https://www.digitalcommonwealth.org/search/commonwealth:2227ng58z",
+      "derived_from": "assets/images/map-medford-1794-peter-tufts.jpg"
     }
   }
 }

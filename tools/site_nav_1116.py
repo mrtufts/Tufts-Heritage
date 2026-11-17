@@ -71,6 +71,12 @@ def _sn_cat(f):
 SN_BACKLINK_PAGES = ("places.html", "essex-privateer.html", "salem-street-burying-ground.html", "harvard.html",
                      "businesses.html", "collections.html", "coat-of-arms.html")
 
+SN_FLAGGED = {"profiles/simon-tufts-11-1.html", "profiles/simon-tufts-1700.html", "profiles/cotton-tufts.html",
+              "profiles/joseph-tufts-1755.html", "profiles/joseph-tufts-43-1.html", "profiles/henry-tufts-25-1.html",
+              "profiles/henry-tufts-1716.html", "profiles/henry-tufts-1748.html", "profiles/nathan-tufts-15-7.html",
+              "profiles/nathan-tufts-cordwainer.html", "profiles/william-tufts-1777.html", "businesses.html",
+              "collections.html", "places.html", "generations/modern.html"}
+
 def SN_finalize():
     files = _sn_files()
     people = _sn_json.load(open("data/people.json"))
@@ -193,6 +199,11 @@ def SN_finalize():
             h = h[:b] + '<p class="to-top"><a href="#top">Back to top &uarr;</a></p>\n' + h[b:]
             stats["toc"] += 1
         h = h.replace('<header class="chainmail">', '<header class="chainmail" id="top">', 1) if 'id="top"' not in h else h
+        h = _sn_re.sub(r'(<img\b[^>]*?\balt=")([^"]*<[^"]*)(")', lambda mo: mo.group(1) + _sn_strip(mo.group(2)) + mo.group(3), h)
+        if f in SN_FLAGGED or (f.startswith("profiles/") and not _sn_re.search(r"<img(?![^>]*rw-icon)", h[h.find("<main>"):])):
+            if 'class="review-flag"' not in h:
+                h = _sn_re.sub(r"(<header[^>]*>.*?</h1>)", r'\1<span class="review-flag" title="Flagged for review" aria-hidden="true"></span>', h, count=1, flags=_sn_re.S)
+            stats["flagged"] = stats.get("flagged", 0) + 1
         h = RW_apply(h, pre, f)
         open(f, "w").write(h)
     print("site_nav:", stats, "pages:", len(files))

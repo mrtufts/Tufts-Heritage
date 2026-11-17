@@ -132,3 +132,8 @@ nav .dropdown.open>ul{display:flex}
   nav .dropdown>ul{position:static;min-width:0;width:100%}
 }
 nav .dropdown>ul{z-index:40}
+/* Small spyglass mark beside a page title */
+.review-flag{display:inline-block;width:16px;height:16px;margin-left:.45rem;vertical-align:middle;opacity:.8;background-color:var(--burgundy);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2 15.5l13-7.5 2 3.5-13 7.5z M15.6 7.6l3.5-2 2.5 4.3-3.5 2z M7 17.8l1.2 4.2h1.6l-1-3.8z M11 15.5l1.8 6.5h1.6l-2-7.2z'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2 15.5l13-7.5 2 3.5-13 7.5z M15.6 7.6l3.5-2 2.5 4.3-3.5 2z M7 17.8l1.2 4.2h1.6l-1-3.8z M11 15.5l1.8 6.5h1.6l-2-7.2z'/%3E%3C/svg%3E") center/contain no-repeat}
+header .review-flag{background-color:var(--gold);opacity:.55}
