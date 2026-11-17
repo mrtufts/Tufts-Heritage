@@ -41,7 +41,8 @@ footer{color:var(--parchment);text-align:center;padding:2rem 1rem;font-size:.95r
 nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center}
 nav li{position:relative}
 nav .dropdown>ul{display:none;position:absolute;left:0;top:100%;min-width:15rem;flex-direction:column;background:var(--iron);border:1px solid var(--gold);z-index:10;text-align:left}
-nav .dropdown:hover>ul,nav .dropdown:focus-within>ul{display:flex}
+@media (hover:hover){nav .dropdown:hover>ul,nav .dropdown:focus-within>ul{display:flex}}
+nav .dropdown.closed>ul{display:none!important}
 nav .dropdown>ul a{display:block}
 nav a[aria-current="page"]{color:var(--gold)}
 .soon{opacity:.55}
@@ -130,6 +131,8 @@ nav .dropdown.open>ul{display:flex}
   .toc a{white-space:normal}
   main [id]{scroll-margin-top:1rem}
   nav .dropdown>ul{position:static;min-width:0;width:100%}
+  nav .dropdown.open{flex-basis:100%}
+  nav .dropdown.open>ul{width:auto;max-width:20rem;margin:0 auto}
 }
 nav .dropdown>ul{z-index:40}
 /* Small spyglass mark beside a page title */

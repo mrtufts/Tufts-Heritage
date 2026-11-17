@@ -115,22 +115,44 @@ document.addEventListener("DOMContentLoaded", function () {
       targets.forEach(function (t) { io.observe(t); });
     }
   }
+  // Touch screens (iPhone etc.) have no real hover, so the menu is opened only by this
+  // handler: first tap opens, a second tap on the same trigger closes, outside tap/Escape closes.
+  // The CSS hover/focus opening is limited to hover-capable devices so a tap can't open the menu
+  // mid-gesture and shift the layout under the finger.
   var touch = window.matchMedia && window.matchMedia("(hover: none)").matches;
+  function closeAll(except) {
+    document.querySelectorAll("nav .dropdown.open").forEach(function (o) {
+      if (o === except) return;
+      o.classList.remove("open"); o.firstElementChild.setAttribute("aria-expanded", "false");
+    });
+  }
+  function setOpen(li, on) {
+    li.classList.toggle("open", on); if (on) li.classList.remove("closed"); li.firstElementChild.setAttribute("aria-expanded", on ? "true" : "false");
+  }
   document.querySelectorAll("nav .dropdown > a").forEach(function (a) {
     var li = a.parentNode;
     a.addEventListener("click", function (ev) {
-      if (!touch || li.classList.contains("open")) return;
+      if (!touch) return;
       ev.preventDefault();
-      document.querySelectorAll("nav .dropdown.open").forEach(function (o) { o.classList.remove("open"); o.firstElementChild.setAttribute("aria-expanded", "false"); });
-      li.classList.add("open"); a.setAttribute("aria-expanded", "true");
+      closeAll(li);
+      setOpen(li, !li.classList.contains("open"));
     });
     a.addEventListener("keydown", function (ev) {
-      if (ev.key === "ArrowDown" || ev.key === " ") { ev.preventDefault(); li.classList.add("open"); a.setAttribute("aria-expanded", "true"); var f = li.querySelector("ul a"); if (f) f.focus(); }
-      if (ev.key === "Escape") { li.classList.remove("open"); a.setAttribute("aria-expanded", "false"); }
+      if (ev.key === "ArrowDown" || ev.key === " ") { ev.preventDefault(); closeAll(li); setOpen(li, true); var f = li.querySelector("ul a"); if (f) f.focus(); }
     });
+  });
+  document.addEventListener("keydown", function (ev) {
+    if (ev.key !== "Escape") return;
+    var li = document.activeElement && document.activeElement.closest && document.activeElement.closest("nav .dropdown");
+    closeAll();
+    if (li) { li.classList.add("closed"); li.firstElementChild.focus(); }
+  });
+  document.querySelectorAll("nav .dropdown").forEach(function (li) {
+    li.addEventListener("mouseleave", function () { li.classList.remove("closed"); });
+    li.addEventListener("focusout", function (ev) { if (!li.contains(ev.relatedTarget)) li.classList.remove("closed"); });
   });
   document.addEventListener("click", function (ev) {
     if (!ev.target.closest || ev.target.closest("nav .dropdown")) return;
-    document.querySelectorAll("nav .dropdown.open").forEach(function (o) { o.classList.remove("open"); o.firstElementChild.setAttribute("aria-expanded", "false"); });
+    closeAll();
   });
 });
