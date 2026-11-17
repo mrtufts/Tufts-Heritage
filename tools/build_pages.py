@@ -13,7 +13,7 @@ GENS = [("Colonial 1638&ndash;1765", "generations/colonial.html", False),
         ("The Revolution 1765&ndash;1783", "generations/revolution.html", False),
         ("19th Century", "generations/19th-century.html", False),
         ("Modern", "generations/modern.html", False)]
-TOP = [("Home", "index.html", False), ("GEN", None, False), ("People", "people.html", False),
+TOP = [("Home", "index.html", False), ("GEN", None, False), ("EXP", None, False), ("People", "people.html", False),
        ("Places", "places.html", False), ("Collections", "collections.html", False), ("Sources", "sources.html", False), ("About", "about.html", False)]
 
 import hashlib as _bp_hl, os as _bp_os
@@ -28,6 +28,8 @@ BP_VER_CSS = _bp_ver("css/style.css")
 BP_VER_JS = _bp_ver("js/main.js")
 BP_VER_CFG = _bp_ver("config.js")
 
+EXPLORE = [("soldiers", "Soldiers"), ("places", "Places"), ("artifacts", "Artifacts"), ("letters", "Family Letters"), ("genealogy", "Genealogy"), ("stories", "Stories"), ("events", "Battles &amp; Events"), ("top", "All Subjects")]
+
 def link(label, path, soon, pre, cur):
     cls = ' class="soon"' if soon else ''
     ac = ' aria-current="page"' if path == cur else ''
@@ -38,7 +40,10 @@ def nav(pre, cur):
     for label, path, soon in TOP:
         if label == "GEN":
             sub = "".join(f"<li>{link(l, p, s, pre, cur)}</li>" for l, p, s in GENS)
-            out.append(f'<li class="dropdown"><a href="{pre}generations/revolution.html" aria-haspopup="true">Generations &#9662;</a><ul>{sub}</ul></li>')
+            out.append(f'<li class="dropdown"><a href="{pre}generations/revolution.html" aria-haspopup="true" aria-expanded="false">Generations &#9662;</a><ul>{sub}</ul></li>')
+        elif label == "EXP":
+            sub = "".join(f'<li><a href="{pre}subjects.html#{i}">{l}</a></li>' for i, l in EXPLORE)
+            out.append(f'<li class="dropdown explore"><a href="{pre}subjects.html" aria-haspopup="true" aria-expanded="false">Explore &#9662;</a><ul>{sub}</ul></li>')
         else:
             out.append(f"<li>{link(label, path, soon, pre, cur)}</li>")
     out.append("</ul></nav>")
@@ -91,3 +96,4 @@ exec(open("tools/images.py").read())
 exec(open("tools/content.py").read())
 exec(open("tools/links_resources.py").read())
 RW_finalize()
+exec(open("tools/site_nav_1116.py").read())

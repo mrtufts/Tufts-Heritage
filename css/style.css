@@ -103,3 +103,32 @@ code{font-family:inherit;font-size:1em;font-weight:inherit;color:inherit;backgro
 .hfig-pair .pair-imgs a{flex:1 1 0;min-width:0}
 .hfig-pair .pair-imgs img{width:100%}
 @media (max-width:600px){.gallery .figs .hfig-pair{grid-column:auto}}
+
+/* "On this page" jump navigation, back-to-top, subjects index, Explore menu */
+html{scroll-behavior:smooth}
+main [id]{scroll-margin-top:4.5rem}
+.toc{position:sticky;top:0;z-index:20;background:var(--parchment,#f3e7c9);border:1px solid var(--gold);border-left:4px solid var(--burgundy);margin:-1rem 0 1.25rem;padding:.35rem .75rem;box-shadow:0 2px 6px rgba(46,48,52,.18);text-align:left}
+.toc summary{font-family:Cinzel,serif;color:var(--burgundy);cursor:pointer;font-size:.9rem;letter-spacing:.06em}
+.toc ol{list-style:none;margin:.3rem 0 .1rem;padding:0;display:flex;flex-wrap:nowrap;overflow-x:auto;gap:.15rem 1rem;scrollbar-width:thin}
+.toc li{flex:0 0 auto}
+.toc a{color:var(--burgundy);text-decoration:none;font-size:.95rem;white-space:nowrap;border-bottom:2px solid transparent}
+.toc a:hover,.toc a:focus,.toc a[aria-current="true"]{border-bottom-color:var(--gold);color:var(--crimson)}
+.to-top{text-align:right;margin-top:2rem;font-size:.95rem}
+.to-top a{color:var(--burgundy)}
+.sn-related{border-top:1px solid var(--gold);margin-top:2rem}
+.sn-related h3{font-family:Cinzel,serif;color:var(--burgundy);font-size:1.05rem;margin-bottom:.3rem}
+.subj-list{columns:2 18rem;column-gap:2rem;padding-left:1.2rem}
+.subj-list li{break-inside:avoid;margin:.15rem 0}
+.subj-src{color:#5a4a36;font-size:.9rem}
+.subj-grid{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(12rem,1fr));gap:.6rem}
+.subj-grid a{display:block;padding:.6rem .8rem;border:1px solid var(--gold);border-left:4px solid var(--burgundy);background:rgba(255,248,225,.8);color:var(--burgundy);text-decoration:none;font-family:Cinzel,serif;font-size:.95rem}
+.subj-grid a:hover,.subj-grid a:focus{background:var(--burgundy);color:var(--parchment)}
+nav .dropdown.open>ul{display:flex}
+@media (max-width:700px){
+  .toc{position:static;margin-top:0}
+  .toc ol{flex-wrap:wrap;flex-direction:column;overflow:visible}
+  .toc a{white-space:normal}
+  main [id]{scroll-margin-top:1rem}
+  nav .dropdown>ul{position:static;min-width:0;width:100%}
+}
+nav .dropdown>ul{z-index:40}

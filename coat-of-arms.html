@@ -12,13 +12,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
-<link rel="stylesheet" href="css/style.css?v=37674270">
+<link rel="stylesheet" href="css/style.css?v=5572da6f">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
-<header class="chainmail">
+<header class="chainmail" id="top">
   <svg class="crest" viewBox="0 0 60 70" aria-hidden="true"><path d="M5 5h50v28c0 18-12 28-25 33C17 61 5 51 5 33z" fill="#6d1a24" stroke="#c9a24a" stroke-width="3"/><path d="M30 5v61M5 30h50" stroke="#c9a24a" stroke-width="2"/></svg>
   <div class="kicker">Collections &middot; Heraldry</div>
   <h1>The Tufts Coat of Arms</h1>
@@ -26,7 +26,8 @@
 </header>
 <nav aria-label="Main"><ul>
 <li><a href="index.html">Home</a></li>
-<li class="dropdown"><a href="generations/revolution.html" aria-haspopup="true">Generations &#9662;</a><ul><li><a href="generations/colonial.html">Colonial 1638&ndash;1765</a></li><li><a href="generations/revolution.html">The Revolution 1765&ndash;1783</a></li><li><a href="generations/19th-century.html">19th Century</a></li><li><a href="generations/modern.html">Modern</a></li></ul></li>
+<li class="dropdown"><a href="generations/revolution.html" aria-haspopup="true" aria-expanded="false">Generations &#9662;</a><ul><li><a href="generations/colonial.html">Colonial 1638&ndash;1765</a></li><li><a href="generations/revolution.html">The Revolution 1765&ndash;1783</a></li><li><a href="generations/19th-century.html">19th Century</a></li><li><a href="generations/modern.html">Modern</a></li></ul></li>
+<li class="dropdown explore"><a href="subjects.html" aria-haspopup="true" aria-expanded="false">Explore &#9662;</a><ul><li><a href="subjects.html#soldiers">Soldiers</a></li><li><a href="subjects.html#places">Places</a></li><li><a href="subjects.html#artifacts">Artifacts</a></li><li><a href="subjects.html#letters">Family Letters</a></li><li><a href="subjects.html#genealogy">Genealogy</a></li><li><a href="subjects.html#stories">Stories</a></li><li><a href="subjects.html#events">Battles &amp; Events</a></li><li><a href="subjects.html#top">All Subjects</a></li></ul></li>
 <li><a href="people.html">People</a></li>
 <li><a href="places.html">Places</a></li>
 <li><a href="collections.html">Collections</a></li>
@@ -34,6 +35,8 @@
 <li><a href="about.html">About</a></li>
 </ul></nav>
 <main>
+<nav class="toc" aria-label="On this page"><details open><summary>On this page</summary><ol><li><a href="#top">Top</a></li><li><a href="#intro">A Shield from Across the Sea</a></li><li><a href="#the-design">The Design</a></li><li><a href="#tufnell">The Tufnell Arms</a></li><li><a href="#toft">The Toft Arms</a></li><li><a href="#by-the-name-of">&ldquo;By the Name of&rdquo;: The American Custom</a></li><li><a href="#deerfield">The &ldquo;Tuffts Family&rdquo; Embroidery at Historic Deerfield</a></li><li><a href="#armories">What the American Armories Record</a></li><li><a href="#university">Tufts College: Seal and Coat of Arms</a></li><li><a href="#commercial">Commercial &ldquo;Tufts Crest&rdquo; Claims</a></li><li><a href="#summary">In Short</a></li><li><a href="#verification-todo">Verification To-Do</a></li><li><a href="#people-on-this-page">People on This Page</a></li></ol></details></nav>
+
 <section id="intro"><h2>A Shield from Across the Sea</h2>
 <figure class="hfig hfig-sm"><a href="assets/images/tufts-arms-reproduction.jpg"><img src="assets/images/tufts-arms-reproduction.jpg" alt="Small reproduction of the By the Name of Tufts coat of arms"  loading="lazy"></a><figcaption>Reproduction by Shannon Tufts</figcaption></figure>
 <p>Many New England families of the late eighteenth and early nineteenth centuries hung a painted or embroidered coat of arms in the parlor, lettered beneath with the words &ldquo;By the Name of&rdquo; and the family surname. The Tufts family was no exception. The design that has come down under the Tufts name, though, a shield from across the sea. Its shield matches the coat of Tufnell of England. This page sets out what the records show about that shield, where the American custom came from, and the other arms that have been linked to the name.</p></section>
@@ -117,11 +120,13 @@
 <li>Check the New England Historic Genealogical Society Committee on Heraldry&rsquo;s <em>Roll of Arms</em> for Tufts.</li>
 </ul></section>
 
+<section id="people-on-this-page" class="sn-related"><h2>People on This Page</h2><ul class="subj-list"><li><a href="profiles/cotton-tufts.html">Dr. Cotton Tufts (1732&ndash;1815)<img class="rw-icon" src="assets/icons/pistol.svg" width="22" height="10" alt="" title="Revolutionary War service: limited service or support of the war effort" aria-label="Revolutionary War service: limited service or support of the war effort"></a></li></ul></section>
+<p class="to-top"><a href="#top">Back to top &uarr;</a></p>
 </main>
 <footer class="chainmail">
   &copy; <span id="year">2026</span> Tufts Lineage &amp; Legacy &middot; <a href="about.html">About</a>
 </footer>
 <script src="config.js?v=01d892c3"></script>
-<script src="js/main.js?v=48da4257"></script>
+<script src="js/main.js?v=ca50398a"></script>
 </body>
 </html>

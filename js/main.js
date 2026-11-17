@@ -91,3 +91,46 @@ function initScans() {
   });
 }
 document.addEventListener("DOMContentLoaded", function () { initPeople(); initScans(); });
+
+// Jump navigation: collapse on small screens and highlight the section in view.
+// Menu dropdowns: tap/keyboard toggle with aria-expanded. Without JS, links and hover still work.
+document.addEventListener("DOMContentLoaded", function () {
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    var d = toc.querySelector("details");
+    if (d && window.matchMedia && window.matchMedia("(max-width:700px)").matches) d.removeAttribute("open");
+    var links = {}, targets = [];
+    toc.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      var id = a.getAttribute("href").slice(1), el = document.getElementById(id);
+      if (el && id !== "top") { links[id] = a; targets.push(el); }
+    });
+    if ("IntersectionObserver" in window && targets.length) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          Object.keys(links).forEach(function (k) { links[k].removeAttribute("aria-current"); });
+          var a = links[e.target.id]; if (a) { a.setAttribute("aria-current", "true"); if (a.scrollIntoView && window.innerWidth > 700) a.parentNode.parentNode.scrollLeft = a.offsetLeft - 40; }
+        });
+      }, { rootMargin: "0px 0px -70% 0px" });
+      targets.forEach(function (t) { io.observe(t); });
+    }
+  }
+  var touch = window.matchMedia && window.matchMedia("(hover: none)").matches;
+  document.querySelectorAll("nav .dropdown > a").forEach(function (a) {
+    var li = a.parentNode;
+    a.addEventListener("click", function (ev) {
+      if (!touch || li.classList.contains("open")) return;
+      ev.preventDefault();
+      document.querySelectorAll("nav .dropdown.open").forEach(function (o) { o.classList.remove("open"); o.firstElementChild.setAttribute("aria-expanded", "false"); });
+      li.classList.add("open"); a.setAttribute("aria-expanded", "true");
+    });
+    a.addEventListener("keydown", function (ev) {
+      if (ev.key === "ArrowDown" || ev.key === " ") { ev.preventDefault(); li.classList.add("open"); a.setAttribute("aria-expanded", "true"); var f = li.querySelector("ul a"); if (f) f.focus(); }
+      if (ev.key === "Escape") { li.classList.remove("open"); a.setAttribute("aria-expanded", "false"); }
+    });
+  });
+  document.addEventListener("click", function (ev) {
+    if (!ev.target.closest || ev.target.closest("nav .dropdown")) return;
+    document.querySelectorAll("nav .dropdown.open").forEach(function (o) { o.classList.remove("open"); o.firstElementChild.setAttribute("aria-expanded", "false"); });
+  });
+});
