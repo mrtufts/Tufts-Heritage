@@ -131,7 +131,7 @@ def SN_finalize():
     def ul(items): return '<ul class="subj-list">' + "".join(items) + "</ul>"
     body = ['<p>Every page on the site, grouped by subject. This index is rebuilt from the site&rsquo;s own pages and people data each time the site is updated.</p>']
     body.append('<section id="soldiers"><h2>Revolutionary War Soldiers &amp; Sailors</h2><p>Family members with recorded Revolutionary War service, oldest first.</p>'
-                + ul(f'<li><a href="{{P}}profiles/{r["slug"]}.html">{r["name"]}</a>{RW_icon(r["slug"])} <span class="subj-src">&middot; {r.get("town","")}{(" &middot; " + str(r["born"])) if r.get("born") else ""}</span></li>' for r in rw) + "</section>")
+                + ul(f'<li><a href="{{P}}profiles/{r["slug"]}.html">{r["name"]}</a> <span class="subj-src">&middot; {r.get("town","")}{(" &middot; " + str(r["born"])) if r.get("born") else ""}</span></li>' for r in rw) + "</section>")
     ev = []
     for eid, elab, pat in SN_EVENTS:
         ps = [f for f in files if eid in [e[0] for e in events.get(f, [])] and f != "subjects.html"]
