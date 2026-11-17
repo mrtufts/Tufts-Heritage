@@ -206,3 +206,5 @@ def page(path, title, kicker, h1, sub, body, *a, **k):
         if _j > -1:
             body = body[:_j + 5] + '<p class="note">Full profile: <a href="{P}profiles/peter-tufts-winter-hill.html">Peter Tufts of Winter Hill (1728&ndash;1791)</a>.</p>' + body[_j + 5:]
     return _page_aer(path, title, kicker, h1, sub, body, *a, **k)
+
+exec(open("tools/simon3_mhr_1117.py").read())
