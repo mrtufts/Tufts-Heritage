@@ -31,3 +31,4 @@ for _p in PROFILES:
         _p["bio"] = _p["bio"] + S3_STORY
     if _p["slug"] == "simon-tufts-11-1" and "merchant-of-india" not in _p["bio"] and "simon-tufts-29-1.html\">Simon Tufts (1750&ndash;1801)</a>. <a" not in _p["bio"]:
         _p["bio"] = _p["bio"] + FIG("home-of-dr-simon-tufts-high-forest-1938.jpg", "hfig-flow mi-inline") + S3_FATHER
+exec(open("tools/hall_tufts_1118.py").read())

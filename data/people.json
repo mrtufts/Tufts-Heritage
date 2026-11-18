@@ -997,5 +997,15 @@
     "town": "Medford, Mass.",
     "profile": "profiles/joseph-tufts-1755.html",
     "rw": "pistol"
+  },
+  {
+    "name": "Hall Tufts (1775&ndash;1801)",
+    "slug": "hall-tufts-1775",
+    "born": "1775",
+    "died": "1801",
+    "era": "Early Republic",
+    "line": "Fourth son of Dr. Simon Tufts (1727&ndash;1786) and Elizabeth (Hall) Tufts; Harvard 1794; merchant in the Surinam trade",
+    "town": "Medford, Mass.; died at Surinam",
+    "profile": "profiles/hall-tufts-1775.html"
   }
 ]

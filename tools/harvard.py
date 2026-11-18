@@ -23,7 +23,7 @@ H = [("Thomas Tufts", "1701", "", SIB("V", "122&ndash;124"), "The Quinquennial C
  ("Simon Tufts (son of Dr. Simon)", "1767", "", SIB("XVI", "540&ndash;542"), 'Probably the Simon Tufts, A.M., eldest son of Dr. Simon and Lucy (Dudley) Tufts, who died in 1802 at the Cape of Good Hope (Medford vital records). Whether he is the <a href="{P}profiles/simon-tufts-29-1.html">Loyalist Simon Tufts (1750&ndash;1801)</a> on this site is Unverified.'),
  ("Cotton Tufts Jr. (1757&ndash;1833)", "1777", "cotton-tufts-jr", QQC("1777"), "Son of Dr. Cotton Tufts; the Adams Papers editors give &ldquo;Harvard 1777&rdquo; (Adams Family Correspondence, vol. 1, Abigail Smith to Cotton Tufts, 2 April 1764, note 6)."),
  ("Abijah Tufts", "1790", "", QQC("1790"), "Identity not established."),
- ("Hall Tufts", "1794", "", 'Brooks, p. 301 (Medford graduates list)', "Listed by Brooks among Medford&rsquo;s Harvard graduates. Identity not established."),
+ ("Hall Tufts", "1794", "", 'Brooks, p. 301 (Medford graduates list)', "Fourth son of Dr. Simon Tufts and Elizabeth (Hall) Tufts, born 1775; died at Surinam, July 19, 1801 (Brooks, p. 546). See his <a href='{P}profiles/hall-tufts-1775.html'>profile</a>."),
  ("Joseph Tufts", "1807", "", QQC("1807"), "Identity not established."),
 ]
 ROWS = "".join(f'<tr><td>{(f"<a href=\"{{P}}profiles/{s}.html\">{n}</a>") if s else n}</td><td>{y}</td><td>{note}</td><td class="cite">{c}</td></tr>' for n, y, s, c, note in H)
