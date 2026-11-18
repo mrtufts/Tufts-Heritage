@@ -759,6 +759,13 @@
       "license": "No known copyright restrictions",
       "source": "https://www.digitalcommonwealth.org/search/commonwealth:2227ng58z",
       "derived_from": "assets/images/map-medford-1794-peter-tufts.jpg"
+    },
+    "tom-crean-statue-annascaul.jpg": {
+      "path": "assets/images/tom-crean-statue-annascaul.jpg",
+      "title": "Statue of Tom Crean in Annascaul",
+      "creator": "Ian Taylor",
+      "license": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tom_Crean_statue,_Anascoul_-_geograph.org.uk_-_2569518.jpg"
     }
   }
 }
