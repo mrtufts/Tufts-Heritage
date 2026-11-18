@@ -37,6 +37,8 @@ CUR.setdefault("cotton-tufts", []).append(("Maps, Surveys and Artifacts", "coat-
 CUR["alfred-tufts-1829"].insert(0, ("Maps, Surveys and Artifacts", "places.html#tufts-subdivisions", "Subdivision plans surveyed by Alfred Tufts", "MCSRD Plans 7:19 (1854), 9a:9 and plan book 10, plan 17 (1861), described on Places."))
 del CUR["alfred-tufts-1829"][1]
 
+CUR.setdefault("samuel-tufts", []).append(("Archives, Letters and Records", "https://www.ebay.com/itm/237179159588", "eBay listing, item 237179159588", "Photographs of a 1766 Newburyport notice by Samuel Tufts, listed by Antique Cottage Collectibles (ended November 17, 2026)."))
+
 
 for _s,_items in {
  "cotton-tufts": [

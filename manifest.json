@@ -766,6 +766,20 @@
       "creator": "Ian Taylor",
       "license": "CC BY-SA 2.0",
       "source": "https://commons.wikimedia.org/wiki/File:Tom_Crean_statue,_Anascoul_-_geograph.org.uk_-_2569518.jpg"
+    },
+    "samuel-tufts-newburyport-1766-front.jpg": {
+      "path": "assets/images/samuel-tufts-newburyport-1766-front.jpg",
+      "title": "Samuel Tufts’s notice to the Newburyport selectmen, 11 July 1766 (front)",
+      "creator": "Antique Cottage Collectibles (eBay listing)",
+      "license": "Photograph of a 1766 manuscript; used with credit to the listing",
+      "source": "https://www.ebay.com/itm/237179159588"
+    },
+    "samuel-tufts-newburyport-1766-back.jpg": {
+      "path": "assets/images/samuel-tufts-newburyport-1766-back.jpg",
+      "title": "Samuel Tufts’s notice to the Newburyport selectmen, 11 July 1766 (back)",
+      "creator": "Antique Cottage Collectibles (eBay listing)",
+      "license": "Photograph of a 1766 manuscript; used with credit to the listing",
+      "source": "https://www.ebay.com/itm/237179159588"
     }
   }
 }

@@ -35,3 +35,4 @@ for _p in PROFILES:
     if _p["slug"] == "turell-tufts" and "mhr-xli-hall-turell-surinam-clip" not in _p["bio"]:
         _p["bio"] = _p["bio"] + FIG("mhr-xli-hall-turell-surinam-clip.jpg", "hfig-flow mi-inline") + '<p>Coolidge, working from the Hall family papers, found that Turell and his brother ' + PL(_HT, "Hall Tufts") + ' carried on trade with Surinam; Hall died there on July 19, 1801, and Turell wrote from Surinam in 1808 to Lucy Hall on the death of her husband.' + S3_C("no. 4, pp. 61&ndash;62") + '</p>'
 
+exec(open("tools/samuel_newburyport_1118.py").read())
