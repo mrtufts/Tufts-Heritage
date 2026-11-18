@@ -16,7 +16,7 @@ V1MERGE = {
   SIDE("birthplace", (WYMAN+", p. 965", "&ldquo;Peter, Jan. 9, 1753&rdquo; (issue of Peter 37 of Charlestown; no place stated)"), (TK1+", p. 178", "born 9 Jan. 1753, Woburn")) +
   '<p class="note">Identity match: <strong>clean</strong>. Birth date, wife (Hannah Adams), Lexington Alarm service, and the Charlestown/Medford setting agree with Wyman, Wild, and MSS.</p>',
  "cotton-tufts": V("Dr. Cotton Tufts, family no. 11-4: born 30 May 1732 in Medford; died 8 Dec. 1815 in Weymouth. The book covers him at length on pp. 110&ndash;112.", "110&ndash;112", "11-4") +
-  V("His father, Dr. Simon Tufts (11-1), is described as an ardent Whig who treated the wounded after Lexington and Concord and at Bunker Hill. See <a href=\"{P}profiles/simon-tufts-11-1.html\">Dr. Simon Tufts</a>.", 110, "11-1") +
+  V("His older brother, Dr. Simon Tufts (11-1), is described as an ardent Whig who treated the wounded after Lexington and Concord and at Bunker Hill. See <a href=\"{P}profiles/simon-tufts-11-1.html\">Dr. Simon Tufts</a>.", 110, "11-1") +
   '<p class="note">Identity match: <strong>clean</strong>. Medford birth, Weymouth death in 1815, and his father Dr. Simon Tufts agree with <em>Tufts Family History</em>, pp. 35, 37. Vol. I supplies the birth date that was missing. Note: Pending further work.</p>',
  "caleb-tufts": V("Caleb Tufts, bricklayer and farmer, family no. 44-4: born 1 Sep. 1762 in Medford; died 21 Oct. 1852 in Mystic, Conn.; private in the Revolution, serving three months in 1776; in Southampton, Long Island, N.Y., in 1790; buried in the Old Packer Burying Ground, Mystic.", 166, "44-4") +
   SIDE("birth day", (WILD+", p. 50", "&ldquo;born Sept. 5, 1762&rdquo;"), (TK1+", p. 166", "born 1 Sep. 1762, Medford")) +
