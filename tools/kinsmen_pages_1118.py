@@ -24,7 +24,7 @@ def _kp_trim_quotes(h):
     # Vol. I is in copyright: long verbatim passages give way to the citation alone (the page text already summarises them).
     def rep(m):
         cite = m.group(2)
-        if "Kinsmen" in cite and "Vol. I" in cite and "Vol. II" not in cite and len(_kp_re.sub("<[^>]+>", "", m.group(1)).split()) > 40:
+        if "Kinsmen" in cite and "Vol. I" in cite and "Vol. II" not in cite and len(_kp_re.sub("<[^>]+>", "", m.group(1)).split()) > 25:
             return '<p class="cite">Source: ' + cite + '</p>'
         return m.group(0)
     return _kp_re.sub(r'<blockquote>(.*?)</blockquote>\s*<p class="cite">(.*?)</p>', rep, h, flags=_kp_re.S)

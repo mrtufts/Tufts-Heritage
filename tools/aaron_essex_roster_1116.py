@@ -84,7 +84,7 @@ ESSEX = ('<section id="about"><p>Aaron Tufts of Medford, a soldier at nineteen, 
   + '</section>{DIV}'
   + '<section id="aaron"><h2>Aaron Tufts&rsquo;s Fate</h2>'
   + '<p>' + PL("aaron-tufts", "Aaron Tufts") + ' was born in Medford on 18 December 1761. He served in the Continental Army from 1777 and again with Medford&rsquo;s six-months men in 1780 (' + _MS(131) + '). The family record then places him among the crew of the <em>Essex</em>:</p>'
-  + Q("a member of the crew of the ship Essex that was captured by the British. He died in Old Mill Prison in England while a prisoner of war", _KV(177) + ", no. 93-4")
+  + Q("died in Old Mill Prison in England while a prisoner of war", _KV(177) + ", no. 93-4")
   + Q("Probably Aaron, who died in Old Mill Prison, England, Sept. 18, 1781.", _WD(50), ["wild-medford-in-revolution-p50.jpg"])
   + '<p>He was nineteen. No grave or burial record for him in England has been found.</p>'
   + UNV("Aaron&rsquo;s name has not been seen on a crew list of the <em>Essex</em> or on a Mill Prison register; his place on the ship rests on <em>Tufts Kinsmen</em>, Vol. I, p. 177. Wild (p. 50) says only &ldquo;probably.&rdquo; Note: Pending further work.")

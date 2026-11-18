@@ -65,7 +65,7 @@ def NP(slug, name, fam, born, died, dates, town, bio, facts, unv="", line="", lo
 NP("simon-tufts-11-1", "Dr. Simon Tufts", "11-1", "", "", "[dates not in extract]", "Medford",
    "<p>Dr. Simon Tufts of Medford, older brother of Dr. Cotton Tufts (both children of family no. 11 in Tufts Kinsmen Vol. I), was an ardent Whig and a justice of the peace from 1770. When the fighting began he cared for the wounded on both sides, and he spent the war in the awkward role of guardian to a Loyalist neighbor&rsquo;s estate.</p>",
    [("Ardent Whig; justice of the peace 1770; took depositions and bound wounds after Lexington and Concord; attended the wounded on both sides at Bunker Hill; lent bounty money for the war.", 110),
-    ("Reluctantly served as conservator of the estate of the Tory Col. Isaac Royall; testified before the Committee of Safety that he believed Royall a friend to the American cause; the Committee refused and ordered the estate surrendered. After Royall&rsquo;s death in 1781 the state returned the estate to Simon as trustee.", 110),
+    ("Reluctantly served as conservator of the estate of the Tory Col. Isaac Royall; testified before the Committee of Safety that he believed Royall a friend to the American cause; the Committee refused and ordered the estate surrendered. When Royall died in 1781, the estate went back into the hands of Simon as trustee.", 110),
     ("Fellow of the Massachusetts Medical Society 1782; died from a fall from his horse.", 110)],
    "Birth and death dates are not in the extract. Service was civil and medical, not military.", line="Older brother of Dr. Cotton Tufts")
 NP("william-tufts-13-6", "Lieut. William Tufts", "13-6", "1713", "1783", "1713 &ndash; 1783", "Charlestown; Medford",
@@ -130,7 +130,7 @@ NP("grimes-tufts-40-8", "Lieut. Grimes Tufts", "40-8", "1748", "1808", "1748 &nd
 NP("samuel-tufts-41-2", "Samuel Tufts 2nd (1752&ndash;1815)", "41-2", "1752", "1815", "1752 &ndash; 1815", "Medford",
    "<p>Samuel Tufts 2nd answered the Lexington Alarm, went to Canada in 1776, and served at West Point in 1780.</p>",
    [("Born 19 Aug. 1752 in Medford; died 29 Nov. 1815.", 160),
-    ("Answered the Lexington Alarm; private, going to Canada in 1776 and to West Point, N.Y., in 1780; head of household in Medford 1790 and 1810.", 160)],
+    ("Turned out on the Lexington Alarm; as a private he served in the Canada campaign of 1776 and at West Point, N.Y., in 1780; head of household in Medford 1790 and 1810.", 160)],
    "Possible match to Wild&rsquo;s Samuel 3d (born 1752, died Nov. 20, 1815, p. 52). The death day differs (20 vs. 29 Nov.). See <a href=\"{P}profiles/samuel-tufts.html\">Samuel Tufts (several men)</a>.")
 NP("francis-tufts-41-4", "Lieut. Francis Tufts (1756&ndash;1823)", "41-4", "1756", "1823", "1756 &ndash; 1823", "Lancaster; Boston",
    "<p>At Saratoga, Francis Tufts picked up the Continental flag from a fallen standard-bearer and led his company into battle with it. Gen. Horatio Gates noticed, and he was made an ensign on the spot. After the war he ran a distillery in Boston, on the lane that came to be called Tufts Street.</p>",
@@ -142,7 +142,7 @@ NP("francis-tufts-41-4", "Lieut. Francis Tufts (1756&ndash;1823)", "41-4", "1756
 NP("david-tufts-41-7", "Cpl. David Tufts", "41-7", "1763", "1823", "1763 &ndash; 1823", "Medford; Billerica; Lynn",
    "<p>David Tufts was at Concord on the first day of the war, aged eleven by the dates given. He later served in the Continental Army as a corporal and became Lynn&rsquo;s first express driver.</p>",
    [("Born 17 June 1763 in Medford; died 6 July 1823 in Lynn; trader, expressman, and hotel keeper.", 162),
-    ("In the Battle of Concord on the first day of the Revolution; later guarded the Convention troops; joined the Continental Army at Claverack, N.Y., 1779; enlisted again at Billerica in 1781 for three years in the 2nd Massachusetts Regiment, rising from private to corporal; applied for a pension 7 Apr. 1818 at Lynn.", 162),
+    ("Present at Concord on April 19, 1775; later guarded the Convention troops; joined the Continental Army at Claverack, N.Y., 1779; enlisted again at Billerica in 1781 for three years in the 2nd Massachusetts Regiment, rising from private to corporal; applied for a pension 7 Apr. 1818 at Lynn.", 162),
     ("First express driver in Lynn; kept a hotel in Market Square.", 162)],
    "Birth year 1763 would make him about 11 at Concord in 1775. This is how the extract reads; it needs checking against the page scan.")
 NP("joseph-tufts-43-1", "Joseph Tufts (of Danvers)", "43-1", "", "", "[dates not in extract]", "Danvers",
@@ -198,7 +198,7 @@ NP("simon-tufts-29-1", "Simon Tufts (Loyalist, 1750&ndash;1801)", "29-1", "1750"
    "<p>Simon Tufts, Harvard 1767, was a merchant and a committed Loyalist. He was charged with selling tea, banished, and his estate was confiscated. He died at the Cape of Good Hope on his way home from India.</p>",
    [("Born 7 Apr. 1750 in Medford; died Dec. 1801 at Cape Town, South Africa; Harvard 1767.", 142),
     ("Devout Loyalist, losing his commerce; charged in 1775 by the Boston Committee of Inspection with selling tea, examined, and made a sworn statement that the Committee published.", 142),
-    ("Arrested by the Council of Massachusetts in April 1776, proscribed and banished; his estate was forfeited and confiscated in 1778. Returning home from India after the war, he fell sick in port at the Cape of Good Hope.", 142)],
+    ("The Massachusetts Council had him arrested in April 1776, and he was later proscribed and exiled; his estate was forfeited and confiscated in 1778. Returning home from India after the war, he fell sick in port at the Cape of Good Hope.", 142)],
    "Not to be confused with Dr. Simon Tufts (11-1).", loyalist=True)
 NP("william-tuffs-35-8", "William Tuffs (1750&ndash;1848)", "35-8", "1750", "1848", "1750 &ndash; 1848", "Schoharie, N.Y.; Ohio; Elkhart, Ind.",
    "<p>William Tuffs (the family name spelled the old way) went west after the war and died in Indiana in 1848, aged ninety-seven. A DAR chapter in Elkhart bears his name.</p>",
@@ -210,7 +210,7 @@ NP("william-tuffs-35-8", "William Tuffs (1750&ndash;1848)", "35-8", "1750", "184
 NP("nathan-tuffs-35-9", "Nathan Tuffs (1752&ndash;1827)", "35-9", "1752", "1827", "1752 &ndash; 1827", "Portsmouth, N.H.; Bethel, Vt.",
    "<p>Nathan Tuffs fought from Lexington to Yorktown. He was an artilleryman in Knox&rsquo;s regiment, a prisoner after Fort Washington, and a three-year man in the 13th Massachusetts.</p>",
    [("Born 16 Dec. 1752 in Portsmouth, N.H.; died 5 Aug. 1827 at Bethel, Vt., unmarried; moved to Bethel 1820.", 150),
-    ("Volunteer at Lexington, probably on the retreat of the King&rsquo;s troops from Concord; May 1775 enlisted at Cambridge as a private for eight months in Capt. Thomas Wait Foster&rsquo;s Co., Col. Gridley&rsquo;s [extract: &ldquo;Guidley&rsquo;s&rdquo;] Regt. of Artillery; in Dec. 1775 re-enlisted for a year in the same regiment, commanded in 1776 by Col. Knox.", 150),
+    ("Turned out as a volunteer on April 19, 1775, most likely against the British column falling back from Concord; May 1775 enlisted at Cambridge as a private for eight months in Capt. Thomas Wait Foster&rsquo;s Co., Col. Gridley&rsquo;s [extract: &ldquo;Guidley&rsquo;s&rdquo;] Regt. of Artillery; in Dec. 1775 re-enlisted for a year in the same regiment, commanded in 1776 by Col. Knox.", 150),
     ("Credited with Bunker Hill, Bemis Heights, the capture of Burgoyne, and the surrender of Cornwallis; taken prisoner at Fort Washington in 1776 and held two months before parole.", 150),
     ("Enlisted again 20 Feb. 1777 for three years in Capt. Aaron Haines&rsquo;s Co., Col. Wigglesworth&rsquo;s 13th Regt.; honorably discharged at Snake Hill near Newburgh, N.Y.; on the pension roll 5 Mar. 1819 at $96.99 a year, receiving $885.33 in all.", 150)],
    "The extract spells the artillery colonel &ldquo;Guidley&rdquo;; Gridley is the likely reading but is not confirmed.")
@@ -222,7 +222,7 @@ KIN_BY_MARRIAGE = [
  ("Ebenezer Thompson", "husband of Hannah Tufts (44-1)", "Private, guarding the Convention Troops.", 165, "44-1"),
  ("Jonathan Foster Jr.", "husband of Susanna Tufts (52-3)", "Paid a man to go to Canada in 1776.", 176, "52-3"),
  ("Seth Stone", "husband of Mary Tufts (52-4)", "Lieutenant; later of Marlborough, N.H. (1791&ndash;94) and Pittsford, Vt.", 177, "52-4"),
- ("Joseph Adams", "husband of Anna Tufts (53-11)", "Sergeant in Capt. Oliver Titcomb&rsquo;s Co., Col. Jacob Gerrish&rsquo;s Regt., guarding Burgoyne&rsquo;s surrendered army; hauled with his oxen for the Dorchester Heights fortifications; buried a silver tankard during the war that is now used in the communion service of the Arlington church.", 181, "53-11"),
+ ("Joseph Adams", "husband of Anna Tufts (53-11)", "Sergeant in Capt. Oliver Titcomb&rsquo;s Co., Col. Jacob Gerrish&rsquo;s Regt., guarding Burgoyne&rsquo;s surrendered army; hauled with his oxen for the Dorchester Heights fortifications; hid a silver tankard in the ground during the war; the tankard later served in the communion service of the Arlington church.", 181, "53-11"),
  ("Joshua Simonds", "husband of Pamela Tufts (31-4)", "Officer in the Revolution (the book cites DUDL 841).", 145, "31-4"),
  ("John Albre", "husband of Lydia Tufts (31-6)", "Officer in the Revolution (DUDL 841); lived in Salem, Acworth, N.H., and Daniels Street, Salem.", 145, "31-6"),
  ("Thomas Brooks Jr.", "husband of Mercy Tufts Jr. (11-6)", "Captain in the Revolution and Representative to the General Court.", 112, "11-6"),
