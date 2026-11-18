@@ -156,3 +156,83 @@ document.addEventListener("DOMContentLoaded", function () {
     closeAll();
   });
 });
+
+// Long-page section folds: open the target section for #hash links (including
+// nested anchors and jump-nav clicks), and wire Expand all / Collapse all.
+document.addEventListener("DOMContentLoaded", function () {
+  var folds = Array.prototype.slice.call(document.querySelectorAll("details.sec-fold"));
+  if (!folds.length) return;
+
+  function openForTarget(el) {
+    if (!el) return;
+    var node = el;
+    while (node) {
+      if (node.tagName === "DETAILS" && node.classList && node.classList.contains("sec-fold")) {
+        node.open = true;
+      }
+      node = node.parentElement;
+    }
+  }
+
+  function revealAndScroll(el) {
+    if (!el) return;
+    openForTarget(el);
+    var root = document.documentElement;
+    function jump() {
+      // Instant jump so a late layout or the browser's own hash scroll cannot
+      // leave the target mid-animation or at its pre-open position.
+      root.style.scrollBehavior = "auto";
+      if (el.scrollIntoView) el.scrollIntoView();
+      root.style.scrollBehavior = "";
+    }
+    jump();
+    requestAnimationFrame(function () {
+      requestAnimationFrame(jump);
+    });
+  }
+
+  function openForHash() {
+    var id = (location.hash || "").replace(/^#/, "");
+    if (!id) return;
+    revealAndScroll(document.getElementById(id));
+  }
+
+  window.addEventListener("hashchange", openForHash);
+  window.addEventListener("load", openForHash);
+  openForHash();
+
+  document.querySelectorAll('.toc a[href^="#"], .to-top a[href^="#"]').forEach(function (a) {
+    a.addEventListener("click", function (ev) {
+      var href = a.getAttribute("href") || "";
+      if (href.charAt(0) !== "#") return;
+      ev.preventDefault();
+      var id = href.slice(1);
+      if (history.replaceState) history.replaceState(null, "", href);
+      else location.hash = href;
+      revealAndScroll(document.getElementById(id));
+    });
+  });
+
+  var expand = document.querySelector(".sec-fold-expand");
+  var collapse = document.querySelector(".sec-fold-collapse");
+  if (expand) expand.addEventListener("click", function () {
+    folds.forEach(function (d) { d.open = true; });
+  });
+  if (collapse) collapse.addEventListener("click", function () {
+    folds.forEach(function (d) {
+      d.open = d.classList.contains("sec-fold-intro");
+    });
+  });
+
+  window.addEventListener("beforeprint", function () {
+    folds.forEach(function (d) {
+      d.dataset.wasOpen = d.open ? "1" : "0";
+      d.open = true;
+    });
+  });
+  window.addEventListener("afterprint", function () {
+    folds.forEach(function (d) {
+      if (d.dataset.wasOpen === "0") d.open = false;
+    });
+  });
+});
