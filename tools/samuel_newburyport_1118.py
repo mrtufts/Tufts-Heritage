@@ -50,3 +50,4 @@ def page(path, title, kicker, h1, sub, body, *a, **k):
         insert = "{DIV}" + _SN_SEC
         body = body.replace(needle, insert + needle, 1) if needle in body else body + insert
     return _page_sn1766(path, title, kicker, h1, sub, body, *a, **k)
+exec(open("tools/nas_finds_1118.py").read())

@@ -75,10 +75,10 @@
     "rw": "pistol"
   },
   {
-    "name": "Dr. Simon Tufts",
+    "name": "Dr. Simon Tufts (1727&ndash;1786)",
     "slug": "simon-tufts-11-1",
-    "born": "",
-    "died": "",
+    "born": "1727",
+    "died": "1786",
     "era": "The Revolution",
     "line": "Older brother of Dr. Cotton Tufts",
     "town": "Medford",
@@ -262,17 +262,6 @@
     "rw": "musket"
   },
   {
-    "name": "Joseph Tufts (of Danvers)",
-    "slug": "joseph-tufts-43-1",
-    "born": "",
-    "died": "",
-    "era": "The Revolution",
-    "line": "Tufts Kinsmen family no. 43-1",
-    "town": "Danvers",
-    "profile": "profiles/joseph-tufts-43-1.html",
-    "rw": "pistol"
-  },
-  {
     "name": "Andrew Tufts",
     "slug": "andrew-tufts-43-3",
     "born": "1761",
@@ -326,17 +315,6 @@
     "town": "Windham, Conn.; Ashford; Stephentown, N.Y.; Ludlow, Mass.",
     "profile": "profiles/john-tufts-22-1.html",
     "rw": "musket"
-  },
-  {
-    "name": "Henry Tufts (of Lee, N.H.)",
-    "slug": "henry-tufts-25-1",
-    "born": "1735",
-    "died": "",
-    "era": "The Revolution",
-    "line": "Tufts Kinsmen family no. 25-1",
-    "town": "Boston; Newmarket and Lee, N.H.",
-    "profile": "profiles/henry-tufts-25-1.html",
-    "rw": "pistol"
   },
   {
     "name": "Thomas Tufts (of Lee, N.H.)",
@@ -979,7 +957,7 @@
   {
     "name": "William Tufts (d. 1777)",
     "slug": "william-tufts-1777",
-    "born": "",
+    "born": "1762",
     "died": "1777",
     "era": "The Revolution",
     "line": "Son of William and Catherine (Tufts) Tufts; killed in service, 1777",
@@ -988,13 +966,13 @@
     "rw": "musket"
   },
   {
-    "name": "Joseph Tufts Jr. (b. 1755)",
+    "name": "Joseph Tufts Jr. (1755&ndash;1840)",
     "slug": "joseph-tufts-1755",
     "born": "1755",
-    "died": "",
+    "died": "1840",
     "era": "The Revolution",
     "line": "Son of Capt. Joseph and Hannah (Cutter) Tufts; loaned money for Medford&rsquo;s 1776 bounties",
-    "town": "Medford, Mass.",
+    "town": "Medford; later Danvers, Mass.",
     "profile": "profiles/joseph-tufts-1755.html",
     "rw": "pistol"
   },
@@ -1007,5 +985,127 @@
     "line": "Fourth son of Dr. Simon Tufts (1727&ndash;1786) and Elizabeth (Hall) Tufts; Harvard 1794; merchant in the Surinam trade",
     "town": "Medford, Mass.; died at Surinam",
     "profile": "profiles/hall-tufts-1775.html"
+  },
+  {
+    "name": "Rachel (Tufts) Francis",
+    "slug": "rachel-tufts-francis",
+    "born": "",
+    "died": "",
+    "era": "Colonial",
+    "line": "Mother of Col. Ebenezer Francis (1743&ndash;1777), killed at Hubbardton",
+    "town": "Medford, Mass.",
+    "profile": "profiles/rachel-tufts-francis.html"
+  },
+  {
+    "name": "John Tufts of West Cambridge (1776&ndash;1817)",
+    "slug": "john-tufts-1776",
+    "born": "1776",
+    "died": "1817",
+    "era": "19th Century",
+    "line": "Son of Jonathan and Elizabeth (Holden) Tufts; tavern keeper and owner of the &ldquo;Tufts mills&rdquo; in West Cambridge",
+    "town": "Medford; West Cambridge (now Arlington), Mass.",
+    "profile": "profiles/john-tufts-1776.html"
+  },
+  {
+    "name": "Rev. John Tufts (Harvard 1708)",
+    "slug": "john-tufts-hc1708",
+    "born": "",
+    "died": "",
+    "era": "Colonial",
+    "line": "Son of Capt. Peter Tufts (c. 1648&ndash;1721); minister and author of an early singing-book",
+    "town": "Medford; minister of the Second Parish of Newbury (now West Newbury), Mass.",
+    "profile": "profiles/john-tufts-hc1708.html"
+  },
+  {
+    "name": "Rev. Thomas Tufts (Harvard 1701)",
+    "slug": "thomas-tufts-hc1701",
+    "born": "",
+    "died": "",
+    "era": "Colonial",
+    "line": "Son of Capt. Peter Tufts (c. 1648&ndash;1721); Harvard 1701; ministerial candidate",
+    "town": "Medford; candidate for the ministry at Weston and Malden, Mass.",
+    "profile": "profiles/thomas-tufts-hc1701.html"
+  },
+  {
+    "name": "Jonathan Tufts of Plymouth (c. 1747&ndash;1821)",
+    "slug": "jonathan-tufts-plymouth",
+    "born": "1747",
+    "died": "1821",
+    "era": "Early Republic",
+    "line": "Buried on Burial Hill, Plymouth, with his two wives",
+    "town": "Plymouth, Mass.",
+    "profile": "profiles/jonathan-tufts-plymouth.html"
+  },
+  {
+    "name": "William Drew Tufts (1791&ndash;1811)",
+    "slug": "william-drew-tufts-1791",
+    "born": "1791",
+    "died": "1811",
+    "era": "Early Republic",
+    "line": "Son of Jonathan and Priscilla Tufts of Plymouth",
+    "town": "Plymouth, Mass.; died at Cuba",
+    "profile": "profiles/william-drew-tufts-1791.html"
+  },
+  {
+    "name": "Deacon Richard Tufts of Lynn",
+    "slug": "richard-tufts-lynn",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Son of David Tufts, a Revolutionary corporal; deacon of the First Church of Lynn; father of Gardiner Tufts",
+    "town": "Lynn, Mass.",
+    "profile": "profiles/richard-tufts-lynn.html"
+  },
+  {
+    "name": "Ichabod Tufts (1731&ndash;1775?)",
+    "slug": "ichabod-tufts-37-3",
+    "born": "1731",
+    "died": "1775",
+    "era": "The Revolution",
+    "line": "Son of John and Sarah (Peirce) Tufts; by tradition killed at Bunker Hill",
+    "town": "Medford, Mass.",
+    "profile": "profiles/ichabod-tufts-37-3.html"
+  },
+  {
+    "name": "Elias Tufts (b. 1751)",
+    "slug": "elias-tufts-42-4",
+    "born": "1751",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Son of Jonathan and Sarah (Thompson) Tufts; of Watertown in 1774; died at Pembroke, N.H.",
+    "town": "Charlestown; Watertown, Mass.; Pembroke, N.H.",
+    "profile": "profiles/elias-tufts-42-4.html"
+  },
+  {
+    "name": "Sergt. Frederick Tufts (bapt. 1731)",
+    "slug": "frederick-tufts-9-7",
+    "born": "1731",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Son of Thomas and Emma (Phipps) Tufts; sergeant from Mystic in the Revolution",
+    "town": "Boston; Mystic (West Medford), Mass.",
+    "profile": "profiles/frederick-tufts-9-7.html",
+    "rw": "pistol"
+  },
+  {
+    "name": "James Tufts, Potter (1755&ndash;1810)",
+    "slug": "james-tufts-82-3",
+    "born": "1755",
+    "died": "1810",
+    "era": "The Revolution",
+    "line": "Son of James and Tabitha (Binford) Tufts; potter of Medford",
+    "town": "Medford, Mass.",
+    "profile": "profiles/james-tufts-82-3.html"
+  },
+  {
+    "name": "Dr. Samuel Tufts of Newburyport (1735&ndash;1799)",
+    "slug": "samuel-tufts-11-5",
+    "born": "1735",
+    "died": "1799",
+    "era": "The Revolution",
+    "line": "Son of Dr. Simon Tufts (1700&ndash;1747); physician, druggist and merchant of Newburyport",
+    "town": "Medford; Newbury and Newburyport, Mass.",
+    "profile": "profiles/samuel-tufts-11-5.html",
+    "rw": "pistol"
   }
 ]
