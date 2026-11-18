@@ -329,7 +329,7 @@ def EXTRA(path):
 # =====================================================================
 TKV = lambda pg, no="": f'<em>Tufts Kinsmen</em>, Vol.&nbsp;I, p. {pg}' + (f', no. {no}' if no else '')
 BED = lambda pg: f'Abram English Brown, <em>History of the Town of Bedford</em> (1891), p. {pg}. {_IA("historyoftownofb00brow")}'
-MM7 = lambda pg: f'<em>The Massachusetts Magazine</em>, vol. 7 (1912), p. {pg}. {_IA("massachusettsmag07newy")}'
+MM7 = lambda pg: f'<em>The Massachusetts Magazine</em>, vol. 7 (1914), p. {pg}. {_IA("massachusettsmag07newy")}'
 WWN = lambda pg: f'<em>Worcester County, Mass., Warnings, 1737&ndash;1788</em> (1899), p. {pg}. {_IA("worcestercountym00blak")}'
 NHL = lambda pg: f'Henry M. Brooks and others, <em>The Newhall Family of Lynn, Massachusetts</em> (1882), p. {pg}. {_IA("newhallfamilyofl01wate")}'
 NHL = lambda pg: f'<em>The Newhall Family of Lynn, Massachusetts</em> (1882), p. {pg}. {_IA("newhallfamilyofl01wate")}'

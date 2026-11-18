@@ -1,0 +1,305 @@
+{
+ "mhr-xxi-why-mystic-tufts-mill": {
+  "id": "medfordhistoricv21v26medf",
+  "leaf": 128,
+  "pat": "Tufts mill"
+ },
+ "mhr-xxiii-turnpike-mills-owners": {
+  "id": "medfordhistoricv21v26medf",
+  "leaf": 478,
+  "pat": "William Tufts|grist mills"
+ },
+ "mhr-xxiii-turnpike-nathan-tufts-cut": {
+  "id": "medfordhistoricv21v26medf",
+  "leaf": 480,
+  "pat": "Nathan Tufts"
+ },
+ "mhr-xxiii-turnpike-cutter-tufts-mill": {
+  "id": "medfordhistoricv21v26medf",
+  "leaf": 480,
+  "pat": "purchased the Tufts"
+ },
+ "mhr-xxii-century-ago-tufts-a": {
+  "id": "medfordhistoricv21v26medf",
+  "leaf": 382,
+  "lines": [
+   22,
+   32
+  ]
+ },
+ "mhr-xxii-century-ago-tufts-b": {
+  "id": "medfordhistoricv21v26medf",
+  "leaf": 384,
+  "lines": [
+   28,
+   37
+  ]
+ },
+ "mhr-xxiv-season-portrait-watch": {
+  "id": "medfordhistoricv21v26medf",
+  "leaf": 762,
+  "lines": [
+   22,
+   34
+  ]
+ },
+ "mhr-xi-royall-letter": {
+  "id": "medfordhistoricav9v12medf",
+  "leaf": 518,
+  "lines": [
+   34,
+   38
+  ]
+ },
+ "mhr-xi-mill-dam-cobble-hill": {
+  "id": "medfordhistoricav9v12medf",
+  "leaf": 566,
+  "pat": "Cambridge, January 11",
+  "until": "westerly side"
+ },
+ "mhr-xiv-medford-incidents-crockery": {
+  "id": "medfordhistoricv13v16medf",
+  "leaf": 358,
+  "pat": "MEDFORD INCIDENTS",
+  "after": 2
+ },
+ "mhr-xiii-water-supply-samuel-tufts": {
+  "id": "medfordhistoricv13v16medf",
+  "leaf": 150,
+  "pat": "Samuel Tufts"
+ },
+ "mhr-viii-loyalists-simon-tufts": {
+  "id": "medfordhistoricav8medf",
+  "leaf": 132,
+  "pat": "Simon Tufts"
+ },
+ "mhr-vi-simon-tufts-letters": {
+  "id": "medfordhistoricav6v7medf",
+  "leaf": 216,
+  "pat": "Extracts from letters",
+  "after": 1
+ },
+ "mhr-xviii-turell-tufts-54": {
+  "id": "medfordhistorica1720medf",
+  "leaf": 348,
+  "pat": "Turell Tufts, who made"
+ },
+ "mhr-xviii-turell-tufts-55": {
+  "id": "medfordhistorica1720medf",
+  "leaf": 350,
+  "pat": "selectman"
+ },
+ "mhr-xviii-residences-67": {
+  "id": "medfordhistorica1720medf",
+  "leaf": 378,
+  "lines": [
+   3,
+   13
+  ]
+ },
+ "mhr-xli-peter-tufts-house-date": {
+  "id": "medfordhistorica12medf",
+  "leaf": 53,
+  "lines": [
+   20,
+   33
+  ]
+ },
+ "mm-v5-orderly-book-francis-tufts": {
+  "id": "massachusettsmagv5sale",
+  "leaf": 38,
+  "pat": "Francis Tufts"
+ },
+ "mm-v6-mansfield-roster-grimes-tufts": {
+  "id": "massachusettsmagv6sale",
+  "leaf": 306,
+  "pat": "Grimes Tufts"
+ },
+ "mm-v6-rachel-tufts-francis": {
+  "id": "massachusettsmagv6sale",
+  "leaf": 324,
+  "pat": "Rachel"
+ },
+ "mm-v7-grimes-tufts-sketch": {
+  "id": "massachusettsmag07newy",
+  "leaf": 49,
+  "pat": "GRIMES TUFTS",
+  "after": 1,
+  "until": "1805"
+ },
+ "mhr-ii-war-revolution-39": {
+  "id": "medfordhistoricav1v2medf",
+  "leaf": 426,
+  "lines": [
+   9,
+   18
+  ]
+ },
+ "bg-1776-05-09-guns-samuel-tufts": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1776-05-09_4_1094",
+  "leaf": 3,
+  "pat": "Tufts|TUFTS"
+ },
+ "bg-1775-04-03-simon-tufts": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1775-04-03_4_1042",
+  "leaf": 2,
+  "pat": "SIMON TUFTS",
+  "around": [
+   9,
+   8
+  ]
+ },
+ "bg-1774-10-17-mary-tufts-horse": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1774-10-17_4_1018",
+  "leaf": 0,
+  "pat": "Tufts|TUFTS"
+ },
+ "bg-1773-11-29-william-tufts-estate": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1773-11-29_4_973",
+  "leaf": 2,
+  "pat": "Tufts|TUFTS"
+ },
+ "bg-1773-05-24-seccombe-estate": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1773-05-24_4_946",
+  "leaf": 3,
+  "pat": "Tufts|TUFTS",
+  "around": [
+   2,
+   4
+  ]
+ },
+ "bg-1772-06-01-simon-tufts-representative": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1772-06-01_4_895",
+  "leaf": 1,
+  "pat": "Tufts|TUFTS"
+ },
+ "bg-1771-11-25-cotton-tufts-mare": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1771-11-25_3_868",
+  "leaf": 3,
+  "pat": "Tufts|TUFTS",
+  "around": [
+   2,
+   9
+  ]
+ },
+ "bg-1771-06-17-william-tufts-jun": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1771-06-17_3_845",
+  "leaf": 2,
+  "pat": "Tufts|TUFTS",
+  "around": [
+   0,
+   5
+  ]
+ },
+ "bg-1770-09-03-simon-tufts-justice": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1770-09-03_3_804",
+  "leaf": 0,
+  "pat": "Tufts|TUFTS",
+  "around": [
+   1,
+   1
+  ]
+ },
+ "bg-1770-07-23-harvard-masters": {
+  "id": "per_boston-gazette_the-boston-gazette-and-country-journal_1770-07-23_3_798",
+  "leaf": 0,
+  "pat": "Tufts|TUFTS"
+ },
+ "mhr-ii-war-revolution-30-nine-tuftses": {
+  "id": "medfordhistoricav1v2medf",
+  "leaf": 408,
+  "lines": [
+   5,
+   14
+  ]
+ },
+ "mhr-ii-war-revolution-41-francis-tufts": {
+  "id": "medfordhistoricav1v2medf",
+  "leaf": 430,
+  "lines": [
+   33,
+   39
+  ]
+ },
+ "mhr-ii-war-revolution-47-aaron-tufts": {
+  "id": "medfordhistoricav1v2medf",
+  "leaf": 442,
+  "lines": [
+   1,
+   6
+  ]
+ },
+ "nehgr-51-300-peter-2": {
+  "id": "newenglandhistor51wate",
+  "leaf": 317,
+  "lines": [
+   1,
+   8
+  ]
+ },
+ "nehgr-51-301-sarah-hinckley": {
+  "id": "newenglandhistor51wate",
+  "leaf": 318,
+  "lines": [
+   1,
+   3
+  ]
+ },
+ "nehgr-51-301-james-2": {
+  "id": "newenglandhistor51wate",
+  "leaf": 318,
+  "lines": [
+   13,
+   16
+  ]
+ },
+ "nehgr-51-302-thomas-3": {
+  "id": "newenglandhistor51wate",
+  "leaf": 319,
+  "lines": [
+   19,
+   26
+  ]
+ },
+ "nehgr-51-302-john-3": {
+  "id": "newenglandhistor51wate",
+  "leaf": 319,
+  "lines": [
+   45,
+   54
+  ]
+ },
+ "nehgr-51-303-james-3": {
+  "id": "newenglandhistor51wate",
+  "leaf": 320,
+  "lines": [
+   42,
+   48
+  ]
+ },
+ "nehgr-51-304-peter-3": {
+  "id": "newenglandhistor51wate",
+  "leaf": 321,
+  "lines": [
+   47,
+   51
+  ]
+ },
+ "nehgr-51-305-peter-3-children": {
+  "id": "newenglandhistor51wate",
+  "leaf": 322,
+  "lines": [
+   1,
+   4
+  ]
+ },
+ "mhr-ii-war-revolution-31-simon-tufts": {
+  "id": "medfordhistoricav1v2medf",
+  "leaf": 410,
+  "pat": "Dr. Simon Tufts",
+  "around": [
+   4,
+   3
+  ]
+ }
+}
