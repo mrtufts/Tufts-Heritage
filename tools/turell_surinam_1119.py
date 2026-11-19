@@ -63,3 +63,4 @@ NF_EXTRA.setdefault("collections.html", []).append(
   + Q(_POR, _CDEC + ', p. 63. <a href="' + _TT63 + '">View the page scan</a>')
   + UNV("Painter, date, and present location not confirmed; no image of the portrait has been found online. Note: Pending further work.")
   + '</section>')
+exec(open("tools/late_books_1119.py").read())

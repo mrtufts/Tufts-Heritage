@@ -1107,5 +1107,76 @@
     "town": "Medford; Newbury and Newburyport, Mass.",
     "profile": "profiles/samuel-tufts-11-5.html",
     "rw": "pistol"
+  },
+  {
+    "name": "Rev. Joshua Tufts (1716&ndash;1767)",
+    "slug": "joshua-tufts-hc1736",
+    "born": "1716",
+    "died": "1767",
+    "era": "Colonial",
+    "line": "Son of Rev. John Tufts of Newbury; Harvard 1736; minister at Edgartown, 1759&ndash;1760",
+    "town": "Newbury, Mass.; Litchfield, N.H.; Edgartown, Martha&rsquo;s Vineyard; Fort Cumberland and Halifax, Nova Scotia",
+    "profile": "profiles/joshua-tufts-hc1736.html"
+  },
+  {
+    "name": "Sarah (Tufts) Whitcomb (1718&ndash;1801)",
+    "slug": "sarah-tufts-whitcomb-1718",
+    "born": "1718",
+    "died": "1801",
+    "era": "Colonial",
+    "line": "Daughter of Peter Tufts; wife of Jonathan Whitcomb of Littleton",
+    "town": "Malden, Mass.; Littleton, Mass.; died at Shelburne Falls, Mass.",
+    "profile": "profiles/sarah-tufts-whitcomb-1718.html"
+  },
+  {
+    "name": "Eliakim Tufts (1767&ndash;1825)",
+    "slug": "eliakim-tufts-87-6",
+    "born": "1767",
+    "died": "1825",
+    "era": "The Revolution",
+    "line": "Son of William and Katherine (Tufts) Tufts; Revolutionary soldier from Billerica; died at Littleton",
+    "town": "Medford; Billerica; Groton; Littleton, Mass.",
+    "profile": "profiles/eliakim-tufts-87-6.html",
+    "rw": "musket"
+  },
+  {
+    "name": "James W. Tufts (1835&ndash;1902), Soda-Fountain Maker",
+    "slug": "james-w-tufts-1835",
+    "born": "1835",
+    "died": "1902",
+    "era": "19th Century",
+    "line": "Son of Leonard and Hepzibah (Fosdick) Tufts; apothecary and maker of the &ldquo;Arctic&rdquo; soda apparatus",
+    "town": "Charlestown (now Somerville); Medford; Boston, Mass.; Pinehurst, N.C.",
+    "profile": "profiles/james-w-tufts-1835.html"
+  },
+  {
+    "name": "Leonard Tufts (1870&ndash;1945)",
+    "slug": "leonard-tufts-1870",
+    "born": "1870",
+    "died": "1945",
+    "era": "19th Century",
+    "line": "Son of James W. Tufts, the soda-fountain maker; resort operator",
+    "town": "Medford; Boston, Mass.; Pinehurst, N.C.",
+    "profile": "profiles/leonard-tufts-1870.html"
+  },
+  {
+    "name": "Nathan A. Tufts (1799&ndash;1873)",
+    "slug": "nathan-adams-tufts-1799",
+    "born": "1799",
+    "died": "1873",
+    "era": "19th Century",
+    "line": "Son of Deacon Amos Tufts; merchant and bank director of Charlestown",
+    "town": "Charlestown, Mass.",
+    "profile": "profiles/nathan-adams-tufts-1799.html"
+  },
+  {
+    "name": "Rev. James Tufts of Monson (1812&ndash;1901)",
+    "slug": "james-tufts-monson-1812",
+    "born": "1812",
+    "died": "1901",
+    "era": "19th Century",
+    "line": "Son of James and Submit F. (Hayden) Tufts; teacher, principal of Monson Academy",
+    "town": "Wardsborough, Vt.; Monson, Mass.",
+    "profile": "profiles/james-tufts-monson-1812.html"
   }
 ]

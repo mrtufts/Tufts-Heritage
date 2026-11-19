@@ -31,11 +31,25 @@ _SN_RULES = [
  (r"The printed page has not yet been checked against the scan", "The page reference is not yet confirmed"),
  (r"was quoted from the MHS edition" + _A + r"s search extract; the page could not be opened directly from here \(server error\), so its exact date", "is quoted from the Massachusetts Historical Society&rsquo;s online edition; its exact date"),
  (r"\[extract: ", "[printed "),
+ (r"\s*\(Scanned text; obvious scanning errors corrected\.\)", " (Transcribed from the printed page.)"),
+ (r"(<em>Tufts Kinsmen</em> Vol\. I) extract", r"\1"),
+ (r"\(As read in the scanned text\.\)", "(As printed.)"),
+ (r"Quoted from the scanned text;", "Quoted as printed;"),
+ (r"quoted from the scanned text of", "quoted from"),
+ (r"(in|per) the scanned text", r"\1 the original"),
+ (r"[Tt]he scanned text (?=prints|did not show)", "the printed text "),
+ (r"Some dates in the scanned text", "Some dates in the original"),
+ (r"The year in the scanned text", "The year in the original"),
+ (r"(in|unclear in) the scan used here", r"\1 the copy consulted"),
+ (r"not fully legible in the scan\)", "not fully legible in the original)"),
+ (r"(Representative\.&rdquo;) Check the scan\.", r"\1"),
+ (r"Internet Archive" + _A + r"s scanned text, checked against", "Internet Archive&rsquo;s copy, checked against"),
+ (r"Burke" + _A + r"s scanned text reads", "Burke&rsquo;s text reads"),
  (r"\bOCR\b", "printed text"),
 ]
 def SN_apply():
     n = {}
-    for f in _sng.glob("*.html") + _sng.glob("profiles/*.html") + _sng.glob("generations/*.html"):
+    for f in _sng.glob("*.html") + _sng.glob("profiles/*.html") + _sng.glob("generations/*.html") + _sng.glob("stories/*.html"):
         h = open(f).read(); h0 = h
         for i, (a, b) in enumerate(_SN_RULES):
             h, k = _snre.subn(a, b, h)
