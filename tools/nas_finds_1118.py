@@ -512,3 +512,4 @@ for _nfsrc in NF_REDIRECTS:
 if "BIZ_HTML" in globals():
     BIZ_HTML = BIZ_HTML + "".join(NF_EXTRA.pop("businesses.html", []))
     page("businesses.html", "Businesses | Tufts Lineage &amp; Legacy", "Places", "Businesses", "The trades of the Tufts family, colonial era to the 19th century", BIZ_HTML)
+exec(open("tools/turell_surinam_1119.py").read())

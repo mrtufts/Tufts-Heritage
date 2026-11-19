@@ -301,5 +301,38 @@
    4,
    3
   ]
+ },
+ "mhr-xli-turell-surinam-letter-1808": {
+  "id": "medfordhistorica12medf",
+  "leaf": 109,
+  "pat": "^Surinam 20 Nov",
+  "until": "Am.*in the port"
+ },
+ "mhr-xli-turell-returns-medford": {
+  "id": "medfordhistorica12medf",
+  "leaf": 110,
+  "pat": "At some time during",
+  "until": "Medford Public Library"
+ },
+ "mhr-xli-turell-portrait-blue-eyes": {
+  "id": "medfordhistorica12medf",
+  "leaf": 110,
+  "pat": "^Not only did Dudley",
+  "until": "blue eyes"
+ },
+ "mhr-xlii-1839-taxpayers-turell": {
+  "id": "medfordhistorica12medf",
+  "leaf": 129,
+  "pat": "Medford Distillery, Turell Tufts",
+  "around": [
+   6,
+   4
+  ]
+ },
+ "mhr-xxiv-route-of-revere-roll": {
+  "id": "medfordhistorica36medf",
+  "leaf": 141,
+  "pat": "Medford roll of honor",
+  "until": "Samuel Hadley"
  }
 }

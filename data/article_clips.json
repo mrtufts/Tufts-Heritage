@@ -642,5 +642,54 @@
     "Boston Gazette"
    ]
   ]
+ },
+ "mhr-xxiv-route-of-revere-roll": {
+  "img": "clip-mhr-xxiv-route-of-revere-roll.jpg",
+  "title": "The Medford roll of April 19, 1775, as printed in &ldquo;The Route of Revere&rdquo;",
+  "source": "<em>Medford Historical Register</em>, vol. XXIV, no. 1 (March 1921), &ldquo;The Route of Revere,&rdquo; p. 22",
+  "link": "https://archive.org/details/medfordhistorica36medf/page/n141/mode/1up",
+  "text": "Medford roll of honor is called: &mdash; Captain Isaac Hall, Lieutenant Caleb Brooks, Ensign Stephen Hall, Sergeant Thomas Pritchard, Sergeant Isaac Tufts, Sergeant Moses Hall, Corporal John Tufts, Corporal Gershom Teel, Corporal Jonathan Greenleaf, Drummer Timothy Hall, Fifer William Farning. Privates: &mdash; David Vinton, John Bucknam, Isaac Watson, Jonathan Laurence, Jonathan Davis, Abel Richardson, James Tufts, Jr., Samuel Tufts, 3d, Andrew Floyd, Benjamin Floyd, Andrew Blanchard, Samuel Tufts, John Francis, Jr., Paul Dexter, John Smith, Abel Butterfield, Josiah Cutter, John Kemp, Eleazer Putnam, James Bucknam, Jr., Aaron Crowell, Jonathan Tufts, Benjamin Pierce, Thomas Wakefield, Jonathan Teel, Aaron Blanchard, Richard Cole, William Binford, Thomas Bradshaw, Daniel Tufts, Peter Tufts, Jr., Ebenezer Tufts, Isaac Cooch, Daniel Conery, David Hadley, Jacob Bedin, Richard Paine, William Polley, Peter Conery, Joseph Clefton, Samuel Hadley, Jr., Moses Hadley, John Callender, John Clarke, Andrew Bradshaw, Thomas Savels, Francis Hall, Benjamin Savils.",
+  "targets": [
+   [
+    "profiles/daniel-tufts.html",
+    "Route of Revere"
+   ],
+   [
+    "profiles/ebenezer-tufts-36-7.html",
+    "Route of Revere"
+   ],
+   [
+    "profiles/isaac-tufts-36-10.html",
+    "Route of Revere"
+   ],
+   [
+    "profiles/james-tufts-jr-36-2.html",
+    "Route of Revere"
+   ],
+   [
+    "profiles/jonathan-tufts-36-8.html",
+    "Route of Revere"
+   ],
+   [
+    "profiles/peter-tufts-1648.html",
+    "Route of Revere"
+   ],
+   [
+    "profiles/peter-tufts-jr.html",
+    "Route of Revere"
+   ],
+   [
+    "profiles/samuel-tufts-3d.html",
+    "Route of Revere"
+   ],
+   [
+    "profiles/samuel-tufts.html",
+    "Route of Revere"
+   ],
+   [
+    "places.html",
+    "Route of Revere"
+   ]
+  ]
  }
 }

@@ -1,6 +1,6 @@
 # Medford Historical Register vols. XXII-XXIV (1919-1921) finds, daily research run 2026-11-12.
 MHRIA = "https://archive.org/details/"
-_R1920 = f'<em>Medford Historical Register</em>, vol. XXIII, no. 1 (March 1920), &ldquo;The Route of Revere,&rdquo; pp. 21&ndash;22. <a href="{MHRIA}medfordhistorica36medf">Internet Archive</a>'
+_R1920 = f'<em>Medford Historical Register</em>, vol. XXIV, no. 1 (March 1921), &ldquo;The Route of Revere,&rdquo; pp. 21&ndash;22. <a href="{MHRIA}medfordhistorica36medf/page/n141/mode/1up">Internet Archive</a>'
 _S1921 = f'<em>Medford Historical Register</em>, vol. XXIV, no. 3 (Sept. 1921), &ldquo;Season of 1920&ndash;1921,&rdquo; pp. 66&ndash;67. <a href="{MHRIA}medfordhistorica36medf">Internet Archive</a>'
 _C1919 = f'<em>Medford Historical Register</em>, vol. XXII, no. 4 (Dec. 1919), &ldquo;Medford a Century Ago&mdash;1819,&rdquo; pp. 65&ndash;66. <a href="{MHRIA}medfordhistorica35medf">Internet Archive</a>'
 _ROLL = [("Sergeant Isaac Tufts","isaac-tufts-36-10"),("Corporal John Tufts",None),("James Tufts, Jr.","james-tufts-jr-36-2"),("Samuel Tufts, 3d","samuel-tufts-3d"),("Samuel Tufts","samuel-tufts"),("Jonathan Tufts","jonathan-tufts-36-8"),("Daniel Tufts","daniel-tufts"),("Peter Tufts, Jr.","peter-tufts-jr"),("Ebenezer Tufts","ebenezer-tufts-36-7")]
