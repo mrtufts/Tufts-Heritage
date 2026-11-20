@@ -1019,8 +1019,8 @@
   {
     "name": "Rev. Thomas Tufts (Harvard 1701)",
     "slug": "thomas-tufts-hc1701",
-    "born": "",
-    "died": "",
+    "born": "1683",
+    "died": "1733",
     "era": "Colonial",
     "line": "Son of Capt. Peter Tufts (c. 1648&ndash;1721); Harvard 1701; ministerial candidate",
     "town": "Medford; candidate for the ministry at Weston and Malden, Mass.",
@@ -1095,7 +1095,8 @@
     "era": "The Revolution",
     "line": "Son of James and Tabitha (Binford) Tufts; potter of Medford",
     "town": "Medford, Mass.",
-    "profile": "profiles/james-tufts-82-3.html"
+    "profile": "profiles/james-tufts-82-3.html",
+    "rw": "pistol"
   },
   {
     "name": "Dr. Samuel Tufts of Newburyport (1735&ndash;1799)",
@@ -1178,5 +1179,70 @@
     "line": "Son of James and Submit F. (Hayden) Tufts; teacher, principal of Monson Academy",
     "town": "Wardsborough, Vt.; Monson, Mass.",
     "profile": "profiles/james-tufts-monson-1812.html"
+  },
+  {
+    "name": "Oliver Tufts (1801&ndash;1883)",
+    "slug": "oliver-tufts-1801",
+    "born": "1801",
+    "died": "1883",
+    "era": "19th Century",
+    "line": "Son of John and Elizabeth (Perry) Tufts; farmer of the Sycamore Street homestead",
+    "town": "Charlestown, later Somerville (Sycamore Street), Mass.",
+    "profile": "profiles/oliver-tufts-1801.html"
+  },
+  {
+    "name": "Samuel Tufts of Milk Row (1737&ndash;1828)",
+    "slug": "samuel-tufts-18-5",
+    "born": "1737",
+    "died": "1828",
+    "era": "The Revolution",
+    "line": "Son of Peter and Lydia (Bucknam) Tufts; brother of Timothy and of Peter of Winter Hill",
+    "town": "Milk Row, Charlestown (now Somerville), Mass.",
+    "profile": "profiles/samuel-tufts-18-5.html",
+    "rw": "pistol"
+  },
+  {
+    "name": "John Tufts of Malden (1739&ndash;1799)",
+    "slug": "john-tufts-19-5",
+    "born": "1739",
+    "died": "1799",
+    "era": "The Revolution",
+    "line": "Son of Benjamin and Mary (Hutchinson) Tufts; soldier from Malden",
+    "town": "Medford and Malden, Mass.",
+    "profile": "profiles/john-tufts-19-5.html",
+    "rw": "pistol"
+  },
+  {
+    "name": "Stephen Tufts Jr., Miller, of Malden (1749&ndash;1832)",
+    "slug": "stephen-tufts-21-1",
+    "born": "1749",
+    "died": "1832",
+    "era": "The Revolution",
+    "line": "Son of Stephen and Katherine (Taylor) Tufts; miller on Spot Pond Brook",
+    "town": "Malden, Mass.",
+    "profile": "profiles/stephen-tufts-21-1.html",
+    "rw": "pistol"
+  },
+  {
+    "name": "Capt. Timothy Tufts, Master Mariner (1756&ndash;1810)",
+    "slug": "timothy-tufts-21-4",
+    "born": "1756",
+    "died": "1810",
+    "era": "The Revolution",
+    "line": "Son of Stephen and Katherine (Taylor) Tufts; corporal from Malden; later a Baltimore sea captain",
+    "town": "Malden, Mass.; Baltimore, Md.",
+    "profile": "profiles/timothy-tufts-21-4.html",
+    "rw": "pistol"
+  },
+  {
+    "name": "Ebenezer Tufts (1761&ndash;1830)",
+    "slug": "ebenezer-tufts-87-4",
+    "born": "1761",
+    "died": "1830",
+    "era": "The Revolution",
+    "line": "Son of William and Katherine (Tufts) Tufts; Revolutionary pensioner; farmer in New Hampshire",
+    "town": "Medford; Billerica, Mass.; Marlborough and Roxbury, N.H.",
+    "profile": "profiles/ebenezer-tufts-87-4.html",
+    "rw": "pistol"
   }
 ]
