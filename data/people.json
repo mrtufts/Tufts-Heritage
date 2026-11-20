@@ -1244,5 +1244,25 @@
     "town": "Medford; Billerica, Mass.; Marlborough and Roxbury, N.H.",
     "profile": "profiles/ebenezer-tufts-87-4.html",
     "rw": "pistol"
+  },
+  {
+    "name": "Richard Tufts, Wheelwright (1804&ndash;1885)",
+    "slug": "richard-tufts-1804",
+    "born": "1804",
+    "died": "1885",
+    "era": "19th Century",
+    "line": "Son of Benjamin Tufts Jr. and Hannah (Turner) Tufts; wheelwright of Medford",
+    "town": "Medford, Mass.",
+    "profile": "profiles/richard-tufts-1804.html"
+  },
+  {
+    "name": "Elias Tufts, Wheelwright (1787&ndash;1868)",
+    "slug": "elias-tufts-1787",
+    "born": "1787",
+    "died": "1868",
+    "era": "19th Century",
+    "line": "Son of James Tufts, potter, and Elizabeth (Hay) Tufts; wheelwright of Medford",
+    "town": "Medford, Mass.",
+    "profile": "profiles/elias-tufts-1787.html"
   }
 ]

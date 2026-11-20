@@ -334,5 +334,21 @@
   "leaf": 141,
   "pat": "Medford roll of honor",
   "until": "Samuel Hadley"
+ },
+ "mhr-xlii-fire-1850-richard-tufts-shop": {
+  "id": "medfordhistorica12medf",
+  "leaf": 227,
+  "lines": [
+   28,
+   35
+  ]
+ },
+ "mhr-xlii-fire-1850-elias-tufts-shop": {
+  "id": "medfordhistorica12medf",
+  "leaf": 228,
+  "lines": [
+   0,
+   9
+  ]
  }
 }

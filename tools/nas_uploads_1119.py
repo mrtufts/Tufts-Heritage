@@ -343,3 +343,4 @@ def EXTRA(path):
             if _h in out and _f not in out:
                 out = out.replace(_h, _h + _f, 1)
     return out
+exec(open("tools/medford_fire_1120.py").read())
