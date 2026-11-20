@@ -300,8 +300,8 @@
     "born": "1754",
     "died": "1839",
     "era": "The Revolution",
-    "line": "Peter Tufts of Winter Hill",
-    "town": "Charlestown (Winter Hill)",
+    "line": "Son of Peter and Anne (Adams) Tufts of Winter Hill",
+    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
     "profile": "profiles/john-tufts-53-3.html",
     "rw": "pistol"
   },
@@ -649,17 +649,6 @@
     "line": "Grandson of Anne Adams Tufts",
     "town": "Medford, Charlestown (Somerville) and Cambridgeport, Mass.",
     "profile": "profiles/peter-tufts-1774.html"
-  },
-  {
-    "name": "John Tufts (b. 1754)",
-    "slug": "john-tufts-1754",
-    "born": "1754",
-    "died": "",
-    "era": "The Revolution",
-    "line": "Son of Peter and Anne (Adams) Tufts of Winter Hill",
-    "town": "Winter Hill, Charlestown (now Somerville), Mass.",
-    "profile": "profiles/john-tufts-1754.html",
-    "rw": "pistol"
   },
   {
     "name": "Ann Tufts Richardson (b. 1757)",

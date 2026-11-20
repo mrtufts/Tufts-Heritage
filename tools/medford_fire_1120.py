@@ -86,3 +86,4 @@ if "BIZ_HTML" in globals() and 'id="wheelwrights-main-street"' not in BIZ_HTML:
     BIZ_HTML = (BIZ_HTML[:_k] + _WHEEL_BIZ + BIZ_HTML[_k:]) if _k != -1 else (BIZ_HTML + "{DIV}" + _WHEEL_BIZ)
     page("businesses.html", "Businesses | Tufts Lineage &amp; Legacy", "Places", "Businesses", "The trades of the Tufts family, colonial era to the 19th century", BIZ_HTML)
 print("medford_fire_1120: profiles", len(PROFILES))
+exec(open("tools/john_merge_1120.py").read())

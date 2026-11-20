@@ -172,3 +172,17 @@ main:has(.sec-fold) [id]{scroll-margin-top:6.5rem}
   details.sec-fold > *:not(summary){display:revert !important}
   .sec-fold > summary::before{display:none}
 }
+
+/* Opening narrative on Revolutionary service profiles */
+.narrative-summary{
+  margin:0 0 1.25rem;
+  padding:.9rem 1.15rem 1rem;
+  border-left:4px solid var(--burgundy);
+  background:rgba(255,248,225,.9);
+  border-top:1px solid var(--gold);
+  border-right:1px solid var(--parchment-dark);
+  border-bottom:1px solid var(--parchment-dark);
+}
+.narrative-summary p{margin:.55rem 0}
+.narrative-summary p:first-child{margin-top:0}
+.narrative-summary .narrative-source{margin-bottom:0;font-size:.95rem;color:var(--iron-light);font-style:italic}
