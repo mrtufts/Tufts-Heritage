@@ -12,7 +12,6 @@ MI_CROPS = [
     ("cotton-tufts-greenleaf-1804-crop-face.jpg", "cotton-tufts-greenleaf-1804.jpg", (0.22, 0.03, 0.68, 0.40), "face"),
     ("henry-tufts-narrative-1807-crop-title.jpg", "henry-tufts-narrative-1807.jpg", (0.04, 0.04, 0.96, 0.42), "title"),
     ("map-medford-1794-crop-title.jpg", "map-medford-1794-peter-tufts.jpg", (0.02, 0.58, 0.42, 0.90), "title cartouche"),
-    ("map-medford-1794-crop-signature.jpg", "map-medford-1794-peter-tufts.jpg", (0.60, 0.70, 0.86, 0.90), "surveyor&rsquo;s signature"),
 ]
 _mi_man = _mi_json.load(open("manifest.json"))
 _mi_man_changed = False
@@ -37,7 +36,7 @@ if _mi_man_changed:
 MI_RULES = [
     (r"Narrative|memoir", "henry-tufts-narrative-1807-crop-title.jpg", ["profiles/henry-tufts-1748.html"]),
     (r"Greenleaf|portrait|physician|Weymouth", "cotton-tufts-greenleaf-1804-crop-face.jpg", ["profiles/cotton-tufts.html"]),
-    (r"1794|surveyor|plan of", "map-medford-1794-crop-signature.jpg", ["profiles/peter-tufts-jr.html", "profiles/peter-tufts-1774.html"]),
+    (r"1794|surveyor|plan of", "map-medford-1794-peter-tufts.jpg", ["profiles/peter-tufts-jr.html", "profiles/peter-tufts-1774.html"]),
     (r"1794", "map-medford-1794-crop-title.jpg", ["places.html"]),
     (r"Anne Adams|married|born", "anne-adams-tufts-pioneer-mothers-1912.jpg", ["profiles/anne-adams-tufts.html"]),
     (r"tablet|marker|Daughters of the American Revolution|D\.A\.R\.", "anne-adams-tufts-tablet-hmdb.jpg", ["profiles/anne-adams-tufts.html"]),
