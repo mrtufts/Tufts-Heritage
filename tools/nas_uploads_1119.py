@@ -25,6 +25,14 @@ _up_img("timothy-tufts-house-elm-street-1904-postcard.jpg", "Timothy Tufts House
 _up_img("dr-simon-tufts-house-medford-photograph.jpg", "The house of Dr. Simon Tufts, Medford, in an early photograph",
   "An original mounted photograph of the house of Dr. Simon Tufts, later of Turell Tufts, at the corner of High and Forest Streets in Medford Square. It shows the same view that the <em>Medford Historical Register</em> later reproduced as a plate. The house was demolished in 1867, so the photograph is older than that.",
   _STC, "Photographer and date unknown", _SELF("dr-simon-tufts-house-medford-photograph.jpg"), "Full-size image")
+_up_img("dr-simon-tufts-house-ai-enhanced-shannon-tufts.jpg", "AI-enhanced rendition of the house of Dr. Simon Tufts",
+  "AI-enhanced rendition by Shannon Tufts of the photograph at left/above. It is not a historical photograph; see the original for how the house actually looked.",
+  "Shannon Tufts (AI-enhanced rendition)", "Modern AI-enhanced artwork, used with the creator&rsquo;s permission",
+  _SELF("dr-simon-tufts-house-ai-enhanced-shannon-tufts.jpg"), "Full-size image")
+_SIMHOUSE_PAIR = ('<div class="fig-row">'
+  + FIG("dr-simon-tufts-house-medford-photograph.jpg")
+  + FIG("dr-simon-tufts-house-ai-enhanced-shannon-tufts.jpg")
+  + '</div>')
 _up_img("peter-tufts-house-cradock-insurance-card.jpg", "&ldquo;The Oldest House in America&rdquo;: an insurance trade card",
   "A nineteenth-century trade card of the Commercial Union Assurance Co. showing the Medford brick house then called the Cradock Mansion, &ldquo;Built 1634.&rdquo; Later research dates the house to about 1677&ndash;1680 and connects it with Peter Tufts rather than Matthew Cradock&rsquo;s agents.",
   _STC, "Publisher&rsquo;s card, nineteenth century", _SELF("peter-tufts-house-cradock-insurance-card.jpg"), "Full-size image")
@@ -282,7 +290,7 @@ _nf_rel("thomas-tufts-hc1701", "frederick-tufts-9-7", "son Sergt. Frederick Tuft
 # =====================================================================
 # 9. Dr. Simon Tufts's house; Whittemore in 1864; Simon Tufts the merchant
 # =====================================================================
-_SIMHOUSE = ('<section id="house-photograph"><h2>The House in an Early Photograph</h2>' + FIG("dr-simon-tufts-house-medford-photograph.jpg", "hfig-flow mi-inline")
+_SIMHOUSE = ('<section id="house-photograph"><h2>The House in an Early Photograph</h2>' + _SIMHOUSE_PAIR
   + '<p>An original photograph of the house at High and Forest Streets has come down in the family. It shows the same view later printed in the <em>Medford Historical Register</em>, and it must date from before the house was pulled down in 1867. See <a href="{P}places.html#homesteads">Places: Homesteads</a>.</p></section>')
 for _s in ("simon-tufts-11-1", "turell-tufts"):
     _up_add(_s, _SIMHOUSE, 'id="house-photograph"')
@@ -314,7 +322,7 @@ _PL_INS = {
    + '<p>Oliver Tufts (1801&ndash;1883), John&rsquo;s son, was born and died in the house; see ' + PL(_OT, "his profile") + '. An unofficial history of the house dates it to 1714&ndash;1719 (' + _SANF + ').</p>'
    + UNV("The 1714&ndash;1719 building date comes from an unofficial modern history, not from a deed. Note: Pending further work."),
  "<h3>Timothy Tufts house, Elm Street, Somerville</h3>": FIG("timothy-tufts-house-elm-street-1904-postcard.jpg", "hfig-flow mi-inline"),
- "<h3>The Drs. Simon Tufts house, Medford Square</h3>": FIG("dr-simon-tufts-house-medford-photograph.jpg", "hfig-flow mi-inline"),
+ "<h3>The Drs. Simon Tufts house, Medford Square</h3>": _SIMHOUSE_PAIR,
  "<h3>Peter Tufts House, Medford (350 Riverside Avenue)</h3>": FIG("peter-tufts-house-cradock-insurance-card.jpg", "hfig-flow mi-inline"),
  "<h3>Peter Tufts of Winter Hill homestead</h3>": FIG("anne-adams-tufts-doorstone-tablet-shannon-tufts.jpg", "hfig-flow mi-inline"),
  "<h3>Peter Tufts the immigrant, Malden</h3>": FIG("peter-mary-tufts-gravestone-bell-rock-shannon-tufts.jpg", "hfig-flow mi-inline"),

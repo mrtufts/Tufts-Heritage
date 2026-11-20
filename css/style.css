@@ -105,6 +105,15 @@ code{font-family:inherit;font-size:1em;font-weight:inherit;color:inherit;backgro
 .hfig-pair .pair-imgs img{width:100%}
 @media (max-width:600px){.gallery .figs .hfig-pair{grid-column:auto}}
 
+/* Two captioned figures side by side; stack on narrow screens */
+.fig-row{display:flex;gap:1.25rem;align-items:flex-start;margin:0 0 1.1rem;clear:both}
+.fig-row > .hfig{flex:1 1 0;min-width:0;max-width:100%;width:auto}
+.fig-row > .hfig img{width:100%;height:auto}
+@media (max-width:600px){
+  .fig-row{flex-direction:column}
+  .fig-row > .hfig{flex:0 0 auto;width:100%}
+}
+
 /* "On this page" jump navigation, back-to-top, subjects index, Explore menu */
 html{scroll-behavior:smooth}
 main [id]{scroll-margin-top:4.5rem}
