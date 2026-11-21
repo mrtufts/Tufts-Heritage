@@ -350,5 +350,28 @@
    0,
    9
   ]
+ },
+ "mhr-xliii-peggy-tufts-china": {
+  "id": "medfordhistorica12medf",
+  "leaf": 310,
+  "pat": "married +Peggy",
+  "until": "Tufts +on +it\\.\""
+ },
+ "mhr-xlii-brooks-tufts-farm-36": {
+  "id": "medfordhistorica12medf",
+  "leaf": 185,
+  "pat": "bought +of +Nathan",
+  "around": [
+   2,
+   0
+  ]
+ },
+ "mhr-xlii-brooks-tufts-farm-37": {
+  "id": "medfordhistorica12medf",
+  "leaf": 188,
+  "lines": [
+   1,
+   5
+  ]
  }
 }

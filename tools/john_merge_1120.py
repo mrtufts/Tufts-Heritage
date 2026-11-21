@@ -204,3 +204,5 @@ def _jm_rewrite_all_profiles():
             p[k] = _jm_rew(v)
 
 _jm_fold()
+
+exec(open("tools/swan_brooks_1121.py").read())
