@@ -4,9 +4,34 @@ DL = _jl.load(open("data/tufts_doctors_letters.json"))
 MHSV = "https://www.masshist.org/publications/adams-papers/index.php/view/"
 FO = lambda i: "https://founders.archives.gov/documents/Adams/" + i[5:]
 def LCITE(r): return f'<em>{r["cite"].split(",")[0]}</em>{r["cite"][len(r["cite"].split(",")[0]):]}. <a href="{MHSV}{r["id"]}">MHS digital edition</a> &middot; <a href="{FO(r["id"])}">Founders Online</a>'
+AUDIO_ID = "ADMS-04-08-02-0087"
+AUDIO_ANCHOR = "letter-1787-11-06"
+AUDIO_FILE = "assets/audio/abigail-adams-to-cotton-tufts-1787-11-06.mp3"
+AUDIO_DOWNLOAD = "abigail-adams-to-cotton-tufts-1787-11-06.mp3"
+_AUDIO_ANCHORED = []
+
+def LETTER_AUDIO_HTML(with_id=False):
+    id_attr = f' id="{AUDIO_ANCHOR}"' if with_id else ""
+    return (
+        f'<div class="letter-audio"{id_attr}>'
+        f'<p class="letter-audio-label">Listen to a reading of this letter</p>'
+        f'<audio controls preload="none">'
+        f'<source src="{{P}}{AUDIO_FILE}" type="audio/mpeg">'
+        f'</audio>'
+        f'<p class="letter-audio-fallback"><a href="{{P}}{AUDIO_FILE}" download="{AUDIO_DOWNLOAD}">Download the reading (MP3)</a></p>'
+        f'</div>'
+    )
+
 def LROW(r, topic=None):
     w = r["who"].replace("Tufts, Cotton", "Dr. Cotton Tufts").replace("Adams, Abigail", "Abigail Adams").replace("Adams, John", "John Adams")
-    return f'<tr><td>{r["date"]}</td><td>{w}</td><td>{topic or r["teaser"]}</td><td class="cite">{LCITE(r)}</td></tr>'
+    audio = ""
+    id_attr = ""
+    if r["id"] == AUDIO_ID:
+        if not _AUDIO_ANCHORED:
+            _AUDIO_ANCHORED.append(True)
+            id_attr = f' id="{AUDIO_ANCHOR}"'
+        audio = LETTER_AUDIO_HTML(with_id=False)
+    return f'<tr{id_attr}><td>{r["date"]}</td><td>{w}</td><td>{topic or r["teaser"]}{audio}</td><td class="cite">{LCITE(r)}</td></tr>'
 TH = '<table class="data"><thead><tr><th>Date</th><th>Correspondents</th><th>Topic</th><th>Citation</th></tr></thead><tbody>'
 QL = {"ADMS-04-01-02-0017": "&ldquo;Ye must permit the little Villains call&rsquo;d the small Pox to have their Feast this Spring.&rdquo;",
       "ADMS-04-02-02-0019": "&ldquo;Yesterday People in Boston were openly inoculated for the Small Pox.&rdquo;",
@@ -59,7 +84,7 @@ _EXTRA7 = EXTRA
 def EXTRA(path):
     out = _EXTRA7(path)
     if path == "collections.html": out = out.replace('<section id="muskets">', DOCTORS + "{DIV}" + '<section id="muskets">', 1) if '<section id="muskets">' in out else out + "{DIV}" + DOCTORS
-    if path == "profiles/cotton-tufts.html": out += '{DIV}<section id="doctor-letters"><h2>His Letters</h2><p>The Adams Papers hold 188 letters by or to Dr. Cotton Tufts, ' + str(len(DIS)) + ' of them touching on smallpox inoculation, fevers, dysentery or measles. Examples: to John Adams, July 5, 1776: &ldquo;Yesterday People in Boston were openly inoculated for the Small Pox&rdquo; (<a href="' + MHSV + 'ADMS-04-02-02-0019">MHS</a>). His Countway papers hold letters with his brother Dr. Simon. See <a href="{P}collections.html#doctors-letters">Letters of the Tufts Doctors</a>.</p></section>'
+    if path == "profiles/cotton-tufts.html": out += '{DIV}<section id="doctor-letters"><h2>His Letters</h2><p>The Adams Papers hold 188 letters by or to Dr. Cotton Tufts, ' + str(len(DIS)) + ' of them touching on smallpox inoculation, fevers, dysentery or measles. Examples: to John Adams, July 5, 1776: &ldquo;Yesterday People in Boston were openly inoculated for the Small Pox&rdquo; (<a href="' + MHSV + 'ADMS-04-02-02-0019">MHS</a>). His Countway papers hold letters with his brother Dr. Simon. See <a href="{P}collections.html#doctors-letters">Letters of the Tufts Doctors</a>.</p><p class="cite">Abigail Adams to Dr. Cotton Tufts, November 6, 1787. <em>Adams Family Correspondence</em>, vol. 8, pp. 201&ndash;203. <a href="{P}collections.html#' + AUDIO_ANCHOR + '">Listed under Letters of the Tufts Doctors</a></p>' + LETTER_AUDIO_HTML(with_id=True) + '</section>'
     if path == "profiles/simon-tufts-11-1.html": out += '{DIV}<section id="doctor-letters"><h2>His Letters</h2><p>Letters between this Dr. Simon (1727&ndash;1786) and the Loyalist Isaac Royall, 1775&ndash;1779, are quoted by Brooks (pp. 173&ndash;179) and the <em>Medford Historical Register</em> (vol. XI, p. 17). His letters with his brother Cotton are in the Countway Library. See <a href="{P}collections.html#doctors-letters">Letters of the Tufts Doctors</a>.</p>' + UNV("Cause of death. This page&rsquo;s source says a fall from his horse, and Brooks (p. 306) says a fall brought on bleeding of the lungs. Mary Cranch wrote to Abigail Adams on September 28, 1786 that &ldquo;Doctor Simon Tufts is just gone in a consumtion&rdquo; (<a href=\"" + MHSV + "ADMS-04-07-02-0131\">MHS</a>), and Medford&rsquo;s church record gives consumption.") + '</section>'
     if path == "profiles/simon-tufts-1700.html": out += '{DIV}<section id="doctor-letters"><h2>Letters</h2><p>No letter by or to this Dr. Simon has yet been found. See <a href="{P}collections.html#doctors-letters">Letters of the Tufts Doctors</a>.</p></section>'
     return out
