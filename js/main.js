@@ -236,3 +236,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Open letter transcriptions when printing so the text is on the page.
+document.addEventListener("DOMContentLoaded", function () {
+  var letters = Array.prototype.slice.call(document.querySelectorAll("details.letter-transcript"));
+  if (!letters.length) return;
+  window.addEventListener("beforeprint", function () {
+    letters.forEach(function (d) {
+      d.dataset.wasOpen = d.open ? "1" : "0";
+      d.open = true;
+    });
+  });
+  window.addEventListener("afterprint", function () {
+    letters.forEach(function (d) {
+      if (d.dataset.wasOpen === "0") d.open = false;
+    });
+  });
+});

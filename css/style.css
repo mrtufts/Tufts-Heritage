@@ -192,3 +192,21 @@ main:has(.sec-fold) [id]{scroll-margin-top:6.5rem}
 .letter-audio-label{margin:0 0 .35rem;font-family:Cinzel,serif;font-size:.95rem;letter-spacing:.02em;color:var(--burgundy)}
 .letter-audio audio{display:block;width:100%;max-width:28rem;height:2.25rem}
 .letter-audio-fallback{margin:.35rem 0 0;font-size:.95rem}
+
+/* Full letter text beside the player */
+tr.letter-full td{background:rgba(255,248,225,.45)}
+.letter-transcript{margin:.55rem 0 0;max-width:42rem}
+.letter-transcript > summary{cursor:pointer;font-family:Cinzel,serif;font-size:.95rem;letter-spacing:.02em;color:var(--burgundy)}
+.letter-transcript > summary:hover,.letter-transcript > summary:focus{color:var(--crimson)}
+.letter-text{margin:.6rem 0 .35rem;padding:.65rem 1rem .75rem;border-left:3px solid var(--burgundy);background:rgba(255,248,225,.7)}
+.letter-text p{margin:.75rem 0}
+.letter-text p:first-child{margin-top:0}
+.letter-text p:last-child{margin-bottom:0}
+.letter-dateline{text-align:right}
+.letter-signed{margin-top:1rem;text-align:right}
+.letter-transcript > .cite{margin:.35rem 0 0}
+@media print{
+  details.letter-transcript,details.letter-transcript[open]{display:block}
+  details.letter-transcript::details-content{display:block}
+  .letter-transcript > *:not(summary){display:revert !important}
+}
