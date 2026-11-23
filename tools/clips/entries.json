@@ -373,5 +373,17 @@
    1,
    5
   ]
+ },
+ "mhr-xl-cotting-hannah-tufts": {
+  "id": "medfordhistorica00me",
+  "leaf": 303,
+  "pat": "James Russell",
+  "until": "Isaac Tufts"
+ },
+ "mhr-xl-turell-tufts-house-1867": {
+  "id": "medfordhistorica00me",
+  "leaf": 359,
+  "pat": "Uncle Turels",
+  "until": "Social Library"
  }
 }
