@@ -17,6 +17,84 @@ TOP = [("Home", "index.html", False), ("GEN", None, False), ("EXP", None, False)
        ("Places", "places.html", False), ("Collections", "collections.html", False), ("Sources", "sources.html", False), ("About", "about.html", False)]
 
 import hashlib as _bp_hl, os as _bp_os
+import json as _ab_json
+from pathlib import Path as _ab_Path
+
+
+def _ab_load_base():
+    text = open("config.js", encoding="utf-8").read()
+    m = re.search(r'const\s+ASSET_BASE_URL\s*=\s*"([^"]*)"', text)
+    if not m:
+        raise SystemExit("ASSET_BASE_URL not found in config.js")
+    return m.group(1)
+
+ASSET_BASE_URL = _ab_load_base()
+_AB_ABS = ASSET_BASE_URL.startswith("http://") or ASSET_BASE_URL.startswith("https://")
+_AB_MEDIA_RE = re.compile(
+    r'(?P<attr>src|href|poster)="(?P<pre>(?:\.\./)*)(?P<path>(?:assets|sources/images)/[^"?#]+)"'
+)
+
+def media_url(rel, pre=""):
+    """Build a media URL from a repo-relative path using ASSET_BASE_URL."""
+    rel = (rel or "").lstrip("/")
+    if rel.startswith("./"):
+        rel = rel[2:]
+    base = ASSET_BASE_URL.rstrip("/")
+    if _AB_ABS:
+        if not (rel.startswith("assets/") or rel.startswith("sources/")):
+            rel = "assets/" + rel
+        return base + "/" + rel
+    if rel.startswith("assets/") or rel.startswith("sources/"):
+        return pre + rel
+    return pre + rel
+
+def rewrite_media_html(text):
+    if not _AB_ABS:
+        return text
+    base = ASSET_BASE_URL.rstrip("/")
+    def repl(m):
+        return f'{m.group("attr")}="{base}/{m.group("path")}"'
+    return _AB_MEDIA_RE.sub(repl, text)
+
+def write_storage_manifest():
+    root = _ab_Path(".")
+    try:
+        man = _ab_json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+    except Exception:
+        man = {}
+    base = ASSET_BASE_URL.rstrip("/")
+    files = {}
+    for folder in (root / "assets", root / "sources" / "images"):
+        if not folder.exists():
+            continue
+        for pth in sorted(folder.rglob("*")):
+            if not pth.is_file() or pth.name == ".DS_Store":
+                continue
+            rel = pth.relative_to(root).as_posix()
+            low = rel.lower()
+            if "kinsmen" in low or "ebook" in low or low.endswith(".pdf"):
+                continue
+            files[rel] = (base + "/" + rel) if _AB_ABS else rel
+    man["base"] = base if _AB_ABS else ""
+    man["files"] = files
+    for _name, meta in (man.get("images") or {}).items():
+        if isinstance(meta, dict) and meta.get("path"):
+            path = meta["path"].lstrip("/")
+            meta["url"] = files.get(path, (base + "/" + path) if _AB_ABS else path)
+    (root / "manifest.json").write_text(
+        _ab_json.dumps(man, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+
+def rewrite_all_pages():
+    for pth in _ab_Path(".").rglob("*.html"):
+        if any(part.startswith(".") for part in pth.parts):
+            continue
+        text = pth.read_text(encoding="utf-8")
+        new = rewrite_media_html(text)
+        if new != text:
+            pth.write_text(new, encoding="utf-8")
+    write_storage_manifest()
+
 def _bp_ver(rel):
     # Short content hash so browsers fetch a fresh copy whenever the file changes.
     fp = _bp_os.path.join(_bp_os.path.dirname(_bp_os.path.abspath(__file__)), "..", rel)
@@ -104,3 +182,4 @@ exec(open("tools/kinsmen_pages_1118.py").read())
 exec(open("tools/article_clips_1118.py").read())
 exec(open("tools/source_notes_1118.py").read())
 exec(open("tools/narratives_1120.py").read())
+rewrite_all_pages()

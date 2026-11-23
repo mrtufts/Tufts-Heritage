@@ -13,7 +13,15 @@ function displayName(x) {
 
 // Tufts Lineage & Legacy site script. Asset paths are built from ASSET_BASE_URL (config.js).
 function assetUrl(path) {
-  return ASSET_BASE_URL.replace(/\/$/, "") + "/" + path.replace(/^\//, "");
+  var base = ASSET_BASE_URL.replace(/\/$/, "");
+  path = String(path || "").replace(/^\//, "");
+  if (/^https?:\/\//i.test(base)) {
+    if (path.indexOf("assets/") !== 0 && path.indexOf("sources/") !== 0) {
+      path = "assets/" + path;
+    }
+    return base + "/" + path;
+  }
+  return base + "/" + path;
 }
 document.addEventListener("DOMContentLoaded", function () {
   var y = document.getElementById("year");
@@ -82,8 +90,8 @@ function initScans() {
       if (s.pages.length) { var p = document.createElement("p"); p.textContent = "Printed page(s): " + s.pages.join(", "); d.appendChild(p); }
       if (!s.scans.length) { var f = document.createElement("p"); f.className = "flag"; f.textContent = "⚠ " + (s.flag || "Missing image"); d.appendChild(f); }
       s.scans.forEach(function (src) {
-        var a = document.createElement("a"); a.href = src;
-        var img = document.createElement("img"); img.src = src; img.loading = "lazy"; img.alt = s.citation + " scan";
+        var a = document.createElement("a"); a.href = assetUrl(src);
+        var img = document.createElement("img"); img.src = assetUrl(src); img.loading = "lazy"; img.alt = s.citation + " scan";
         a.appendChild(img); d.appendChild(a);
       });
       box.appendChild(d);

@@ -1,4 +1,5 @@
 // Base location for media assets (images, scans, documents).
-// Keep this RELATIVE while hosted on GitHub Pages. To migrate media to
-// Cloudflare R2 or Backblaze B2 later, change only this one value.
-const ASSET_BASE_URL = "./assets";
+// Public Cloudflare R2 URL for the tufts-heritage-media bucket.
+// Local copies remain in the repo as a fallback. Change only this one value
+// to move media again.
+const ASSET_BASE_URL = "https://pub-a12668c819794642b5eef193ae8f9bc0.r2.dev";
