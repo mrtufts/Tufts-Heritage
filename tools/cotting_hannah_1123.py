@@ -8,6 +8,8 @@ _CPL = "https://archive.org/details/medfordhistorica00me/page/n291/mode/1up"
 _L60 = "https://archive.org/details/medfordhistorica00me/page/n359/mode/1up"
 _CSRC = 'Samuel L. Conner, &ldquo;Timothy Cotting, Tufts College Trustee and Civic Leader of Medford,&rdquo; <em>Medford Historical Register</em> XL, no. 2 (June 1937), p. 28. <a href="' + _C28 + '">View the page scan</a>'
 _LSRC = '&ldquo;A Medford Letter of 1839,&rdquo; <em>Medford Historical Register</em> XL (December 1937), p. 60. <a href="' + _L60 + '">View the page scan</a>'
+_FS = "https://www.familysearch.org/tree/person/details/KZ53-PJ5"
+_FSRC = 'FamilySearch Family Tree, entry for Hannah Tufts, ID <a href="' + _FS + '">KZ53-PJ5</a> (a user-contributed tree, not a primary source)'
 _MHRS4 = "Medford Historical Society, <em>Medford Historical Register</em>, via Internet Archive"
 IMAGES["mhr-xl-cotting-hannah-tufts.jpg"] = ("Clipping: the estate of Hannah Tufts, single woman",
   "Detail of p. 28, <em>Medford Historical Register</em> XL, no. 2 (June 1937): the land willed to Hannah Tufts by her father Isaac Tufts, bought by Timothy Cotting.",
@@ -29,16 +31,16 @@ _LAND = ('<section id="hannah-tufts-land"><h2>Hannah Tufts&rsquo;s Land and the 
   + FIG("mhr-xl-cotting-plan-1869.jpg", "hfig-flow mi-inline")
   + '<p>Cotting conveyed the land to Tufts College for &ldquo;$1 and other valuable consideration.&rdquo; The article&rsquo;s frontispiece plan shows it on the west side of the college land, between South Street (now Winthrop Street) and the Boston &amp; Lowell Railroad (' + _CSRC.replace("p. 28", "p. 28 and frontispiece") + '). The college later found itself &ldquo;land poor,&rdquo; and the tract was sold off and built over rather than joined to the campus.</p>'
   + '<p><strong>Tufts association:</strong> land owned by ' + PL("isaac-tufts-36-10", _ISAAC) + ' and willed by him in 1823 to his daughter ' + PL(_HT, "Hannah Tufts") + ', a single woman, whose estate was sold by her administrator James Russell (' + _CSRC + ').</p>'
-  + UNV("The 1937 article does not give the year of the administrator&rsquo;s sale, Hannah&rsquo;s dates, or the deed book and page. W. A. Mason&rsquo;s plan of 28 March 1842 has not been located; it may be a recorded plan at the Middlesex South Registry of Deeds. That Hannah&rsquo;s father is Sgt. Isaac Tufts (who died 22 July 1823) rests on the match of name and year. Note: Pending further work.")
+  + UNV("The 1937 article does not give the year of the administrator&rsquo;s sale or the deed book and page. W. A. Mason&rsquo;s plan of 28 March 1842 has not been located; it may be a recorded plan at the Middlesex South Registry of Deeds. Hannah&rsquo;s dates (18 March 1775&ndash;18 May 1841, both at Medford) come from a FamilySearch Family Tree entry and have not been confirmed from a primary record. A death in May 1841 is consistent with the date of Mason&rsquo;s plan. Note: Pending further work.")
   + '</section>')
-_nf_new(_HT, "Hannah Tufts (daughter of Sgt. Isaac Tufts)", "dates not yet found", "Medford, Mass.", "", "", "19th Century",
+_nf_new(_HT, "Hannah Tufts (1775&ndash;1841)", "18 March 1775 &ndash; 18 May 1841", "Medford, Mass.", "1775", "1841", "19th Century",
   "Daughter of Sgt. Isaac Tufts (1744&ndash;1823) of Medford; her inherited land became part of the Cotting gift to Tufts College",
-  '<p>Hannah Tufts, a single woman of Medford, inherited land from her father, Isaac Tufts, under his will of 1823. After her death her administrator, James Russell, sold the estate at auction; the highest bidder was Timothy Cotting, who later gave the land to Tufts College.</p>' + _LAND,
+  '<p>Hannah Tufts, a single woman of Medford, was born there on 18 March 1775 and died there on 18 May 1841 (' + _FSRC + '). She inherited land from her father, Isaac Tufts, under his will of 1823. After her death her administrator, James Russell, sold the estate at auction; the highest bidder was Timothy Cotting, who later gave the land to Tufts College.</p>' + _LAND,
   '<p>No military service is recorded for her. Her father, ' + PL("isaac-tufts-36-10", _ISAAC) + ', answered the Lexington alarm and served at Dorchester Heights.</p>',
-  '<p>Father: ' + PL("isaac-tufts-36-10", _ISAAC) + ' (' + _CSRC + ').</p>',
-  "<strong>Identity and dates:</strong> her birth and death dates have not been found, and her father is identified as Sgt. Isaac Tufts by the name and the 1823 date only. Note: Pending further work.",
+  '<p>Father: ' + PL("isaac-tufts-36-10", _ISAAC) + '. The FamilySearch Family Tree entry for her (ID <a href="' + _FS + '">KZ53-PJ5</a>, a user-contributed tree) lists Isaac Tufts as her parent. Conner, writing from the Middlesex deeds, likewise says the land was willed to her by her father, Isaac Tufts, in 1823 (' + _CSRC + '). Isaac&rsquo;s 1823 Middlesex probate would add confirmation from a primary record.</p>',
+  "<strong>Dates:</strong> her birth (18 March 1775) and death (18 May 1841), both at Medford, are taken from a FamilySearch Family Tree entry (ID KZ53-PJ5), a user-contributed tree, and have not been confirmed from a primary record. A death in May 1841 is consistent with W. A. Mason&rsquo;s plan of her land, dated 28 March 1842. Note: Pending further work.",
   "<p>None recorded; she is described as a single woman (" + _CSRC + ").</p>",
-  [("isaac-tufts-36-10", "father " + _ISAAC, "daughter Hannah Tufts")])
+  [("isaac-tufts-36-10", "father " + _ISAAC, "daughter Hannah Tufts (1775&ndash;1841)")])
 _up_add("isaac-tufts-36-10", _LAND, 'id="hannah-tufts-land"')
 _QT = ("&ldquo;Uncle Turels House&rdquo; was the house of Turell Tufts, son of Simon Tufts, Medford&rsquo;s Revolutionary doctor, friend of Isaac Royall. This old Tufts family homestead was on the corner of Forest and High Streets and was torn down in 1867. "
   "Turell Tufts himself died three years after this letter, leaving $500.00 to the town as a perpetual trust, the income to be expended annually for valuable books for the Medford Social Library, founded in 1825.")
@@ -48,4 +50,11 @@ _up_add("turell-tufts", '<section id="uncle-turels-house"><h2>&ldquo;Uncle Turel
   + '<p><strong>Tufts association:</strong> the homestead of Dr. Simon Tufts and his son Turell Tufts, at Forest and High Streets, Medford (' + _LSRC + ').</p></section>', 'id="uncle-turels-house"')
 if "MAPS_HTML" in globals() and "mhr-xl-cotting" not in MAPS_HTML:
     MAPS_HTML = MAPS_HTML.replace("</ul>", '<li>Plan of the Land of Timothy Cotting transferred to Tufts College, 1869, printed as the frontispiece of the <em>Medford Historical Register</em> XL, no. 2 (June 1937). Part of this land had been willed in 1823 by ' + PL("isaac-tufts-36-10", _ISAAC) + ' to his daughter ' + PL(_HT, "Hannah Tufts") + '; the article also cites a lost plan by W. A. Mason, 28 March 1842. <a href="' + _CPL + '">Internet Archive</a>. <!--mhr-xl-cotting--></li></ul>', 1)
+_IDSEC_H = IDSEC
+def IDSEC(p):
+    h = _IDSEC_H(p)
+    if p["slug"] == _HT:
+        h = h.replace("<td>FamilySearch ID</td><td>Note: Pending further work.</td>",
+            '<td>FamilySearch ID</td><td><a href="' + _FS + '">KZ53-PJ5</a>. FamilySearch Family Tree entry (a user-contributed tree, not a primary source); lists Isaac Tufts as her father, with dates 18 March 1775&ndash;18 May 1841, both at Medford.</td>')
+    return h
 print("cotting_hannah_1123 done")
