@@ -153,7 +153,7 @@ for _p in PROFILES:
         _p["family"] = _p["family"].replace("include Capt. Peter Tufts of Medford", "include " + _L("peter-tufts-1648", "Capt. Peter Tufts of Medford")).replace("(Brooks, p. 545).</p>", "(Brooks, p. 545). A further son, " + _L("james-tufts-1675", "James") + ", was killed at Bloody Brook in 1675 (NEHGR 51, p. 301).</p>")
     if _p["slug"] == "timothy-tufts":
         _p["family"] = _p["family"] + '<p>Father: ' + _L("peter-tufts-1697", "Peter Tufts (1697&ndash;1776)") + ', &ldquo;Peter of Milk Row.&rdquo;</p>'
-NEWPROF = [("Colonial", ["peter-tufts-1648", "james-tufts-1675", "james-tufts-1672", "sarah-tufts-hinckley", "peter-tufts-1697"]), ("19th Century", ["uriah-tufts-1768", "uriah-tufts-1796", "william-tufts-1820"])]
+NEWPROF = [("Colonial", ["peter-tufts-1648", "james-tufts-1675", "james-tufts-1672", "sarah-tufts-hinckley", "peter-tufts-1697", "anna-tufts-brocus"]), ("19th Century", ["uriah-tufts-1768", "uriah-tufts-1796", "william-tufts-1820"])]
 _PN = {p["slug"]: p["name"] for p in PROFILES}
 _EXTRA_CP = EXTRA
 def EXTRA(path):
