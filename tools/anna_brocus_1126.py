@@ -55,3 +55,4 @@ def IDSEC(p):
     return h
 
 print("anna_brocus_1126 done")
+exec(open("tools/missing_profiles_1126.py").read())

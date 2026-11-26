@@ -949,7 +949,7 @@
     "born": "1762",
     "died": "1777",
     "era": "The Revolution",
-    "line": "Son of William and Catherine (Tufts) Tufts; killed in service, 1777",
+    "line": "Son of William and <a href=\"{P}profiles/katherine-tufts-1734.html\">Catherine (Tufts) Tufts</a>; killed in service, 1777",
     "town": "Medford, Mass.",
     "profile": "profiles/william-tufts-1777.html",
     "rw": "musket"
@@ -1283,5 +1283,205 @@
     "line": "Daughter of Capt. Peter Tufts (c. 1648&ndash;1721) by Elizabeth Lynde; married John Brocus, 24 June 1700",
     "town": "Medford, Mass.",
     "profile": "profiles/anna-tufts-brocus.html"
+  },
+  {
+    "name": "Edmund Tufts, Printer (1795&ndash;1859)",
+    "slug": "edmund-tufts-1795",
+    "born": "1795",
+    "died": "1859",
+    "era": "19th Century",
+    "line": "Son of Joseph Tufts (1760&ndash;1818) and Abigail Tufts; printer of Somerville",
+    "town": "Charlestown, later Somerville, Mass.",
+    "profile": "profiles/edmund-tufts-1795.html"
+  },
+  {
+    "name": "Seth Tufts, Brickmaker",
+    "slug": "seth-tufts-brickmaker",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Brickmaker at the &ldquo;Sodom&rdquo; yards; carried on the business with his son Seth",
+    "town": "Medford, Mass. (south of the Mystic, near the Middlesex Canal)",
+    "profile": "profiles/seth-tufts-brickmaker.html"
+  },
+  {
+    "name": "Seth Tufts, Brickmaker, the Son",
+    "slug": "seth-tufts-jr-brickmaker",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Brickmaker with his father Seth at the &ldquo;Sodom&rdquo; yards",
+    "town": "Medford, Mass. (south of the Mystic, near the Middlesex Canal)",
+    "profile": "profiles/seth-tufts-jr-brickmaker.html"
+  },
+  {
+    "name": "Jonathan Tufts, Mystic Fisherman (fl. 1803)",
+    "slug": "jonathan-tufts-fisherman",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Among the earliest holders of the town fishing right on the Mystic River",
+    "town": "Medford, Mass.",
+    "profile": "profiles/jonathan-tufts-fisherman.html"
+  },
+  {
+    "name": "Jonathan Tufts (c. 1659&ndash;1722)",
+    "slug": "jonathan-tufts-1659",
+    "born": "1659",
+    "died": "1722",
+    "era": "Colonial",
+    "line": "Son of Peter Tufts the immigrant; of Malden and Medford",
+    "town": "Malden and Medford, Mass.",
+    "profile": "profiles/jonathan-tufts-1659.html"
+  },
+  {
+    "name": "The Misses Tufts (fl. 1850)",
+    "slug": "misses-tufts",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Occupants of the Main Street dwelling-house burned in the Medford fire of 21 November 1850",
+    "town": "Main Street, Medford, Mass.",
+    "profile": "profiles/misses-tufts.html"
+  },
+  {
+    "name": "Mary Tufts of Medford (fl. 1774)",
+    "slug": "mary-tufts-1774",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Advertised a stray or stolen horse from her Medford pasture, October 1774",
+    "town": "Medford, Mass.",
+    "profile": "profiles/mary-tufts-1774.html"
+  },
+  {
+    "name": "Sally (Tufts) Locke (1789&ndash;1871)",
+    "slug": "sally-tufts-locke",
+    "born": "1789",
+    "died": "1871",
+    "era": "19th Century",
+    "line": "Daughter of Peter Tufts Jr. and Hannah Adams; wife of Amos Locke; her portrait is at the Arlington Historical Society",
+    "town": "Medford; Charlestown (Somerville); West Cambridge (Arlington), Mass.",
+    "profile": "profiles/sally-tufts-locke.html"
+  },
+  {
+    "name": "Effie Tufts",
+    "slug": "effie-tufts",
+    "born": "",
+    "died": "",
+    "era": "Modern",
+    "line": "Named in some accounts as a donor of Capt. Benjamin Locke&rsquo;s musket; the museum record does not name her",
+    "town": "Not established",
+    "profile": "profiles/effie-tufts.html"
+  },
+  {
+    "name": "Nathaniel Tufts (1692&ndash;1741)",
+    "slug": "nathaniel-tufts-1692",
+    "born": "1692",
+    "died": "1741",
+    "era": "Colonial",
+    "line": "Son of John Tufts of Malden; homestead on Washington Street near Union Square",
+    "town": "Medford and Charlestown (Washington Street near Union Square, now Somerville), Mass.",
+    "profile": "profiles/nathaniel-tufts-1692.html"
+  },
+  {
+    "name": "Abigail Tufts (1761&ndash;1801)",
+    "slug": "abigail-tufts-1761",
+    "born": "1761",
+    "died": "1801",
+    "era": "The Revolution",
+    "line": "Daughter of James and Tabitha (Binford) Tufts; first wife of Joseph Tufts (1760&ndash;1818)",
+    "town": "Medford and Charlestown (now Somerville), Mass.",
+    "profile": "profiles/abigail-tufts-1761.html"
+  },
+  {
+    "name": "Katherine (Tufts) Tufts (b. 1734)",
+    "slug": "katherine-tufts-1734",
+    "born": "1734",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Daughter of Lieut. William Tufts; wife of William Tufts Jr., the Medford mariner; mother of Ebenezer, Eliakim, and William (d. 1777)",
+    "town": "Medford, Mass.",
+    "profile": "profiles/katherine-tufts-1734.html"
+  },
+  {
+    "name": "Rowland Cotton Tufts (1763&ndash;1768)",
+    "slug": "rowland-cotton-tufts",
+    "born": "1763",
+    "died": "1768",
+    "era": "Colonial",
+    "line": "Son of Rev. Joshua Tufts; died in childhood at Halifax",
+    "town": "Fort Cumberland and Halifax, Nova Scotia",
+    "profile": "profiles/rowland-cotton-tufts.html"
+  },
+  {
+    "name": "Annie Louise (Tufts) Fletcher (1839&ndash;1917)",
+    "slug": "annie-louise-tufts",
+    "born": "1839",
+    "died": "1917",
+    "era": "19th Century",
+    "line": "Only child of Oliver Tufts; born in the Sycamore Street house; wife of Dr. William Kelley Fletcher",
+    "town": "Charlestown, later Somerville (Sycamore Street), Mass.",
+    "profile": "profiles/annie-louise-tufts.html"
+  },
+  {
+    "name": "Edith (Tufts) Shaw (b. 1878)",
+    "slug": "edith-tufts-shaw",
+    "born": "1878",
+    "died": "",
+    "era": "19th Century",
+    "line": "Daughter of Albert C. Tufts, the Sacramento druggist; later Edith Tufts Shaw",
+    "town": "Sacramento, Calif.",
+    "profile": "profiles/edith-tufts-shaw.html"
+  },
+  {
+    "name": "Jessie May Tufts",
+    "slug": "jessie-may-tufts",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Daughter of Albert C. Tufts, the Sacramento druggist",
+    "town": "Sacramento, Calif.",
+    "profile": "profiles/jessie-may-tufts.html"
+  },
+  {
+    "name": "Dorinda (&ldquo;Daranda&rdquo;) Tufts (fl. 1825)",
+    "slug": "daranda-tufts",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Daughter of Eliakim Tufts of Littleton; marriage intention to Leonard Porter of Carlisle, 1 May 1825",
+    "town": "Littleton, Mass.",
+    "profile": "profiles/daranda-tufts.html"
+  },
+  {
+    "name": "Joel Tufts (1781&ndash;1852)",
+    "slug": "joel-tufts-1781",
+    "born": "1781",
+    "died": "1852",
+    "era": "19th Century",
+    "line": "Son of Peter Tufts Jr. and Hannah Adams",
+    "town": "Medford and Charlestown (Somerville), Mass.; later Peterborough, N.H.",
+    "profile": "profiles/joel-tufts-1781.html"
+  },
+  {
+    "name": "Thomas Tufts (1785&ndash;1844)",
+    "slug": "thomas-tufts-1785",
+    "born": "1785",
+    "died": "1844",
+    "era": "19th Century",
+    "line": "Son of Peter Tufts Jr.; settled in New York State; land agent",
+    "town": "Medford, Mass.; later Utica and LeRoy, N.Y.",
+    "profile": "profiles/thomas-tufts-1785.html"
+  },
+  {
+    "name": "Aaron Tufts (1793&ndash;1881)",
+    "slug": "aaron-tufts-1793",
+    "born": "1793",
+    "died": "1881",
+    "era": "19th Century",
+    "line": "Son of Peter Tufts Jr.; farmer who settled in New York State",
+    "town": "Medford, Mass.; later Pavilion, Genesee County, N.Y.",
+    "profile": "profiles/aaron-tufts-1793.html"
   }
 ]
