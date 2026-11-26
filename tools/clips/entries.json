@@ -385,5 +385,30 @@
   "leaf": 359,
   "pat": "Uncle Turels",
   "until": "Social Library"
+ },
+ "mhr-xxxiv-town-meeting-officers": {
+  "id": "medfordhistorica07medf",
+  "leaf": 251,
+  "pat": "Tufts was moderator",
+  "until": "fence"
+ },
+ "mhr-xxxiv-peter-tufts-house-residents": {
+  "id": "medfordhistorica07medf",
+  "leaf": 280,
+  "pat": "Residents",
+  "until": "General"
+ },
+ "mhr-xxxiv-mercy-cotton-tufts": {
+  "id": "medfordhistorica07medf",
+  "leaf": 282,
+  "pat": "Seaborn",
+  "until": "poetess"
+ },
+ "mhr-xxxiv-brocus-tufts-marriage": {
+  "id": "medfordhistorica07medf",
+  "leaf": 289,
+  "pat": "Brocus",
+  "before": 1,
+  "after": 0
  }
 }
