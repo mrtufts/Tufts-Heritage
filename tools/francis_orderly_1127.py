@@ -1,6 +1,6 @@
 # Francis Tufts orderly book, Huntington mssHM 719 vol. 13 (7 Apr–30 May 1782).
-# Transcription of Huntington digital images 1–9 of 94 (front cover through manuscript p. 6).
-# Images are not hosted; each [Page] heading links to the Huntington Digital Library.
+# Huntington digital images 1–94 are shown from the Library's IIIF URLs (not hosted here).
+# A diplomatic transcription stands under pages 1–9.
 
 _OB13 = "{P}stories/francis-tufts-orderly-book-1782.html"
 _HDL = "https://hdl.huntington.org/digital/collection/p15150coll7/id/{}/"
@@ -16,14 +16,120 @@ _H13 = "https://hdl.huntington.org/digital/collection/p15150coll7/id/44274/"
 _CRED_ORIG = "Original: The Huntington Library, San Marino, California, mssHM 719 vol. 13."
 _CRED_TR = "Transcription prepared for Tufts Lineage &amp; Legacy; unclear readings are marked [?]."
 
-def _ob_page(n, ptr, label, text):
+_IIIF = "https://hdl.huntington.org/digital/iiif/p15150coll7/{ptr}/full/800,/0/default.jpg"
+_LEAVES = [
+    (1, '44180', 'Front Cover'),
+    (2, '44181', 'Inside Front Cover'),
+    (3, '44182', 'Index'),
+    (4, '44183', 'p. 1'),
+    (5, '44184', 'p. 2'),
+    (6, '44185', 'p. 3'),
+    (7, '44186', 'p. 4'),
+    (8, '44187', 'p. 5'),
+    (9, '44188', 'p. 6'),
+    (10, '44189', 'p. 7'),
+    (11, '44190', 'p. 8'),
+    (12, '44191', 'p. 9'),
+    (13, '44192', 'p. 10'),
+    (14, '44193', 'p. 11'),
+    (15, '44194', 'p. 12'),
+    (16, '44195', 'p. 13'),
+    (17, '44196', 'p. 14'),
+    (18, '44197', 'p. 15'),
+    (19, '44198', 'p. 16'),
+    (20, '44199', 'p. 17'),
+    (21, '44200', 'p. 18'),
+    (22, '44201', 'p. 19'),
+    (23, '44202', 'p. 20'),
+    (24, '44203', 'p. 21'),
+    (25, '44204', 'p. 22'),
+    (26, '44205', 'p. 23'),
+    (27, '44206', 'p. 24'),
+    (28, '44207', 'p. 25'),
+    (29, '44208', 'p. 26'),
+    (30, '44209', 'p. 27'),
+    (31, '44210', 'p. 28'),
+    (32, '44211', 'p. 29'),
+    (33, '44212', 'p. 30'),
+    (34, '44213', 'p. 31'),
+    (35, '44214', 'p. 32'),
+    (36, '44215', 'p. 33'),
+    (37, '44216', 'p. 34'),
+    (38, '44217', 'p. 35'),
+    (39, '44218', 'p. 36'),
+    (40, '44219', 'p. 37'),
+    (41, '44220', 'p. 38'),
+    (42, '44221', 'p. 39'),
+    (43, '44222', 'p. 40'),
+    (44, '44223', 'p. 41'),
+    (45, '44224', 'p. 42'),
+    (46, '44225', 'p. 43'),
+    (47, '44226', 'p. 44'),
+    (48, '44227', 'p. 45'),
+    (49, '44228', 'p. 46'),
+    (50, '44229', 'p. 47'),
+    (51, '44230', 'p. 48'),
+    (52, '44231', 'p. 49'),
+    (53, '44232', 'p. 50'),
+    (54, '44233', 'p. 51'),
+    (55, '44234', 'p. 52'),
+    (56, '44235', 'p. 53'),
+    (57, '44236', 'p. 54'),
+    (58, '44237', 'p. 55'),
+    (59, '44238', 'p. 56'),
+    (60, '44239', 'p. 57'),
+    (61, '44240', 'p. 58'),
+    (62, '44241', 'p. 59'),
+    (63, '44242', 'p. 60'),
+    (64, '44243', 'p. 61'),
+    (65, '44244', 'p. 62'),
+    (66, '44245', 'p. 63'),
+    (67, '44246', 'p. 64'),
+    (68, '44247', 'p. 65'),
+    (69, '44248', 'p. 66'),
+    (70, '44249', 'p. 67'),
+    (71, '44250', 'p. 68'),
+    (72, '44251', 'p. 69'),
+    (73, '44252', 'p. 70'),
+    (74, '44253', 'p. 71'),
+    (75, '44254', 'p. 72'),
+    (76, '44255', 'p. 73'),
+    (77, '44256', 'p. 74'),
+    (78, '44257', 'p. 75'),
+    (79, '44258', 'p. 76'),
+    (80, '44259', 'p. 77'),
+    (81, '44260', 'p. 78'),
+    (82, '44261', 'p. 79'),
+    (83, '44262', 'p. 80'),
+    (84, '44263', 'p. 81'),
+    (85, '44264', 'p. 82'),
+    (86, '44265', 'p. 83'),
+    (87, '44266', 'p. 84'),
+    (88, '44267', 'p. 85'),
+    (89, '44268', 'p. 86'),
+    (90, '44269', 'Chart 1'),
+    (91, '44270', 'Chart 2'),
+    (92, '44271', 'Inside back Cover'),
+    (93, '44272', 'Back cover'),
+    (94, '44273', 'Spine')
+]
+
+def _ob_page(n, ptr, label, text=""):
     import html as _html
     url = _HDL.format(ptr)
-    body = _html.escape(text.strip("\n"), quote=False)
-    return (
-        f'<p class="ob-page" id="image-{n:03d}"><a href="{url}">[{label}]</a></p>\n'
-        f"<pre>{body}</pre>\n"
+    src = _IIIF.format(ptr=ptr)
+    alt = _html.escape(label + ", orderly book of Lieut. Francis Tufts, The Huntington Library, mssHM 719 vol. 13")
+    cap = _html.escape(label)
+    fig = (
+        f'<p class="ob-page" id="image-{n:03d}"><a href="{url}">[{cap}]</a></p>\n'
+        f'<figure class="ob-scan"><a href="{url}">'
+        f'<img src="{src}" alt="{alt}" loading="lazy" width="800"></a>'
+        f"<figcaption>{cap}</figcaption></figure>\n"
     )
+    if text and text.strip():
+        body = _html.escape(text.strip("\n"), quote=False)
+        fig += f"<pre>{body}</pre>\n"
+    return fig
 
 _INTRO = (
     '<p>In the spring of 1782, Lieut. '
@@ -40,16 +146,12 @@ _INTRO = (
     + f'<a href="{_MHS}">Ms. N-1687, microfilm P-394</a>'
     + ") and the Maine Historical Society (Coll. 1507; "
     + f'<a href="{_MM1}">vol. 1</a> and <a href="{_MM2}">vol. 2</a> on the Maine Memory Network).</p>'
-    + '<p>The transcription below follows the wording, spelling, abbreviations, and lineation of the manuscript. Words written above the line are placed in the text with a caret (for example, Head Quarters^new). Unclear readings are marked [?]. Each heading links to the corresponding page image in the Huntington Digital Library. The images themselves are not reproduced here.</p>'
+    + '<p>The transcription below follows the wording, spelling, abbreviations, and lineation of the manuscript. Words written above the line are placed in the text with a caret (for example, Head Quarters^new). Unclear readings are marked [?]. Each leaf is shown from the Huntington Digital Library; the heading or image opens that page there.</p>'
     + f'<p class="cite">{_CRED_ORIG}</p>'
     + f'<p class="cite">{_CRED_TR}</p>'
 )
 
-_PROGRESS = (
-    '<p class="ob-progress"><strong>Transcription in progress: pages 1&ndash;9 of 94.</strong> '
-    "The pages below run from the front cover through manuscript page 6 (Huntington digital images 1&ndash;9). "
-    "The index on digital image 3 has not yet been transcribed. The remaining images, through 30 May 1782, will follow.</p>"
-)
+_PROGRESS = '<p class="ob-progress">Transcription of pages 1&ndash;9; remaining pages shown as scanned.</p>'
 
 _TR = (
     _ob_page(1, "44180", "Page 1. Front cover",
@@ -293,6 +395,13 @@ disobeying the orders of Lieut
 Trot[?], Quarter Master to the
 [The last line continues on the following leaf, not yet transcribed.]""")
 )
+# Remaining leaves (10-94): Huntington scans only, no added transcription.
+_BY_PTR = {n: (ptr, title) for n, ptr, title in _LEAVES}
+_HAVE = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+for _n, _ptr, _title in _LEAVES:
+    if _n in _HAVE:
+        continue
+    _TR += _ob_page(_n, _ptr, f"Page {_n}")
 
 page(
     "stories/francis-tufts-orderly-book-1782.html",
@@ -303,7 +412,7 @@ page(
     '<section id="the-book"><h2>The Adjutant&rsquo;s Book, Spring 1782</h2>'
     + _INTRO
     + "</section>{DIV}"
-    + '<section id="transcription"><h2>The Transcription</h2>'
+    + '<section id="the-pages"><h2>The Pages</h2>'
     + _PROGRESS
     + '<div class="ob-trans">\n'
     + _TR

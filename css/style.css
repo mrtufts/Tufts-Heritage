@@ -218,3 +218,7 @@ tr.letter-full td{background:rgba(255,248,225,.45)}
 .ob-trans p.ob-page a{color:var(--crimson)}
 .ob-trans pre{margin:0 0 .8rem;padding:0;white-space:pre-wrap;font-family:Georgia,"Times New Roman",serif;font-size:1rem;line-height:1.55;background:none;border:0}
 .ob-credit,.ob-trans .cite{margin:.35rem 0 0;font-size:.92rem}
+
+.ob-trans figure.ob-scan{margin:.35rem 0 .8rem;padding:0;background:none;border:0}
+.ob-trans figure.ob-scan img{max-width:min(100%,800px);height:auto;border:1px solid var(--parchment-dark);background:#fff}
+.ob-trans figure.ob-scan figcaption{margin:.35rem 0 0;font-size:.92rem}
