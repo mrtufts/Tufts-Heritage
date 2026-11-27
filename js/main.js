@@ -28,6 +28,42 @@ document.addEventListener("DOMContentLoaded", function () {
   if (y) y.textContent = new Date().getFullYear();
 });
 
+// New-information stars: seen ids are stored in localStorage "seen-new"
+// so each visitor can dismiss a star. A static site cannot change repo JSON.
+function seenNewIds() {
+  try { return JSON.parse(localStorage.getItem("seen-new") || "[]"); }
+  catch (e) { return []; }
+}
+function markNewSeen(id) {
+  if (!id) return;
+  var seen = seenNewIds();
+  if (seen.indexOf(id) === -1) {
+    seen.push(id);
+    try { localStorage.setItem("seen-new", JSON.stringify(seen)); } catch (e) {}
+  }
+}
+function hideSeenStars(root) {
+  var seen = seenNewIds();
+  (root || document).querySelectorAll("a.is-new[data-id]").forEach(function (a) {
+    if (seen.indexOf(a.getAttribute("data-id")) === -1) return;
+    a.classList.remove("is-new");
+    a.removeAttribute("title");
+    a.removeAttribute("aria-label");
+  });
+}
+document.addEventListener("DOMContentLoaded", function () {
+  var id = document.body.getAttribute("data-id");
+  if (!id) {
+    var m = (location.pathname || "").match(/\/profiles\/([^/]+)\.html$/);
+    if (m) id = decodeURIComponent(m[1]);
+  }
+  if (id) markNewSeen(id);
+  document.addEventListener("click", function (ev) {
+    var a = ev.target && ev.target.closest && ev.target.closest("a.is-new[data-id]");
+    if (a) markNewSeen(a.getAttribute("data-id"));
+  });
+});
+
 // People index: search plus era and line filters, driven by data/people.json.
 function initPeople() {
   var list = document.getElementById("people-list");
@@ -54,6 +90,12 @@ function initPeople() {
       rows.forEach(function (x) {
         var li = document.createElement("li"), a = document.createElement("a");
         a.href = x.profile; a.textContent = displayName(x);
+        if (x.new) {
+          a.className = "is-new";
+          a.setAttribute("data-id", x.slug);
+          a.title = "New information";
+          a.setAttribute("aria-label", displayName(x) + ", New information");
+        }
         if (x.rw === "musket" || x.rw === "pistol") {
           var img = document.createElement("img");
           img.className = "rw-icon";
@@ -73,6 +115,7 @@ function initPeople() {
         ul.appendChild(li);
       });
       list.appendChild(ul);
+      hideSeenStars(list);
     }
     [q, era, line].forEach(function (el) { el.addEventListener("input", render); });
     render();

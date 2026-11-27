@@ -85,6 +85,37 @@ def write_storage_manifest():
         _ab_json.dumps(man, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
 
+
+def apply_new_findings():
+    """Set people.json 'new' from /workspace/new-findings/ if that directory exists."""
+    findings_dir = _ab_Path("/workspace/new-findings")
+    names = []
+    if findings_dir.is_dir():
+        for pth in findings_dir.iterdir():
+            if not pth.is_file():
+                continue
+            if pth.name.startswith(".") or pth.name.lower() == "readme.md":
+                continue
+            names.append(pth.name)
+    people_path = _ab_Path("data/people.json")
+    people = _ab_json.loads(people_path.read_text(encoding="utf-8"))
+    matched = set()
+    for fname in names:
+        hits = [rec.get("slug") for rec in people if rec.get("slug") and fname.startswith(rec["slug"])]
+        if hits:
+            matched.add(max(hits, key=len))
+    changed = False
+    for rec in people:
+        should = rec.get("slug") in matched
+        if should and rec.get("new") is not True:
+            rec["new"] = True
+            changed = True
+        elif not should and "new" in rec:
+            del rec["new"]
+            changed = True
+    if changed:
+        people_path.write_text(_ab_json.dumps(people, indent=2) + "\n", encoding="utf-8")
+
 def rewrite_all_pages():
     for pth in _ab_Path(".").rglob("*.html"):
         if any(part.startswith(".") for part in pth.parts):
@@ -129,6 +160,9 @@ def nav(pre, cur):
 
 def page(path, title, kicker, h1, sub, body, desc="The Tufts family across generations, from colonial New England onward."):
     pre = "../" * path.count("/")
+    slug_attr = ""
+    if path.startswith("profiles/") and path.endswith(".html"):
+        slug_attr = f' data-id="{path[len("profiles/"):-len(".html")]}"'
     html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -146,7 +180,7 @@ def page(path, title, kicker, h1, sub, body, desc="The Tufts family across gener
 <link rel="icon" href="{pre}favicon.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="{pre}apple-touch-icon.png">
 </head>
-<body>
+<body{slug_attr}>
 <header class="chainmail">
   {CREST}
   <div class="kicker">{kicker}</div>
@@ -183,3 +217,4 @@ exec(open("tools/article_clips_1118.py").read())
 exec(open("tools/source_notes_1118.py").read())
 exec(open("tools/narratives_1120.py").read())
 rewrite_all_pages()
+apply_new_findings()
