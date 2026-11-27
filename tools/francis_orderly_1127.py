@@ -476,3 +476,5 @@ def EXTRA(path):
     return out
 
 print("francis_orderly_1127 done")
+
+exec(open("tools/peter_plan_1127.py").read())

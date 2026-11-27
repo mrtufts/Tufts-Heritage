@@ -410,5 +410,17 @@
   "pat": "Brocus",
   "before": 1,
   "after": 0
+ },
+ "mhr-xxxi-peter-tufts-plan-1816": {
+  "id": "medfordhistorica05medf",
+  "leaf": 81,
+  "pat": "Two interesting old plans",
+  "until": "upper pond"
+ },
+ "mhr-xxxii-cradock-tufts-campaign": {
+  "id": "medfordhistorica05medf",
+  "leaf": 167,
+  "pat": "campaign to save",
+  "until": "still undecided"
  }
 }
