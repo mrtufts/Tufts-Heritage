@@ -1483,5 +1483,71 @@
     "line": "Son of Peter Tufts Jr.; farmer who settled in New York State",
     "town": "Medford, Mass.; later Pavilion, Genesee County, N.Y.",
     "profile": "profiles/aaron-tufts-1793.html"
+  },
+  {
+    "name": "Lucy Quincy Tufts (1729&ndash;1785)",
+    "slug": "lucy-quincy-tufts",
+    "born": "1729",
+    "died": "1785",
+    "era": "The Revolution",
+    "line": "First wife of Dr. Cotton Tufts; of Braintree, later Weymouth",
+    "town": "Braintree; Weymouth, Mass.",
+    "profile": "profiles/lucy-quincy-tufts.html",
+    "new": true
+  },
+  {
+    "name": "William Tufts 3d (1758&ndash;1782)",
+    "slug": "william-tufts-3d",
+    "born": "1758",
+    "died": "1782",
+    "era": "The Revolution",
+    "line": "Son of William and Rebeccah 3d of Medford; not the same man as William Tufts (1736&ndash;1782)",
+    "town": "Medford, Mass.",
+    "profile": "profiles/william-tufts-3d.html",
+    "new": true
+  },
+  {
+    "name": "Simon Tufts of Newburyport (1769&ndash;1797)",
+    "slug": "simon-tufts-33-4",
+    "born": "1769",
+    "died": "1797",
+    "era": "The Revolution",
+    "line": "Son of Dr. Samuel Tufts of Newburyport",
+    "town": "Newburyport, Mass.",
+    "profile": "profiles/simon-tufts-33-4.html",
+    "new": true
+  },
+  {
+    "name": "Sally Tufts of Newburyport (1772&ndash;1797)",
+    "slug": "sally-tufts-33-5",
+    "born": "1772",
+    "died": "1797",
+    "era": "The Revolution",
+    "line": "Daughter of Dr. Samuel Tufts of Newburyport; not the infant Sarah born 1763",
+    "town": "Newburyport, Mass.",
+    "profile": "profiles/sally-tufts-33-5.html",
+    "new": true
+  },
+  {
+    "name": "Nathan Tufts (1724&ndash;1771)",
+    "slug": "nathan-tufts-1724",
+    "born": "1724",
+    "died": "1771",
+    "era": "Colonial",
+    "line": "Son of Peter and Lydia Tufts; possibly the same man as Nathan the cordwainer already on this site",
+    "town": "Charlestown (now Somerville); Medford, Mass.",
+    "profile": "profiles/nathan-tufts-1724.html",
+    "new": true
+  },
+  {
+    "name": "Elias Tuffts (Coburn roll)",
+    "slug": "elias-tuffts",
+    "born": "",
+    "died": "",
+    "era": "The Revolution",
+    "line": "Name on Capt. Samuel Barnard&rsquo;s Watertown Lexington-alarm roll; identity with Elias Tufts (b. 1751) is unverified",
+    "town": "Watertown, Mass. (roll endorsement)",
+    "profile": "profiles/elias-tuffts.html",
+    "new": true
   }
 ]

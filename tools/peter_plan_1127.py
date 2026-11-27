@@ -31,3 +31,5 @@ _up_add(_PH, _SEC2, 'id="cradock-tufts-1929"')
 if "MAPS_HTML" in globals() and "road-plan-1816" not in MAPS_HTML:
     MAPS_HTML = MAPS_HTML.replace("</ul>", '<li>Peter Tufts, plan of the turnpikes, canal and a proposed road through Upper Medford (1816), Medford Historical Society files: described by the <em>Register</em> with distances in rods from Charlestown bridges to Wood&rsquo;s tavern (' + _S58 + '; maker&rsquo;s identity flagged). <a href="{P}profiles/' + _PS + '.html#road-plan-1816">Details on his page</a>.</li></ul>', 1)
 print("peter_plan_1127 done")
+
+exec(open("tools/six_profiles_1127.py").read())
