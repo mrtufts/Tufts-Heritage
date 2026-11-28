@@ -509,7 +509,8 @@
     "line": "Son of Peter Tufts of Milk Row",
     "town": "Charlestown (now Somerville), Mass.",
     "profile": "profiles/timothy-tufts.html",
-    "rw": "pistol"
+    "rw": "pistol",
+    "new": true
   },
   {
     "name": "Peter Tufts the Immigrant (c. 1617&ndash;1700)",
@@ -821,7 +822,8 @@
     "era": "The Revolution",
     "line": "Wife of Cotton Tufts (1757&ndash;1833)",
     "town": "Medford; Weymouth, Mass.",
-    "profile": "profiles/mercy-brooks-tufts.html"
+    "profile": "profiles/mercy-brooks-tufts.html",
+    "new": true
   },
   {
     "name": "Quincy Tufts (1791&ndash;1872)",
@@ -1100,7 +1102,8 @@
     "line": "Son of Dr. Simon Tufts (1700&ndash;1747); physician, druggist and merchant of Newburyport",
     "town": "Medford; Newbury and Newburyport, Mass.",
     "profile": "profiles/samuel-tufts-11-5.html",
-    "rw": "pistol"
+    "rw": "pistol",
+    "new": true
   },
   {
     "name": "Rev. Joshua Tufts (1716&ndash;1767)",
@@ -1563,6 +1566,61 @@
     "line": "Shipmaster in the Salem and Beverly registers; parentage not established",
     "town": "Salem and Beverly, Mass.; at sea",
     "profile": "profiles/horace-tufts.html",
+    "new": true
+  },
+  {
+    "name": "Timothy Tufts Jr. (1762&ndash;1802)",
+    "slug": "timothy-tufts-1762",
+    "born": "1762",
+    "died": "1802",
+    "era": "The Revolution",
+    "line": "Son of Timothy and Anne (Adams) Tufts; father of Jonas Tufts of Charlestown, N.H.",
+    "town": "Menotomy (Arlington); Cambridge; Lynnfield, Mass.",
+    "profile": "profiles/timothy-tufts-1762.html",
+    "new": true
+  },
+  {
+    "name": "Jonas Tufts (1798&ndash;1879)",
+    "slug": "jonas-tufts-1798",
+    "born": "1798",
+    "died": "1879",
+    "era": "19th Century",
+    "line": "Son of Timothy Tufts Jr. and Submit (Flagg) Tufts; the first of his line in New Hampshire",
+    "town": "Charlestown (Somerville), Mass.; Charlestown and Walpole, N.H.",
+    "profile": "profiles/jonas-tufts-1798.html",
+    "new": true
+  },
+  {
+    "name": "Timothy Tufts of Alstead (1824&ndash;1901)",
+    "slug": "timothy-tufts-1824",
+    "born": "1824",
+    "died": "1901",
+    "era": "19th Century",
+    "line": "Son of Jonas and Sarah (Labaree) Tufts; merchant, farmer and town treasurer of Alstead, N.H.",
+    "town": "Charlestown and Alstead, N.H.",
+    "profile": "profiles/timothy-tufts-1824.html",
+    "new": true
+  },
+  {
+    "name": "Hon. James Tufts of Montana (1829&ndash;1884)",
+    "slug": "james-tufts-1829",
+    "born": "1829",
+    "died": "1884",
+    "era": "19th Century",
+    "line": "Son of Jonas and Sarah (Labaree) Tufts; lawyer and acting governor of Montana Territory",
+    "town": "Charlestown, N.H.; Iowa; Nebraska; Dakota, Idaho and Montana Territories",
+    "profile": "profiles/james-tufts-1829.html",
+    "new": true
+  },
+  {
+    "name": "Prof. James Arthur Tufts of Phillips Exeter (1855&ndash;1938)",
+    "slug": "james-arthur-tufts-1855",
+    "born": "1855",
+    "died": "1938",
+    "era": "19th Century",
+    "line": "Son of Timothy and Hannah Sophia (Kingsbury) Tufts; teacher at Phillips Exeter Academy for fifty years",
+    "town": "Alstead and Exeter, N.H.",
+    "profile": "profiles/james-arthur-tufts-1855.html",
     "new": true
   }
 ]
