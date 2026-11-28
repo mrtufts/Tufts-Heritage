@@ -141,7 +141,7 @@ def SN_finalize():
     body.append('<section id="events"><h2>Battles &amp; Events</h2>' + "".join(ev) + "</section>")
     pl = [li_file(f) for f in ("places.html", "essex-privateer.html", "salem-street-burying-ground.html", "harvard.html", "businesses.html") if f in H]
     body.append('<section id="places"><h2>Places</h2>' + ul(pl) + '<h3>Places page sections</h3>' + ul(li_page(*x) for x in places) + "</section>")
-    body.append('<section id="artifacts"><h2>Artifacts &amp; Collections</h2>' + ul([li_file(f) for f in ("collections.html", "coat-of-arms.html") if f in H] + [li_page(*x) for x in artifacts]) + "</section>")
+    body.append('<section id="artifacts"><h2>Artifacts &amp; Collections</h2>' + ul([li_file(f) for f in ("collections.html", "artifacts.html", "coat-of-arms.html") if f in H] + [li_page(*x) for x in artifacts]) + "</section>")
     body.append('<section id="letters"><h2>Family Letters &amp; Documents</h2>' + ul(li_page(*x) for x in letters) + "</section>")
     gen = [li_file(f) for f in files if f.startswith("generations/")] + [li_file(f) for f in ("people.html", "shea-selee-lineage.html") if f in H]
     eras = "".join(f'<h3 id="era-{_sn_slug(e)}">{e}</h3>' + ul(li_person(r["slug"]) for r in sorted(rs, key=lambda r: r["name"])) for e, rs in by_era.items())

@@ -1569,6 +1569,94 @@
     "new": true
   },
   {
+    "name": "Samuel Tufts of Harvard Square, Cambridge",
+    "slug": "samuel-tufts-cambridge",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Furniture and job-wagon man of Harvard Square; parentage not established",
+    "town": "Cambridge, Mass.",
+    "profile": "profiles/samuel-tufts-cambridge.html",
+    "new": true
+  },
+  {
+    "name": "Hon. Aaron Tufts of Dudley (1770&ndash;1844)",
+    "slug": "aaron-tufts-dudley",
+    "born": "1770",
+    "died": "1844",
+    "era": "19th Century",
+    "line": "Justice of the peace and woolen manufacturer of Tuftsville, Dudley; son of Aaron and Mary (Stone) Tufts",
+    "town": "Charlestown (Somerville), Mass.; Dudley, Mass.",
+    "profile": "profiles/aaron-tufts-dudley.html",
+    "new": true
+  },
+  {
+    "name": "Gardner Tufts of an 1811 cotton letter",
+    "slug": "gardner-tufts-1811",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Named on the docket of an 1811 cotton letter or invoice; identity not established",
+    "town": "Place not established from the document",
+    "profile": "profiles/gardner-tufts-1811.html",
+    "new": true
+  },
+  {
+    "name": "George Tufts of a 1901 Jamaica Plain gas bill",
+    "slug": "george-tufts-jamaica-plain",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Named in an eBay title for a Jamaica Plain gas bill of 1901; identity not established",
+    "town": "Jamaica Plain (Boston), Mass., if the listing is correct",
+    "profile": "profiles/george-tufts-jamaica-plain.html",
+    "new": true
+  },
+  {
+    "name": "The Tufts of Tufts &amp; Neal, Rangeley, Maine",
+    "slug": "tufts-and-neal-rangeley",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Partner in the firm of Tufts &amp; Neal, Main Street, Rangeley; first name not known",
+    "town": "Rangeley, Maine",
+    "profile": "profiles/tufts-and-neal-rangeley.html",
+    "new": true
+  },
+  {
+    "name": "Ambler Tufts of Dallas",
+    "slug": "ambler-tufts-dallas",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Agent of the Consolidated, later American, Steel &amp; Wire Company at Dallas; parentage not established",
+    "town": "Dallas, Texas",
+    "profile": "profiles/ambler-tufts-dallas.html",
+    "new": true
+  },
+  {
+    "name": "Dr. J. E. Tufts of Packer &amp; Tufts, Virginia City",
+    "slug": "dr-tufts-virginia-city",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Physician of the firm of Drs. Packer &amp; Tufts; first name on the billhead not given",
+    "town": "Virginia City, Nevada",
+    "profile": "profiles/dr-tufts-virginia-city.html",
+    "new": true
+  },
+  {
+    "name": "John M. Tufts, manufacturer of roll-top desks",
+    "slug": "john-m-tufts-desks",
+    "born": "",
+    "died": "",
+    "era": "19th Century",
+    "line": "Manufacturer of Tufts Roll-Top Desks, Fulton Street, New York, with a factory at Somerville; parentage not established",
+    "town": "New York, N.Y.; factory at Somerville, Mass.",
+    "profile": "profiles/john-m-tufts-desks.html",
+    "new": true
+  },
+  {
     "name": "Timothy Tufts Jr. (1762&ndash;1802)",
     "slug": "timothy-tufts-1762",
     "born": "1762",

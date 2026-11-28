@@ -93,7 +93,10 @@ def _ar_render(items):
 
 _AR = _ar_json.load(open("data/artifacts.json", encoding="utf-8"))
 _ar_by = {}
-for _it in _AR: _ar_by.setdefault(_it["profile"], []).append(_it)
+for _it in _AR:
+    if _it.get("skip_profile"):
+        continue
+    _ar_by.setdefault(_it["profile"], []).append(_it)
 for _slug, _items in _ar_by.items():
     _up_add(_slug, _ar_render(_items), 'id="artifacts"')
 # Samuel (11-5) and Timothy (1735) are placed in the Unverified section as well.

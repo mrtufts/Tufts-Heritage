@@ -177,5 +177,7 @@ def EXTRA(path):
             out = out.replace("</ul></section>", _li + "\n</ul></section>", 1)
     return out
 
+exec(open("tools/artifacts_1128c.py").read())
 exec(open("tools/artifacts_1128b.py").read())
+_ar_gallery()
 print("auction_finds_1128 done")
