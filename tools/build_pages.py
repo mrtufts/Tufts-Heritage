@@ -92,6 +92,7 @@ def apply_new_findings():
     names = []
     if findings_dir.is_dir():
         for pth in findings_dir.iterdir():
+            # Subdirectories, including archive/, are ignored.
             if not pth.is_file():
                 continue
             if pth.name.startswith(".") or pth.name.lower() == "readme.md":

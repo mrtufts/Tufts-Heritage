@@ -19,7 +19,8 @@
     "line": "Dr. Simon Tufts",
     "town": "Medford; Weymouth, Mass.",
     "profile": "profiles/cotton-tufts.html",
-    "rw": "pistol"
+    "rw": "pistol",
+    "new": true
   },
   {
     "name": "Zachariah Tufts",
@@ -248,7 +249,8 @@
     "line": "Tufts Kinsmen family no. 41-4",
     "town": "Lancaster; Boston",
     "profile": "profiles/francis-tufts-41-4.html",
-    "rw": "musket"
+    "rw": "musket",
+    "new": true
   },
   {
     "name": "Cpl. David Tufts",
@@ -808,7 +810,8 @@
     "era": "The Revolution",
     "line": "Son of Dr. Cotton Tufts",
     "town": "Weymouth, Mass.",
-    "profile": "profiles/cotton-tufts-jr.html"
+    "profile": "profiles/cotton-tufts-jr.html",
+    "new": true
   },
   {
     "name": "Mercy Brooks Tufts (1763&ndash;1849)",
@@ -828,7 +831,8 @@
     "era": "19th Century",
     "line": "Grandson of Dr. Cotton Tufts",
     "town": "Weymouth; Boston, Mass.",
-    "profile": "profiles/quincy-tufts.html"
+    "profile": "profiles/quincy-tufts.html",
+    "new": true
   },
   {
     "name": "Susannah Tufts (1797&ndash;1877)",
@@ -1548,6 +1552,17 @@
     "line": "Name on Capt. Samuel Barnard&rsquo;s Watertown Lexington-alarm roll; identity with Elias Tufts (b. 1751) is unverified",
     "town": "Watertown, Mass. (roll endorsement)",
     "profile": "profiles/elias-tuffts.html",
+    "new": true
+  },
+  {
+    "name": "Capt. Horace Tufts (b. about 1796&ndash;97)",
+    "slug": "horace-tufts",
+    "born": "1797",
+    "died": "",
+    "era": "19th Century",
+    "line": "Shipmaster in the Salem and Beverly registers; parentage not established",
+    "town": "Salem and Beverly, Mass.; at sea",
+    "profile": "profiles/horace-tufts.html",
     "new": true
   }
 ]

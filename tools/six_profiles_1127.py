@@ -273,3 +273,5 @@ if _p:
     _p["bio"] = _p["bio"].replace("same volume, p. 446; birth on p. 153", "same volume, p. 446; birth on p. 153")
 
 print("six_profiles_1127 done")
+
+exec(open("tools/auction_finds_1128.py").read())
