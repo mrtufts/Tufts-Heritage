@@ -62,14 +62,14 @@
  {
   "profile": "samuel-tufts-11-5",
   "id": "resnick-listing",
-  "image": null,
-  "title": "A 1766 Newburyport document offered as an &ldquo;indenture,&rdquo; Samuel Resnick to Samuel Tufts",
-  "text": "A dealer listing mirrors an eBay sale of a document titled &ldquo;1766 antique COLONIAL INDENTURE newburyport ma Samuel RESNICK to Samuel TUFTS,&rdquo; asking $395 when it was last seen (28 November 2026). The names, the town and the year are those of the July 1766 notice shown on <a href=\"{P}profiles/samuel-tufts.html#newburyport-1766\">Samuel Tufts (several men)</a>. No photograph is shown here.",
-  "who": "Josephmarc.com listing (mirror of an eBay sale)",
-  "lic": null,
+  "image": "samuel-tufts-indenture-1766.jpg",
+  "title": "Notice to the Newburyport selectmen, 11 July 1766, offered as a 1766 &ldquo;indenture&rdquo;",
+  "text": "The photograph, from a Josephmarc listing of eBay item 860119781812, is of the notice dated 11 July 1766 in which &ldquo;Saml Tufts&rdquo; tells the selectmen of Newburyport that on 7 July he had taken into his family Samuel Resnick, about eight, son of Isaac Resnick, late of Newbury. That is the same text already shown on <a href=\"{P}profiles/samuel-tufts.html#newburyport-1766\">Samuel Tufts (several men)</a>. The dealer titled the lot a colonial indenture and reported a date of 7 February 1766; the sheet itself is dated 11 July. Asking $395 when last seen (28 November 2026).",
+  "who": "Josephmarc.com (image from eBay item 860119781812)",
+  "lic": "Photograph &copy; the seller or auction house; shown with credit for research",
   "url": "https://josephmarc.com/vintage/1766-antique-COLONIAL-INDENTURE-newburyport-ma-Samuel-RESNICK-to-Samuel-TUFTS_860119781812.html",
   "label": "Josephmarc listing",
-  "flag": "<strong>Unverified.</strong> The listing page could not be opened, so its text, date, photographs and sale status are unconfirmed. It has not been established whether it is the same notice already shown on this site, a second notice, or a later sale of the first, and a February 1766 date reported for it has not been confirmed. Whether the writer is Dr. Samuel Tufts (1735&ndash;1799), rather than another Samuel Tufts, rests only on the name and place. Note: Pending further work."
+  "flag": "<strong>Unverified.</strong> The photograph shows the July 1766 selectmen notice already on this site, not a February indenture; the dealer&rsquo;s February date is a misreading of the sheet. Whether this listing is a later sale of the same piece already photographed from another eBay offer has not been confirmed from the paper itself. Whether the writer is Dr. Samuel Tufts (1735&ndash;1799), rather than another Samuel Tufts, still rests only on the name and place. Note: Pending further work."
  },
  {
   "profile": "timothy-tufts",
