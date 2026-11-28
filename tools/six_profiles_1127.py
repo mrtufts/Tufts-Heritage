@@ -24,7 +24,7 @@ _nf_new(_LUCY, "Lucy Quincy Tufts (1729&ndash;1785)", "[b. about 1729] &ndash; 3
 
 # ---------- William Tufts 3d ----------
 _W3D = "william-tufts-3d"
-_nf_new(_W3D, "William Tufts 3d (1758&ndash;1782)", "11 Jan. 1758 &ndash; 4 Jan. 1782",
+_nf_new(_W3D, "William Tufts (1758&ndash;1782)", "11 Jan. 1758 &ndash; 4 Jan. 1782",
   "Medford, Mass.", "1758", "1782", "The Revolution",
   "Son of William and Rebeccah 3d of Medford; not the same man as William Tufts (1736&ndash;1782)",
   '<p>William Tufts, styled 3d, was born at Medford on January 11, 1758, the son of William and Rebeccah 3d: &ldquo;Tufts, William, s. William and Rebeccah 3d, Jan. 11, 1758.&rdquo; <em>Vital Records of Medford, Massachusetts, to the Year 1850</em> (Boston, 1907), p. 153. An older brother of the same name had been born May 20, 1756, and died February 12, 1757: &ldquo;William, s. William and Rebeccah 3d, Feb. 12, 1757&rdquo; (same volume, p. 446; birth on p. 153).</p>'
@@ -35,11 +35,11 @@ _nf_new(_W3D, "William Tufts 3d (1758&ndash;1782)", "11 Jan. 1758 &ndash; 4 Jan.
   '<p>Parents: William Tufts Jr. (d. 24 Oct. 1775, Medford VR, p. 446) and Rebecca (&ldquo;Rebeccah 3d&rdquo;) Tufts. Infant brother: William, b. 20 May 1756, d. 12 Feb. 1757 (Medford VR, pp. 153, 446). Grandfather (compiled): ' + PL("simon-tufts-1700", "Dr. Simon Tufts (1700&ndash;1747)") + '. Uncles: ' + PL("cotton-tufts", "Dr. Cotton Tufts (1732&ndash;1815)") + ', ' + PL("simon-tufts-11-1", "Dr. Simon Tufts (1727&ndash;1786)") + ', and ' + PL("samuel-tufts-11-5", "Dr. Samuel Tufts of Newburyport (1735&ndash;1799)") + ' (<em>Tufts Kinsmen</em>, Vol.&nbsp;I, families 11-3 and 31, p. 71).</p>',
   "<strong>Death year in <em>Tufts Kinsmen</em>:</strong> Vol.&nbsp;I, p. 71, no. 31-3, prints 4 Jan. 1784, citing Medford VR p. 446, but the printed volume and gravestone read 4 Jan. 1782, a. 24. This page follows the vital record. Note: Pending further work.",
   "<p>No marriage has been found for him in the Medford vital records or in <em>Tufts Kinsmen</em>, Vol.&nbsp;I, p. 71, which treats him as unmarried.</p>",
-  [("william-tufts-40-2", "a different man: William Tufts (1736&ndash;1782)", "a different man: William Tufts 3d (1758&ndash;1782); the Medford death &ldquo;William 3d, Jan. 4, 1782, a. 24&rdquo; belongs to him, not to this page"),
-   ("cotton-tufts", "uncle Dr. Cotton Tufts (1732&ndash;1815)", "nephew William Tufts 3d (1758&ndash;1782)"),
-   ("simon-tufts-11-1", "uncle Dr. Simon Tufts (1727&ndash;1786)", "nephew William Tufts 3d (1758&ndash;1782)"),
-   ("samuel-tufts-11-5", "uncle Dr. Samuel Tufts of Newburyport (1735&ndash;1799)", "nephew William Tufts 3d (1758&ndash;1782)"),
-   ("simon-tufts-1700", "grandfather (compiled) Dr. Simon Tufts (1700&ndash;1747)", "grandson (compiled) William Tufts 3d (1758&ndash;1782)")])
+  [("william-tufts-40-2", "a different man: William Tufts (1736&ndash;1782)", "a different man: William Tufts (1758&ndash;1782); the Medford death &ldquo;William 3d, Jan. 4, 1782, a. 24&rdquo; belongs to him, not to this page"),
+   ("cotton-tufts", "uncle Dr. Cotton Tufts (1732&ndash;1815)", "nephew William Tufts (1758&ndash;1782)"),
+   ("simon-tufts-11-1", "uncle Dr. Simon Tufts (1727&ndash;1786)", "nephew William Tufts (1758&ndash;1782)"),
+   ("samuel-tufts-11-5", "uncle Dr. Samuel Tufts of Newburyport (1735&ndash;1799)", "nephew William Tufts (1758&ndash;1782)"),
+   ("simon-tufts-1700", "grandfather (compiled) Dr. Simon Tufts (1700&ndash;1747)", "grandson (compiled) William Tufts (1758&ndash;1782)")])
 
 # ---------- Simon of Newburyport ----------
 _SIM = "simon-tufts-33-4"
@@ -134,7 +134,7 @@ if "cotton-tufts" in SP and "Lucy Quincy" in SP["cotton-tufts"] and _LUCY not in
 
 _p = _up_get("william-tufts-40-2")
 if _p:
-    _note = ('<p>He is not ' + PL(_W3D, "William Tufts 3d (1758&ndash;1782)")
+    _note = ('<p>He is not ' + PL(_W3D, "William Tufts (1758&ndash;1782)")
              + '. The Medford death &ldquo;William 3d, Jan. 4, 1782, a. 24, g.r.i.&rdquo; (Medford VR, p. 446) belongs to that man, not to this page.</p>')
     if _W3D not in _p.get("bio", ""):
         _p["bio"] = _p.get("bio", "") + _note

@@ -1503,7 +1503,7 @@
     "new": true
   },
   {
-    "name": "William Tufts 3d (1758&ndash;1782)",
+    "name": "William Tufts (1758&ndash;1782)",
     "slug": "william-tufts-3d",
     "born": "1758",
     "died": "1782",
@@ -1710,5 +1710,25 @@
     "town": "Alstead and Exeter, N.H.",
     "profile": "profiles/james-arthur-tufts-1855.html",
     "new": true
+  },
+  {
+    "name": "Benjamin Tufts (c. 1704&ndash;1774)",
+    "slug": "benjamin-tufts-1704",
+    "born": "1704",
+    "died": "1774",
+    "era": "Colonial",
+    "line": "Son of John Tufts; farmer of North Medford; father of Benjamin Tufts (1731&ndash;1804) and John Tufts of Malden",
+    "town": "Medford, Mass. (North Medford, on the road to Spot Pond)",
+    "profile": "profiles/benjamin-tufts-1704.html"
+  },
+  {
+    "name": "John Tufts of Medford, father of Benjamin",
+    "slug": "john-tufts-father-of-benjamin",
+    "born": "",
+    "died": "",
+    "era": "Colonial",
+    "line": "Father of Benjamin Tufts (c. 1704&ndash;1774) of North Medford",
+    "town": "Medford, Mass.",
+    "profile": "profiles/john-tufts-father-of-benjamin.html"
   }
 ]
